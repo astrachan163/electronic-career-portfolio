@@ -902,3 +902,14 @@ dialog.video-dialog-modal::backdrop {
   color: var(--color-circuit-gold);
   text-decoration: underline;
 }
+
+@media (max-width: 640px) {
+  .pd-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .pd-proctor-thumb {
+    width: 120px;
+    height: 75px;
+  }
+}
