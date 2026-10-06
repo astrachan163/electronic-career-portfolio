@@ -1,0 +1,142 @@
+/**
+ * styles/print.css
+ * High-Fidelity Printable Stylesheet for Clean PDF Companion Generation.
+ * Author: Andrew Strachan Electronic Career Portfolio
+ */
+
+@media print {
+  /* ==========================================================================
+     1. Page Box Formatting & Reset
+     ========================================================================== */
+  @page {
+    size: letter portrait;
+    margin: 0.75in 0.75in 0.75in 0.75in;
+  }
+
+  *, *::before, *::after {
+    background: transparent !important;
+    color: #000000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+  }
+
+  html, body {
+    background: #ffffff !important;
+    color: #111111 !important;
+    font-size: 11pt !important;
+    line-height: 1.5 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* ==========================================================================
+     2. Suppress Interactive-Only & Navigation UI
+     ========================================================================== */
+  .site-header,
+  .site-nav,
+  .nav-actions,
+  .nav-toggle-btn,
+  .btn-nav-action,
+  .btn-primary-cyan,
+  .btn-secondary-outline,
+  .filter-chips-container,
+  .presenter-drawer,
+  .presenter-timer-module,
+  .timer-controls-bar,
+  .btn-timer-ctrl,
+  dialog,
+  .video-action-bar,
+  .btn-demo-link,
+  .skip-link {
+    display: none !important;
+  }
+
+  /* Show video posters instead of blank player boxes - allow poster frames to render on print sheets */
+  .video-player-container {
+    aspect-ratio: auto !important;
+    height: auto !important;
+    border: 1px solid #cccccc !important;
+  }
+
+  .video-player-container video {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Unhide skills pills hidden by interactive filtering on printout */
+  .skill-item-pill {
+    display: flex !important;
+  }
+
+  /* ==========================================================================
+     3. Pagination & Break Controls (Prevent Card Splitting)
+     ========================================================================== */
+  h1, h2, h3, h4 {
+    page-break-after: avoid;
+    break-after: avoid;
+    color: #000000 !important;
+  }
+
+  h2.section-header {
+    border-bottom: 2px solid #333333 !important;
+    padding-bottom: 4pt !important;
+    margin-top: 18pt !important;
+    margin-bottom: 12pt !important;
+  }
+
+  section.portfolio-section {
+    padding-block: 1rem !important;
+    page-break-inside: auto;
+  }
+
+  .glass-card,
+  .timeline-item,
+  .star-card,
+  .stat-metric-card,
+  .gs-step-card,
+  .obstacle-card,
+  .showcase-card,
+  .mce-featured-card,
+  .table-responsive-container,
+  tr {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+    border: 1px solid #dddddd !important;
+    background: #ffffff !important;
+    margin-bottom: 12pt !important;
+  }
+
+  /* ==========================================================================
+     4. High-Contrast Typography & Tables
+     ========================================================================== */
+  p, li, td, th {
+    color: #222222 !important;
+    font-size: 10pt !important;
+  }
+
+  .cyber-data-table th {
+    background: #f1f5f9 !important;
+    color: #000000 !important;
+    font-weight: bold !important;
+    border-bottom: 2px solid #000000 !important;
+  }
+
+  .cyber-data-table td {
+    border-bottom: 1px solid #e2e8f0 !important;
+  }
+
+  /* Display link destination URLs for paper review */
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 8pt;
+    color: #555555 !important;
+  }
+
+  /* Don't show URL for anchors inside tables or headings */
+  th a::after, td a::after, h1 a::after, h2 a::after {
+    content: "";
+  }
+}

@@ -1,0 +1,281 @@
+{
+  "specialSkills": [
+    {
+      "id": "SKILL-01",
+      "name": "Secure Systems & Zero-Trust Architecture",
+      "category": "Cybersecurity Engineering",
+      "credential": "CyberCorps: Scholarship for Service (SFS) Scholarship & UAB M.S. Cybersecurity (GPA 3.75)",
+      "credentialType": "National Science Foundation Scholarship & Academic Credential",
+      "correlationToMission": "Directly supports federal zero-trust mandates (OMB M-22-09) and critical infrastructure protection. Leverages STRIDE threat modeling, network packet analysis, and defense-in-depth principles to architect resilient federal systems.",
+      "tools": ["STRIDE", "Wireshark", "Nmap", "NIST SP 800-53", "NIST Cybersecurity Framework", "IAM Least Privilege", "Packet Filtering"]
+    },
+    {
+      "id": "SKILL-02",
+      "name": "Educational Technology & Instructional Design",
+      "category": "Instructional Systems & Workforce Training",
+      "credential": "Microsoft Certified Educator (MCE) & Alabama Teaching Certificate (PCTF)",
+      "credentialType": "Industry Certification & State Licensure",
+      "verificationUrl": "https://www.credly.com/badges/d4e5c326-c255-405c-b50e-0a369d6fc3a0/public_url",
+      "badgeImage": "assets/brand/mce-microsoft-certified-educator.png",
+      "correlationToMission": "Essential for federal cyber workforce development, designing security awareness programs, training non-technical agency personnel on cyber hygiene, and translating complex technical security controls into actionable operational protocols.",
+      "tools": ["Microsoft 21CLD Framework", "TAPE Compliance", "FBLA Advising", "DECA Coaching", "Experiential Pedagogy", "Curriculum Design"]
+    },
+    {
+      "id": "SKILL-03",
+      "name": "On-Device AI & Privacy-Preserving Systems",
+      "category": "Artificial Intelligence & Edge Compute",
+      "credential": "Native Apple Silicon Architecture (MaqkrsTutor2) & 30 Professional AI Certifications",
+      "credentialType": "Software Engineering & Industry Certifications",
+      "correlationToMission": "Addresses strict federal privacy, classified data protection, and operational security requirements. Enables offline semantic intelligence and local RAG capabilities that prevent data exfiltration to external commercial AI APIs.",
+      "tools": ["SwiftUI", "SwiftData", "Apple MLX", "Ollama", "Quantized Gemma 4", "Local SQLite Vector Search", "Model Context Protocol (MCP)"]
+    },
+    {
+      "id": "SKILL-04",
+      "name": "Cloud Infrastructure & DevSecOps Engineering",
+      "category": "Cloud Architecture & Automated Delivery",
+      "credential": "CS532 Cloud Systems Architecture & Multi-Cloud Production Deployments",
+      "credentialType": "Academic Systems Project & Cloud Engineering",
+      "correlationToMission": "Ensures federal digital assets are deployed within fortified, automated environments. Enforces cryptographic download expiration, automated container isolation, and immutable audit trails across AWS, GCP, and serverless runtimes.",
+      "tools": ["AWS S3", "AWS CloudFront", "AWS Lambda", "AWS DynamoDB", "Firebase", "Docker", "HMAC Signatures", "CI/CD SAST"]
+    },
+    {
+      "id": "SKILL-05",
+      "name": "Regulatory Compliance & Quality Assurance Systems",
+      "category": "Governance, Risk & Compliance (GRC)",
+      "credential": "MidSouth Extracts Operational Directorship & cGMP Standard Operating Procedures",
+      "credentialType": "Industrial Leadership & Regulatory Auditing",
+      "correlationToMission": "Bridges technical security controls with legal and regulatory mandates. Applies rigorous pharmaceutical-grade standard operating procedures and chain-of-custody discipline to federal cybersecurity governance, risk management, and digital forensics.",
+      "tools": ["cGMP / FDA 21 CFR", "Standard Operating Procedures (SOPs)", "Process Hazard Analysis (PHA)", "HIPAA Compliance", "Chain of Custody", "Quality Auditing"]
+    }
+  ],
+  "featuredCredential": {
+    "name": "Microsoft Certified Educator (MCE)",
+    "issuingOrganization": "Microsoft Corporation / Certiport",
+    "issuedDate": "May 16, 2025",
+    "credentialId": "d4e5c326-c255-405c-b50e-0a369d6fc3a0",
+    "badgeUrl": "https://www.credly.com/badges/d4e5c326-c255-405c-b50e-0a369d6fc3a0/public_url",
+    "imagePath": "assets/brand/mce-microsoft-certified-educator.png",
+    "badgeAlias": "assets/brand/mce-badge.png",
+    "description": "Validates technology literacy and the competencies needed to provide a rich, custom learning environment for learners. Confirms mastery in integrating information and communication technology into professional instructional design and workforce upskilling."
+  },
+  "stateTeachingCertificate": {
+    "title": "Provisional Certificate in a Teaching Field (PCTF)",
+    "field": "Business, Marketing, and Finance",
+    "issuingAuthority": "Alabama State Department of Education (ALSDE) / University of Montevallo",
+    "activeDates": "August 2024 – June 2025",
+    "gpa": "3.75 / 4.0",
+    "status": "Verified Official Record"
+  },
+  "linkedinLearning": [
+    {
+      "id": "LIL-01",
+      "title": "Developing Executive Presence",
+      "date": "April 6, 2025",
+      "category": "Leadership & Executive Strategy",
+      "url": "https://www.linkedin.com/learning/certificates/80c5af1302366bc0f58975b8e47366b1b9cacdf4b1717e461be45d11554e637c/"
+    },
+    {
+      "id": "LIL-02",
+      "title": "How to Make Innovative Thinking a Habit",
+      "date": "September 7, 2024",
+      "category": "Innovation & Problem Solving",
+      "url": "https://www.linkedin.com/learning/certificates/38db059c12bd74c588c52bd46f1620e05e713af07867fc404a8a1b69232ad458/"
+    },
+    {
+      "id": "LIL-03",
+      "title": "Tech Trends",
+      "date": "September 8, 2024",
+      "category": "Emerging Technology",
+      "url": "https://www.linkedin.com/learning/certificates/9f02c8b5d449d36f700357c322b937c3046baebaa03f45daa07441f7a09cf018/"
+    },
+    {
+      "id": "LIL-04",
+      "title": "Fundamentals of Agentic AI: Business Implications and Ethical Insights",
+      "date": "October 9, 2024",
+      "category": "Agentic AI & Ethics",
+      "url": "https://www.linkedin.com/learning/certificates/a540ca10a00b2bb365732a59e9a3586dfbc44f3a5c6682a591c9a9cf1faba6ad/"
+    },
+    {
+      "id": "LIL-05",
+      "title": "Hands-On Generative AI with Multi-Agent LangChain: Building Real-World Applications",
+      "date": "October 9, 2024",
+      "category": "Multi-Agent AI Engineering",
+      "url": "https://www.linkedin.com/learning/certificates/4de319facbd958b86695aed10dd1d63daaf831340a1d69606402ab82303e37f5/"
+    },
+    {
+      "id": "LIL-06",
+      "title": "How to Boost Your Productivity with AI Tools",
+      "date": "October 10, 2024",
+      "category": "AI Productivity",
+      "url": "https://www.linkedin.com/learning/certificates/44d54d96d179aea9bf479197251238c5042b686ebe2594cca702eff0a408a346/"
+    },
+    {
+      "id": "LIL-07",
+      "title": "Greg McKeown on the Art of Getting Effortless Results (Without Burning Out)",
+      "date": "October 10, 2024",
+      "category": "Operational Excellence",
+      "url": "https://www.linkedin.com/learning/certificates/31f95bc84f20097cfa91e5161db36389ef7d09fca0060036d4d172b8e3269e95/"
+    },
+    {
+      "id": "LIL-08",
+      "title": "Nano Tips for Using AI to Boost Productivity for Any Role with Rachel Woods",
+      "date": "October 10, 2024",
+      "category": "Applied AI Skills",
+      "url": "https://www.linkedin.com/learning/certificates/11d0967544ec3840b7f7bec263760ecdb363bf12ac868a24e34c47f023fa6c47/"
+    },
+    {
+      "id": "LIL-09",
+      "title": "Microsoft Power Platform Fundamentals (PL-900) Cert Prep: Core Components",
+      "date": "October 10, 2024",
+      "category": "Cloud & Enterprise Platforms",
+      "url": "https://www.linkedin.com/learning/certificates/cf971c20e18b737b4e4192091dc931a7247b81b99bab07a264e442ae2c59e3d4/"
+    },
+    {
+      "id": "LIL-10",
+      "title": "What Is Generative AI?",
+      "date": "October 10, 2024",
+      "category": "Generative AI Foundations",
+      "url": "https://www.linkedin.com/learning/certificates/cb373b709a8b3183a20256864583e114b05f29331dd4801004799b7212373799/"
+    },
+    {
+      "id": "LIL-11",
+      "title": "Generative AI vs. Traditional AI",
+      "date": "October 10, 2024",
+      "category": "AI Foundations & Theory",
+      "url": "https://www.linkedin.com/learning/certificates/dddfc1f7c9dba1efe07f16d7b3675b7c6de62a644eb0fdc38199a710212d4dcb/"
+    },
+    {
+      "id": "LIL-12",
+      "title": "Leveraging Generative AI in Finance and Accounting",
+      "date": "November 3, 2024",
+      "category": "Financial Technology & AI",
+      "url": "https://www.linkedin.com/learning/certificates/62c8b62d8af996b7c79229cbc1c24818b26717e99598b567efe66ae5476dab84/"
+    },
+    {
+      "id": "LIL-13",
+      "title": "Accounting Foundations",
+      "date": "November 7, 2024",
+      "category": "Finance & Business Operations",
+      "url": "https://www.linkedin.com/learning/certificates/486e8a57a5d1394cdff715d976fe07abb14c3fa5a2a8159453d71cd9855fa615/"
+    },
+    {
+      "id": "LIL-14",
+      "title": "Accounting Foundations: Bookkeeping",
+      "date": "November 8, 2024",
+      "category": "Finance & Financial Controls",
+      "url": "https://www.linkedin.com/learning/certificates/6e9c8da478167e6b25f97982302053aac42c2bb79307726af7a14f0ca0aa8624/"
+    },
+    {
+      "id": "LIL-15",
+      "title": "Advanced AI Governance: Operationalizing AI Controls and Continuous Monitoring",
+      "date": "November 15, 2024",
+      "category": "AI Governance, Risk & Controls",
+      "url": "https://www.linkedin.com/learning/certificates/91b82fcde090789768b336db8fce7914e110627c9a3fa64c77a962f91f9bfcfd/"
+    },
+    {
+      "id": "LIL-16",
+      "title": "Agentic AI Business Strategy: A Conversation with Charlene Li",
+      "date": "November 15, 2024",
+      "category": "Strategic Leadership & AI",
+      "url": "https://www.linkedin.com/learning/certificates/ee7794b7f7c55f34897761d1dc61991c6e17bf1ce18af0ae9831b2a81d4aceee/"
+    },
+    {
+      "id": "LIL-17",
+      "title": "Copilot for Service: Helpful Tips for Customer Service Agents",
+      "date": "November 15, 2024",
+      "category": "Enterprise Customer Solutions",
+      "url": "https://www.linkedin.com/learning/certificates/e114997ddcd93805e977dda58fd043f85767e23706cec682ddc58e20dd064e70/"
+    },
+    {
+      "id": "LIL-18",
+      "title": "Building Agents with Vertex AI",
+      "date": "October 9, 2024",
+      "category": "Cloud AI & Agent Building",
+      "url": "https://www.linkedin.com/learning/certificates/f64c67bcb95f256f4628665c9b3e0b1716fd10c388f540e32338a6c00bb5acfa/"
+    },
+    {
+      "id": "LIL-19",
+      "title": "AI for React Developers",
+      "date": "November 16, 2024",
+      "category": "Frontend Systems & AI",
+      "url": "https://www.linkedin.com/learning/certificates/397b40ed680f95dc12e184dc64aeda24e1c09ac66a3e6de9db32e685dcc16990/"
+    },
+    {
+      "id": "LIL-20",
+      "title": "Knowledge Graphs for Generative AI Use Cases",
+      "date": "November 9, 2024",
+      "category": "Data Modeling & Graph Systems",
+      "url": "https://www.linkedin.com/learning/certificates/212aa3ec812bc240416c88a219255fe3a0dd5d439b0dc9d1d81669617cce86d5/"
+    },
+    {
+      "id": "LIL-21",
+      "title": "Google Cloud Core Services",
+      "date": "November 17, 2024",
+      "category": "Cloud Infrastructure & Security",
+      "url": "https://www.linkedin.com/learning/certificates/a91915bc420b3f58d1fc44e3398b1e6f026afc87d4cb85975d4f8cda82fa7590/"
+    },
+    {
+      "id": "LIL-22",
+      "title": "Agentic AI for Developers: Concepts and Application for Enterprises",
+      "date": "November 17, 2024",
+      "category": "Enterprise Agent Engineering",
+      "url": "https://www.linkedin.com/learning/certificates/32befa0c9bbe8cda3cbe4d7afdd748ca6cb51bc0ed9fd8d857182f67e35a1baa/"
+    },
+    {
+      "id": "LIL-23",
+      "title": "Preparing Your Organization for AI Agents",
+      "date": "November 24, 2024",
+      "category": "Organizational Transformation",
+      "url": "https://www.linkedin.com/learning/certificates/c858777de5b940f5a9bb20b6d3a81f2c0052948978593e13156a961f3c528be2/"
+    },
+    {
+      "id": "LIL-24",
+      "title": "A Practical Guide to Upskilling Your Organization on AI",
+      "date": "November 24, 2024",
+      "category": "Workforce Upskilling",
+      "url": "https://www.linkedin.com/learning/certificates/ebdbdcec76b0c8ea565624a89a4db6c30c25cfb520f45aac9c74dd8d08f207a0/"
+    },
+    {
+      "id": "LIL-25",
+      "title": "The Future of Workforce Learning: AI-Powered Personalization for Skill Development",
+      "date": "November 24, 2024",
+      "category": "Educational Technology",
+      "url": "https://www.linkedin.com/learning/certificates/e727c26a36b402856aff5af64ba73fb8ae2cd74f56cad42358c15c1be1a1c004//"
+    },
+    {
+      "id": "LIL-26",
+      "title": "Generative AI in Learning and Development",
+      "date": "November 26, 2024",
+      "category": "Instructional Systems & AI",
+      "url": "https://www.linkedin.com/learning/certificates/d3fc3390e22c5d64da8d7cec42a72e054d8346cecdeb603aaa8feec7a332e3fd/"
+    },
+    {
+      "id": "LIL-27",
+      "title": "Using Gen AI to Develop Personalized Learning Plans",
+      "date": "November 26, 2024",
+      "category": "Personalized Education",
+      "url": "https://www.linkedin.com/learning/certificates/b0b910f867ca5b4a18da366bfc120d2d8dcc10fd2aed077a74e7f4d222a70e2f/"
+    },
+    {
+      "id": "LIL-28",
+      "title": "Building Advanced AI Apps with Prompt Flow",
+      "date": "December 10, 2024",
+      "category": "AI Application Pipelines",
+      "url": "https://www.linkedin.com/learning/certificates/638879edcc13d8dd4d774904da536a25da1418e0a973d4ddeca651d477e6ba10/"
+    },
+    {
+      "id": "LIL-29",
+      "title": "Finding and Retaining High Potentials",
+      "date": "April 6, 2025",
+      "category": "Talent Development & Leadership",
+      "url": "https://www.linkedin.com/learning/certificates/ef48d5d0458c6d9f06c3a45f6980c588925880b2fc881e7aba55367e8bc27344/"
+    },
+    {
+      "id": "LIL-30",
+      "title": "Learning Google Gemini for Business Analysis",
+      "date": "April 6, 2025",
+      "category": "Business Intelligence & Analytics",
+      "url": "https://www.linkedin.com/learning/certificates/bab98e0f5779c30857cbd9ce5313d778d772e467596604de6a1c15ce2fba7303/"
+    }
+  ]
+}
