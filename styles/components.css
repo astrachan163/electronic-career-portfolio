@@ -109,7 +109,7 @@
 
 @media (max-width: 640px) {
   .skills-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns:  1fr;
     gap: 0.625rem;
   }
 }
@@ -174,6 +174,8 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  word-break: break-word;
+  max-width: 100%;
   transition: all var(--transition-fast);
 }
 

@@ -772,3 +772,24 @@ section.portfolio-section:nth-child(even) {
 
 /* Pro-Dev Layout Fix */
 #development { width: 100%; box-sizing: border-box; }
+
+/* Custom Internal Scroller */
+.scrolling-internal-container {
+  max-height: 60vh;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding-right: 0.5rem;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-cyber-cyan) rgba(255,255,255,0.05);
+}
+.scrolling-internal-container::-webkit-scrollbar {
+  width: 6px;
+}
+.scrolling-internal-container::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0.05);
+  border-radius: 4px;
+}
+.scrolling-internal-container::-webkit-scrollbar-thumb {
+  background: var(--color-cyber-cyan);
+  border-radius: 4px;
+}
