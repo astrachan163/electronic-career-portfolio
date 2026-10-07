@@ -1,0 +1,38 @@
+{
+  "slug": "study-cockpit",
+  "title": "Study Cockpit",
+  "oneLine": "Instructor-tuned local AI study loop: ingest, curate with Ollama, dashboard views, optional MLX kernel training.",
+  "role": "Builder \u2014 local pipeline, dashboard server, curation + training scripts",
+  "stack": [
+    "Python",
+    "Local HTTP dashboard",
+    "Ollama",
+    "MLX LoRA",
+    "Jupyter"
+  ],
+  "evidence": [
+    {
+      "label": "Dashboard server (Mode A)"
+    },
+    {
+      "label": "Ollama curation loop"
+    },
+    {
+      "label": "MLX kernel training"
+    },
+    {
+      "label": "Inbox pipeline"
+    },
+    {
+      "label": "One-click launcher"
+    },
+    {
+      "label": "Master control notebook"
+    }
+  ],
+  "launchLocal": "python3 -m http.server 8767 --bind 127.0.0.1 --directory dist-ready/study-cockpit",
+  "demoType": "simulation",
+  "limitations": "Static architecture + synthetic curation toy only. Real cockpit needs Ollama running and private course trees. Do not record with live exam keys; use synthetic-pack.",
+  "sanitized": true,
+  "evidencePathsWithheld": true
+}

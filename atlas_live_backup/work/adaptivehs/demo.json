@@ -1,0 +1,26 @@
+{
+  "slug": "adaptivehs",
+  "title": "AdaptiveHS (AdaptivePrep)",
+  "oneLine": "Parent, student, and teacher portal simulation for a K-12 adaptive learning product.",
+  "role": "Full-stack builder (Next.js, auth portals, mock AI tools)",
+  "stack": [
+    "Next.js 15",
+    "React 19",
+    "TypeScript",
+    "Tailwind CSS",
+    "Demo auth"
+  ],
+  "evidence": [
+    {
+      "label": "AdaptiveHS source (private)"
+    },
+    {
+      "label": "Security / Firebase isolation notes"
+    }
+  ],
+  "launchLocal": "mkdir -p /tmp/adaptivehs-serve/work && cp -R dist-ready/adaptivehs /tmp/adaptivehs-serve/work/adaptivehs && python3 -m http.server 8877 --bind 127.0.0.1 --directory /tmp/adaptivehs-serve",
+  "demoType": "live-static",
+  "limitations": "Client-side demo auth and mock AI only; no Firebase, no real student data, no live model calls. Built with NEXT_PUBLIC_BASE_PATH=/work/adaptivehs.",
+  "sanitized": true,
+  "evidencePathsWithheld": true
+}

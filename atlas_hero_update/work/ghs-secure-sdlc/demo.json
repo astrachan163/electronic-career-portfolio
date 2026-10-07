@@ -1,0 +1,52 @@
+{
+  "slug": "ghs-secure-sdlc",
+  "title": "GHS Secure SDLC Evidence Explorer",
+  "oneLine": "Federal-interview simulation of RBAC, STRIDE, OWASP coverage, secrets policy, and a role-change IR tabletop from a team learning-platform project.",
+  "role": "Security-minded contributor on a team project (authorization, threat modeling, DevSecOps evidence).",
+  "stack": [
+    "Firebase Auth / Firestore rules",
+    "Express RBAC middleware",
+    "GitHub Actions security CI",
+    "Google Secret Manager (documented target)",
+    "Static HTML/CSS/JS portfolio demo"
+  ],
+  "evidence": [
+    {
+      "label": "Orchestration STRIDE threat model"
+    },
+    {
+      "label": "ADR-0002 secrets management"
+    },
+    {
+      "label": "OWASP Top 10 coverage map"
+    },
+    {
+      "label": "Role-change IR simulation (2025-09-24)"
+    },
+    {
+      "label": "Admissions appendix (secure SDLC tour)"
+    },
+    {
+      "label": "RBAC middleware (roles / rule shape)"
+    },
+    {
+      "label": "Role enum (student, parent, teacher, admin)"
+    },
+    {
+      "label": "Firestore security rules (shape)"
+    },
+    {
+      "label": "Security CI (SBOM + npm audit)"
+    },
+    {
+      "label": "Risk register R-01 (secrets in VCS)"
+    }
+  ],
+  "evidenceRootNote": "Paths are relative to the private local clone of the GHS Learning Platform team repo. Absolute Mac paths are listed only in D5/EVIDENCE.md (outside the public dist package).",
+  "launchLocal": "python3 -m http.server 8755 --bind 127.0.0.1 --directory dist-ready/ghs-secure-sdlc",
+  "demoType": "simulation",
+  "limitations": "Login-free portfolio simulation. Paraphrases private team-repo docs; no live backend, no code excerpts, no class data. Interactive allow/deny is a local model of documented deny-by-default RBAC plus Firestore ownership patterns.",
+  "sanitized": true,
+  "needsPermission": true,
+  "evidencePathsWithheld": true
+}

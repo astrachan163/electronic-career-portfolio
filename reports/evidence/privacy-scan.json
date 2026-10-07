@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-10-07T07:39:43.641Z",
+  "targetDirectory": "/Users/andrewstrachan/career_portfolio/dist/public",
+  "totalFilesScanned": 13,
+  "violationsCount": 0,
+  "violationReports": [],
+  "verifiedRules": {
+    "phoneNumbers": 0,
+    "testCredentials": 0,
+    "personalEmails": 0
+  },
+  "passed": true
+}

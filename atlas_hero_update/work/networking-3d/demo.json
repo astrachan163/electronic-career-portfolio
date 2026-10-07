@@ -1,0 +1,26 @@
+{
+  "slug": "networking-3d",
+  "title": "Networking Galaxy \u2014 Original Study Demo",
+  "oneLine": "3D galaxy of eight original networking micro-lessons with interactive simulators and an accessible list fallback.",
+  "role": "Sole builder of the portfolio-safe synthetic fork (Vite + React Three Fiber hub; original course repo untouched).",
+  "stack": [
+    "Vite",
+    "React",
+    "React Three Fiber",
+    "Three.js",
+    "TypeScript"
+  ],
+  "evidence": [
+    {
+      "label": "Original hosted study hub (private; not this demo)"
+    },
+    {
+      "label": "Synthetic work copy used for this build"
+    }
+  ],
+  "launchLocal": "python3 -m http.server 8766 --bind 127.0.0.1 --directory dist/work/networking-3d",
+  "demoType": "live-static",
+  "limitations": "Synthetic original lessons only; no course packs, scoring, or answer keys. 3D galaxy requires WebGL; otherwise list view. Three.js loads lazily after hub paint.",
+  "sanitized": true,
+  "evidencePathsWithheld": true
+}

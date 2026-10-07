@@ -1,0 +1,309 @@
+{
+  "highlights": [
+    {
+      "id": "sanctum",
+      "title": "CS646 Sanctum 3D Cryptographic Memory Palace",
+      "subtitle": "Gamified Distributed Ledger & Cryptographic Verification Environment",
+      "category": "3D Spatial Computing & Cryptography",
+      "techStack": ["Godot 4", "WebGL", "TypeScript", "React", "AWS CloudFront", "SHA-256 Primitives"],
+      "mp4Url": "assets/previews/sanctum-v1-10s-720p.mp4",
+      "webmUrl": "assets/previews/sanctum-v1-10s-720p.webm",
+      "posterUrl": "assets/previews/sanctum-v1-poster.png",
+      "durationSeconds": 10,
+      "liveUrl": "https://d1puxvoeqwchkj.cloudfront.net/",
+      "backupLiveUrl": "https://cs646-sanctum-world.firebaseapp.com/",
+      "description": "Architected an interactive 3D browser-based learning world visualizing abstract blockchain and cryptocurrency mechanisms. Features 5 distinct districts (Consensus, Cryptography, Money Exchange, Network, Storage), procedural hover vehicle traversal, and real-time SHA-256 block hashing demonstrations."
+    },
+    {
+      "id": "tutor",
+      "title": "MaqkrsTutor2 (Local AI Privacy-Preserving Study Assistant)",
+      "subtitle": "Native macOS/iOS Local Retrieval-Augmented Generation (Local RAG)",
+      "category": "Artificial Intelligence & Edge Privacy",
+      "techStack": ["SwiftUI", "SwiftData", "Apple MLX", "Ollama", "Quantized Gemma 4", "SQLite Vector Search"],
+      "mp4Url": "assets/previews/tutor-v1-10s-720p.mp4",
+      "webmUrl": "assets/previews/tutor-v1-10s-720p.webm",
+      "posterUrl": "assets/previews/tutor-v1-poster.png",
+      "durationSeconds": 10,
+      "repoUrl": "https://github.com/astrachan163/MaqkrsTutor-public",
+      "description": "Engineered a native Apple Silicon assistant that indexes technical course documents, PDFs, and source code for grounded question answering with 0 network egress. Protects institutional and student data through 100% on-device inference using quantized foundation models."
+    },
+    {
+      "id": "adaptivehs",
+      "title": "AdaptivePrep & AdaptiveHS Learning Platform",
+      "subtitle": "K-12 Homeschool Learning Management System & Curriculum Portal",
+      "category": "Full-Stack EdTech & Cloud Architecture",
+      "techStack": ["Next.js 15", "Firebase Firestore", "Tailwind CSS", "Cloud Run", "Google Genkit", "DemoAuth"],
+      "mp4Url": "assets/previews/adaptivehs-v1-10s-720p.mp4",
+      "webmUrl": "assets/previews/adaptivehs-v1-10s-720p.webm",
+      "posterUrl": "assets/previews/adaptivehs-v1-poster.png",
+      "durationSeconds": 10,
+      "liveUrl": "https://adaptivehs-v2.firebaseapp.com/",
+      "simulationUrl": "https://d3jeotfnsm148g.cloudfront.net/work/adaptivehs/",
+      "description": "Developed a full-stack homeschool platform aligned with Georgia Standards of Excellence (GSE). Implemented role-based authentication separating Parent oversight, Student modules, and Educator tools with adaptive question generation and rubric scoring."
+    },
+    {
+      "id": "maqkrs",
+      "title": "MaQkRs OS Command Center & Operational Planner",
+      "subtitle": "Unified Executive Business Dashboard & Multi-Agent Operations Hub",
+      "category": "Systems Operations & Dashboard Architecture",
+      "techStack": ["React 19", "TypeScript", "Firebase", "Tailwind CSS", "Local Agent Hub", "Python"],
+      "posterUrl": "assets/screenshots/web-home.png",
+      "liveUrl": "https://maqkrs-command-center-i.firebaseapp.com/",
+      "description": "Engineered an operational command center providing real-time telemetry across multi-agent workflows, business financials, project sprint schedules, and system health monitors with responsive dark-mode cyber styling."
+    }
+  ],
+  "projects": [
+    {
+      "id": "p-01",
+      "name": "CS646 Sanctum: 3D Memory Palace",
+      "category": "3D Spatial & Blockchain",
+      "platform": "AWS CloudFront",
+      "url": "https://d1puxvoeqwchkj.cloudfront.net/",
+      "description": "Flagship 3D cryptographic exploration world built in Godot 4 and WebGL with interactive SHA-256 hashing.",
+      "techStack": ["Godot 4", "WebGL", "AWS CloudFront", "TypeScript"]
+    },
+    {
+      "id": "p-02",
+      "name": "CS646 Sanctum Alternative Deployment",
+      "category": "3D Spatial & Blockchain",
+      "platform": "Firebase Hosting",
+      "url": "https://cs646-sanctum-world.firebaseapp.com/",
+      "description": "High-availability fallback cloud deployment of the Sanctum 3D WebGL memory palace.",
+      "techStack": ["Godot 4", "Firebase Hosting", "WebAssembly"]
+    },
+    {
+      "id": "p-03",
+      "name": "CS646 Blockchain Study Hub (Production)",
+      "category": "Coursework & Cryptography",
+      "platform": "Firebase Hosting",
+      "url": "https://cs646-sanctum-astrachan.firebaseapp.com/",
+      "description": "Permanent course portal for Dr. Yuliang Zheng's UAB graduate blockchain and cryptography curriculum.",
+      "techStack": ["React", "Firebase Hosting", "Tailwind CSS"]
+    },
+    {
+      "id": "p-04",
+      "name": "CS646 Midterm Review Portal",
+      "category": "Coursework & Cryptography",
+      "platform": "Firebase Web App",
+      "url": "https://cs646-sanctum-astrachan--midterm-aogm2izm.web.app/#/",
+      "description": "Specialized midterm exam preparation portal with interactive cryptographic lexicons and flashcards.",
+      "techStack": ["React", "Firebase", "Single-Page Router"]
+    },
+    {
+      "id": "p-05",
+      "name": "MaqkrsTutor Public Repository",
+      "category": "On-Device AI & Privacy",
+      "platform": "GitHub Open Source",
+      "url": "https://github.com/astrachan163/MaqkrsTutor-public",
+      "description": "Sanitized open source distribution for the native macOS/iOS on-device AI study assistant.",
+      "techStack": ["SwiftUI", "SwiftData", "Apple MLX", "Ollama"]
+    },
+    {
+      "id": "p-06",
+      "name": "AdaptivePrep K-12 Homeschool Platform",
+      "category": "Full-Stack EdTech",
+      "platform": "Cloud Run / Firebase",
+      "url": "https://adaptivehs-v2.firebaseapp.com/",
+      "description": "Server-side rendered homeschool learning management system aligned with Georgia GSE benchmarks.",
+      "techStack": ["Next.js 15", "Cloud Run", "Firebase", "DemoAuth"]
+    },
+    {
+      "id": "p-07",
+      "name": "AdaptiveHS Interactive Walkthrough Simulation",
+      "category": "Interactive EdTech Demo",
+      "platform": "AWS CloudFront",
+      "url": "https://d3jeotfnsm148g.cloudfront.net/work/adaptivehs/",
+      "description": "Static cloud simulation illustrating multi-role user workflows and assessment interfaces.",
+      "techStack": ["AWS CloudFront", "Static Web Showcase", "HTML5"]
+    },
+    {
+      "id": "p-08",
+      "name": "Quantum Universe Cyber Dashboard",
+      "category": "AI & Spatial Workspace",
+      "platform": "Firebase Web App",
+      "url": "https://quantum-universe-3d.web.app/",
+      "description": "Cyber-themed operations console with real-time 3D nodes, system status feeds, and agent metrics.",
+      "techStack": ["Three.js", "WebGL", "Firebase Hosting"]
+    },
+    {
+      "id": "p-09",
+      "name": "MaQkRs OS Command Center",
+      "category": "Systems Operations",
+      "platform": "Firebase Hosting",
+      "url": "https://maqkrs-command-center-i.firebaseapp.com/",
+      "description": "Unified business dashboard coordinating task pipelines, financial tracking, and agent status.",
+      "techStack": ["React 19", "TypeScript", "Tailwind CSS", "Firebase"]
+    },
+    {
+      "id": "p-10",
+      "name": "Project Atlas 3D Portfolio",
+      "category": "Spatial Web Portfolio",
+      "platform": "AWS CloudFront",
+      "url": "https://d3jeotfnsm148g.cloudfront.net/",
+      "description": "Andrew's spatial portfolio architecture with scroll-scrubbed 3D storytelling and case studies.",
+      "techStack": ["Canvas", "GSAP", "ScrollTrigger", "AWS CloudFront"]
+    },
+    {
+      "id": "p-11",
+      "name": "Coastal Speech Co. Clinical Platform",
+      "category": "Client Healthcare Web",
+      "platform": "Firebase Hosting",
+      "url": "https://coastal-speech-co-fl.firebaseapp.com/",
+      "description": "Professional clinical practice website launched for a speech therapy practice in Panama City, FL.",
+      "techStack": ["React", "Firebase Hosting", "Responsive CSS"]
+    },
+    {
+      "id": "p-12",
+      "name": "Victorious Herbal Elements (Storefront)",
+      "category": "E-Commerce Storefront",
+      "platform": "Vercel",
+      "url": "https://aether-apothecary.vercel.app/",
+      "description": "Modern botanical product catalog and checkout workflow with responsive product showcases.",
+      "techStack": ["Next.js", "Vercel", "Stripe API"]
+    },
+    {
+      "id": "p-13",
+      "name": "Networking Universe (CS 334/534)",
+      "category": "Networking Course Portal",
+      "platform": "Firebase Hosting",
+      "url": "https://networking-testy.firebaseapp.com/",
+      "description": "Interactive course platform with 3D packet-routing simulations and network protocol guides.",
+      "techStack": ["React Three Fiber", "Vite", "Firebase"]
+    },
+    {
+      "id": "p-14",
+      "name": "CS 623 Network Security Hub",
+      "category": "Network Security Coursework",
+      "platform": "Firebase Hosting",
+      "url": "https://networking-security-cs623-hub.firebaseapp.com/",
+      "description": "Comprehensive graduate study platform for firewalls, packet inspection, and cryptographic protocols.",
+      "techStack": ["React", "Firebase Hosting", "Markdown Guides"]
+    },
+    {
+      "id": "p-15",
+      "name": "Switch MAC Address Learning Practice",
+      "category": "Interactive Network Simulator",
+      "platform": "Firebase Hosting",
+      "url": "https://practice-questions-networking.firebaseapp.com/",
+      "description": "Interactive educational tool simulating Layer 2 switch forwarding tables and frame switching.",
+      "techStack": ["JavaScript", "HTML5 Canvas", "Firebase Hosting"]
+    },
+    {
+      "id": "p-16",
+      "name": "Networking Midterm Intensive Study Guide",
+      "category": "Interactive Exam Review",
+      "platform": "Firebase Web App",
+      "url": "https://networking-midterm.web.app/studyguide4.html",
+      "description": "Intensive 33-question variant study platform with deep algorithmic network routing explanations.",
+      "techStack": ["JavaScript", "Interactive DOM", "Firebase"]
+    },
+    {
+      "id": "p-17",
+      "name": "CS 334/534 Networking Study Resources",
+      "category": "Course Resources",
+      "platform": "Firebase Web App",
+      "url": "https://networking-exam-60418.web.app/",
+      "description": "Static reference hub organizing network topology standards, subnetting charts, and exam guides.",
+      "techStack": ["Static HTML5", "Firebase Web App"]
+    },
+    {
+      "id": "p-18",
+      "name": "CS 423/623/723 Network Security 200-Question Practice",
+      "category": "Security Practice Exam",
+      "platform": "Firebase Hosting",
+      "url": "https://network-security-study.firebaseapp.com/",
+      "description": "200-question practice examination engine testing defense-in-depth, access controls, and protocols.",
+      "techStack": ["React", "Firebase Hosting", "Timed Exam Engine"]
+    },
+    {
+      "id": "p-19",
+      "name": "Network Security Interactive Demos",
+      "category": "Security Interactive Simulator",
+      "platform": "Firebase Hosting",
+      "url": "https://ns-demos-34811.firebaseapp.com/",
+      "description": "Interactive security demonstrations simulating stateless/stateful firewalls, proxy filtering, and ACL rules.",
+      "techStack": ["React", "Interactive State Engine", "Firebase"]
+    },
+    {
+      "id": "p-20",
+      "name": "Cybersecurity Risk Management Study Hub",
+      "category": "NIST Framework Mastery",
+      "platform": "Firebase Hosting",
+      "url": "https://cyberriskmanagement-testy.firebaseapp.com/",
+      "description": "UAB course portal covering NIST SP 800-30, SP 800-37, and NIST CSF risk assessment methodologies.",
+      "techStack": ["React", "Firebase Hosting", "NIST Risk Matrices"]
+    },
+    {
+      "id": "p-21",
+      "name": "CS 203 Ultimate OOP Study Hub",
+      "category": "Java OOP Coursework",
+      "platform": "Firebase Hosting",
+      "url": "https://cs203-java-studyguide.firebaseapp.com/",
+      "description": "Comprehensive Java OOP study guide covering polymorphism, inheritance, interfaces, and exception handling.",
+      "techStack": ["React", "Firebase Hosting", "Code Snippet Visualizer"]
+    },
+    {
+      "id": "p-22",
+      "name": "CS 203 Test 1 Question Bank",
+      "category": "Java Practice Questions",
+      "platform": "Firebase Hosting",
+      "url": "https://cs203-java-practice1.firebaseapp.com/",
+      "description": "Interactive question bank drilling object-oriented programming fundamentals and memory reference models.",
+      "techStack": ["JavaScript", "Firebase Hosting"]
+    },
+    {
+      "id": "p-23",
+      "name": "CS 203 Java OOP Exam Simulator",
+      "category": "Timed Exam Simulator",
+      "platform": "Firebase Web App",
+      "url": "https://cs203-exam-simulator.firebaseapp.com/",
+      "description": "Timed exam simulator providing grading feedback and detailed explanations for complex Java programs.",
+      "techStack": ["React", "Timed Evaluation Runtimes", "Firebase"]
+    },
+    {
+      "id": "p-24",
+      "name": "CS 203 Lab Output Analysis Practice",
+      "category": "Code Output Analysis",
+      "platform": "Firebase Web App",
+      "url": "https://cs-203-midterm.web.app/practice_test_labs.html",
+      "description": "Diagnostic practice tool testing student ability to trace Java code execution and predict console outputs.",
+      "techStack": ["JavaScript", "Firebase Web App"]
+    },
+    {
+      "id": "p-25",
+      "name": "CS 203 Exam 1 Practice Test",
+      "category": "Java Practice Testing",
+      "platform": "Firebase Web App",
+      "url": "https://cs-203-midterm.web.app/practice_test.html",
+      "description": "Full-length practice test covering Java types, loops, class construction, and encapsulation.",
+      "techStack": ["HTML5/JS", "Firebase Web App"]
+    },
+    {
+      "id": "p-26",
+      "name": "Computer Security Study Companion",
+      "category": "AI Security Companion",
+      "platform": "Lovable App",
+      "url": "https://secure-connector-buddy.lovable.app/",
+      "description": "Interactive AI study assistant and flashcard portal for UAB CS 436/636/736 computer security.",
+      "techStack": ["Lovable Runtimes", "Generative AI", "Web App"]
+    },
+    {
+      "id": "p-27",
+      "name": "Cybersecurity Question Variants Study Guide",
+      "category": "Security Question Bank",
+      "platform": "Firebase Hosting",
+      "url": "https://andy-sg-ns.firebaseapp.com/",
+      "description": "Deep question variant generator covering Identification, Authentication, Authorization, and Accounting (IAAA).",
+      "techStack": ["JavaScript", "Firebase Hosting"]
+    },
+    {
+      "id": "p-28",
+      "name": "Andrew Strachan GitHub Profile & Portfolio",
+      "category": "Developer Portfolio",
+      "platform": "GitHub",
+      "url": "https://github.com/astrachan163",
+      "description": "Public developer profile housing open-source systems projects, scripts, and academic repositories.",
+      "techStack": ["Git", "GitHub Pages", "Open Source"]
+    }
+  ]
+}

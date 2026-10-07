@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>Study Cockpit — architecture</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to main content</a>
+    <div class="banner" role="status">
+      <strong>Interactive simulation I built for this portfolio; not the production system.</strong>
+      Sanitized loop overview — no live course content, exam keys, or cloud account details.
+    </div>
+    <header class="site">
+      <h1>Study Cockpit</h1>
+      <p>
+        Instructor-tuned local AI pipeline: ingest materials → extract/score → curate with a
+        local model → serve quiz/lecture views → optional MLX kernel training → feedback.
+        Path labels point at private script names only.
+      </p>
+      <div class="pills">
+        <span class="pill">Python</span>
+        <span class="pill">Local dashboard</span>
+        <span class="pill">Ollama curation</span>
+        <span class="pill">MLX LoRA kernel</span>
+        <span class="pill">demoType: simulation</span>
+      </div>
+    </header>
+
+    <main id="main">
+      <section aria-labelledby="arch-h">
+        <h2 id="arch-h">Architecture stages</h2>
+        <p class="muted" style="margin-top: 0; color: var(--muted)">
+          Select a stage (click or arrow keys) for a sanitized description and script path labels.
+        </p>
+        <div class="flow" id="flow" role="toolbar" aria-label="Pipeline stages"></div>
+        <div class="detail" id="detail" role="region" aria-live="polite"></div>
+      </section>
+
+      <section aria-labelledby="toy-h">
+        <h2 id="toy-h">Curation emphasis toy</h2>
+        <p class="muted" style="margin-top: 0; color: var(--muted)">
+          Synthetic units only. Move sliders to change how instructor emphasis, quiz focus, and
+          practice weight decide what lands in a study module (threshold filter).
+        </p>
+        <div class="toy-grid">
+          <div>
+            <div class="slider-block">
+              <label for="w-lecture">Lecture coverage <span id="v-lecture">70</span>%</label>
+              <input id="w-lecture" type="range" min="0" max="100" value="70" />
+            </div>
+            <div class="slider-block">
+              <label for="w-quiz">Quiz alignment <span id="v-quiz">50</span>%</label>
+              <input id="w-quiz" type="range" min="0" max="100" value="50" />
+            </div>
+            <div class="slider-block">
+              <label for="w-practice">Practice / predictive <span id="v-practice">40</span>%</label>
+              <input id="w-practice" type="range" min="0" max="100" value="40" />
+            </div>
+            <div class="slider-block">
+              <label for="w-instructor">Instructor emphasis <span id="v-instructor">30</span>%</label>
+              <input id="w-instructor" type="range" min="0" max="100" value="30" />
+            </div>
+          </div>
+          <div class="module-out">
+            <h3>Assembled module (synthetic)</h3>
+            <p id="module-summary" class="muted" style="margin: 0 0 0.5rem; color: var(--muted); font-size: 0.9rem"></p>
+            <div id="module-items" aria-live="polite"></div>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="lim-h">
+        <h2 id="lim-h">Honest limitations</h2>
+        <ul class="plain">
+          <li>Production cockpit expects a local model runtime (Ollama) for AI curation.</li>
+          <li>This page does not start servers, train adapters, or load real module banks.</li>
+          <li>Recording demos should use the synthetic pack only — never live exam keys.</li>
+          <li>Dashboard Mode A executes whitelisted local scripts; treat it as a power tool, not a public site.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      Study Cockpit architecture page · relative assets · noindex until owner approval
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

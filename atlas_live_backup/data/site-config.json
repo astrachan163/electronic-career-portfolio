@@ -1,0 +1,6 @@
+{
+  "worldUrl": "https://d1puxvoeqwchkj.cloudfront.net/",
+  "worldUrlFallback": "https://cs646-sanctum-world.web.app",
+  "observed": "2026-09-28",
+  "notes": "Primary Sanctum world on AWS CloudFront (noindex). Firebase kept as worldUrlFallback."
+}

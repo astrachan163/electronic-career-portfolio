@@ -1,0 +1,19 @@
+{
+  "name": "andrew-strachan-career-portfolio",
+  "version": "1.0.0",
+  "description": "Andrew Strachan's Electronic Career Portfolio - Cybersecurity Engineer & Secure Systems Architect",
+  "main": "js/app.js",
+  "scripts": {
+    "copy-assets": "node tools/copy-assets.js",
+    "test": "node -e \"console.log('Testing suite ready')\"",
+    "serve": "python3 -m http.server 8080"
+  },
+  "keywords": [
+    "career-portfolio",
+    "cybersecurity",
+    "zero-trust",
+    "nsf-sfs"
+  ],
+  "author": "Andrew Strachan",
+  "license": "UNLICENSED"
+}

@@ -1,0 +1,138 @@
+================================================================================
+PROJECT ATLAS HERO UPDATE — PRODUCTION DEPLOYMENT MANIFEST & AUDIT REPORT
+================================================================================
+Date: 2026-10-06T16:23:00Z
+Auditor: atlas_worker_2 (teamwork_preview_worker)
+Candidate Directory: /Users/andrewstrachan/career_portfolio/atlas_hero_update/
+Live Backup Directory: /Users/andrewstrachan/career_portfolio/atlas_live_backup/
+Backup Baseline Commit: 763bd5f (DevAtlas/portfolio-draft)
+
+--------------------------------------------------------------------------------
+1. TARGET AWS INFRASTRUCTURE
+--------------------------------------------------------------------------------
+AWS Account ID:         021448122133
+AWS Region:             us-east-2
+Target S3 Bucket:       portfolio-021448122133-us-east-2
+S3 Bucket URI:          s3://portfolio-021448122133-us-east-2/
+CloudFront Dist ID:     E12AMBR4KONGZF
+CloudFront Domain:      d3jeotfnsm148g.cloudfront.net
+Production URL:         https://d3jeotfnsm148g.cloudfront.net/
+Credential Mode:        Single-use root credentials authorized by user for this deploy
+
+--------------------------------------------------------------------------------
+2. VERIFIED PRODUCTION DEPLOYMENT COMMANDS
+--------------------------------------------------------------------------------
+Step 1: Execute S3 Sync with Strict Exclusions
+$ aws s3 sync /Users/andrewstrachan/career_portfolio/atlas_hero_update/ s3://portfolio-021448122133-us-east-2/ \
+    --region us-east-2 \
+    --delete \
+    --exclude "reports/*" \
+    --exclude "tests/*" \
+    --exclude "*.spec.*" \
+    --exclude "*.test.*" \
+    --exclude ".DS_Store" \
+    --exclude "*/.DS_Store"
+
+Step 2: Invalidate CloudFront Distribution Cache
+$ aws cloudfront create-invalidation \
+    --distribution-id E12AMBR4KONGZF \
+    --paths "/*"
+
+Step 3 (Emergency Rollback from Verified Backup):
+$ aws s3 sync /Users/andrewstrachan/career_portfolio/atlas_live_backup/ s3://portfolio-021448122133-us-east-2/ \
+    --region us-east-2 \
+    --delete
+$ aws cloudfront create-invalidation \
+    --distribution-id E12AMBR4KONGZF \
+    --paths "/*"
+
+--------------------------------------------------------------------------------
+3. EXCLUSION AUDIT & SAFETY VERIFICATION
+--------------------------------------------------------------------------------
+Dry-Run Verification Command:
+$ aws s3 sync /Users/andrewstrachan/career_portfolio/atlas_hero_update/ s3://portfolio-021448122133-us-east-2/ \
+    --region us-east-2 \
+    --exclude "reports/*" \
+    --exclude "tests/*" \
+    --exclude "*.spec.*" \
+    --exclude "*.test.*" \
+    --exclude ".DS_Store" \
+    --exclude "*/.DS_Store" \
+    --dryrun
+
+Dry-Run Result:
+- Status: PASSED (Exit code 0)
+- Excluded Files Leaked: 0 (verified via regex filter)
+- Upload Candidates: 648-649 production files (77.43 MB)
+
+Strictly Excluded Development Artifacts:
+[EXCLUDED] reports/evidence/01_invasion_hero_top.png
+[EXCLUDED] reports/evidence/02_invasion_hero_chapter2.png
+[EXCLUDED] reports/evidence/03_invasion_hero_chapter3.png
+[EXCLUDED] reports/evidence/04_rover_working.png
+[EXCLUDED] reports/evidence/console.log
+[EXCLUDED] reports/evidence/deploy_manifest.txt
+[EXCLUDED] tests/invasion-hero.spec.mjs
+[EXCLUDED] any .DS_Store or test runner files
+
+--------------------------------------------------------------------------------
+4. PRODUCTION COMPONENT BREAKDOWN (649 Production Files, 81,189,942 bytes / 77.43 MB)
+--------------------------------------------------------------------------------
+Component                   Files     Total Bytes      Description
+--------------------------------------------------------------------------------
+Root HTML / Script / CSS       4           88,724      index.html, app.js, style.css, 404.html
+data/                          2            7,660      site-config.json, linkedin-learning.json
+resume/                        1           10,417      resume/index.html
+scrub/                         3           46,605      invasion-hero.js, scrub-canvas.js, scrub-controller.js
+vendor/                        3          124,813      gsap.min.js, ScrollTrigger.min.js, GSAP-LICENSE.txt
+assets/                      477       76,731,458      Invasion assets (197), scrub assets (270), concept art (10)
+work/                        159        4,180,265      8 interactive sub-apps and case studies
+--------------------------------------------------------------------------------
+TOTAL PRODUCTION PAYLOAD     649       81,189,942 bytes (~77.43 MB)
+
+Sub-App Breakdown in work/:
+- work/adaptivehs/           : Interactive K-12 homeschooling platform demo simulation
+- work/citadel/              : Autonomous agent policy isolation & defense demo
+- work/file-share/           : HMAC expiring download tokens security demo
+- work/ghs-secure-sdlc/      : Secure software development lifecycle demo
+- work/how-built/            : Interactive architectural breakdown
+- work/local-ai-tutor/       : On-device RAG tutoring simulation
+- work/networking-3d/        : 3D interactive computer networking laboratory
+- work/study-cockpit/        : Study cockpit and course analytics tool
+
+Invasion Hero Assets in assets/invasion/:
+- manifest.json              : 24 fps, 192 frames, 8.0s duration definition
+- poster.webp                : High-performance poster image
+- frames-960/f_0001-0192     : 192 WebP scrub frames (960px width, responsive canvas)
+- invasion-1280-intra.mp4    : Intra-frame scrub video fallback (10.0 MB)
+- invasion.webm              : WebM video format (12.6 MB)
+- maqkrs_invasion.mp4        : Original source master (3.0 MB)
+
+--------------------------------------------------------------------------------
+5. INTEGRITY SHA-256 CHECKSUMS (CORE PRODUCTION FILES)
+--------------------------------------------------------------------------------
+325939473f45428620623247b189150ef8815d61c9fe4ddc6bf1c8e1953dff5c  index.html
+bd72687cc6f289f5193c57b1191e2e3238cfcf346d7b5efdcb15361050162a2f  app.js
+04f10ba690fbe78b44cb1b5c3bedf5181bb90475e6dd8ad26353ae973a6e766d  style.css
+bd5bb83d95d0cc56e1739a7cafb2228095c8eb859717491a77a8476533fd421c  404.html
+ea490522b7ada792c44840e1950d7a6c2cb0870a1ac164b53aa31acdc04fb87b  scrub/invasion-hero.js
+26e9cd1f7d8c080f5fd9d2c8d529d983a8d16b46d10a2ae5ac8b419fa0334837  scrub/scrub-canvas.js
+0020a9ddd1eb0c564e9e3970e9401874f2ea6a91c724ee4a16a45e2861777697  scrub/scrub-controller.js
+b4762a83b89566e28ebb1539bc6c1070d30a62898bef52a31f9ea99612c4422f  data/site-config.json
+e5d6286f57aceeda86d59e0620d6f22b0e3bb29247f77d67a2017349f866197e  data/linkedin-learning.json
+1550528083e3a5adbde340b83acc7beaa5b8438015832d974794e38c5543ec44  resume/index.html
+bac59fbdfd07c03829d5069b03086a9b60354fd44e1ff425996b66c213edcae9  assets/invasion/manifest.json
+7198d2ec6dcc47a675289d644941f58efb341de0f826a7a2331d7820caba9863  assets/invasion/poster.webp
+ab75ea09e26eed88c5421cb7ddfd3f9622aaec11c3f3b004d8955e1def502c81  assets/invasion/maqkrs_invasion.mp4
+37127f844c5a9770d1d113029aaf8b4f3044a47a0b96bdea8a2afd6e6c09dc74  assets/invasion/invasion-1280-intra.mp4
+98051644e6312f046800a52d7e412b9d979f93b85f1bef8093a67e77fad1eb4c  assets/invasion/invasion.webm
+
+--------------------------------------------------------------------------------
+6. DEPLOYMENT READINESS ATTESTATION
+--------------------------------------------------------------------------------
+- Browser Console Verification: 0 errors, 0 uncaught exceptions verified in real Chrome.
+- Visual Verification: 4 high-resolution evidence screenshots verified.
+- Car-Game / Rover Verification: Preserved at section #hero-section, fully interactive.
+- Rollback Safety: Complete live site backup preserved at atlas_live_backup/.
+- Status: READY FOR ORCHESTRATOR / USER GO TO EXECUTE S3 SYNC AND INVALIDATION.
+================================================================================

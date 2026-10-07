@@ -1,0 +1,39 @@
+{
+  "slug": "citadel",
+  "title": "Citadel Policy Gate Simulator",
+  "oneLine": "Interactive zero-trust policy gate for AI agent tool calls (identity \u2192 scope \u2192 args \u2192 rate \u2192 allow/deny).",
+  "role": "Architect / implementer \u2014 Java WebSocket gate, MCP action sandbox, multi-agent orchestration",
+  "stack": [
+    "Java 21",
+    "WebSocket",
+    "Bucket4j",
+    "Python FastMCP",
+    "LanceDB",
+    "Ollama/Gemma"
+  ],
+  "evidence": [
+    {
+      "label": "Java WebSocket gate + Bucket4j rate limit"
+    },
+    {
+      "label": "Agent TOOL_CALL parse + schema lock"
+    },
+    {
+      "label": "MCP stdio client (tools/call)"
+    },
+    {
+      "label": "Sandbox path + CLI traversal deny"
+    },
+    {
+      "label": "Startup script (local UI + gate)"
+    },
+    {
+      "label": "Browser client (dumb terminal)"
+    }
+  ],
+  "launchLocal": "python3 -m http.server 8777 --bind 127.0.0.1 --directory dist-ready/citadel",
+  "demoType": "simulation",
+  "limitations": "Static simulation of authorization rules; does not start Ollama, Java gate, or MCP. Production SANDBOX_DIR anonymized as /sandbox/citadel. Per-persona scopes for design-only agents are least-privilege overlays; Java runtime registers MaKr/SupremeAdvisor/DocDora with shared MCP access.",
+  "sanitized": true,
+  "evidencePathsWithheld": true
+}

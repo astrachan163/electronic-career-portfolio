@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>Cloud File Sharing — portfolio demo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to main content</a>
+    <div class="sim-banner" role="status">
+      Interactive simulation I built for this portfolio; not the production system.
+    </div>
+    <div class="wrap" id="main">
+      <header>
+        <p class="mono" style="margin: 0; color: var(--muted)">CS532 · Cloud Computing · file-share</p>
+        <h1>HMAC-signed download links with auto-delete</h1>
+        <p class="lede">
+          Course project: Flask upload UI, private object storage, event-driven notify,
+          SES email with per-recipient tokens, click-time verification, then delete once
+          every recipient has downloaded. This page is a static lab — no cloud account,
+          no real email.
+        </p>
+        <nav class="toc" aria-label="On this page">
+          <a href="#architecture">Architecture &amp; STRIDE</a>
+          <a href="#token-lab">Token lab</a>
+          <a href="#built">What I built</a>
+        </nav>
+      </header>
+
+      <section id="architecture" aria-labelledby="arch-title">
+        <h2 id="arch-title">Architecture &amp; threat callouts</h2>
+        <p class="note">
+          Flow matches the coursework design: upload → object store → notify function →
+          mail → HMAC token link → verify → short-lived download → expiry / auto-delete.
+          Callouts cite mitigations from the real application logic (injectable clients,
+          HMAC tokens, conditional notification claim, download_status map, grace-period delete).
+        </p>
+        <svg
+          class="arch-svg"
+          viewBox="0 0 1000 420"
+          role="img"
+          aria-labelledby="arch-svg-title arch-svg-desc"
+        >
+          <title id="arch-svg-title">Upload to auto-delete architecture</title>
+          <desc id="arch-svg-desc">
+            Numbered boxes: 1 Uploader Flask, 2 private object store, 3 metadata table,
+            4 notify Lambda, 5 mail service, 6 recipient with HMAC link, 7 verify and
+            delete path.
+          </desc>
+          <defs>
+            <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+              <path d="M0,0 L6,3 L0,6 Z" fill="#3d9cfd" />
+            </marker>
+          </defs>
+          <!-- boxes -->
+          <rect x="30" y="40" width="150" height="70" rx="8" fill="#1a2332" stroke="#3d9cfd" />
+          <text x="105" y="70" text-anchor="middle" fill="#e8eef5" font-size="13" font-family="Segoe UI,sans-serif">1 · Flask upload</text>
+          <text x="105" y="90" text-anchor="middle" fill="#9aabbd" font-size="11" font-family="Segoe UI,sans-serif">session gate</text>
+
+          <rect x="240" y="30" width="150" height="55" rx="8" fill="#1a2332" stroke="#2fbf71" />
+          <text x="315" y="55" text-anchor="middle" fill="#e8eef5" font-size="13" font-family="Segoe UI,sans-serif">2 · Private S3</text>
+          <text x="315" y="72" text-anchor="middle" fill="#9aabbd" font-size="11" font-family="Segoe UI,sans-serif">no public ACL</text>
+
+          <rect x="240" y="105" width="150" height="55" rx="8" fill="#1a2332" stroke="#e6b84d" />
+          <text x="315" y="130" text-anchor="middle" fill="#e8eef5" font-size="13" font-family="Segoe UI,sans-serif">3 · DynamoDB</text>
+          <text x="315" y="147" text-anchor="middle" fill="#9aabbd" font-size="11" font-family="Segoe UI,sans-serif">download_status</text>
+
+          <rect x="460" y="55" width="160" height="70" rx="8" fill="#1a2332" stroke="#3d9cfd" />
+          <text x="540" y="85" text-anchor="middle" fill="#e8eef5" font-size="13" font-family="Segoe UI,sans-serif">4 · Notify Lambda</text>
+          <text x="540" y="105" text-anchor="middle" fill="#9aabbd" font-size="11" font-family="Segoe UI,sans-serif">mint HMAC tokens</text>
+
+          <rect x="690" y="40" width="140" height="60" rx="8" fill="#1a2332" stroke="#e85d5d" />
+          <text x="760" y="68" text-anchor="middle" fill="#e8eef5" font-size="13" font-family="Segoe UI,sans-serif">5 · SES email</text>
+          <text x="760" y="85" text-anchor="middle" fill="#9aabbd" font-size="11" font-family="Segoe UI,sans-serif">per-recipient link</text>
+
+          <rect x="690" y="130" width="140" height="70" rx="8" fill="#1a2332" stroke="#3d9cfd" />
+          <text x="760" y="160" text-anchor="middle" fill="#e8eef5" font-size="13" font-family="Segoe UI,sans-serif">6 · Recipient</text>
+          <text x="760" y="178" text-anchor="middle" fill="#9aabbd" font-size="11" font-family="Segoe UI,sans-serif">/download/&lt;token&gt;</text>
+
+          <rect x="430" y="220" width="220" height="80" rx="8" fill="#1a2332" stroke="#2fbf71" />
+          <text x="540" y="250" text-anchor="middle" fill="#e8eef5" font-size="13" font-family="Segoe UI,sans-serif">7 · Verify + presign</text>
+          <text x="540" y="270" text-anchor="middle" fill="#9aabbd" font-size="11" font-family="Segoe UI,sans-serif">compare_digest · mark downloaded</text>
+          <text x="540" y="286" text-anchor="middle" fill="#9aabbd" font-size="11" font-family="Segoe UI,sans-serif">all true → delete object</text>
+
+          <rect x="240" y="240" width="150" height="55" rx="8" fill="#1a2332" stroke="#e6b84d" />
+          <text x="315" y="265" text-anchor="middle" fill="#e8eef5" font-size="13" font-family="Segoe UI,sans-serif">8 · Expiry / delete</text>
+          <text x="315" y="282" text-anchor="middle" fill="#9aabbd" font-size="11" font-family="Segoe UI,sans-serif">max-age + grace</text>
+
+          <!-- arrows -->
+          <line x1="180" y1="70" x2="235" y2="55" stroke="#3d9cfd" stroke-width="2" marker-end="url(#arrow)" />
+          <line x1="180" y1="85" x2="235" y2="125" stroke="#3d9cfd" stroke-width="2" marker-end="url(#arrow)" />
+          <line x1="390" y1="55" x2="455" y2="80" stroke="#3d9cfd" stroke-width="2" marker-end="url(#arrow)" />
+          <line x1="620" y1="80" x2="685" y2="70" stroke="#3d9cfd" stroke-width="2" marker-end="url(#arrow)" />
+          <line x1="760" y1="100" x2="760" y2="128" stroke="#3d9cfd" stroke-width="2" marker-end="url(#arrow)" />
+          <line x1="690" y1="165" x2="655" y2="240" stroke="#3d9cfd" stroke-width="2" marker-end="url(#arrow)" />
+          <line x1="430" y1="260" x2="395" y2="265" stroke="#3d9cfd" stroke-width="2" marker-end="url(#arrow)" />
+
+          <!-- STRIDE badges -->
+          <circle cx="105" cy="160" r="14" fill="#2a1f0a" stroke="#e6b84d" />
+          <text x="105" y="164" text-anchor="middle" fill="#ffd166" font-size="11" font-family="Segoe UI,sans-serif">S</text>
+          <circle cx="315" cy="195" r="14" fill="#2a1f0a" stroke="#e6b84d" />
+          <text x="315" y="199" text-anchor="middle" fill="#ffd166" font-size="11" font-family="Segoe UI,sans-serif">I</text>
+          <circle cx="540" cy="40" r="14" fill="#2a1f0a" stroke="#e6b84d" />
+          <text x="540" y="44" text-anchor="middle" fill="#ffd166" font-size="11" font-family="Segoe UI,sans-serif">R</text>
+          <circle cx="860" cy="165" r="14" fill="#2a1f0a" stroke="#e6b84d" />
+          <text x="860" y="169" text-anchor="middle" fill="#ffd166" font-size="11" font-family="Segoe UI,sans-serif">T</text>
+          <circle cx="540" cy="330" r="14" fill="#2a1f0a" stroke="#e6b84d" />
+          <text x="540" y="334" text-anchor="middle" fill="#ffd166" font-size="11" font-family="Segoe UI,sans-serif">E</text>
+          <circle cx="200" cy="265" r="14" fill="#2a1f0a" stroke="#e6b84d" />
+          <text x="200" y="269" text-anchor="middle" fill="#ffd166" font-size="11" font-family="Segoe UI,sans-serif">D</text>
+
+          <text x="30" y="380" fill="#9aabbd" font-size="12" font-family="Segoe UI,sans-serif">
+            S Spoofing · T Tampering · R Repudiation · I Info disclosure · D DoS · E Elevation
+          </text>
+        </svg>
+
+        <div class="callouts">
+          <article class="callout">
+            <span class="tag">1 · Spoofing</span>
+            <h3>Forged download URLs</h3>
+            <p>
+              Mitigation: HMAC-SHA256 over base64url payload; verification rejects
+              unsigned or wrong-key tokens before any object access.
+            </p>
+          </article>
+          <article class="callout">
+            <span class="tag">2 · Tampering</span>
+            <h3>Altered token bytes</h3>
+            <p>
+              Mitigation: signature checked with <span class="mono">hmac.compare_digest</span>
+              (constant-time). Flipping a character fails verification; see token lab.
+            </p>
+          </article>
+          <article class="callout">
+            <span class="tag">3 · Information disclosure</span>
+            <h3>Direct object exposure</h3>
+            <p>
+              Mitigation: private bucket; recipients never get a permanent object URL —
+              Flask exchanges a valid token for a short-lived presigned GET at click time.
+            </p>
+          </article>
+          <article class="callout">
+            <span class="tag">4 · Denial of service</span>
+            <h3>Huge uploads / fan-out</h3>
+            <p>
+              Mitigation: 25&nbsp;MB content length cap, at most five recipients per upload,
+              and email uniqueness when parsing the recipient list.
+            </p>
+          </article>
+          <article class="callout">
+            <span class="tag">5 · Repudiation</span>
+            <h3>“I never got / used the link”</h3>
+            <p>
+              Mitigation: per-recipient <span class="mono">download_status</span> map in
+              DynamoDB; notify path claims <span class="mono">queued → sending</span>
+              with a conditional update so duplicate events do not double-send.
+            </p>
+          </article>
+          <article class="callout">
+            <span class="tag">6 · Elevation of privilege</span>
+            <h3>Using someone else’s link / racing delete</h3>
+            <p>
+              Mitigation: token binds object key + recipient email; email must appear in
+              the record; delete uses conditional <span class="mono">upload_status &lt;&gt; deleted</span>
+              after every recipient is true (plus a grace timer outside tests).
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="token-lab" aria-labelledby="lab-title">
+        <h2 id="lab-title">Interactive token lab</h2>
+        <div class="key-warn" role="note">
+          Demo HMAC key (public, intentional):
+          <code id="demo-key" class="mono"></code>
+          — never used for real storage or email.
+        </div>
+        <p class="note">
+          Payload format matches the coursework:
+          <code>object_key + "\\n" + email + "\\n" + issued_at</code>, then
+          <code>base64url(payload) + "." + base64url(HMAC-SHA256(secret, payload_b64))</code>.
+          Expiry is derived from <strong>issued_at inside the signed payload</strong> plus
+          a max-age window — changing the clock without re-signing demonstrates age denial;
+          rewriting issued_at in the token without a valid MAC fails as tampering.
+        </p>
+        <div class="lab-grid">
+          <div>
+            <div class="field">
+              <label for="file-id">File id (object key)</label>
+              <input id="file-id" type="text" value="uploads/demo/notes.txt" autocomplete="off" />
+            </div>
+            <div class="field">
+              <label for="recipient">Recipient (bound in payload)</label>
+              <input id="recipient" type="text" value="recipient@demo.invalid" autocomplete="off" />
+            </div>
+            <div class="field">
+              <label for="max-age">Max age seconds</label>
+              <input id="max-age" type="number" min="1" value="3600" />
+            </div>
+            <div class="field">
+              <label for="clock-skew">Simulated clock skew (seconds): <span id="clock-label">0</span></label>
+              <input id="clock-skew" type="range" min="0" max="100000" step="60" value="0" />
+            </div>
+            <div class="btn-row">
+              <button type="button" class="primary" id="generate">Generate signed link token</button>
+              <button type="button" id="verify">Verify</button>
+              <button type="button" id="tamper">Tamper one signature byte</button>
+              <button type="button" id="expire-clock">Push clock past expiry</button>
+            </div>
+            <p class="note">
+              issued_at: <code id="issued-at" class="mono">—</code> ·
+              simulated now: <code id="sim-now" class="mono">—</code>
+            </p>
+          </div>
+          <div>
+            <div class="field">
+              <label for="token">Token (editable — try tampering by hand)</label>
+              <textarea id="token" spellcheck="false" aria-describedby="verdict"></textarea>
+            </div>
+            <div id="verdict" class="verdict deny" role="status">DENIED<span class="reason">Waiting…</span></div>
+            <p class="note">
+              Verification uses a constant-time compare on the signature strings so a
+              timing oracle cannot learn a matching prefix — the same idea as Python’s
+              <code>hmac.compare_digest</code> in the Flask verifier.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="built" class="built" aria-labelledby="built-title">
+        <h2 id="built-title">What I built (sanitized)</h2>
+        <ul>
+          <li>Flask web app: course-demo login, upload form, tracked <code>/download/&lt;token&gt;</code> route.</li>
+          <li>Private object storage for uploads; metadata and per-recipient download flags in a NoSQL table.</li>
+          <li>Object-created notify function that mints one HMAC token per recipient and sends mail.</li>
+          <li>Shared stdlib HMAC token create/verify (no extra Lambda dependency package).</li>
+          <li>Click-time short-lived download URL after successful verify; auto-delete when every recipient has downloaded (extra credit), with a grace period outside automated tests.</li>
+          <li>Unit tests with fake cloud clients (no live account, no real email).</li>
+          <li>Least-privilege IAM policy templates for the compute roles (not root credentials for the app).</li>
+        </ul>
+        <p class="note">
+          DEMO=1 in-process fakes were not patched into the coursework tree: the project
+          folder is not a git repository, so I left the coursework tree unchanged and relied on its existing fake-client tests.
+          Existing tests already inject fake S3/DynamoDB clients via <code>create_app({...})</code>.
+        </p>
+      </section>
+
+      <footer>
+        Portfolio demo package · relative assets only · noindex.
+      </footer>
+    </div>
+    <script src="token-lab.js"></script>
+  </body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Citadel Policy Gate — Interactive Simulation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="banner" role="note">
+    Interactive simulation I built for this portfolio; not the production system.
+  </div>
+
+  <main class="wrap">
+    <header>
+      <p class="lede" style="margin-bottom:0;color:var(--accent);font-weight:600;letter-spacing:0.06em;text-transform:uppercase;font-size:0.75rem;">Personal Agentic Citadel</p>
+      <h1>Policy-gate simulator</h1>
+      <p class="lede">
+        Pick an agent identity, a tool, and arguments. Walk the same decision path the Java gate + MCP action layer enforce:
+        identity → scope → tool allowlist → argument validation → rate/limits → allow or deny — with an audit line and a plain-language “why denied.”
+      </p>
+    </header>
+
+    <section class="panel" aria-labelledby="arch-h">
+      <h2 id="arch-h">Architecture</h2>
+      <div class="arch" role="img" aria-label="Diagram: Browser to Java Gatekeeper WebSocket to Python MCP over stdio, with Gemini rate-limited and LanceDB memory">
+        <svg viewBox="0 0 920 280" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+              <path d="M0,0 L6,3 L0,6 Z" fill="#8aa0ae"/>
+            </marker>
+          </defs>
+          <rect x="8" y="8" width="904" height="264" rx="8" fill="#0a1014" stroke="#2a3a46"/>
+          <text x="24" y="36" fill="#c4a35a" font-family="Georgia, serif" font-size="16">Citadel perimeter (zero trust)</text>
+
+          <rect x="40" y="70" width="160" height="90" rx="6" fill="#162028" stroke="#3d9b8f"/>
+          <text x="120" y="105" text-anchor="middle" fill="#e8f0f4" font-size="13" font-family="Avenir Next, sans-serif">Browser UI</text>
+          <text x="120" y="125" text-anchor="middle" fill="#8aa0ae" font-size="11">dumb terminal</text>
+          <text x="120" y="142" text-anchor="middle" fill="#8aa0ae" font-size="11">no API keys</text>
+
+          <line x1="200" y1="115" x2="270" y2="115" stroke="#8aa0ae" stroke-width="2" marker-end="url(#arrow)"/>
+          <text x="235" y="100" text-anchor="middle" fill="#8aa0ae" font-size="10">WS :8887</text>
+
+          <rect x="270" y="60" width="200" height="110" rx="6" fill="#1e2c36" stroke="#c4a35a"/>
+          <text x="370" y="95" text-anchor="middle" fill="#e8f0f4" font-size="13">Java Gatekeeper</text>
+          <text x="370" y="115" text-anchor="middle" fill="#8aa0ae" font-size="11">AiBridgeServer</text>
+          <text x="370" y="132" text-anchor="middle" fill="#8aa0ae" font-size="11">Bucket4j 15/min</text>
+          <text x="370" y="149" text-anchor="middle" fill="#8aa0ae" font-size="11">TOOL_CALL parse</text>
+
+          <line x1="470" y1="115" x2="540" y2="115" stroke="#8aa0ae" stroke-width="2" marker-end="url(#arrow)"/>
+          <text x="505" y="100" text-anchor="middle" fill="#8aa0ae" font-size="10">stdio RPC</text>
+
+          <rect x="540" y="60" width="180" height="110" rx="6" fill="#162028" stroke="#3d9b8f"/>
+          <text x="630" y="95" text-anchor="middle" fill="#e8f0f4" font-size="13">Python MCP</text>
+          <text x="630" y="115" text-anchor="middle" fill="#8aa0ae" font-size="11">sandbox whitelist</text>
+          <text x="630" y="132" text-anchor="middle" fill="#8aa0ae" font-size="11">CLI .. / ~ deny</text>
+          <text x="630" y="149" text-anchor="middle" fill="#8aa0ae" font-size="11">no tool ports</text>
+
+          <line x1="370" y1="170" x2="370" y2="200" stroke="#8aa0ae" stroke-width="2" marker-end="url(#arrow)"/>
+          <rect x="290" y="205" width="160" height="50" rx="6" fill="#162028" stroke="#2a3a46"/>
+          <text x="370" y="235" text-anchor="middle" fill="#e8f0f4" font-size="12">Gemini (proxied)</text>
+
+          <line x1="630" y1="170" x2="630" y2="200" stroke="#8aa0ae" stroke-width="2" marker-end="url(#arrow)"/>
+          <rect x="550" y="205" width="160" height="50" rx="6" fill="#162028" stroke="#2a3a46"/>
+          <text x="630" y="235" text-anchor="middle" fill="#e8f0f4" font-size="12">LanceDB memory</text>
+
+          <text x="780" y="120" fill="#8aa0ae" font-size="11">agent → gate → tool</text>
+        </svg>
+      </div>
+    </section>
+
+    <section class="panel explainer" aria-labelledby="zt-h" style="margin-top:1.25rem;">
+      <h2 id="zt-h">Zero trust for AI agents</h2>
+      <p>
+        Zero trust means every agent action is untrusted until a gate proves it. The browser never holds cloud keys.
+        Prompts reach a local model; host effects only happen after a rigid tool schema, a directory whitelist, and CLI traversal checks.
+        Rate limits stop wallet-draining loops. Tools talk over stdio, not open ports. Memory and observations stay data, not authority—
+        a file that contains a fake tool call must not become a new privileged command. Deny by default; allow only what the sandbox and allowlist explicitly permit.
+      </p>
+    </section>
+
+    <div class="grid grid-main" style="margin-top:1.25rem;">
+      <section class="panel" aria-labelledby="ctrl-h">
+        <h2 id="ctrl-h">Request builder</h2>
+        <label for="agent">Agent identity</label>
+        <select id="agent"></select>
+
+        <label for="tool">Requested tool</label>
+        <select id="tool"></select>
+
+        <label for="args">Arguments (JSON)</label>
+        <textarea id="args" spellcheck="false" aria-describedby="args-hint"></textarea>
+        <p id="args-hint" class="meta" style="margin-top:0.35rem;">Sandbox stand-in root: <code>/sandbox/citadel</code> (production uses a private whitelist directory).</p>
+
+        <label>
+          <input type="checkbox" id="consumeGemini"> Also consume Gemini proxy token (15/min bucket)
+        </label>
+
+        <div class="btn-row">
+          <button type="button" id="evaluate">Evaluate request</button>
+          <button type="button" id="verifyAll" class="secondary">Re-run all scenarios</button>
+        </div>
+        <p class="verify-bar" id="verify" aria-live="polite"></p>
+      </section>
+
+      <section class="panel" aria-labelledby="path-h">
+        <h2 id="path-h">Decision path</h2>
+        <ol class="pipeline" id="pipeline"></ol>
+        <div class="decision" id="decision" aria-live="polite">—</div>
+        <div class="why" id="why" hidden></div>
+        <h3 class="sr-only">Audit log line</h3>
+        <pre class="audit" id="audit" aria-label="Audit log line">No evaluation yet.</pre>
+      </section>
+    </div>
+
+    <section class="panel" style="margin-top:1.25rem;" aria-labelledby="sc-h">
+      <h2 id="sc-h">Scenarios (expected outcomes from real design)</h2>
+      <p class="lede" style="margin-bottom:0.75rem;">Ten canned cases. Click one to load it into the builder and see the gate decide.</p>
+      <div class="scenarios" id="scenarios"></div>
+    </section>
+
+    <footer class="meta">
+      Simulation evidence labels only — private source paths live in <code>demo.json</code> on the builder machine.
+      Keyboard: Tab through controls; Enter activates focused buttons. Honors <code>prefers-reduced-motion</code>.
+    </footer>
+  </main>
+
+  <script src="policy.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

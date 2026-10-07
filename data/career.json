@@ -1,0 +1,108 @@
+{
+  "targetCareer": {
+    "title": "Information Security Analyst & Cybersecurity Systems Engineer",
+    "socCode": "15-1212.00",
+    "socTitle": "Information Security Analysts",
+    "specialization": "Federal Public Service & CyberCorps SFS Track",
+    "niceFramework": {
+      "categories": [
+        {
+          "code": "PR-CD-001",
+          "title": "Cyber Defense Analyst",
+          "description": "Uses data collected from cyber defense tools to analyze events, identify intrusions, and remediate vulnerabilities."
+        },
+        {
+          "code": "SP-ARC-002",
+          "title": "Security Architect",
+          "description": "Designs system security architectures and guides development of zero-trust network boundaries."
+        },
+        {
+          "code": "IN-FOR-001",
+          "title": "Cyber Crime Investigator",
+          "description": "Recovers, analyzes, and preserves digital evidence according to legal and forensic chain of custody standards."
+        }
+      ]
+    },
+    "description": "Information Security Analysts plan, engineer, implement, and monitor security measures to protect computer networks, cloud systems, and critical national infrastructure. They conduct vulnerability assessments, simulate adversary cyberattacks through threat modeling, configure zero-trust access controls, and respond to security breaches to ensure system resilience and data confidentiality."
+  },
+  "blsEconomicResearch": {
+    "source": "U.S. Bureau of Labor Statistics (BLS) Occupational Outlook Handbook",
+    "citationUrl": "https://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm",
+    "releaseDate": "2024–2026 Projections",
+    "metrics": {
+      "medianAnnualWage": 120360,
+      "medianHourlyWage": 57.87,
+      "topDecileAnnualWage": 182370,
+      "topDecileHourlyWage": 87.68,
+      "seventyFifthPercentile": 152430,
+      "twentyFifthPercentile": 89040,
+      "tenthPercentile": 69310,
+      "projectedGrowthRate": "32%",
+      "growthRateDescriptor": "Much faster than average (all occupations avg: 3%)",
+      "projectedNewJobs": 53200,
+      "annualAverageOpenings": 16800,
+      "nationalWorkforceGap": ">500,000 unfilled cybersecurity positions in the United States"
+    },
+    "wageDistributionTable": [
+      { "level": "Lowest 10%", "annual": "$69,310", "hourly": "$33.32 / hr", "context": "Entry-level junior analyst / associate" },
+      { "level": "25th Percentile", "annual": "$89,040", "hourly": "$42.81 / hr", "context": "Early-career technical analyst" },
+      { "level": "50th Percentile (Median)", "annual": "$120,360", "hourly": "$57.87 / hr", "context": "Mid-career experienced engineer" },
+      { "level": "75th Percentile", "annual": "$152,430", "hourly": "$73.28 / hr", "context": "Senior security systems engineer" },
+      { "level": "Highest 10% (Top Decile)", "annual": "$182,370+", "hourly": "$87.68+ / hr", "context": "Principal architect / technical director" }
+    ]
+  },
+  "federalCareerPathway": {
+    "framework": "U.S. Federal Civil Service — General Schedule (GS) Pay Scales",
+    "program": "National Science Foundation (NSF) CyberCorps: Scholarship for Service (SFS)",
+    "serviceCommitment": "Mandatory federal civilian employment commitment (1:1 year ratio) post-graduation",
+    "hiringAuthority": "Direct Hire Authority (DHA) for CyberCorps SFS graduates across federal agencies",
+    "payProgression": [
+      {
+        "grade": "GS-09",
+        "title": "Cybersecurity Graduate Intern / Junior Analyst",
+        "salaryRange": "$65,000 – $84,000",
+        "qualifications": "Master's degree student (active SFS Scholar); eligible for federal employment"
+      },
+      {
+        "grade": "GS-11 / GS-12",
+        "title": "Information Security Systems Engineer / Cyber Defense Specialist",
+        "salaryRange": "$78,000 – $122,000",
+        "qualifications": "Completed M.S. Cybersecurity degree; agency-sponsored clearance pathway; SFS initial placement"
+      },
+      {
+        "grade": "GS-13 / GS-14",
+        "title": "Senior Security Architect & Federal Technical Lead",
+        "salaryRange": "$110,000 – $168,000+",
+        "qualifications": "3-5 years federal service, lead architect role; eligible for up to 25% Cyber Incentive Pay"
+      }
+    ],
+    "targetAgencies": [
+      "Cybersecurity and Infrastructure Security Agency (CISA)",
+      "U.S. Space Force (USSF) Cyber Operations",
+      "Department of Justice (DOJ) Computer Crime and Intellectual Property Section (CCIPS)",
+      "Sandia National Laboratories (TITANS Cyber & Center for Cyber Defenders)",
+      "U.S. Marine Corps Forces Cyberspace Command (MARFORCYBER)",
+      "Executive Office of the President / Office of the National Cyber Director (ONCD)"
+    ]
+  },
+  "industryObstaclesAndMitigations": [
+    {
+      "id": "OBS-01",
+      "obstacle": "Post-Quantum Cryptography (PQC) Transition & Legacy Protocol Obsolescence",
+      "challenge": "Quantum computing advances threaten current asymmetric public-key cryptography (RSA, ECC, Diffie-Hellman), creating vulnerability to 'harvest now, decrypt later' adversary tactics against federal data.",
+      "mitigation": "Proactive research into NIST-standardized post-quantum algorithms (ML-KEM, ML-DSA, SLH-DSA). Andrew explored cryptographic fundamentals through his CS646 Sanctum 3D engine, mastering lattice-based cryptography principles and hybrid TLS encapsulation mechanisms."
+    },
+    {
+      "id": "OBS-02",
+      "obstacle": "Agentic AI Weaponization & Autonomous Adversary Exploits",
+      "challenge": "Hostile state actors and cyber syndicates are weaponizing autonomous LLM agents to execute automated vulnerability discovery, multi-stage phishing, and real-time evasion of static security rules.",
+      "mitigation": "Building zero-trust agentic security architectures. Andrew engineered 'Citadel' (Java 21 / Model Context Protocol) enforcing sandboxed tool invocation, strict capability manifests, and hardware-isolated local AI inference (MaqkrsTutor2) that neutralizes data egress risks."
+    },
+    {
+      "id": "OBS-03",
+      "obstacle": "Critical National Infrastructure Ransomware & Zero-Trust Modernization",
+      "challenge": "Legacy industrial control systems (ICS/SCADA) and municipal networks operate with outdated perimeter-only security models, making them vulnerable to lateral adversary movement following initial compromise.",
+      "mitigation": "Deploying defense-in-depth and STRIDE threat modeling. Andrew's background in pharmaceutical cGMP compliance and industrial standard operating procedures (SOPs) bridges cyber controls with physical systems, enforcing strict micro-segmentation, multi-factor authentication, and immutable audit logs."
+    }
+  ]
+}

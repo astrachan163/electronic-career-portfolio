@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>Local AI Tutor — architecture explorer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to main content</a>
+    <div class="banner" role="status">
+      <strong>Interactive simulation I built for this portfolio; not the production system.</strong>
+      No language model runs in this demo — it demonstrates retrieval grounding and provenance only.
+    </div>
+    <header class="site">
+      <h1>Local AI Tutor</h1>
+      <p>
+        Honest architecture explorer for an on-device macOS/iOS study assistant:
+        ingest → chunk → embed → sqlite-vec → focused retrieval → deterministic turn
+        resolution → local Gemma. Built from the public feature set and private source layout
+        (path labels only).
+      </p>
+      <div class="meta-row" aria-label="Stack">
+        <span class="pill">SwiftUI</span>
+        <span class="pill">SwiftData</span>
+        <span class="pill">sqlite-vec</span>
+        <span class="pill">Ollama / MLX Gemma</span>
+        <span class="pill">demoType: simulation</span>
+      </div>
+    </header>
+
+    <main id="main">
+      <section aria-labelledby="pipe-h">
+        <h2 id="pipe-h">Pipeline</h2>
+        <p class="device" style="margin-top: 0">
+          Activate a stage (click or arrow keys) to open its panel: what it does, source path
+          label, and what stays on device.
+        </p>
+        <div class="pipeline" id="pipeline" role="toolbar" aria-label="Pipeline stages"></div>
+        <div class="panel" id="stage-panel" role="region" aria-live="polite"></div>
+      </section>
+
+      <section aria-labelledby="lab-h">
+        <h2 id="lab-h">RAG grounding lab</h2>
+        <p class="device" style="margin-top: 0">
+          Synthetic corpus (zero-trust + secure SDLC). Type a question; BM25 or TF-IDF ranks
+          chunks; the answer is extractive — only retrieved sentences, with source chips.
+        </p>
+        <div class="lab-controls">
+          <div class="row">
+            <label class="grow">
+              Question
+              <input
+                id="q"
+                type="text"
+                value="How does zero trust use identity and microsegmentation?"
+                autocomplete="off"
+              />
+            </label>
+            <label>
+              Method
+              <select id="method">
+                <option value="bm25">BM25</option>
+                <option value="tfidf">TF-IDF</option>
+              </select>
+            </label>
+            <label>
+              Top-k
+              <select id="topk">
+                <option value="2">2</option>
+                <option value="3" selected>3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </label>
+          </div>
+          <div class="row">
+            <label class="toggle">
+              <input id="focus" type="checkbox" />
+              Focus on one document (scoped retrieval)
+            </label>
+            <label>
+              Document
+              <select id="focusDoc" disabled></select>
+            </label>
+            <button type="button" class="primary" id="run">Retrieve</button>
+          </div>
+        </div>
+        <div id="hits" class="hits" aria-live="polite"></div>
+        <div id="grounded" class="answer-box" aria-live="polite"></div>
+      </section>
+
+      <div class="two-col">
+        <section aria-labelledby="why-h">
+          <h2 id="why-h">Why on-device</h2>
+          <ul class="plain">
+            <li>
+              <strong>Privacy:</strong> course PDFs, notes, and chat stay in the app sandbox
+              instead of a hosted chat API.
+            </li>
+            <li>
+              <strong>Offline:</strong> once models are pulled locally, study turns do not need
+              a cloud LLM endpoint.
+            </li>
+            <li>
+              <strong>Instructor-tunable:</strong> focused documents and study modes keep answers
+              tied to the materials you choose, not a general web persona.
+            </li>
+          </ul>
+        </section>
+        <section aria-labelledby="lim-h">
+          <h2 id="lim-h">Limitations (from public README)</h2>
+          <ul class="plain">
+            <li>Requires local model runtime (Ollama and/or on-device backends) — not shipped in this page.</li>
+            <li>Embedding-backed retrieval needs a local embed model (e.g. nomic-embed-text).</li>
+            <li>Public macOS copy emphasizes PDF / Markdown / code; some media paths are exploratory.</li>
+            <li>Model capability differs by Gemma variant (text vs multimodal).</li>
+            <li>This simulation uses lexical retrieval, not sqlite-vec KNN.</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      Local AI Tutor architecture explorer · relative assets only · no external network calls
+    </footer>
+
+    <script src="corpus.js"></script>
+    <script src="rag.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+{
+  "slug": "file-share",
+  "title": "Cloud File Sharing (HMAC download tokens)",
+  "oneLine": "Flask + object storage + notify function: HMAC-signed expiring download links and auto-delete after every recipient downloads.",
+  "role": "Solo CS532 coursework project \u2014 design, Flask app, Lambda notify, IAM templates, fake-AWS unit tests.",
+  "stack": [
+    "Python",
+    "Flask",
+    "AWS S3",
+    "DynamoDB",
+    "Lambda",
+    "SES",
+    "HMAC-SHA256",
+    "unittest"
+  ],
+  "evidence": [
+    {
+      "label": "HMAC token create + verify (Flask)"
+    },
+    {
+      "label": "HMAC token mint + SES notify (Lambda)"
+    },
+    {
+      "label": "Auto-delete after all recipients download (tests)"
+    },
+    {
+      "label": "Lambda unit tests (fake SES/table)"
+    }
+  ],
+  "launchLocal": "python3 -m http.server 8765 --bind 127.0.0.1 --directory dist-ready/file-share",
+  "demoType": "simulation",
+  "limitations": "Static simulation only. Coursework tree is not a git repo, so DEMO=1 was documented not patched. As-checked-in unittest discover fails TemplateNotFound unless HTML files sit under templates/ next to app.py; logic tests pass in a /tmp layout. No live AWS or email. Absolute evidence paths stay in a private evidence note, not in this public package.",
+  "sanitized": true,
+  "evidencePathsWithheld": true
+}

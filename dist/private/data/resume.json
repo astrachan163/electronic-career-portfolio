@@ -1,0 +1,485 @@
+{
+  "profile": {
+    "name": "Andrew Strachan",
+    "headline": "Cybersecurity Systems Engineer & Secure Systems Architect",
+    "fellowship": "CyberCorps: Scholarship for Service (SFS) Scholar",
+    "location": "Birmingham, Alabama",
+    "email": "strachan@uab.edu",
+    "github": "https://github.com/astrachan163",
+    "linkedin": "https://www.linkedin.com/in/andrew-william-strachan/",
+    "clearance": "CyberCorps: Scholarship for Service (SFS) Scholar | Clearable. Maintained eligibility requirements for federal civilian employment; fully prepared to undergo federal security background investigations upon agency sponsorship.",
+    "summary": "NSF CyberCorps Scholarship for Service (SFS) Scholar pursuing an M.S. in Cybersecurity at UAB (GPA 3.75). Combines deep systems programming and zero-trust engineering with executive compliance, industrial cGMP quality controls, and award-winning career and technical education leadership."
+  },
+  "education": [
+    {
+      "institution": "University of Alabama at Birmingham",
+      "abbreviation": "UAB",
+      "degree": "Master of Science in Cybersecurity",
+      "field": "Cybersecurity & Information Security",
+      "dates": "January 2026 – Present (Expected Graduation: Dec 2027)",
+      "gpa": "3.75 / 4.0",
+      "honors": "NSF CyberAICorps SFS Scholar",
+      "highlights": [
+        "Specializing in Network Security (CS 623), Blockchain & Cryptography (CS 646), Threat Modeling (CS 636), and Cloud Computing (CS 532)",
+        "Under federal service commitment upon graduation to protect critical national infrastructure and executive agency assets",
+        "Graduate researcher in on-device AI security, sandboxed agent runtimes, and WebAssembly cryptographic architectures"
+      ]
+    },
+    {
+      "institution": "University of Montevallo",
+      "abbreviation": "Montevallo",
+      "degree": "ALSDE Certified CTE Educator — Provisional Certificate in a Teaching Field (PCTF): Business, Marketing, and Finance",
+      "field": "Business, Marketing, and Finance",
+      "dates": "August 2024 – May 2025",
+      "gpa": "3.75 / 4.0",
+      "honors": "ALSDE State CTE Certification · NAOF Curriculum Specialization",
+      "highlights": [
+        "Mastered experiential pedagogy in managerial finance, business software systems, and entrepreneurship",
+        "Rigorous training in Alabama Department of Education Technical Assessment for Program Evaluation (TAPE) standards",
+        "Designed simulations bridging enterprise financial risk matrices and cybersecurity risk governance"
+      ]
+    },
+    {
+      "institution": "Mississippi College",
+      "abbreviation": "MC",
+      "degree": "Bachelor of Science (B.S.)",
+      "field": "ACS Biochemistry, Biology Medical Sciences; Music (Minor)",
+      "dates": "August 2011 – May 2016",
+      "gpa": "3.5 / 4.0",
+      "honors": "Graduated with Honors · Delta Epsilon Iota Academic Honor Society · Phi Mu Alpha Sinfonia",
+      "highlights": [
+        "Senior Class Senator (Student Government Association, 2015–2016)",
+        "Principal French Horn in MC Symphonic Band and Orchestra (2012–2013)",
+        "Inducted into Delta Epsilon Iota Academic Honor Society for scholastic achievement",
+        "Co-Founder of Phi Mu Alpha Sinfonia Music Fraternity Chapter (2014–2016)",
+        "Co-Founder of International Justice Mission (IJM) Campus Chapter"
+      ]
+    },
+    {
+      "institution": "University of Mississippi School of Medicine",
+      "abbreviation": "UMMC",
+      "degree": "Doctor of Medicine (M.D.) Candidate — 4 Years Coursework & Clinical Clerkships Completed (Incomplete as of 2020)",
+      "field": "Medicine (Completed 4 Years; In Good Standing)",
+      "dates": "January 2016 – July 2020",
+      "gpa": "Coursework Completed in Good Standing",
+      "honors": "Virginia Covington Award (2017) · President & Founder: P.A.L.S. (Peer-Assisted Learning Society) · Chair: UMMC/MBN Opioid Crisis Council · BCLS / ACLS / First Aid Certified",
+      "highlights": [
+        "Master Anatomical Prosector for School of Medicine and School of Dentistry (2017)",
+        "President, Quality Improvement Student Interest Group & Associate Student Body QI Chair",
+        "Chair, UMMC/MBN Opioid Crisis Council directing harm reduction initiatives and youth shelter outreach",
+        "BCLS / ACLS / First Aid Certified (American Heart Association high-reliability life support)",
+        "Rigorous four-year training in high-reliability clinical operations, diagnostic triage, and HIPAA privacy security"
+      ]
+    }
+  ],
+  "skillsMatrix": [
+    {
+      "category": "Cybersecurity & Security Architecture",
+      "skills": [
+        "STRIDE Threat Modeling",
+        "Zero-Trust Architecture",
+        "NIST SP 800-53 / CSF Compliance",
+        "Network Defense & Packet Analysis (Wireshark, Nmap)",
+        "Cryptographic Hashing & SHA-256 Block Verification",
+        "Cloud Computing Architecture & Secure Enclaves (CS 532)",
+        "Identity & Access Management (IAM / Least Privilege)",
+        "Firewall, Proxy & Access Control Lists (ACLs)"
+      ]
+    },
+    {
+      "category": "Artificial Intelligence & Local Models",
+      "skills": [
+        "On-Device Retrieval-Augmented Generation (Local RAG)",
+        "Apple MLX & Metal Performance Shaders",
+        "Quantized LLMs (Ollama / Gemma 4 / Llama 3)",
+        "SwiftData & Local SQLite Vector Indexing",
+        "Model Context Protocol (MCP) Sandboxed Tool Routing",
+        "Agentic AI Workflow Architecture & Permission Gates",
+        "Prompt Engineering & Automated Evaluation Pipelines",
+        "Knowledge Graphs for Enterprise GenAI"
+      ]
+    },
+    {
+      "category": "Cloud & DevSecOps",
+      "skills": [
+        "AWS (S3, CloudFront, Lambda, DynamoDB, SES)",
+        "Firebase (Hosting, Firestore, Cloud Functions)",
+        "Google Cloud Platform Core Services",
+        "Docker Container Isolation & Sandboxing",
+        "Expiring HMAC Token Verification & Secure File Transfer",
+        "CI/CD Pipeline Security & Static Analysis (SAST)",
+        "Vercel & Next.js Server-Side Deployment"
+      ]
+    },
+    {
+      "category": "Systems & Programming Languages",
+      "skills": [
+        "Swift / SwiftUI (Native macOS & iOS)",
+        "Python (Systems, Data Analytics, Cryptography)",
+        "Java 21 (Zero-Trust Sockets & Agent Gatekeepers)",
+        "TypeScript / JavaScript (ESNext, React 19, Vite)",
+        "C & Assembly Systems Fundamentals",
+        "SQL (SQLite, PostgreSQL, Relational Schema Design)",
+        "Godot GDScript & WebGL Spatial Computing"
+      ]
+    },
+    {
+      "category": "Leadership & Educational Instruction",
+      "skills": [
+        "Microsoft Certified Educator (MCE Credly-Verified)",
+        "Career and Technical Education (CTE) Curriculum Design",
+        "Student Organization Advising & Competitive Coaching",
+        "DECA State-Level Competition Preparation",
+        "TAPE Standards Compliance & Educational Governance",
+        "Physical Computing & STEM Robotics (BBC micro:bit)",
+        "Cross-Disciplinary Team Facilitation & Executive Presentation"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "role": "Teaching Assistant — Python Coding Summer Camp",
+      "organization": "University of Alabama at Birmingham (Department of Computer Science)",
+      "location": "Birmingham, AL",
+      "dates": "June 2026 – August 2026 (20–40 hrs/wk)",
+      "badge": "STEM Mentorship",
+      "achievements": [
+        "Instructed middle school cohorts in Python programming fundamentals, algorithmic loops, and physical computing.",
+        "Guided students to interface BBC micro:bit microcontrollers with LED displays, motion sensors, and external robotics.",
+        "Mentored students in scripting custom autonomous flight trajectories for aerial drones using Python.",
+        "Created an inclusive, high-engagement STEM problem-solving environment that boosted student confidence in computer science."
+      ]
+    },
+    {
+      "role": "Career & Technical Education (CTE) Teacher — Business, Marketing & Finance",
+      "organization": "Shades Valley High School (Jefferson County Board of Education - JEFCOED)",
+      "location": "Birmingham, AL",
+      "dates": "July 2024 – June 2025 (Full-Time, 40 hrs/wk)",
+      "badge": "Torchbearer Award 2025",
+      "achievements": [
+        "Taught Business Finance, Customer Service, and Sales in the premier National Academy of Finance (NAOF) program.",
+        "Served as official Chapter Adviser for the state's largest student career and technical business organization.",
+        "Head Coach for the Shades Valley High School Esports Team; raised funding and secured corporate sponsorships.",
+        "Maintained 100% compliance with Alabama State Department of Education TAPE instructional standards.",
+        "Honored with the prestigious 2025 JEFCOED Technology Torchbearer Award for Excellence for innovative classroom technology integration."
+      ]
+    },
+    {
+      "role": "Career & Technical Education (CTE) Teacher — Business, Marketing & Finance (DECA Chapter Founder & State Competition Coach)",
+      "organization": "Corner High School (Jefferson County Board of Education - JEFCOED)",
+      "location": "Dora, AL",
+      "dates": "August 2023 – June 2024 (Full-Time, 40 hrs/wk)",
+      "badge": "DECA State Winners",
+      "achievements": [
+        "Founded, chartered, and advised a brand-new DECA chapter, opening statewide competitive business leadership to rural students.",
+        "Coached student competitors in business finance and marketing, achieving 1st place and 2nd place state trophies at the 2024 Alabama DECA Career Development Conference.",
+        "Engineered experiential business curricula in financial modeling, spreadsheet automation, and entrepreneurship.",
+        "Received the 2024 Alabama DECA New Chapter Advisor Recognition for exceptional student competitive placement."
+      ]
+    },
+    {
+      "role": "Operational Director & Laboratory Specialist",
+      "organization": "MidSouth Extracts LLC",
+      "location": "Tupelo, MS",
+      "dates": "January 2023 – May 2023 (Full-Time, 40 hrs/wk)",
+      "badge": "cGMP Compliance Lead",
+      "achievements": [
+        "Directed operational buildout of a state-licensed, cGMP-regulated botanical and medical processing facility.",
+        "Authored an audit-ready library of Standard Operating Procedures (SOPs) spanning extraction protocols, hazardous material safety, and QA/QC testing.",
+        "Embedded with PhD analytical chemists and process engineers to execute process hazard analyses (PHA) and equipment qualification.",
+        "Secured state and municipal operating permits with 100% first-pass regulatory compliance."
+      ]
+    },
+    {
+      "role": "Founder & Principal Technologist",
+      "organization": "Maqkrs Consulting",
+      "location": "Birmingham, AL & Clinton, MS",
+      "dates": "January 2022 – Present (15–20 hrs/wk)",
+      "badge": "Consulting & Systems",
+      "achievements": [
+        "Delivered technical advisory services on zero-trust digital infrastructure, FDA/cGMP compliance, and secure cloud deployments.",
+        "Developed custom client platforms including e-commerce storefronts, clinical healthcare portals, and local AI workflows.",
+        "Mentored student interns in security baseline auditing, vulnerability scanning, and cloud least-privilege configurations."
+      ]
+    },
+    {
+      "role": "Sales Development Specialist",
+      "organization": "SelectQuote Insurance Services",
+      "location": "Clinton, MS",
+      "dates": "April 2021 – November 2022 (Full-Time, 40 hrs/wk)",
+      "badge": "Top Sales Award (2021)",
+      "achievements": [
+        "Trained, onboarded, and coached incoming sales cohorts across high-velocity life and health insurance divisions.",
+        "Engineered micro-training modules and compliance scripts that reduced regulatory complaints and elevated retention.",
+        "Honored with the SelectQuote Top Sales Award (2021) and SQ Team Lead Award (2021) for sustained performance and coaching excellence."
+      ]
+    },
+    {
+      "role": "OmniMed Certified Village Health Volunteer (Uganda, East Africa)",
+      "organization": "OmniMed",
+      "location": "Mukono District, Uganda, East Africa",
+      "dates": "July 2017 – August 2017",
+      "badge": "Global Health Certification",
+      "achievements": [
+        "Certified Village Health Volunteer partnering with local village health teams to conduct primary preventive care.",
+        "Established two functional mobile medical clinics delivering clinical assessments and health education to 1,000+ rural patients.",
+        "Delivered clean-water sanitation and disease prevention workshops across remote communities."
+      ]
+    },
+    {
+      "role": "Youth Leadership & Civic Mentorship",
+      "organization": "First Presbyterian Church",
+      "location": "Gulfport, MS & Clinton, MS",
+      "dates": "August 2011 – Present (10 hrs/wk)",
+      "badge": "Civic Stewardship",
+      "achievements": [
+        "Provided sustained youth leadership, academic mentoring, and civic guidance across 15+ years of continuous service.",
+        "Organized community outreach initiatives, disaster relief volunteering, and student developmental programs.",
+        "Facilitated small-group discussions and character development for youth facing academic and personal challenges."
+      ]
+    },
+    {
+      "role": "Master Human Anatomy Prosector",
+      "organization": "University of Mississippi School of Medicine (UMMC)",
+      "location": "Jackson, MS",
+      "dates": "May 2017 – September 2017",
+      "badge": "Medical Training",
+      "achievements": [
+        "Performed intricate anatomical dissections of human cadaveric donors to create master teaching specimens for medical and dental schools.",
+        "Delivered lecture demonstrations to 100+ first-year medical students, teaching complex neurovascular and musculoskeletal relationships."
+      ]
+    },
+    {
+      "role": "Human Gross Anatomy Laboratory Teaching Assistant",
+      "organization": "Mississippi College (Department of Biological Sciences)",
+      "location": "Clinton, MS",
+      "dates": "August 2015 – May 2016",
+      "badge": "Undergraduate STEM",
+      "achievements": [
+        "Facilitated laboratory dissections and practical exam tutorials for undergraduate pre-medical cohorts across two semesters.",
+        "Enforced biosafety standards and laboratory chain of custody for chemical preservation protocols."
+      ]
+    }
+  ],
+  "starAccomplishments": [
+    {
+      "id": "STAR-01",
+      "title": "2025 JEFCOED Technology Torchbearer Award for Excellence",
+      "situation": "Shades Valley High School required modern technology integration across CTE business classrooms to prepare students for industry credentialing.",
+      "task": "Design, deploy, and instruct experiential learning curriculum utilizing business technology, financial simulations, and competitive event training.",
+      "action": "Built interactive spreadsheet simulation models, introduced digital business portfolios, and mentored the state's largest student business chapter.",
+      "result": "Honored by the Jefferson County Board of Education with the 2025 JEFCOED Technology Torchbearer Award for Excellence out of hundreds of CTE educators across the district."
+    },
+    {
+      "id": "STAR-02",
+      "title": "State Championship DECA Coaching (1st & 2nd Place)",
+      "situation": "Corner High School lacked a competitive business leadership organization, limiting student exposure to state and national career pathways.",
+      "task": "Charter a new DECA chapter from scratch, recruit student competitors, and prepare them for statewide marketing and finance role-play competitions.",
+      "action": "Conducted weekly simulated business judging sessions, analyzed market case studies, and trained students in rapid executive decision-making.",
+      "result": "Students earned 1st-place and 2nd-place state trophies at the 2024 Alabama DECA Career Development Conference, qualifying for internationals."
+    },
+    {
+      "id": "STAR-03",
+      "title": "cGMP Facility Buildout & Audit-Ready SOP Library",
+      "situation": "MidSouth Extracts was establishing a botanical extraction facility requiring compliance with rigorous FDA and state health authority mandates.",
+      "task": "Author an entire operational standard operating procedure (SOP) library and guide facility qualification before state licensing audits.",
+      "action": "Embedded with analytical chemists and process engineers, synthesized complex extraction protocols into 30+ standardized operating procedures, and enforced safety controls.",
+      "result": "Passed all state regulatory inspections on the first audit pass, achieving 100% operational licensure with zero compliance citations."
+    },
+    {
+      "id": "STAR-04",
+      "title": "CS646 Sanctum 3D Cryptographic Exploration World",
+      "situation": "Graduate students in UAB CS 646 struggled with abstract blockchain concepts including Merkle proofs, SHA-256 block hashing, and Byzantine consensus.",
+      "task": "Build an engaging, interactive 3D spatial simulation that visualizes complex cryptographic distributed ledger mechanisms in real time.",
+      "action": "Engineered Sanctum in Godot 4, compiled to WebAssembly/WebGL, integrated vehicle traversal across 5 learning districts, and deployed on AWS CloudFront.",
+      "result": "Delivered a production 3D web application with 0 console errors, 720p 30fps web previews, and permanent course review adoption."
+    },
+    {
+      "id": "STAR-05",
+      "title": "MaqkrsTutor2 Privacy-Preserving On-Device AI Assistant",
+      "situation": "Commercial cloud AI tools leak institutional data and student intellectual property to remote LLM providers, violating zero-trust and educational privacy laws.",
+      "task": "Architect a native on-device macOS AI study assistant capable of semantic document search with 0 network egress.",
+      "action": "Built SwiftUI app with SwiftData, integrated Ollama/MLX for quantized Gemma 4 local inference, engineered SQLite vector retrieval over PDFs and code, and open-sourced sanitized repo.",
+      "result": "Presented at the UAB CS Spring Showcase (ACM & Women in Tech), achieving sub-second local retrieval with 100% privacy assurance."
+    },
+    {
+      "id": "STAR-06",
+      "title": "Secure Cloud File Sharing Service with Expiring HMAC Tokens",
+      "situation": "Enterprise systems frequently suffer from unauthorized data exfiltration due to statically shared cloud download links and overly permissive IAM policies.",
+      "task": "Design a serverless file exchange architecture enforcing strict time expiration, cryptographic signature verification, and automated object lifecycle pruning.",
+      "action": "Built Python Flask microservice integrating AWS S3, DynamoDB, SES, and Lambda; generated HMAC-SHA256 signed download tokens expiring in 15 minutes.",
+      "result": "Achieved least-privilege IAM compliance, zero unauthorized file access vulnerabilities, and automated S3 lifecycle garbage collection."
+    },
+    {
+      "id": "STAR-07",
+      "title": "Enterprise STRIDE Threat Modeling Portfolio",
+      "situation": "UAB BlazerNET network and enterprise IoT infrastructure faced sophisticated attack vectors across public academic Wi-Fi boundaries.",
+      "task": "Conduct comprehensive STRIDE security assessment, model data flow diagrams (DFDs), and propose defense-in-depth mitigations.",
+      "action": "Deconstructed architecture into processes, datastores, data flows, and trust boundaries; categorized threats across Spoofing, Tampering, Repudiation, Information Disclosure, DoS, and Elevation of Privilege.",
+      "result": "Authored comprehensive mitigation roadmap specifying 802.1X enterprise authentication, WPA3-Enterprise encryption, and micro-segmentation."
+    },
+    {
+      "id": "STAR-08",
+      "title": "51-Position Federal Cyber Career Opportunity Campaign",
+      "situation": "Transitioning from graduate cybersecurity studies into high-impact federal defense and intelligence agencies requires extensive eligibility preparation and opportunity tracking.",
+      "task": "Build a structured opportunity tracker capturing agency requirements, clearance tracks, pay scales, and application timelines.",
+      "action": "Created 'accurateinternshiptracker.xlsx' cataloging 51 federal positions across Dream Tier (White House OSTP, ONCD, USDS), National Labs (Sandia, Los Alamos, Oak Ridge), and Defense (Space Force, CISA).",
+      "result": "Completed 14 agency applications at the NSF CyberCorps SFS Virtual Job Fair, initiating federal hiring pipelines across GS-9 to GS-12 bands."
+    },
+    {
+      "id": "STAR-09",
+      "title": "Youth STEM Education & Drone Trajectory Programming",
+      "situation": "Middle school students lacked hands-on computer science exposure connecting software code with physical hardware behavior.",
+      "task": "Serve as Teaching Assistant for UAB Department of Computer Science Python Summer Camp, creating memorable physical computing projects.",
+      "action": "Taught algorithmic fundamentals using BBC micro:bit LED matrices and guided students to write Python scripts controlling drone flight pitch, roll, and yaw.",
+      "result": "Successfully coached 25+ youth participants to write and execute autonomous drone flight routines with zero safety incidents."
+    },
+    {
+      "id": "STAR-10",
+      "title": "Uganda International Health Outreach & Mobile Clinic Establishment",
+      "situation": "Rural communities in Uganda, Africa faced extreme barriers to primary healthcare, clean water hygiene, and preventive health screenings.",
+      "task": "Participate in an intensive international health internship with Omnimed Health Initiative to expand clinical capacity.",
+      "action": "Partnered with village health teams to establish two functional mobile medical clinics and delivered preventive health workshops across remote villages.",
+      "result": "Delivered care and preventive health education to over 1,000 rural patients, demonstrating crisis composure and cross-cultural leadership."
+    },
+    {
+      "id": "STAR-11",
+      "title": "Benjamin A. Gilman International Fellowship in Pokhara, Nepal",
+      "situation": "Global public health and sustainable agriculture initiatives require cross-disciplinary volunteers capable of clinical support and community education.",
+      "task": "Complete U.S. Department of State Gilman Scholarship in Nepal, balancing clinical rotations with international educational broadcasts.",
+      "action": "Assisted physicians at B.G. Hospital & Research Center, taught organic farming to 50+ Himalayan farmers, and served as Reach the World Travel Correspondent broadcasting live seminars to New York students.",
+      "result": "Awarded official Gilman International Scholar credentials and recognized for bridging international development with classroom STEM education."
+    },
+    {
+      "id": "STAR-12",
+      "title": "Personal Agentic Citadel Zero-Trust Gatekeeper",
+      "situation": "Emerging autonomous AI agents with access to command line tools pose severe security risks if models execute unverified shell commands.",
+      "task": "Build a defense-in-depth gatekeeper ensuring zero-trust verification before executing agent actions on local systems.",
+      "action": "Engineered Java 21 / Python architecture with WebSocket security boundary, Model Context Protocol (MCP) tool sandboxing, and LanceDB memory audit trails.",
+      "result": "Successfully prevented unauthorized system call execution and established verifiable audit trails for 100% of autonomous tool invocations."
+    },
+    {
+      "id": "STAR-13",
+      "title": "SelectQuote Sales Leadership & Training Curriculum Engineering",
+      "situation": "Rapid expansion of life and health insurance sales teams resulted in onboarding bottlenecks and elevated customer compliance inquiries.",
+      "task": "Develop accelerated training modules, mentor new agents, and uphold strict state insurance compliance standards.",
+      "action": "Authored micro-training modules clarifying regulatory disclosures, conducted daily deal coaching, and modeled customer-centric sales frameworks.",
+      "result": "Earned Top Sales Award (2021) and SQ Team Lead Award (2021), driving team performance while reducing regulatory compliance flags."
+    },
+    {
+      "id": "STAR-14",
+      "title": "AdaptiveHS K-12 Homeschool Learning Platform",
+      "situation": "Homeschool families needed a unified learning platform aligned with Georgia Standards of Excellence (GSE) that supported parents, students, and educators.",
+      "task": "Develop an accessible full-stack educational web application with role-based access control and adaptive assessments.",
+      "action": "Built with Next.js 15, Firebase Firestore, and Tailwind CSS; engineered multi-role demo authentication and interactive simulation exports.",
+      "result": "Deployed live on Cloud Run / Firebase (`adaptivehs-v2.firebaseapp.com`) and static CloudFront showcase with responsive UI across mobile and desktop."
+    },
+    {
+      "id": "STAR-15",
+      "title": "Master Human Anatomy Prosectorship & Surgical Dissection",
+      "situation": "UMMC School of Medicine required pristine, high-fidelity anatomical specimens for incoming medical and dental students.",
+      "task": "Execute complex surgical dissections of donor cadavers and lead clinical demonstration labs for first-year cohorts.",
+      "action": "Spent 400+ hours in laboratory dissection isolating deep neurovascular bundles, cranial nerves, and thoracic viscera; delivered weekly clinical lectures.",
+      "result": "Prepared 20+ master specimens and taught over 100 medical and dental students, reinforcing precision and zero-defect manual discipline."
+    },
+    {
+      "id": "STAR-16",
+      "title": "Peer-Assisted Learning Society (P.A.L.S.) Founding & Leadership",
+      "situation": "Pre-clinical medical students faced high attrition rates in challenging foundational courses like Medical Biochemistry and Neuroscience.",
+      "task": "Found and structure an academic peer-mentorship organization to deliver high-yield study reviews and practice question banks.",
+      "action": "Founded P.A.L.S., recruited high-performing upperclassmen tutors, established study sessions, and coordinated with faculty course directors.",
+      "result": "Mentored 150+ students across multiple cohorts, resulting in documented increases in class exam averages and earning the Virginia Covington Award."
+    },
+    {
+      "id": "STAR-17",
+      "title": "Cloud Computing Infrastructure & Automated Zero-Trust Deployment",
+      "situation": "Enterprise systems required automated cloud provisioning adhering to least-privilege access and zero-trust boundary verification.",
+      "task": "Design and deploy cloud infrastructure automation validating IAM policies and encrypted resource boundaries.",
+      "action": "Engineered infrastructure automation, strict IAM policy least-privilege configurations, and cryptographic hashing pipelines across cloud storage and compute.",
+      "result": "Automated deployment pipelines with 100% verification across test clusters, enforcing NIST SP 800-53 security controls."
+    }
+  ],
+  "careerRelatedEducation": [
+    {
+      "institution": "University of Alabama at Birmingham",
+      "program": "M.S. in Cybersecurity (Graduate Coursework)",
+      "courses": [
+        "CS 623 Network Security (Firewalls, Proxies, Packet Inspection, TLS/SSL)",
+        "CS 646 Blockchain & Cryptography (Elliptic Curves, SHA-256, Consensus Algorithms)",
+        "CS 636 Computer Security & Threat Modeling (STRIDE, DFDs, Vulnerability Mitigation)",
+        "CS 532 Cloud Computing (AWS S3, DynamoDB, Lambda, IAM Security)"
+      ],
+      "careerImpact": "Directly develops the technical defense capabilities required for Information Security Analysts. Coursework provides rigorous, hands-on mastery in identifying network intrusions, analyzing cryptographic primitives, evaluating system architecture threats, and deploying zero-trust cloud architectures."
+    },
+    {
+      "institution": "STRIDE Threat Modeling Enterprise Assessment",
+      "program": "Systems Security Architecture (CS 636)",
+      "courses": [
+        "BlazerNET Enterprise Threat Boundary Analysis",
+        "IoT Surveillance Camera Threat Vector Modeling",
+        "Data Flow Diagramming (Level 0 and Level 1 DFDs)",
+        "Risk Likelihood and Impact Matrix Calibration"
+      ],
+      "careerImpact": "Trains security engineering instincts to anticipate adversary attack paths before code deployment. Equips Andrew to evaluate enterprise software architectures against the OWASP Top 10, NIST SP 800-53 controls, and federal zero-trust mandates."
+    },
+    {
+      "institution": "University of Montevallo",
+      "program": "Provisional Certificate in a Teaching Field (PCTF)",
+      "courses": [
+        "Business, Marketing, and Finance Pedagogy",
+        "Managerial Accounting & Enterprise Risk Analysis",
+        "Alabama TAPE Educational Standards & Program Evaluation",
+        "Curriculum Design & Educational Technology Integration"
+      ],
+      "careerImpact": "Provides essential executive communication, financial acumen, and educational leadership skills. In federal cybersecurity and critical infrastructure, security analysts must articulate technical cyber risks to non-technical executives and train workforce personnel on security hygiene."
+    },
+    {
+      "institution": "Mississippi College & UMMC",
+      "program": "B.S. ACS Biochemistry Honors & Medical Training",
+      "courses": [
+        "ACS-Certified Biochemistry & Physical Chemistry",
+        "Human Gross Anatomy & Neuroanatomy (Master Prosector)",
+        "Medical School Preclinical Sciences & Clinical Clerkships",
+        "High-Reliability Healthcare Operations & HIPAA Privacy Security"
+      ],
+      "careerImpact": "Instills scientific rigor, empirical hypothesis testing, and zero-defect attention to detail. Operating in sterile surgical suites and cGMP extraction labs directly parallels the discipline needed to enforce zero-trust security postures and safeguard protected infrastructure."
+    }
+  ],
+  "educationalEnhancement": [
+    {
+      "title": "51-Position Federal Opportunity Tracker",
+      "source": "accurateinternshiptracker.xlsx",
+      "count": 51,
+      "details": "Meticulously organized pipeline cataloging federal cybersecurity positions across Dream Tier (White House OSTP, ONCD, USDS), National Labs (Sandia TITANS, Los Alamos CAI, Oak Ridge, Lawrence Livermore), and Defense (U.S. Army Space & Missile Defense Command, Redstone Arsenal, CISA).",
+      "careerRelevance": "Demonstrates proactive, structured career development planning aligned with the CyberCorps SFS public service service requirement."
+    },
+    {
+      "title": "14 SFS Virtual Job Fair Agency Applications",
+      "source": "CyberCorps SFS Virtual Job Fair Manifest",
+      "count": 14,
+      "details": "Submitted tailored applications to 14 premier federal intelligence, defense, and civilian agencies including U.S. Space Force, CISA, MARFORCYBER, DOJ CCIPS Cyber Crime Lab, CBP Cyber Threat Intelligence, and Sandia National Laboratories.",
+      "careerRelevance": "Direct engagement with federal cyber workforce recruiters to secure high-impact summer graduate internships converting to GS-11/12 permanent roles."
+    },
+    {
+      "title": "International Service & Healthcare Outreach",
+      "source": "Omnimed Uganda & Gilman Scholarship Nepal",
+      "count": 2,
+      "details": "Uganda medical outreach establishing 2 mobile clinics serving 1,000+ rural patients; U.S. Department of State Benjamin A. Gilman International Scholarship in Pokhara, Nepal conducting hospital service and rural sustainable agriculture education.",
+      "careerRelevance": "Cultivates global situational awareness, high-stakes operational adaptability, and community stewardship foundational to public service leadership."
+    },
+    {
+      "title": "Youth STEM Education & Physical Computing",
+      "source": "UAB CS Python Summer Camp 2026",
+      "count": 1,
+      "details": "Served as Teaching Assistant instructing middle school students in Python programming, BBC micro:bit microcontrollers, and autonomous aerial drone trajectory scripting.",
+      "careerRelevance": "Validates instructional design capabilities, hardware-software integration, and inspiring future generations in computer science."
+    },
+    {
+      "title": "Work-Based Learning & Products Developed",
+      "source": "DevAtlas & Maqkrs Hub Releases",
+      "count": 4,
+      "details": "Engineered flagship working systems including CS646 Sanctum 3D World (Godot/WebGL on CloudFront), MaqkrsTutor2 On-Device AI (SwiftUI/Local RAG), AdaptiveHS Learning Portal (Next.js 15/Cloud Run), and Citadel Zero-Trust Gatekeeper (Java 21).",
+      "careerRelevance": "Proves tangible end-to-end software engineering capability from architecture and cryptographic verification to cloud deployment and user experience."
+    }
+  ]
+}

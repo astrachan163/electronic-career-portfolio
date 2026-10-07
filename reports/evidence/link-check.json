@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-10-07T07:38:27.442Z",
+  "totalLocalAssetsChecked": 28,
+  "missingAssetsCount": 0,
+  "missingAssets": [],
+  "totalOutboundUrlsChecked": 82,
+  "insecureUrlsCount": 0,
+  "insecureUrls": [],
+  "deepPathPreserved": true,
+  "passed": true
+}

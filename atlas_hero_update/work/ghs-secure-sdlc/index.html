@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta
+      name="description"
+      content="Portfolio simulation: secure SDLC evidence explorer for a team learning-platform project (RBAC, STRIDE, OWASP, secrets, IR tabletop)."
+    />
+    <title>GHS Secure SDLC Evidence Explorer</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link visually-hidden" href="#content">Skip to content</a>
+
+    <div class="banner" role="status">
+      <p>
+        Evidence summary of a team project; interactive views are simulations
+        built for this portfolio; code is private.
+      </p>
+      <p>
+        Interactive simulation I built for this portfolio; not the production
+        system.
+      </p>
+    </div>
+
+    <div class="wrap">
+      <header class="app-header">
+        <h1>Secure SDLC Evidence Explorer</h1>
+        <p class="lede">
+          Interview-facing walkthrough of authorization, threat modeling, OWASP
+          coverage, secrets policy, and an incident-response tabletop from the
+          GHS Learning Platform team project. All interactive controls are
+          local simulations — not a live client system.
+        </p>
+        <div class="meta-row" aria-label="Demo metadata">
+          <span class="chip">demoType: simulation</span>
+          <span class="chip">deny by default</span>
+          <span class="chip">no student data</span>
+          <span class="chip">no code excerpts</span>
+        </div>
+      </header>
+
+      <nav class="toc" aria-label="Sections">
+        <ul>
+          <li><a href="#rbac">1. RBAC matrix</a></li>
+          <li><a href="#stride">2. STRIDE</a></li>
+          <li><a href="#owasp">3. OWASP map</a></li>
+          <li><a href="#secrets">4. Secrets</a></li>
+          <li><a href="#ir">5. IR tabletop</a></li>
+          <li><a href="#evidence">Evidence</a></li>
+        </ul>
+      </nav>
+
+      <main id="content" tabindex="-1">
+        <section class="panel" id="rbac" aria-labelledby="rbac-h">
+          <h2 id="rbac-h">1. Role × action RBAC matrix</h2>
+          <p class="sub">
+            Roles come from the project role set: student, parent, teacher,
+            admin. API checks use an allow-list middleware (deny when the role
+            claim is missing or not listed). Data actions paraphrase Firestore
+            ownership and relationship patterns. Empty allow-lists deny
+            everyone.
+          </p>
+          <div class="table-scroll" id="rbac-matrix"></div>
+          <p class="legend" id="rbac-legend">
+            <span class="l-allow">Allow — role on allow-list</span>
+            <span class="l-deny">Deny — default or insufficient role</span>
+          </p>
+
+          <div class="tester">
+            <h3>Try an action as a role</h3>
+            <form id="tester-form" class="controls">
+              <label for="role-select"
+                >Role
+                <select id="role-select" name="role"></select>
+              </label>
+              <label for="action-select"
+                >Action
+                <select id="action-select" name="action"></select>
+              </label>
+              <button type="submit" class="primary">Evaluate</button>
+            </form>
+            <div
+              class="result"
+              id="tester-result"
+              role="status"
+              aria-live="polite"
+              data-decision="deny"
+            ></div>
+          </div>
+        </section>
+
+        <section class="panel" id="stride" aria-labelledby="stride-h">
+          <h2 id="stride-h">2. STRIDE — orchestration flow</h2>
+          <p class="sub">
+            Summary of the documented threat model for authentication, admin
+            role assignment, and execution tracing. Status labels match the
+            source document (mitigated / partially mitigated / open).
+          </p>
+          <div class="stride-grid">
+            <article class="stride-card">
+              <div class="cat">S — Spoofing</div>
+              <h3>Stolen JWT impersonation</h3>
+              <p>
+                <strong>Mitigation:</strong> short-lived tokens; HTTPS only.<br />
+                <strong>Where verified:</strong> auth middleware on protected
+                routes; transport assumption for deployed HTTPS.
+              </p>
+              <span class="status-pill mitigated">Mitigated</span>
+            </article>
+            <article class="stride-card">
+              <div class="cat">T — Tampering</div>
+              <h3>Altered JWT role claims</h3>
+              <p>
+                <strong>Mitigation:</strong> signature verification on every
+                authenticated request; tampered tokens rejected.<br />
+                <strong>Where verified:</strong> require-auth middleware path.
+              </p>
+              <span class="status-pill mitigated">Mitigated</span>
+            </article>
+            <article class="stride-card">
+              <div class="cat">T — Tampering</div>
+              <h3>Malicious admin role change</h3>
+              <p>
+                <strong>Mitigation:</strong> set-role restricted to admin;
+                executions traced (audit incomplete without request body).<br />
+                <strong>Where verified:</strong> RBAC on set-role; IR tabletop
+                used traces.
+              </p>
+              <span class="status-pill partial">Partially mitigated</span>
+            </article>
+            <article class="stride-card">
+              <div class="cat">R — Repudiation</div>
+              <h3>Admin denies a role change</h3>
+              <p>
+                <strong>Mitigation:</strong> execution trace logs authenticated
+                actor userId.<br />
+                <strong>Where verified:</strong> orchestration registry /
+                executions collection (body detail still a gap).
+              </p>
+              <span class="status-pill partial">Partially mitigated</span>
+            </article>
+            <article class="stride-card">
+              <div class="cat">I — Information disclosure</div>
+              <h3>JWT / executions exposure</h3>
+              <p>
+                <strong>Mitigation:</strong> HTTPS; minimal JWT claims. Trace
+                reads must be restricted — documented as still open.<br />
+                <strong>Where verified:</strong> HTTPS + JWT design mitigated;
+                Firestore read lock on executions = open.
+              </p>
+              <span class="status-pill open">Open (traces)</span>
+            </article>
+            <article class="stride-card">
+              <div class="cat">D — Denial of service</div>
+              <h3>Flood of set-role attempts</h3>
+              <p>
+                <strong>Mitigation:</strong> auth + admin gate; rate limiting
+                noted as follow-on (also present on the route in later work).<br />
+                <strong>Where verified:</strong> authorization surface reduced;
+                rate limit as hardening.
+              </p>
+              <span class="status-pill partial">Partially mitigated</span>
+            </article>
+            <article class="stride-card">
+              <div class="cat">E — Elevation of privilege</div>
+              <h3>Non-admin calls set-role / injection</h3>
+              <p>
+                <strong>Mitigation:</strong> allow-list role check; schema
+                validation rejects object-shaped payloads; security tests cited
+                in OWASP map.<br />
+                <strong>Where verified:</strong> RBAC + validate middleware +
+                injection tests (private repo).
+              </p>
+              <span class="status-pill mitigated">Mitigated</span>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel" id="owasp" aria-labelledby="owasp-h">
+          <h2 id="owasp-h">3. OWASP Top 10 coverage heat map</h2>
+          <p class="sub">
+            Counts from the project OWASP coverage document (2021 categories).
+            Labels: covered (mitigated), partial, gap/open work (planned or
+            ongoing), and not applicable.
+          </p>
+          <div class="counts" aria-label="Coverage counts">
+            <div class="stat"><b>6</b> covered</div>
+            <div class="stat"><b>1</b> partial</div>
+            <div class="stat"><b>1</b> gap / ongoing</div>
+            <div class="stat"><b>1</b> planned</div>
+            <div class="stat"><b>1</b> N/A</div>
+          </div>
+          <div class="heat">
+            <article class="heat-item">
+              <span class="badge covered">Covered</span>
+              <div>
+                <h3>A01 Broken Access Control</h3>
+                <p>JWT-validated RBAC middleware on sensitive routes.</p>
+              </div>
+            </article>
+            <article class="heat-item">
+              <span class="badge partial">Partial</span>
+              <div>
+                <h3>A02 Cryptographic Failures</h3>
+                <p>
+                  Example hashing helpers; HTTPS required in production; limited
+                  at-rest sensitive storage to date.
+                </p>
+              </div>
+            </article>
+            <article class="heat-item">
+              <span class="badge covered">Covered</span>
+              <div>
+                <h3>A03 Injection</h3>
+                <p>
+                  Schema validation on sensitive bodies; security tests cited as
+                  verification.
+                </p>
+              </div>
+            </article>
+            <article class="heat-item">
+              <span class="badge gap">Ongoing</span>
+              <div>
+                <h3>A04 Insecure Design</h3>
+                <p>
+                  Living threat models updated with features (security-as-code
+                  practice).
+                </p>
+              </div>
+            </article>
+            <article class="heat-item">
+              <span class="badge planned">Planned</span>
+              <div>
+                <h3>A05 Security Misconfiguration</h3>
+                <p>
+                  Hardening headers and explicit CORS called out before
+                  production.
+                </p>
+              </div>
+            </article>
+            <article class="heat-item">
+              <span class="badge covered">Covered</span>
+              <div>
+                <h3>A06 Vulnerable Components</h3>
+                <p>
+                  CI generates an SBOM and runs dependency audit on the backend
+                  workspace.
+                </p>
+              </div>
+            </article>
+            <article class="heat-item">
+              <span class="badge covered">Covered</span>
+              <div>
+                <h3>A07 Identification &amp; Auth Failures</h3>
+                <p>Managed auth with signed JWTs verified per request.</p>
+              </div>
+            </article>
+            <article class="heat-item">
+              <span class="badge covered">Covered</span>
+              <div>
+                <h3>A08 Software &amp; Data Integrity</h3>
+                <p>
+                  Release manifest with commit hash / artifact pointers for
+                  deployment integrity baseline.
+                </p>
+              </div>
+            </article>
+            <article class="heat-item">
+              <span class="badge covered">Covered</span>
+              <div>
+                <h3>A09 Logging &amp; Monitoring Failures</h3>
+                <p>
+                  Structured logs plus per-request trace registry for audit
+                  trails.
+                </p>
+              </div>
+            </article>
+            <article class="heat-item">
+              <span class="badge na">N/A</span>
+              <div>
+                <h3>A10 SSRF</h3>
+                <p>
+                  Documented as not applicable: no server-side fetch of
+                  user-supplied URLs in current scope.
+                </p>
+              </div>
+            </article>
+          </div>
+          <p class="legend">
+            <span class="l-allow">Covered</span>
+            <span class="l-partial">Partial</span>
+            <span class="l-gap">Gap / ongoing</span>
+            <span class="l-planned">Planned</span>
+            <span class="l-na">N/A</span>
+          </p>
+        </section>
+
+        <section class="panel" id="secrets" aria-labelledby="secrets-h">
+          <h2 id="secrets-h">4. Secrets management policy</h2>
+          <p class="sub">
+            Architecture decision record summary (accepted): keep credentials out
+            of source control; give the app one secrets abstraction that reads
+            environment variables in every environment.
+          </p>
+          <ul class="stack-list">
+            <li>
+              <strong>What changed:</strong> centralized secrets module reading
+              process environment variables instead of embedding keys in code or
+              committing them.
+            </li>
+            <li>
+              <strong>Why:</strong> accidental commit of credentials is tracked
+              as a high-impact risk; environments differ (local vs cloud) and
+              should not couple app code to a single vault product.
+            </li>
+            <li>
+              <strong>Local:</strong> developer environment file, gitignored,
+              never committed.
+            </li>
+            <li>
+              <strong>Cloud:</strong> managed secret store injects values as
+              runtime environment variables; IAM least privilege; auditability of
+              access.
+            </li>
+            <li>
+              <strong>How keys are rotated:</strong> operational docs call for a
+              periodic rotation cycle (documented as a 90-day cadence) using the
+              platform secret-set / redeploy path — rotate the store value, then
+              roll the runtime so old material is retired.
+            </li>
+            <li>
+              <strong>Supply-chain CI:</strong> security workflow builds the
+              backend, emits an SBOM artifact, and runs dependency audit on
+              pushes/PRs.
+            </li>
+          </ul>
+          <aside class="callout" aria-labelledby="lessons-h">
+            <h3 id="lessons-h">Lessons learned: secret hygiene</h3>
+            <p>
+              A credential file was found in repository history and is being
+              remediated (history cleanup and key invalidation are in flight /
+              awaiting explicit owner approval for rewrite publication). This
+              portfolio demo deliberately omits paths, project identifiers, and
+              key material. Takeaway for interviews: treat “gitignore alone” as
+              insufficient — scan history, rotate anything that ever touched a
+              shared remote, and prefer short-lived workload identity over
+              long-lived key files.
+            </p>
+          </aside>
+        </section>
+
+        <section class="panel" id="ir" aria-labelledby="ir-h">
+          <h2 id="ir-h">5. Incident-response tabletop — role change</h2>
+          <p class="sub">
+            Simulated SEV-2 scenario (2025-09-24): unauthorized elevation to
+            admin. Personas below are the simulation’s test accounts from the
+            write-up — not real class users.
+          </p>
+          <ol class="timeline">
+            <li>
+              <div class="phase">Triage</div>
+              <p>Classify as SEV-2; open a simulated incident channel.</p>
+            </li>
+            <li>
+              <div class="phase">Investigate — traces</div>
+              <p>
+                Query the executions audit collection; locate a trace showing a
+                simulated admin account promoted a simulated student account to
+                admin.
+              </p>
+              <p class="finding">
+                Finding: traces were effective for attribution; request body
+                (target + new role) was missing from the record.
+              </p>
+            </li>
+            <li>
+              <div class="phase">Investigate — auth logs</div>
+              <p>
+                Auth logs show a successful login for the admin account from an
+                unrecognized IP shortly before the change — credential compromise
+                hypothesis.
+              </p>
+            </li>
+            <li>
+              <div class="phase">Contain</div>
+              <p>
+                Disable the compromised admin account (simulated console
+                action); note refresh-token revocation to kill sessions.
+              </p>
+            </li>
+            <li>
+              <div class="phase">Recover</div>
+              <p>
+                Revert the elevated student’s role; force password reset on the
+                admin account.
+              </p>
+            </li>
+            <li>
+              <div class="phase">Lessons / actions</div>
+              <p>
+                Keep structured traces; enrich critical audit events with
+                sanitized request bodies; add proactive alerts when admin claims
+                are granted (do not wait for a user report).
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="panel" id="evidence" aria-labelledby="evidence-h">
+          <h2 id="evidence-h">Evidence list (private paths)</h2>
+          <p class="sub">
+            Labels and repo-relative paths shown here and in
+            <code>demo.json</code>. Absolute Mac paths live only in the private
+            agent folder evidence list (outside this package).
+          </p>
+          <ul class="stack-list">
+            <li>Orchestration STRIDE threat model — <code>docs/threat-models/orchestration.md</code></li>
+            <li>ADR-0002 secrets management — <code>docs/architecture/adr/adr-0002-secrets-management.md</code></li>
+            <li>OWASP coverage — <code>docs/security/owasp-coverage.md</code></li>
+            <li>IR simulation — <code>docs/ir/simulation-2025-09-24-role-change.md</code></li>
+            <li>Admissions appendix — <code>docs/ADMISSIONS_APPENDIX.md</code></li>
+            <li>RBAC middleware (shape) — <code>backend/src/middleware/rbac.ts</code></li>
+            <li>Role enum — <code>backend/src/services/roles.ts</code></li>
+            <li>Firestore rules (shape) — <code>firestore.rules</code></li>
+            <li>Security CI — <code>.github/workflows/security-ci.yml</code></li>
+            <li>Risk register R-01 — <code>docs/risk/risk-register.md</code></li>
+          </ul>
+        </section>
+      </main>
+
+      <footer>
+        <p>
+          Interactive simulation I built for this portfolio; not the production
+          system. Launch locally from the D5 folder:
+          <code>python3 -m http.server 8755 --bind 127.0.0.1 --directory dist-ready/ghs-secure-sdlc</code>
+        </p>
+      </footer>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

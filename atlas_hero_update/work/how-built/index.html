@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="Case study: how a scroll-scrubbed 3D portfolio site was built with all-intra video, GSAP ScrollTrigger, and a canvas fallback.">
+  <title>How this 3D scroll site was built</title>
+  <link rel="stylesheet" href="how-built.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+
+  <div class="wrap">
+    <header class="hero">
+      <p class="eyebrow">Portfolio case study · interview talking point</p>
+      <h1>How this 3D scroll site was built</h1>
+      <p class="lede">
+        A production-minded walkthrough of scroll-scrubbed video: why ordinary
+        H.264 fails under scrubbing, how all-intra re-encoding + ScrollTrigger
+        math fix it, and when the canvas path takes over. Every number below
+        comes from measurements I took — nothing invented.
+      </p>
+      <p class="meta">
+        <span>Andrew Strachan</span>
+        <span>Measured on my MacBook Pro in Chrome · Sept 28, 2026</span>
+        <a href="../../index.html">← Portfolio home</a>
+      </p>
+    </header>
+
+    <nav class="toc" aria-label="Case study sections">
+      <h2>On this page</h2>
+      <ol>
+        <li><a href="#goal">Goal and architecture</a></li>
+        <li><a href="#keyframes">Why normal video scrubs badly</a></li>
+        <li><a href="#math">Scroll math (interactive)</a></li>
+        <li><a href="#paths">Two render paths and the decision gate</a></li>
+        <li><a href="#a11y">Accessibility and performance guardrails</a></li>
+        <li><a href="#delivery">Delivery and cost</a></li>
+        <li><a href="#checklist">Production checklist</a></li>
+      </ol>
+    </nav>
+
+    <main id="main">
+      <section id="goal" aria-labelledby="goal-h">
+        <h2 id="goal-h">Goal and one-sentence architecture</h2>
+        <p>
+          I built a presentation-ready portfolio where scroll position drives a
+          short 3D clip frame-by-frame, hosted as static files with near-zero
+          ongoing cost. The source clip was generated with Gemini; I re-encoded
+          and wired the scroll experience myself.
+        </p>
+        <p class="arch">
+          <strong>Architecture:</strong> pre-rendered clip → all-intra re-encode
+          → GSAP ScrollTrigger maps scroll progress to frame → canvas fallback
+          → static hosting.
+        </p>
+
+        <svg class="pipeline" viewBox="0 0 720 160" role="img" aria-labelledby="pipe-title pipe-desc">
+          <title id="pipe-title">Scroll-scrub pipeline</title>
+          <desc id="pipe-desc">
+            Source clip is re-encoded all-intra, then ScrollTrigger maps progress
+            to a frame. Video path seeks; canvas path draws WebP frames from an LRU cache. Static hosting serves Range requests.
+          </desc>
+          <defs>
+            <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+              <polygon points="0 0, 8 3, 0 6" fill="#f0a06a"/>
+            </marker>
+          </defs>
+          <rect class="box" x="12" y="48" width="100" height="56" rx="8"/>
+          <text x="62" y="72" text-anchor="middle">Source</text>
+          <text x="62" y="88" text-anchor="middle">clip</text>
+
+          <path class="arrow flow" d="M118 76 H148"/>
+
+          <rect class="box" x="150" y="48" width="110" height="56" rx="8"/>
+          <text x="205" y="72" text-anchor="middle">All-intra</text>
+          <text x="205" y="88" text-anchor="middle">encode</text>
+
+          <path class="arrow flow" d="M266 76 H296"/>
+
+          <rect class="box" x="298" y="48" width="120" height="56" rx="8"/>
+          <text x="358" y="72" text-anchor="middle">ScrollTrigger</text>
+          <text x="358" y="88" text-anchor="middle">progress→frame</text>
+
+          <path class="arrow flow" d="M424 60 H454"/>
+          <path class="arrow flow" d="M424 92 H454"/>
+
+          <rect class="box" x="456" y="20" width="100" height="48" rx="8"/>
+          <text x="506" y="42" text-anchor="middle">Video</text>
+          <text x="506" y="56" text-anchor="middle">seek</text>
+
+          <rect class="box" x="456" y="84" width="100" height="48" rx="8"/>
+          <text x="506" y="106" text-anchor="middle">Canvas</text>
+          <text x="506" y="120" text-anchor="middle">LRU draw</text>
+
+          <path class="arrow flow" d="M562 44 H590"/>
+          <path class="arrow flow" d="M562 108 H590"/>
+          <path class="arrow" d="M590 44 V108"/>
+          <path class="arrow flow" d="M590 76 H618"/>
+
+          <rect class="box" x="620" y="48" width="88" height="56" rx="8"/>
+          <text x="664" y="72" text-anchor="middle">Static</text>
+          <text x="664" y="88" text-anchor="middle">host</text>
+        </svg>
+      </section>
+
+      <section id="keyframes" aria-labelledby="kf-h">
+        <h2 id="kf-h">Why a normal video scrubs badly</h2>
+        <p>
+          The source file <code>WebAnimation.mp4</code> is 1920×1080 H.264,
+          24&nbsp;fps, 5.502&nbsp;s, <strong>134 frames</strong>, ~<strong>8.6&nbsp;MB</strong>,
+          with <strong>1 keyframe</strong> for the whole clip.
+          Seeking to an arbitrary frame forces the decoder to rebuild from that
+          lone I-frame — fine for playback, terrible for scroll scrubbing.
+        </p>
+        <p>
+          The fix: I re-encoded <strong>all-intra</strong> (a keyframe on every
+          frame). Measured encodes report <strong>134/134</strong> I-frames.
+        </p>
+        <table>
+          <caption class="visually-hidden">Source vs encoded asset sizes</caption>
+          <thead>
+            <tr>
+              <th>Asset</th>
+              <th>Size</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Source <code>WebAnimation.mp4</code></td>
+              <td>~8.6 MB</td>
+              <td>1 keyframe / 134 frames</td>
+            </tr>
+            <tr>
+              <td><code>scrub-1280-intra.mp4</code></td>
+              <td>8,562,955 B (8.17 MB)</td>
+              <td>H.264 1280×720, CRF&nbsp;17, all I</td>
+            </tr>
+            <tr>
+              <td><code>scrub-1920-intra.mp4</code></td>
+              <td>12,302,083 B (11.73 MB)</td>
+              <td>H.264 1920×1080, CRF&nbsp;20, all I</td>
+            </tr>
+            <tr>
+              <td><code>scrub.webm</code></td>
+              <td>10,155,526 B (9.69 MB)</td>
+              <td>VP9 1280×720, CRF&nbsp;35, all I</td>
+            </tr>
+            <tr>
+              <td><code>poster.webp</code></td>
+              <td>56,342 B (~55–56 KB)</td>
+              <td>LCP stand-in; budget ≤200 KB</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="muted">
+          Decode note: ffmpeg produced 133 frames from the source; I duplicated
+          frame 134 so the sequence stays 134 frames long.
+        </p>
+      </section>
+
+      <section id="math" aria-labelledby="math-h">
+        <h2 id="math-h">The scroll math</h2>
+        <p>
+          GSAP ScrollTrigger pins <code>.scrub-pin</code> with
+          <code>start: "top top"</code>, pin length <code>+=500%</code> desktop /
+          <code>+=350%</code> at max-width 720px (I switched away from ignored
+          <code>vh</code> units), and <code>scrub: 0.35</code> for smoothing.
+        </p>
+        <pre><code>frame = Math.round(progress * (frames - 1))
+// seek / draw only when frame changes
+currentTime = frame / fps   // quantized</code></pre>
+        <p>
+          Progress is clamped to [0,&nbsp;1]. Chapters use half-open windows
+          <code>[start, end)</code> from the chapter markup.
+        </p>
+
+        <div class="lab" data-testid="math-lab">
+          <label for="progress-slider">
+            Interactive scrub math
+            <span class="muted">(same formula as production)</span>
+          </label>
+          <input
+            id="progress-slider"
+            type="range"
+            min="0"
+            max="1000"
+            value="0"
+            step="1"
+            aria-valuemin="0"
+            aria-valuemax="1000"
+            aria-describedby="math-live"
+          >
+          <div class="lab-out" aria-live="off">
+            <div>
+              <dt>Progress</dt>
+              <dd id="out-progress">0.000</dd>
+            </div>
+            <div>
+              <dt>Frame (0-based)</dt>
+              <dd id="out-frame">0 / 133</dd>
+            </div>
+            <div>
+              <dt>Timestamp</dt>
+              <dd id="out-time">0.000 s</dd>
+            </div>
+            <div>
+              <dt>Chapter</dt>
+              <dd><span class="chapter-chip" id="out-chapter">Build</span></dd>
+            </div>
+          </div>
+          <p id="math-live" class="visually-hidden" aria-live="polite"></p>
+          <p class="muted" style="margin:0.85rem 0 0;font-size:0.88rem">
+            Chapters: Build [0–0.20) · Explain [0.20–0.40) · Protect [0.40–0.60) ·
+            AI [0.60–0.80) · Cloud [0.80–1]
+          </p>
+        </div>
+      </section>
+
+      <section id="paths" aria-labelledby="paths-h">
+        <h2 id="paths-h">Two render paths and the decision gate</h2>
+        <h3>Video vs canvas</h3>
+        <p>
+          Default mode is <strong>video</strong> (seek all-intra MP4/WebM).
+          Initial canvas instead when iOS/iPad/Safari, <code>deviceMemory&nbsp;&lt;&nbsp;4</code>,
+          or <code>hardwareConcurrency&nbsp;≤&nbsp;4</code>.
+          Runtime auto-degrade switches video → canvas if seek latency or drop
+          ratio exceeds thresholds (drop ratio &gt; 0.2 after ≥15 samples).
+        </p>
+
+        <h3>LRU memory math</h3>
+        <p>
+          An ImageBitmap at ~1280×720 is about <strong>~3.7&nbsp;MB</strong>.
+          Caching all 134 frames would be ≈<strong>495&nbsp;MB</strong>.
+          ScrubCanvas keeps an LRU window of <strong>~40</strong> decoded bitmaps
+          (24 on low-memory), not the full sequence.
+        </p>
+
+        <h3>Measured results (MacBook Chrome)</h3>
+        <table>
+          <caption class="visually-hidden">Scroll harness metrics</caption>
+          <thead>
+            <tr>
+              <th>Pass</th>
+              <th>Median fps</th>
+              <th>Match</th>
+              <th>Seek med / p95</th>
+              <th>Presented / dropped</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>video-slow-fwd</td>
+              <td>120.5</td>
+              <td>1.00</td>
+              <td>8.1 / 9.4 ms</td>
+              <td>107 / 0</td>
+            </tr>
+            <tr>
+              <td>video-med-fwd</td>
+              <td>120.5</td>
+              <td>1.00</td>
+              <td>7.8 / 9.5 ms</td>
+              <td>107 / 0</td>
+            </tr>
+            <tr>
+              <td>video-flick-fwd</td>
+              <td>120.5</td>
+              <td>1.00</td>
+              <td>7.4 / 10.0 ms</td>
+              <td><strong>39 / 68</strong></td>
+            </tr>
+            <tr>
+              <td>video-med-fwd-4x</td>
+              <td>120.5</td>
+              <td>1.00</td>
+              <td>10.3 / 11.7 ms</td>
+              <td>108 / 0</td>
+            </tr>
+            <tr>
+              <td>canvas-med-fwd</td>
+              <td>120.5</td>
+              <td>1.00</td>
+              <td>—</td>
+              <td>— (LRU cached 40)</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="muted">
+          Decision gate: <strong>keep-video-default</strong> (video medium median
+          page fps 120.5, matched-frame fraction 1.0; thresholds ≥55 fps / ≥0.9).
+        </p>
+
+        <div class="callout warn">
+          <strong>Honest limits.</strong>
+          iPhone Safari was <strong>not tested</strong> — device verification
+          still required.
+          The flick pass dropped frames in video mode (39 presented / 68 dropped),
+          which is exactly why auto-degrade to canvas exists.
+          Canvas heap after a full pass: ~2.16&nbsp;MB JS heap with LRU cached 40.
+        </div>
+      </section>
+
+      <section id="a11y" aria-labelledby="a11y-h">
+        <h2 id="a11y-h">Accessibility and performance guardrails</h2>
+        <ul>
+          <li>
+            <strong>prefers-reduced-motion:</strong> no pin; poster; stacked chapters;
+            live region once.
+          </li>
+          <li>
+            <strong>saveData:</strong> no video/frame fetch; poster + stacked chapters.
+          </li>
+          <li>
+            <strong>Skip link:</strong> <code>#scrub-skip</code> → <code>#overview</code>
+            verified keyboard path.
+          </li>
+          <li>
+            <strong>Live region:</strong> <code>#scrub-live</code> polite announcements.
+          </li>
+          <li>
+            <strong>Budgets:</strong> poster 56&nbsp;KB vs 200&nbsp;KB budget; site JS
+            excluding GSAP gzip <strong>17,853&nbsp;B</strong> (≤120&nbsp;KB);
+            pre-scroll transfer <strong>495&nbsp;KB</strong> (video/frames not requested).
+          </li>
+          <li>
+            <strong>Lazy loading:</strong> video sources use <code>data-src</code> +
+            <code>preload="none"</code>; IntersectionObserver attaches media when
+            <code>#scrub</code> enters the viewport (<code>lazyRootMargin: 0px</code>).
+          </li>
+        </ul>
+      </section>
+
+      <section id="delivery" aria-labelledby="del-h">
+        <h2 id="del-h">Delivery: static hosting plan</h2>
+        <p>
+          Hosting design is <strong>private S3 + CloudFront (OAC)</strong> with
+          byte-range support for MP4 seeking. CloudFront forwards Range by default.
+        </p>
+        <p>
+          Security headers policy includes HSTS, <code>X-Content-Type-Options</code>,
+          <code>X-Frame-Options: SAMEORIGIN</code>, referrer policy,
+          CSP, XSS protection, and optional <code>X-Robots-Tag: noindex</code>.
+          PriceClass_100 + static objects keep cost near zero aside from transfer.
+        </p>
+      </section>
+
+      <section id="checklist" aria-labelledby="ck-h">
+        <h2 id="ck-h">Production-grade 3D scroll website checklist</h2>
+        <p class="muted">Derived from what I actually measured and shipped for this site.</p>
+        <ol class="checklist">
+          <li>Measure source keyframes; re-encode all-intra if scrubbing is required.</li>
+          <li>Ship dual resolutions + WebM with a light poster as LCP.</li>
+          <li>Map <code>progress → frame</code> once; seek only on frame change.</li>
+          <li>Pin with ScrollTrigger; use <code>%</code> pin ends if <code>vh</code> is ignored.</li>
+          <li>Add canvas frame-sequence fallback with bounded LRU (≈40, not 134).</li>
+          <li>Decision gate on real devices; keep video default only if fps/match clear thresholds.</li>
+          <li>Auto-degrade when flick scrub drops frames or seeks get slow.</li>
+          <li>Honor reduced-motion and saveData with a static poster path.</li>
+          <li>Lazy-attach media; keep pre-scroll transfer lean (poster yes, video no).</li>
+          <li>Serve with Range-capable static hosting + security headers; keep <code>noindex</code> until indexing is approved.</li>
+        </ol>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Study model for interviews — not a live production claim.
+        This page is <code>noindex</code> until indexing is approved.
+        Numbers last verified on my MacBook Pro in Chrome on Sept 28, 2026.
+      </p>
+    </footer>
+  </div>
+
+  <script src="how-built.js" defer></script>
+</body>
+</html>

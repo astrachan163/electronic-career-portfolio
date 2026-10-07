@@ -1,0 +1,40 @@
+{
+  "slug": "local-ai-tutor",
+  "title": "Local AI Tutor",
+  "oneLine": "On-device study assistant: grounded RAG over course docs with local Gemma and deterministic turn resolution.",
+  "role": "Builder \u2014 SwiftUI/SwiftData app, RAG pipeline, local model orchestration",
+  "stack": [
+    "SwiftUI",
+    "SwiftData",
+    "sqlite-vec",
+    "Ollama",
+    "MLX",
+    "Gemma",
+    "PDFKit"
+  ],
+  "evidence": [
+    {
+      "label": "Document ingestion pipeline"
+    },
+    {
+      "label": "Native sentence-aware chunker"
+    },
+    {
+      "label": "sqlite-vec vector store"
+    },
+    {
+      "label": "Deterministic turn / chat coordinator"
+    },
+    {
+      "label": "Model manager / local backends"
+    },
+    {
+      "label": "Public sanitized README (features)"
+    }
+  ],
+  "launchLocal": "python3 -m http.server 8766 --bind 127.0.0.1 --directory dist-ready/local-ai-tutor",
+  "demoType": "simulation",
+  "limitations": "No language model in the static demo; lexical BM25/TF-IDF stands in for sqlite-vec. Production needs Ollama/local Gemma and optional embed model. Multimodal paths vary by model variant.",
+  "sanitized": true,
+  "evidencePathsWithheld": true
+}

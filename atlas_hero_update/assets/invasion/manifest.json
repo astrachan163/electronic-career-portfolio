@@ -1,0 +1,19 @@
+{
+  "fps": 24,
+  "frames": 192,
+  "duration": 8.0,
+  "width": 1280,
+  "height": 720,
+  "framePattern": "frames-960/f_%04d.webp",
+  "framePattern960": "frames-960/f_%04d.webp",
+  "poster": "poster.webp",
+  "videoMp4": "invasion-1280-intra.mp4",
+  "videoWebm": "invasion.webm",
+  "master": "maqkrs_invasion.mp4",
+  "bytes": {
+    "mp4": 10031713,
+    "webm": 12639847,
+    "poster": 48480,
+    "master": 3054904
+  }
+}
