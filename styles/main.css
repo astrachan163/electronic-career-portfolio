@@ -402,7 +402,7 @@ section.portfolio-section:nth-child(even) {
 }
 
 .btn-primary-cyan {
-  background: var(--color-cyber-cyan);
+  background: rgba(255, 255, 255, 0.15);
   color: var(--color-midnight-base);
   font-weight: 700;
   padding: 0.875rem 1.75rem;
@@ -790,6 +790,6 @@ section.portfolio-section:nth-child(even) {
   border-radius: 4px;
 }
 .scrolling-internal-container::-webkit-scrollbar-thumb {
-  background: var(--color-cyber-cyan);
+  background: rgba(255, 255, 255, 0.15);
   border-radius: 4px;
 }

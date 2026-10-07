@@ -63,7 +63,7 @@
 .filter-chip {
   background: rgba(11, 18, 32, 0.8);
   color: var(--color-text-secondary);
-  border: 1px solid var(--glass-border);
+  border: 1px solid transparent;
   padding: 0.5rem 1.125rem;
   border-radius: var(--border-radius-full);
   font-size: 0.875rem;
