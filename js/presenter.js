@@ -50,7 +50,7 @@ var PresenterState = (typeof window !== 'undefined' && window.PresenterState) ? 
     ],
     projects: [
       "4 highlight video cards with web-optimized 10s 720p video previews.",
-      "CS646 Sanctum 3D World (Godot WebGL on CloudFront) and MaqkrsTutor2 (SwiftUI on-device AI).",
+      "CS646 Sanctum 3D World (Godot WebGL on CloudFront) and MaQkrs AI Tutor (SwiftUI on-device AI).",
       "Directory of 28+ verified live cloud-hosted applications."
     ],
     sources: [

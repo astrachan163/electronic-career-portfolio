@@ -96,7 +96,7 @@
       "id": "OBS-02",
       "obstacle": "Agentic AI Weaponization & Autonomous Adversary Exploits",
       "challenge": "Hostile state actors and cyber syndicates are weaponizing autonomous LLM agents to execute automated vulnerability discovery, multi-stage phishing, and real-time evasion of static security rules.",
-      "mitigation": "Building zero-trust agentic security architectures. Andrew engineered 'Citadel' (Java 21 / Model Context Protocol) enforcing sandboxed tool invocation, strict capability manifests, and hardware-isolated local AI inference (MaqkrsTutor2) that neutralizes data egress risks."
+      "mitigation": "Building zero-trust agentic security architectures. Andrew engineered 'Citadel' (Java 21 / Model Context Protocol) enforcing sandboxed tool invocation, strict capability manifests, and hardware-isolated local AI inference (MaQkrs AI Tutor) that neutralizes data egress risks."
     },
     {
       "id": "OBS-03",

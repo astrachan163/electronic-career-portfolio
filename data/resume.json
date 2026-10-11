@@ -58,17 +58,17 @@
     {
       "institution": "University of Mississippi School of Medicine",
       "abbreviation": "UMMC",
-      "degree": "Medical school coursework — 4 years of coursework and clinical clerkships completed (incomplete as of 2020)",
-      "field": "Medicine (Completed 4 Years; In Good Standing)",
+      "degree": "Medical Studies (coursework), University of Mississippi School of Medicine, 2016–2020",
+      "field": "Medical Studies (coursework), 2016–2020",
       "dates": "January 2016 – July 2020",
       "gpa": "Coursework Completed in Good Standing",
       "honors": "Virginia Covington Award (2017) · President & Founder: P.A.L.S. (Peer-Assisted Learning Society) · Chair: UMMC/MBN Opioid Crisis Council · BCLS / ACLS / First Aid Certified",
       "highlights": [
-        "Master Anatomical Prosector for School of Medicine and School of Dentistry (2017)",
+        "Human Anatomy Prosector (May–Sep 2017)",
         "President, Quality Improvement Student Interest Group & Associate Student Body QI Chair",
         "Chair, UMMC/MBN Opioid Crisis Council directing harm reduction initiatives and youth shelter outreach",
         "BCLS / ACLS / First Aid Certified (American Heart Association high-reliability life support)",
-        "Rigorous four-year training in high-reliability clinical operations, diagnostic triage, and HIPAA privacy security"
+        "Medical Studies (coursework), 2016–2020, including high-reliability clinical operations, diagnostic triage, and HIPAA privacy security"
       ]
     }
   ],
@@ -184,15 +184,13 @@
       "dates": "January 2023 – May 2023 (Full-Time, 40 hrs/wk)",
       "badge": "cGMP Compliance Lead",
       "achievements": [
-        "Directed operational buildout of a state-licensed, cGMP-regulated botanical and medical processing facility.",
-        "Authored an audit-ready library of Standard Operating Procedures (SOPs) spanning extraction protocols, hazardous material safety, and QA/QC testing.",
-        "Embedded with PhD analytical chemists and process engineers to execute process hazard analyses (PHA) and equipment qualification.",
-        "Secured state and municipal operating permits with 100% first-pass regulatory compliance."
+        "MidSouth Extracts, a Mississippi Medical Cannabis Program (MSDH)-licensed processing facility, needed its MSDH processing license, FDA food-facility registration, and required state and county licenses.",
+        "Personally procured its MSDH (Mississippi Medical Cannabis Program) processing license, FDA food-facility registration, and all other required state and county licenses, including its MSDH manufactured-food permit and City of Tupelo local permits; wrote its 11-SOP library and HACCP program."
       ]
     },
     {
       "role": "Founder & Principal Technologist",
-      "organization": "Maqkrs Consulting",
+      "organization": "MaQkrs Consulting",
       "location": "Birmingham, AL & Clinton, MS",
       "dates": "January 2022 – Present (15–20 hrs/wk)",
       "badge": "Consulting & Systems",
@@ -239,11 +237,11 @@
       ]
     },
     {
-      "role": "Master Human Anatomy Prosector",
+      "role": "Human Anatomy Prosector (May–Sep 2017)",
       "organization": "University of Mississippi School of Medicine (UMMC)",
       "location": "Jackson, MS",
       "dates": "May 2017 – September 2017",
-      "badge": "Medical Training",
+      "badge": "Medical Studies (coursework)",
       "achievements": [
         "Performed intricate anatomical dissections of human cadaveric donors to create master teaching specimens for medical and dental schools.",
         "Delivered lecture demonstrations to 100+ first-year medical students, teaching complex neurovascular and musculoskeletal relationships."
@@ -281,10 +279,10 @@
     {
       "id": "STAR-03",
       "title": "cGMP Facility Buildout & Audit-Ready SOP Library",
-      "situation": "MidSouth Extracts was establishing a botanical extraction facility requiring compliance with rigorous FDA and state health authority mandates.",
+      "situation": "MidSouth Extracts, a Mississippi Medical Cannabis Program (MSDH)-licensed processing facility, needed its MSDH processing license, FDA food-facility registration, and required state and county licenses.",
       "task": "Author an entire operational standard operating procedure (SOP) library and guide facility qualification before state licensing audits.",
-      "action": "Embedded with analytical chemists and process engineers, synthesized complex extraction protocols into 30+ standardized operating procedures, and enforced safety controls.",
-      "result": "Passed all state regulatory inspections on the first audit pass, achieving 100% operational licensure with zero compliance citations."
+      "action": "Personally procured its MSDH (Mississippi Medical Cannabis Program) processing license, FDA food-facility registration, and all other required state and county licenses, including its MSDH manufactured-food permit and City of Tupelo local permits; wrote its 11-SOP library and HACCP program.",
+      "result": "Passed all state regulatory inspections on the first audit pass, with zero compliance citations."
     },
     {
       "id": "STAR-04",
@@ -296,7 +294,7 @@
     },
     {
       "id": "STAR-05",
-      "title": "MaqkrsTutor2 Privacy-Preserving On-Device AI Assistant",
+      "title": "MaQkrs AI Tutor Privacy-Preserving On-Device AI Assistant",
       "situation": "Commercial cloud AI tools leak institutional data and student intellectual property to remote LLM providers, violating zero-trust and educational privacy laws.",
       "task": "Architect a native on-device macOS AI study assistant capable of semantic document search with 0 network egress.",
       "action": "Built SwiftUI app with SwiftData, integrated Ollama/MLX for quantized Gemma 4 local inference, engineered SQLite vector retrieval over PDFs and code, and open-sourced sanitized repo.",
@@ -435,11 +433,11 @@
     },
     {
       "institution": "Mississippi College & UMMC",
-      "program": "B.S. ACS Biochemistry Honors & Medical Training",
+      "program": "B.S. Biochemistry (ACS), Mississippi College (now Mississippi Christian University); Medical Studies (coursework), 2016–2020",
       "courses": [
         "ACS-Certified Biochemistry & Physical Chemistry",
-        "Human Gross Anatomy & Neuroanatomy (Master Prosector)",
-        "Medical School Preclinical Sciences & Clinical Clerkships",
+        "Human Anatomy Prosector (May–Sep 2017)",
+        "Medical Studies (coursework), 2016–2020",
         "High-Reliability Healthcare Operations & HIPAA Privacy Security"
       ],
       "careerImpact": "Instills scientific rigor, empirical hypothesis testing, and zero-defect attention to detail. Operating in sterile surgical suites and cGMP extraction labs directly parallels the discipline needed to enforce zero-trust security postures and safeguard protected infrastructure."
@@ -476,9 +474,9 @@
     },
     {
       "title": "Work-Based Learning & Products Developed",
-      "source": "DevAtlas & Maqkrs Hub Releases",
+      "source": "DevAtlas & MaQkrs Hub Releases",
       "count": 4,
-      "details": "Engineered flagship working systems including CS646 Sanctum 3D World (Godot/WebGL on CloudFront), MaqkrsTutor2 On-Device AI (SwiftUI/Local RAG), AdaptiveHS Learning Portal (Next.js 15/Cloud Run), and Citadel Zero-Trust Gatekeeper (Java 21).",
+      "details": "Engineered flagship working systems including CS646 Sanctum 3D World (Godot/WebGL on CloudFront), MaQkrs AI Tutor On-Device AI (SwiftUI/Local RAG), AdaptiveHS Learning Portal (Next.js 15/Cloud Run), and Citadel Zero-Trust Gatekeeper (Java 21).",
       "careerRelevance": "Proves tangible end-to-end software engineering capability from architecture and cryptographic verification to cloud deployment and user experience."
     }
   ]
