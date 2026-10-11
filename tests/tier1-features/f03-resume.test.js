@@ -79,7 +79,7 @@ describe('Tier 1 - Feature 3: Interactive Resume Component', () => {
     const html = loadFileContent(INDEX_HTML) || '';
     const content = (resumeData ? JSON.stringify(resumeData) : '') + ' ' + html;
 
-    // Checks for STAR structure or key accomplishment milestones (Shades Valley FBLA, Corner High DECA, MidSouth cGMP)
+    // Checks for STAR structure or key accomplishment stages (Shades Valley FBLA, Corner High DECA, MidSouth cGMP)
     const hasShadesValley = /Shades Valley/i.test(content);
     const hasDecaOrFbla = /FBLA|DECA/i.test(content);
     const hasMeasurableOutcome = /state|1st|2nd|Torchbearer|SOP|cGMP|4\.0|3\.75/i.test(content);

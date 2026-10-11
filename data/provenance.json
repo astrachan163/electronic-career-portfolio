@@ -83,7 +83,7 @@
     {
       "claimId": "CLM-009",
       "category": "Cybersecurity Standards & Frameworks",
-      "claim": "Cybersecurity systems and threat modeling aligned with National Institute of Standards and Technology (NIST) SP 800-53 Rev. 5 and NIST Cybersecurity Framework (CSF 2.0).",
+      "claim": "Cybersecurity systems and threat modeling referencing National Institute of Standards and Technology (NIST) SP 800-53 Rev. 5 and NIST Cybersecurity Framework (CSF 2.0).",
       "verificationAuthority": "National Institute of Standards and Technology (NIST), U.S. Department of Commerce",
       "evidenceSource": "NIST SP 800-53 Rev. 5 Security & Privacy Controls for Information Systems",
       "evidencePath": "/Users/andrewstrachan/career_portfolio/data/career.json",
@@ -143,7 +143,7 @@
     {
       "claimId": "CLM-015",
       "category": "Medical & Life Sciences",
-      "claim": "Doctor of Medicine (M.D.) Candidate — 4 Years Coursework & Clinical Clerkships Completed in Good Standing (Incomplete as of 2020) at University of Mississippi School of Medicine (January 2016 – July 2020).",
+      "claim": "Medical school coursework — 4 years of coursework and clinical clerkships completed (incomplete as of 2020) at University of Mississippi School of Medicine (January 2016 – July 2020).",
       "verificationAuthority": "University of Mississippi School of Medicine (UMMC)",
       "evidenceSource": "Medical School Registrar & Clerkship Evaluations in atlas.json",
       "evidencePath": "/Users/andrewstrachan/DevAtlas/achievement-atlas/atlas.json",

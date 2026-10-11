@@ -40,7 +40,7 @@ Execute the **Comprehensive Diagnostic & Architectural Revamp Blueprint** on the
 
 | Frame # | Visual & Technical Fixes Needed |
 | :--- | :--- |
-| **1: Medical Training (UMMC)** | Update wording to: *"M.D. Candidate (4 Years Coursework & Clinical Clerkships Completed — Incomplete as of 2020)"*. Move into a collapsible "Medical & Life Sciences Foundation" card. |
+| **1: Medical Training (UMMC)** | Update wording to: *"Medical school coursework (4 years of coursework and clinical clerkships completed, incomplete as of 2020)"*. Move into a collapsible "Medical & Life Sciences Foundation" card. |
 | **2: Education Stack (Montevallo/MC)** | Add clear headers: *"University of Montevallo — CTE Business & Finance"* and *"Mississippi College — B.S. ACS Biochemistry (Honors)"*. Consolidate into 4-tier accordion. |
 | **3: Technical Matrix Header** | Fix severe text truncation. Convert filter pills to horizontal swipe row (`overflow-x: auto; white-space: nowrap;`). |
 | **4: Expanded Technical Matrix** | Group into 2-column card grid with category badges (Zero-Trust, Systems, Educational Leadership). Add touch-activated repos drawers. |
@@ -69,7 +69,7 @@ This audit establishes a single-source-of-truth accuracy for all deployment vari
 | :--- | :--- |
 | **UAB Graduate Degree** | **January 2026 – Present** (Expected Graduation: Dec 2027). Title: **NSF CyberAICorps SFS Scholar**. |
 | **Univ. of Montevallo** | **August 2024 – May 2025**. Title: **ALSDE Certified CTE Educator — Provisional Certificate in a Teaching Field (PCTF): Business, Marketing, and Finance**. |
-| **UMMC Medical School** | **January 2016 – July 2020**. Wording: **Doctor of Medicine (M.D.) Candidate — 4 Years Coursework & Clinical Clerkships Completed (Incomplete as of 2020)**. |
+| **UMMC Medical School** | **January 2016 – July 2020**. Wording: **Medical school coursework — 4 years of coursework and clinical clerkships completed (incomplete as of 2020)**. |
 | **UMMC Credentials** | Explicitly add: **President & Founder: P.A.L.S. (Peer-Assisted Learning Society)**; **President: Quality Improvement Student Interest Group**; **Chair: UMMC/MBN Opioid Crisis Council**; **BCLS / ACLS / First Aid Certified**. |
 | **Mississippi College** | **August 2011 – May 2016** (GPA: 3.5 / 4.0). Add honor societies: **Delta Epsilon Iota Academic Honor Society** and **Phi Mu Alpha Sinfonia**. |
 | **Global Health: Uganda** | **July 2017 – August 2017**. Title: **OmniMed Certified Village Health Volunteer (Uganda, East Africa)**. |

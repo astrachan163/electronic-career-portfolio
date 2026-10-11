@@ -12,7 +12,7 @@
 
   var agentEl = document.getElementById("agent");
   var toolEl = document.getElementById("tool");
-  var argsEl = document.getElementById("args");
+  var argsBox = document.getElementById("args");
   var pipelineEl = document.getElementById("pipeline");
   var decisionEl = document.getElementById("decision");
   var auditEl = document.getElementById("audit");
@@ -111,7 +111,7 @@
   function evaluateCurrent() {
     var args;
     try {
-      args = JSON.parse(argsEl.value || "{}");
+      args = JSON.parse(argsBox.value || "{}");
     } catch (e) {
       whyEl.hidden = false;
       whyEl.textContent = "Arguments must be valid JSON.";
@@ -138,7 +138,7 @@
       toolEl.appendChild(o);
     }
     toolEl.value = s.tool;
-    argsEl.value = JSON.stringify(s.args, null, 2);
+    argsBox.value = JSON.stringify(s.args, null, 2);
     geminiEl.checked = !!s.consumeGemini;
     P.resetRateLimit();
     var out = P.runScenario(s, { resetRate: true });
@@ -198,11 +198,11 @@
   document.getElementById("evaluate").addEventListener("click", evaluateCurrent);
   document.getElementById("verifyAll").addEventListener("click", runAllVerify);
   toolEl.addEventListener("change", function () {
-    argsEl.value = JSON.stringify(defaultArgsFor(toolEl.value), null, 2);
+    argsBox.value = JSON.stringify(defaultArgsFor(toolEl.value), null, 2);
   });
 
   fillSelects();
-  argsEl.value = JSON.stringify(defaultArgsFor("read_file"), null, 2);
+  argsBox.value = JSON.stringify(defaultArgsFor("read_file"), null, 2);
   renderPipeline([]);
   buildScenarios();
   runAllVerify();
