@@ -1,0 +1,36 @@
+{
+  "fps": 24,
+  "frames": 134,
+  "duration": 5.502,
+  "posterBytes": 56342,
+  "sizes": {
+    "scrub1280": "8.17MB",
+    "scrub1920": "11.73MB",
+    "webm": "9.69MB",
+    "poster": "55.0KB",
+    "frames1280Total": "7.27MB",
+    "frames960Total": "4.92MB"
+  },
+  "bytes": {
+    "scrub1280": 8562955,
+    "scrub1920": 12302083,
+    "webm": 10155526,
+    "poster": 56342,
+    "frames1280Total": 7624530,
+    "frames960Total": 5153806
+  },
+  "framePattern": "frames/f_%04d.webp",
+  "framePattern960": "frames-960/f_%04d.webp",
+  "width": 1280,
+  "height": 720,
+  "encodeNotes": {
+    "sourceDecodedFrames": 133,
+    "frame134": "duplicated last decoded frame to meet contract 134",
+    "mp4_1280_crf": 17,
+    "mp4_1920_crf": 20,
+    "webm_crf": 35,
+    "webp_quality": 78,
+    "poster_quality": 80,
+    "webp_tool": "cwebp (ffmpeg lacked libwebp encoder)"
+  }
+}

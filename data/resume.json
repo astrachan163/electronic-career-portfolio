@@ -7,7 +7,7 @@
     "email": "strachan@uab.edu",
     "github": "https://github.com/astrachan163",
     "linkedin": "https://www.linkedin.com/in/andrew-william-strachan/",
-    "clearance": "CyberCorps: Scholarship for Service (SFS) Scholar | Clearable. Maintained eligibility requirements for federal employment; fully prepared to undergo Tier 3 / Tier 5 background investigations (SF-86 track) upon agency sponsorship.",
+    "clearance": "CyberCorps: Scholarship for Service (SFS) Scholar | Clearable. Maintained eligibility requirements for federal civilian employment; fully prepared to undergo federal security background investigations upon agency sponsorship.",
     "summary": "NSF CyberCorps Scholarship for Service (SFS) Scholar pursuing an M.S. in Cybersecurity at UAB (GPA 3.75). Combines deep systems programming and zero-trust engineering with executive compliance, industrial cGMP quality controls, and award-winning career and technical education leadership."
   },
   "education": [
@@ -16,9 +16,9 @@
       "abbreviation": "UAB",
       "degree": "Master of Science in Cybersecurity",
       "field": "Cybersecurity & Information Security",
-      "dates": "August 2024 – Expected December 2027",
+      "dates": "January 2026 – Present (Expected Graduation: Dec 2027)",
       "gpa": "3.75 / 4.0",
-      "honors": "CyberCorps: Scholarship for Service (SFS) Scholar (National Science Foundation Grant)",
+      "honors": "NSF CyberAICorps SFS Scholar",
       "highlights": [
         "Specializing in Network Security (CS 623), Blockchain & Cryptography (CS 646), Threat Modeling (CS 636), and Cloud Computing (CS 532)",
         "Under federal service commitment upon graduation to protect critical national infrastructure and executive agency assets",
@@ -28,9 +28,9 @@
     {
       "institution": "University of Montevallo",
       "abbreviation": "Montevallo",
-      "degree": "Provisional Certificate in a Teaching Field (PCTF)",
+      "degree": "ALSDE Certified CTE Educator — Provisional Certificate in a Teaching Field (PCTF): Business, Marketing, and Finance",
       "field": "Business, Marketing, and Finance",
-      "dates": "August 2024 – June 2025",
+      "dates": "August 2024 – May 2025",
       "gpa": "3.75 / 4.0",
       "honors": "ALSDE State CTE Certification · NAOF Curriculum Specialization",
       "highlights": [
@@ -46,10 +46,11 @@
       "field": "ACS Biochemistry, Biology Medical Sciences; Music (Minor)",
       "dates": "August 2011 – May 2016",
       "gpa": "3.5 / 4.0",
-      "honors": "Graduated with Honors (American Chemical Society Certified Curriculum)",
+      "honors": "Graduated with Honors · Delta Epsilon Iota Academic Honor Society · Phi Mu Alpha Sinfonia",
       "highlights": [
         "Senior Class Senator (Student Government Association, 2015–2016)",
         "Principal French Horn in MC Symphonic Band and Orchestra (2012–2013)",
+        "Inducted into Delta Epsilon Iota Academic Honor Society for scholastic achievement",
         "Co-Founder of Phi Mu Alpha Sinfonia Music Fraternity Chapter (2014–2016)",
         "Co-Founder of International Justice Mission (IJM) Campus Chapter"
       ]
@@ -57,14 +58,16 @@
     {
       "institution": "University of Mississippi School of Medicine",
       "abbreviation": "UMMC",
-      "degree": "Doctor of Medicine (M.D.) Coursework & Clinical Clerkships",
+      "degree": "Medical school coursework — 4 years of coursework and clinical clerkships completed (incomplete as of 2020)",
       "field": "Medicine (Completed 4 Years; In Good Standing)",
-      "dates": "August 2016 – December 2020",
+      "dates": "January 2016 – July 2020",
       "gpa": "Coursework Completed in Good Standing",
-      "honors": "Virginia Covington Award (2017) · P.A.L.S. Founder & President",
+      "honors": "Virginia Covington Award (2017) · President & Founder: P.A.L.S. (Peer-Assisted Learning Society) · Chair: UMMC/MBN Opioid Crisis Council · BCLS / ACLS / First Aid Certified",
       "highlights": [
         "Master Anatomical Prosector for School of Medicine and School of Dentistry (2017)",
         "President, Quality Improvement Student Interest Group & Associate Student Body QI Chair",
+        "Chair, UMMC/MBN Opioid Crisis Council directing harm reduction initiatives and youth shelter outreach",
+        "BCLS / ACLS / First Aid Certified (American Heart Association high-reliability life support)",
         "Rigorous four-year training in high-reliability clinical operations, diagnostic triage, and HIPAA privacy security"
       ]
     }
@@ -138,7 +141,7 @@
       "role": "Teaching Assistant — Python Coding Summer Camp",
       "organization": "University of Alabama at Birmingham (Department of Computer Science)",
       "location": "Birmingham, AL",
-      "dates": "June 2026",
+      "dates": "June 2026 – August 2026 (20–40 hrs/wk)",
       "badge": "STEM Mentorship",
       "achievements": [
         "Instructed middle school cohorts in Python programming fundamentals, algorithmic loops, and physical computing.",
@@ -151,21 +154,21 @@
       "role": "Career & Technical Education (CTE) Teacher — Business, Marketing & Finance",
       "organization": "Shades Valley High School (Jefferson County Board of Education - JEFCOED)",
       "location": "Birmingham, AL",
-      "dates": "August 2024 – June 2025",
+      "dates": "July 2024 – June 2025 (Full-Time, 40 hrs/wk)",
       "badge": "Torchbearer Award 2025",
       "achievements": [
         "Taught Business Finance, Customer Service, and Sales in the premier National Academy of Finance (NAOF) program.",
         "Served as official Chapter Adviser for the state's largest student career and technical business organization.",
         "Head Coach for the Shades Valley High School Esports Team; raised funding and secured corporate sponsorships.",
         "Maintained 100% compliance with Alabama State Department of Education TAPE instructional standards.",
-        "Honored with the prestigious JEFCOED Technology Torchbearer Award (2025) for innovative classroom technology integration."
+        "Honored with the prestigious 2025 JEFCOED Technology Torchbearer Award for Excellence for innovative classroom technology integration."
       ]
     },
     {
-      "role": "Career & Technical Education (CTE) Teacher — Business, Marketing & Finance",
+      "role": "Career & Technical Education (CTE) Teacher — Business, Marketing & Finance (DECA Chapter Founder & State Competition Coach)",
       "organization": "Corner High School (Jefferson County Board of Education - JEFCOED)",
       "location": "Dora, AL",
-      "dates": "September 2023 – June 2024",
+      "dates": "August 2023 – June 2024 (Full-Time, 40 hrs/wk)",
       "badge": "DECA State Winners",
       "achievements": [
         "Founded, chartered, and advised a brand-new DECA chapter, opening statewide competitive business leadership to rural students.",
@@ -175,10 +178,10 @@
       ]
     },
     {
-      "role": "Operational Director",
+      "role": "Operational Director & Laboratory Specialist",
       "organization": "MidSouth Extracts LLC",
       "location": "Tupelo, MS",
-      "dates": "January 2023 – May 2023",
+      "dates": "January 2023 – May 2023 (Full-Time, 40 hrs/wk)",
       "badge": "cGMP Compliance Lead",
       "achievements": [
         "Directed operational buildout of a state-licensed, cGMP-regulated botanical and medical processing facility.",
@@ -188,27 +191,51 @@
       ]
     },
     {
-      "role": "Sales Development Specialist & Team Lead",
-      "organization": "SelectQuote Insurance Services",
-      "location": "Clinton, MS",
-      "dates": "April 2021 – November 2022",
-      "badge": "Top Sales Award 2022",
-      "achievements": [
-        "Trained, onboarded, and coached incoming sales cohorts across high-velocity life and health insurance divisions.",
-        "Engineered micro-training modules and compliance scripts that reduced regulatory complaints and elevated retention.",
-        "Honored with the SelectQuote Top Sales Award (2022) and SQ Team Lead Award (2021) for sustained performance and coaching excellence."
-      ]
-    },
-    {
-      "role": "Founder & Lead Technologist",
+      "role": "Founder & Principal Technologist",
       "organization": "Maqkrs Consulting",
       "location": "Birmingham, AL & Clinton, MS",
-      "dates": "2022 – Present",
+      "dates": "January 2022 – Present (15–20 hrs/wk)",
       "badge": "Consulting & Systems",
       "achievements": [
         "Delivered technical advisory services on zero-trust digital infrastructure, FDA/cGMP compliance, and secure cloud deployments.",
         "Developed custom client platforms including e-commerce storefronts, clinical healthcare portals, and local AI workflows.",
         "Mentored student interns in security baseline auditing, vulnerability scanning, and cloud least-privilege configurations."
+      ]
+    },
+    {
+      "role": "Sales Development Specialist",
+      "organization": "SelectQuote Insurance Services",
+      "location": "Clinton, MS",
+      "dates": "April 2021 – November 2022 (Full-Time, 40 hrs/wk)",
+      "badge": "Top Sales Award (2021)",
+      "achievements": [
+        "Trained, onboarded, and coached incoming sales cohorts across high-velocity life and health insurance divisions.",
+        "Engineered micro-training modules and compliance scripts that reduced regulatory complaints and elevated retention.",
+        "Honored with the SelectQuote Top Sales Award (2021) and SQ Team Lead Award (2021) for sustained performance and coaching excellence."
+      ]
+    },
+    {
+      "role": "OmniMed Certified Village Health Volunteer (Uganda, East Africa)",
+      "organization": "OmniMed",
+      "location": "Mukono District, Uganda, East Africa",
+      "dates": "July 2017 – August 2017",
+      "badge": "Global Health Certification",
+      "achievements": [
+        "Certified Village Health Volunteer partnering with local village health teams to conduct primary preventive care.",
+        "Established two functional mobile medical clinics delivering clinical assessments and health education to 1,000+ rural patients.",
+        "Delivered clean-water sanitation and disease prevention workshops across remote communities."
+      ]
+    },
+    {
+      "role": "Youth Leadership & Civic Mentorship",
+      "organization": "First Presbyterian Church",
+      "location": "Gulfport, MS & Clinton, MS",
+      "dates": "August 2011 – Present (10 hrs/wk)",
+      "badge": "Civic Stewardship",
+      "achievements": [
+        "Provided sustained youth leadership, academic mentoring, and civic guidance across 15+ years of continuous service.",
+        "Organized community outreach initiatives, disaster relief volunteering, and student developmental programs.",
+        "Facilitated small-group discussions and character development for youth facing academic and personal challenges."
       ]
     },
     {
@@ -237,11 +264,11 @@
   "starAccomplishments": [
     {
       "id": "STAR-01",
-      "title": "JEFCOED Technology Torchbearer Award (2025)",
+      "title": "2025 JEFCOED Technology Torchbearer Award for Excellence",
       "situation": "Shades Valley High School required modern technology integration across CTE business classrooms to prepare students for industry credentialing.",
       "task": "Design, deploy, and instruct experiential learning curriculum utilizing business technology, financial simulations, and competitive event training.",
       "action": "Built interactive spreadsheet simulation models, introduced digital business portfolios, and mentored the state's largest student business chapter.",
-      "result": "Honored by the Jefferson County Board of Education with the 2025 Technology Torchbearer Award out of hundreds of CTE educators across the district."
+      "result": "Honored by the Jefferson County Board of Education with the 2025 JEFCOED Technology Torchbearer Award for Excellence out of hundreds of CTE educators across the district."
     },
     {
       "id": "STAR-02",
@@ -294,7 +321,7 @@
     {
       "id": "STAR-08",
       "title": "51-Position Federal Cyber Career Opportunity Campaign",
-      "situation": "Transitioning from graduate cybersecurity studies into high-impact federal defense and intelligence agencies requires extensive pre-vetting and tracking.",
+      "situation": "Transitioning from graduate cybersecurity studies into high-impact federal defense and intelligence agencies requires extensive eligibility preparation and opportunity tracking.",
       "task": "Build a structured opportunity tracker capturing agency requirements, clearance tracks, pay scales, and application timelines.",
       "action": "Created 'accurateinternshiptracker.xlsx' cataloging 51 federal positions across Dream Tier (White House OSTP, ONCD, USDS), National Labs (Sandia, Los Alamos, Oak Ridge), and Defense (Space Force, CISA).",
       "result": "Completed 14 agency applications at the NSF CyberCorps SFS Virtual Job Fair, initiating federal hiring pipelines across GS-9 to GS-12 bands."
@@ -337,12 +364,12 @@
       "situation": "Rapid expansion of life and health insurance sales teams resulted in onboarding bottlenecks and elevated customer compliance inquiries.",
       "task": "Develop accelerated training modules, mentor new agents, and uphold strict state insurance compliance standards.",
       "action": "Authored micro-training modules clarifying regulatory disclosures, conducted daily deal coaching, and modeled customer-centric sales frameworks.",
-      "result": "Earned Top Sales Award (2022) and Team Leader Award (2023), driving team performance while reducing regulatory compliance flags."
+      "result": "Earned Top Sales Award (2021) and SQ Team Lead Award (2021), driving team performance while reducing regulatory compliance flags."
     },
     {
       "id": "STAR-14",
       "title": "AdaptiveHS K-12 Homeschool Learning Platform",
-      "situation": "Homeschool families needed a unified learning platform aligned with Georgia Standards of Excellence (GSE) that supported parents, students, and educators.",
+      "situation": "Homeschool families needed a unified learning platform that supported parents, students, and educators.",
       "task": "Develop an accessible full-stack educational web application with role-based access control and adaptive assessments.",
       "action": "Built with Next.js 15, Firebase Firestore, and Tailwind CSS; engineered multi-role demo authentication and interactive simulation exports.",
       "result": "Deployed live on Cloud Run / Firebase (`adaptivehs-v2.firebaseapp.com`) and static CloudFront showcase with responsive UI across mobile and desktop."

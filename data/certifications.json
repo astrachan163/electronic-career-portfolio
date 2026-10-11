@@ -62,9 +62,20 @@
     "title": "Provisional Certificate in a Teaching Field (PCTF)",
     "field": "Business, Marketing, and Finance",
     "issuingAuthority": "Alabama State Department of Education (ALSDE) / University of Montevallo",
-    "activeDates": "August 2024 – June 2025",
+    "activeDates": "August 2024 – May 2025",
     "gpa": "3.75 / 4.0",
     "status": "Verified Official Record"
+  },
+  "clinicalLifeSupport": {
+    "title": "BCLS / ACLS / First Aid Certified",
+    "certifications": [
+      "Basic Cardiac Life Support (BCLS)",
+      "Advanced Cardiovascular Life Support (ACLS)",
+      "First Aid Certified"
+    ],
+    "issuingAuthority": "American Heart Association (AHA) / University of Mississippi Medical Center (UMMC)",
+    "status": "Verified Clinical Certification",
+    "description": "High-reliability clinical life support, emergency resuscitation protocols, and acute healthcare trauma response certification."
   },
   "linkedinLearning": [
     {

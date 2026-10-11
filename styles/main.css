@@ -402,7 +402,7 @@ section.portfolio-section:nth-child(even) {
 }
 
 .btn-primary-cyan {
-  background: var(--color-cyber-cyan);
+  background: rgba(255, 255, 255, 0.15);
   color: var(--color-midnight-base);
   font-weight: 700;
   padding: 0.875rem 1.75rem;
@@ -729,4 +729,67 @@ section.portfolio-section:nth-child(even) {
     transform: none !important;
     transition: none !important;
   }
+}
+
+/* Revamp Blueprint Specifications */
+.accordion { border: 1px solid var(--glass-border); margin-bottom: 1rem; border-radius: var(--border-radius-md); overflow: hidden; }
+.accordion.active { border-color: var(--color-circuit-gold); }
+.accordion-header { cursor: pointer; padding: 1rem 1.25rem; display: flex; justify-content: space-between; align-items: center; user-select: none; }
+.accordion-content { display: none; padding: 1.25rem; }
+.accordion.active .accordion-content { display: block; }
+.carousel-container { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; white-space: nowrap; gap: 1rem; padding-bottom: 1rem; }
+.carousel-container > * { scroll-snap-align: start; flex: 0 0 auto; white-space: normal; }
+
+/* Sticky Window Canvas Pipeline */
+.sticky-canvas-wrapper { height: 400dvh; position: relative; }
+.sticky-canvas-inner { position: sticky; top: 0; height: 100dvh; z-index: 1; pointer-events: none; margin-bottom: -100dvh; }
+.interactive-card { pointer-events: auto; position: relative; z-index: 2; }
+
+/* Touch Navigation vs Desktop Arrow Cues */
+.nav-cues { display: none !important; }
+@media (hover: hover) and (pointer: fine) {
+  .nav-cues { display: flex !important; }
+}
+.mobile-swipe-cues { display: flex !important; }
+@media (hover: hover) and (pointer: fine) {
+  .mobile-swipe-cues { display: none !important; }
+}
+
+/* Modal Close Button & Ellipsis Truncation */
+.modal-close-btn, #btn-modal-close {
+  z-index: 9999 !important;
+  pointer-events: auto !important;
+  position: relative;
+}
+.modal-title, .modal-header-fix {
+  flex: 1;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 16px;
+}
+
+/* Pro-Dev Layout Fix */
+#development { width: 100%; box-sizing: border-box; }
+
+/* Custom Internal Scroller */
+.scrolling-internal-container {
+  max-height: 60vh;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding-right: 0.5rem;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-cyber-cyan) rgba(255,255,255,0.05);
+}
+.scrolling-internal-container::-webkit-scrollbar {
+  width: 6px;
+}
+.scrolling-internal-container::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0.05);
+  border-radius: 4px;
+}
+.scrolling-internal-container::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
 }

@@ -34,12 +34,12 @@ var PresenterState = (typeof window !== 'undefined' && window.PresenterState) ? 
       "Connect laboratory biochemistry discipline and medical training to zero-trust compliance standards."
     ],
     enhancement: [
-      "Professional Development (2023–2025): conferences (ALACTE, DECA Anaheim, KY Derby, Jump$tart), UMMC leadership, and community service.",
+      "Professional Development (2023–2025): conferences (ALACTE, DECA Anaheim, National Jump$tart Financial Literacy Conference (Louisville, KY)), UMMC leadership, and community service.",
       "51-position federal tracker (accurateinternshiptracker.xlsx) with 14 SFS job fair applications.",
       "Global humanitarian service (Uganda mobile clinics, Nepal Gilman Scholarship) and youth STEM drone mentoring."
     ],
     development: [
-      "Professional Development (2023–2025): conferences (ALACTE, DECA Anaheim, KY Derby, Jump$tart), UMMC leadership, and community service.",
+      "Professional Development (2023–2025): conferences (ALACTE, DECA Anaheim, National Jump$tart Financial Literacy Conference (Louisville, KY)), UMMC leadership, and community service.",
       "51-position federal tracker (accurateinternshiptracker.xlsx) with 14 SFS job fair applications.",
       "Community leadership: GiveGab volunteering, UMMC Opioid Crisis Council, and Frontier AI Initiative (nonartificialsi.com)."
     ],

@@ -40,7 +40,7 @@ var PresenterState = (typeof window !== 'undefined' && window.PresenterState) ? 
       'Detail global humanitarian service (Uganda mobile clinics, Nepal Gilman Scholarship) and youth STEM drone mentoring.'
     ],
     development: [
-      'Professional Development (2023–2025): conferences (ALACTE, DECA Anaheim, KY Derby, Jump$tart), UMMC leadership, and community service.',
+      'Professional Development (2023–2025): conferences (ALACTE, DECA Anaheim, National Jump$tart Financial Literacy Conference (Louisville, KY)), UMMC leadership, and community service.',
       '51-position federal tracker (accurateinternshiptracker.xlsx) with 14 SFS job fair applications.',
       'Community leadership: GiveGab volunteering, UMMC Opioid Crisis Council, and Frontier AI Initiative (nonartificialsi.com).'
     ],
@@ -82,6 +82,9 @@ class PortfolioApp {
       this.initSectionObserver();
       this.initScrollAnimations();
       this.initImageLightbox();
+      this.initAccordion();
+      this.initSalaryExplorer();
+      this.initReposDrawer();
     });
   }
 
@@ -320,7 +323,15 @@ class PortfolioApp {
       if (e.code === 'Escape' || e.key === 'Escape') {
         this.togglePresenterDrawer(false);
         const modal = document.getElementById('video-modal');
-        if (modal && typeof modal.close === 'function') modal.close();
+        if (modal) {
+          const videoEl = modal.querySelector('video') || document.getElementById('modal-video-element');
+          if (videoEl) {
+            videoEl.pause();
+            videoEl.removeAttribute('src');
+            videoEl.load();
+          }
+          if (typeof modal.close === 'function') modal.close();
+        }
       }
 
       // Digits 1-8: Direct jump to portfolio sections
@@ -486,42 +497,142 @@ class PortfolioApp {
   // ==========================================================================
   // Image Lightbox / Modal Preview
   // ==========================================================================
+
+  initAccordion() {
+    const headers = document.querySelectorAll('.accordion-header');
+    headers.forEach(header => {
+      const toggle = (e) => {
+        if (e.type === 'keydown' && e.key !== 'Enter' && e.key !== ' ' && e.key !== 'Spacebar') {
+          return;
+        }
+        if (e.type === 'keydown') {
+          e.preventDefault();
+        }
+        const accordion = header.closest('.accordion');
+        if (accordion) {
+          const isActive = accordion.classList.toggle('active');
+          header.setAttribute('aria-expanded', isActive ? 'true' : 'false');
+        }
+      };
+      header.addEventListener('click', toggle);
+      header.addEventListener('keydown', toggle);
+    });
+  }
+
   initImageLightbox() {
-    const clickableImages = document.querySelectorAll('.pd-card-img, .pd-preview-img');
+    const clickableMedia = document.querySelectorAll(
+      '.pd-card-img, .pd-preview-img, .preview-video-element, [data-type="image"], [data-type="video"]'
+    );
     const modal = document.getElementById('video-modal');
     const modalTitle = document.getElementById('modal-video-title');
     const modalBody = document.querySelector('.modal-video-wrapper');
+    const videoEl = document.getElementById('modal-video-element');
+    const closeBtn = document.getElementById('btn-modal-close');
 
-    if (!clickableImages.length || !modal) return;
+    if (!clickableMedia.length || !modal) return;
 
-    clickableImages.forEach(img => {
-      // If the image is inside an external image link, allow normal navigation
-      if (img.closest('a.pd-image-link')) return;
+    const closeModal = (e) => {
+      if (e && typeof e.preventDefault === 'function') e.preventDefault();
+      if (videoEl) {
+        videoEl.pause();
+        videoEl.removeAttribute('src');
+        videoEl.load();
+      }
+      if (typeof modal.close === 'function') modal.close();
+      else modal.removeAttribute('open');
+    };
 
-      img.addEventListener('click', () => {
-        const src = img.getAttribute('src');
-        const alt = img.getAttribute('alt') || 'Asset Preview';
+    // Close button click and touchend
+    if (closeBtn) {
+      closeBtn.style.zIndex = '9999';
+      closeBtn.style.pointerEvents = 'auto';
+      closeBtn.addEventListener('click', closeModal);
+      closeBtn.addEventListener('touchend', closeModal);
+    }
+
+    // Backdrop click and touchend dismiss
+    const handleBackdropDismiss = (e) => {
+      const dialogDimensions = modal.getBoundingClientRect();
+      const clientX = e.clientX !== undefined ? e.clientX : (e.changedTouches && e.changedTouches[0] && e.changedTouches[0].clientX);
+      const clientY = e.clientY !== undefined ? e.clientY : (e.changedTouches && e.changedTouches[0] && e.changedTouches[0].clientY);
+      if (clientX === undefined || clientY === undefined) return;
+
+      if (
+        clientX < dialogDimensions.left ||
+        clientX > dialogDimensions.right ||
+        clientY < dialogDimensions.top ||
+        clientY > dialogDimensions.bottom
+      ) {
+        closeModal(e);
+      }
+    };
+
+    modal.addEventListener('click', handleBackdropDismiss);
+    modal.addEventListener('touchend', handleBackdropDismiss);
+
+    // ESC cancel event handler on dialog
+    modal.addEventListener('cancel', () => {
+      if (videoEl) {
+        videoEl.pause();
+        videoEl.removeAttribute('src');
+        videoEl.load();
+      }
+    });
+
+    // Native modal close event listener to terminate audio/video playback
+    modal.addEventListener('close', () => {
+      if (videoEl) {
+        videoEl.pause();
+        videoEl.removeAttribute('src');
+        videoEl.load();
+      }
+    });
+
+    clickableMedia.forEach(media => {
+      if (media.closest('a.pd-image-link')) return;
+
+      const triggerHandler = (e) => {
+        if (e && typeof e.preventDefault === 'function') e.preventDefault();
+        const type = media.getAttribute('data-type') || (media.tagName === 'VIDEO' ? 'video' : 'image');
+        let src = media.getAttribute('data-src') || media.getAttribute('src');
+        if (!src && media.tagName === 'VIDEO') {
+          const firstSource = media.querySelector('source');
+          if (firstSource) src = firstSource.getAttribute('src') || firstSource.getAttribute('data-src');
+        }
+        const alt = media.getAttribute('alt') || media.getAttribute('aria-label') || 'Asset Preview';
 
         if (modalTitle) modalTitle.textContent = alt;
 
-        // Temporarily display image inside modal body
         if (modalBody) {
-          const videoEl = document.getElementById('modal-video-element');
-          if (videoEl) videoEl.style.display = 'none';
-
           let lightboxImg = document.getElementById('lightbox-img-element');
           if (!lightboxImg) {
             lightboxImg = document.createElement('img');
             lightboxImg.id = 'lightbox-img-element';
             lightboxImg.style.maxWidth = '100%';
-            lightboxImg.style.maxHeight = '80vh';
+            lightboxImg.style.maxHeight = '80dvh';
             lightboxImg.style.objectFit = 'contain';
             lightboxImg.style.borderRadius = '8px';
             modalBody.appendChild(lightboxImg);
           }
-          lightboxImg.src = src;
-          lightboxImg.alt = alt;
-          lightboxImg.style.display = 'block';
+
+          if (type === 'video') {
+            if (lightboxImg) lightboxImg.style.display = 'none';
+            if (videoEl) {
+              videoEl.style.display = 'block';
+              videoEl.src = src || '';
+              videoEl.play().catch(() => {});
+            }
+          } else {
+            if (videoEl) {
+              videoEl.style.display = 'none';
+              videoEl.pause();
+            }
+            if (lightboxImg) {
+              lightboxImg.src = src || '';
+              lightboxImg.alt = alt;
+              lightboxImg.style.display = 'block';
+            }
+          }
         }
 
         if (typeof modal.showModal === 'function') {
@@ -529,19 +640,59 @@ class PortfolioApp {
         } else {
           modal.setAttribute('open', 'true');
         }
-      });
-    });
+      };
 
-    // Reset modal on close
-    const closeBtn = document.getElementById('btn-modal-close');
-    if (closeBtn) {
-      closeBtn.addEventListener('click', () => {
-        const videoEl = document.getElementById('modal-video-element');
-        const lightboxImg = document.getElementById('lightbox-img-element');
-        if (videoEl) videoEl.style.display = 'block';
-        if (lightboxImg) lightboxImg.style.display = 'none';
-      });
-    }
+      media.addEventListener('click', triggerHandler);
+    });
+  }
+
+  initSalaryExplorer() {
+    const toggleButtons = document.querySelectorAll('.salary-toggle-btn');
+    const blsPane = document.getElementById('salary-pane-bls');
+    const gsPane = document.getElementById('salary-pane-gs');
+
+    if (!toggleButtons.length) return;
+
+    toggleButtons.forEach(btn => {
+      const handleToggle = (e) => {
+        if (e && typeof e.preventDefault === 'function') e.preventDefault();
+        const mode = btn.getAttribute('data-mode');
+
+        toggleButtons.forEach(b => {
+          const isActive = b === btn;
+          b.classList.toggle('active', isActive);
+          b.setAttribute('aria-selected', isActive ? 'true' : 'false');
+        });
+
+        if (mode === 'gs') {
+          if (blsPane) blsPane.style.display = 'none';
+          if (gsPane) gsPane.style.display = 'block';
+        } else {
+          if (blsPane) blsPane.style.display = 'block';
+          if (gsPane) gsPane.style.display = 'none';
+        }
+      };
+
+      btn.addEventListener('click', handleToggle);
+      btn.addEventListener('touchend', handleToggle);
+    });
+  }
+
+  initReposDrawer() {
+    const toggleBtn = document.getElementById('btn-toggle-repos-drawer');
+    const drawer = document.getElementById('skills-repos-drawer');
+
+    if (!toggleBtn || !drawer) return;
+
+    const toggle = (e) => {
+      if (e && typeof e.preventDefault === 'function') e.preventDefault();
+      const isExpanded = toggleBtn.getAttribute('aria-expanded') === 'true';
+      toggleBtn.setAttribute('aria-expanded', !isExpanded);
+      drawer.style.display = isExpanded ? 'none' : 'block';
+    };
+
+    toggleBtn.addEventListener('click', toggle);
+    toggleBtn.addEventListener('touchend', toggle);
   }
 }
 

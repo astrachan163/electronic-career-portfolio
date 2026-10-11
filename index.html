@@ -72,7 +72,20 @@
        ========================================================================== -->
   <main id="main-content" role="main">
 
-    <!-- Hero Identity Section -->
+    
+    <!-- 01. INVASION SCROLL HERO (VERY FIRST ELEMENT AT TOP OF PAGE) -->
+    <section id="invasion-hero-section" class="portfolio-section" aria-label="Cinematic Project Atlas Introduction" style="padding: 0; margin-top: 0;">
+      <div class="sticky-canvas-wrapper" id="invasion-canvas-wrapper" style="height: 400dvh; position: relative;">
+        <div class="sticky-canvas-inner" style="position: sticky; top: 0; height: 100dvh; display: flex; align-items: center; justify-content: center; background: #030810; overflow: hidden; z-index: 1;">
+          <canvas id="invasion-canvas" class="hero-canvas" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;"></canvas>
+          <div class="scroll-down-indicator" style="position: absolute; bottom: 3rem; color: #fff; font-size: 0.8rem; letter-spacing: 0.1em; opacity: 0.7; pointer-events: none; text-align: center; text-transform: uppercase;">
+            <div style="width: 1px; height: 60px; background: rgba(255,255,255,0.5); margin: 0 auto 12px;"></div>
+            Scroll To Explore
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- Hero Identity Section -->
     <section id="hero" class="hero-section portfolio-section" aria-label="Candidate Overview">
       <div class="container hero-grid">
         <div class="hero-text-block">
@@ -117,7 +130,7 @@
       <div class="container">
         <h2 id="resume-heading" class="section-header">Interactive Resume & Technical Profile</h2>
         <p class="section-intro">
-          Candidate credentials evaluated through interactive technology. Filter competencies across technical domains, review chronological milestones, and inspect verified STAR accomplishment evidence.
+          Candidate credentials evaluated through interactive technology. Filter competencies across technical domains, review chronological stages, and inspect verified STAR accomplishment evidence.
         </p>
 
         <!-- Candidate Profile Contact Card -->
@@ -144,57 +157,102 @@
           </div>
         </div>
 
-        <!-- Academic Record Cards -->
-        <h3 style="color: var(--color-circuit-gold); margin-bottom: 1.25rem;">Academic Record & Degree Verification</h3>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
+        <!-- Academic Record & Degree Verification: 4-Tier Interactive Accordion -->
+        <h3 style="color: var(--color-circuit-gold); margin-bottom: 1.25rem;">Academic Record &amp; Degree Verification</h3>
+        <div class="education-accordion-container" style="margin-bottom: 3rem;">
           
-          <div class="glass-card">
-            <span class="badge-wage-level" style="margin-bottom: 0.75rem;">Master of Science</span>
-            <h4 style="font-size: 1.125rem; margin-bottom: 0.25rem;">University of Alabama at Birmingham</h4>
-            <p style="color: var(--color-circuit-gold); font-weight: 700; margin-bottom: 0.5rem;">M.S. in Cybersecurity · GPA: 3.75 / 4.0</p>
-            <p style="font-size: 0.875rem; color: var(--color-text-secondary); margin-bottom: 0.5rem;">
-              Dates: Aug 2024 – Expected Dec 2027 · NSF CyberCorps SFS Scholar.
-            </p>
-            <p style="font-size: 0.8125rem; color: var(--color-text-muted); margin-bottom: 0;">
-              Key coursework: CS 623 Network Security, CS 646 Blockchain & Cryptography, CS 636 Threat Modeling, CS 532 Cloud Computing.
-            </p>
+          <!-- Tier 1: UAB Graduate Degree -->
+          <div class="accordion glass-card active">
+            <div class="accordion-header" role="button" aria-expanded="true" tabindex="0">
+              <div>
+                <span class="badge-wage-level" style="margin-bottom: 0.35rem;">Master of Science</span>
+                <h4 style="font-size: 1.125rem; margin: 0; color: var(--color-circuit-gold);">University of Alabama at Birmingham — M.S. Cybersecurity</h4>
+              </div>
+              <span class="accordion-icon" aria-hidden="true">&#9662;</span>
+            </div>
+            <div class="accordion-content">
+              <p style="color: var(--color-circuit-gold); font-weight: 700; margin-bottom: 0.5rem;">M.S. in Cybersecurity · GPA: 3.75 / 4.0 · NSF CyberAICorps SFS Scholar</p>
+              <p style="font-size: 0.875rem; color: var(--color-text-secondary); margin-bottom: 0.5rem;">
+                Dates: January 2026 – Present (Expected Graduation: Dec 2027) · NSF CyberCorps SFS Scholar.
+              </p>
+              <p style="font-size: 0.8125rem; color: var(--color-text-muted); margin-bottom: 0.5rem;">
+                Key coursework: CS 623 Network Security, CS 646 Blockchain &amp; Cryptography, CS 636 Threat Modeling, CS 532 Cloud Computing.
+              </p>
+              <div class="career-impact-box">
+                <strong>Career Impact:</strong> Direct alignment with federal cyber defense architectures and zero-trust engineering standards.
+              </div>
+            </div>
           </div>
 
-          <div class="glass-card">
-            <span class="badge-wage-level" style="margin-bottom: 0.75rem;">State Licensure</span>
-            <h4 style="font-size: 1.125rem; margin-bottom: 0.25rem;">University of Montevallo</h4>
-            <p style="color: var(--color-circuit-gold); font-weight: 700; margin-bottom: 0.5rem;">Teaching Field (PCTF): Business & Finance · GPA: 3.75 / 4.0</p>
-            <p style="font-size: 0.875rem; color: var(--color-text-secondary); margin-bottom: 0.5rem;">
-              Dates: Aug 2024 – June 2025 · ALSDE Certified CTE Educator.
-            </p>
-            <p style="font-size: 0.8125rem; color: var(--color-text-muted); margin-bottom: 0;">
-              Focus: Managerial finance, enterprise risk frameworks, curriculum engineering, and Alabama TAPE standards.
-            </p>
+          <!-- Tier 2: University of Montevallo -->
+          <div class="accordion glass-card">
+            <div class="accordion-header" role="button" aria-expanded="false" tabindex="0">
+              <div>
+                <span class="badge-wage-level" style="margin-bottom: 0.35rem;">State Licensure</span>
+                <h4 style="font-size: 1.125rem; margin: 0; color: var(--color-circuit-gold);">University of Montevallo — CTE Business &amp; Finance</h4>
+              </div>
+              <span class="accordion-icon" aria-hidden="true">&#9662;</span>
+            </div>
+            <div class="accordion-content">
+              <p style="color: var(--color-circuit-gold); font-weight: 700; margin-bottom: 0.5rem;">Teaching Field (PCTF): Business &amp; Finance · GPA: 3.75 / 4.0</p>
+              <p style="font-size: 0.875rem; color: var(--color-text-secondary); margin-bottom: 0.5rem;">
+                Dates: August 2024 – May 2025 · ALSDE Certified CTE Educator — Provisional Certificate in a Teaching Field (PCTF): Business, Marketing, and Finance.
+              </p>
+              <p style="font-size: 0.8125rem; color: var(--color-text-muted); margin-bottom: 0.5rem;">
+                Focus: Managerial finance, enterprise risk frameworks, curriculum engineering, and Alabama TAPE standards.
+              </p>
+              <div class="career-impact-box">
+                <strong>Career Impact:</strong> Educational governance, public-sector financial modeling, and structured communication rigor.
+              </div>
+            </div>
           </div>
 
-          <div class="glass-card">
-            <span class="badge-wage-level" style="margin-bottom: 0.75rem;">Bachelor of Science</span>
-            <h4 style="font-size: 1.125rem; margin-bottom: 0.25rem;">Mississippi College</h4>
-            <p style="color: var(--color-circuit-gold); font-weight: 700; margin-bottom: 0.5rem;">B.S. ACS Biochemistry Honors · GPA: 3.5 / 4.0</p>
-            <p style="font-size: 0.875rem; color: var(--color-text-secondary); margin-bottom: 0.5rem;">
-              Dates: Aug 2011 – May 2016 · American Chemical Society Certified.
-            </p>
-            <p style="font-size: 0.8125rem; color: var(--color-text-muted); margin-bottom: 0;">
-              Honors: Senior Class Senator, Symphonic Band Principal Horn, Phi Mu Alpha co-founder, pre-medical rigor.
-            </p>
+          <!-- Tier 3: Mississippi College -->
+          <div class="accordion glass-card">
+            <div class="accordion-header" role="button" aria-expanded="false" tabindex="0">
+              <div>
+                <span class="badge-wage-level" style="margin-bottom: 0.35rem;">Bachelor of Science</span>
+                <h4 style="font-size: 1.125rem; margin: 0; color: var(--color-circuit-gold);">Mississippi College — B.S. ACS Biochemistry (Honors)</h4>
+              </div>
+              <span class="accordion-icon" aria-hidden="true">&#9662;</span>
+            </div>
+            <div class="accordion-content">
+              <p style="color: var(--color-circuit-gold); font-weight: 700; margin-bottom: 0.5rem;">B.S. ACS Biochemistry Honors · GPA: 3.5 / 4.0</p>
+              <p style="font-size: 0.875rem; color: var(--color-text-secondary); margin-bottom: 0.5rem;">
+                Dates: Aug 2011 – May 2016 · American Chemical Society Certified.
+              </p>
+              <p style="font-size: 0.8125rem; color: var(--color-text-muted); margin-bottom: 0.5rem;">
+                Honors: Senior Class Senator, Symphonic Band Principal Horn, Phi Mu Alpha Sinfonia co-founder, Delta Epsilon Iota Academic Honor Society, pre-medical rigor.
+              </p>
+              <div class="career-impact-box">
+                <strong>Career Impact:</strong> Analytical methodology and problem decomposition.
+              </div>
+            </div>
           </div>
 
-          <div class="glass-card">
-            <span class="badge-wage-level" style="margin-bottom: 0.75rem;">Medical Training</span>
-            <h4 style="font-size: 1.125rem; margin-bottom: 0.25rem;">University of Mississippi School of Medicine</h4>
-            <p style="color: var(--color-circuit-gold); font-weight: 700; margin-bottom: 0.5rem;">M.D. Coursework & Clerkships (4 Years Completed)</p>
-            <p style="font-size: 0.875rem; color: var(--color-text-secondary); margin-bottom: 0.5rem;">
-              Dates: Aug 2016 – Dec 2020 · Completed in Good Standing.
-            </p>
-            <p style="font-size: 0.8125rem; color: var(--color-text-muted); margin-bottom: 0;">
-              Honors: Human Anatomy Prosector, P.A.L.S. President, Virginia Covington Award; HIPAA security protocols.
-            </p>
+          <!-- Tier 4: Medical & Life Sciences Foundation -->
+          <div class="accordion glass-card">
+            <div class="accordion-header" role="button" aria-expanded="false" tabindex="0">
+              <div>
+                <span class="badge-wage-level" style="margin-bottom: 0.35rem;">Medical Training</span>
+                <h4 style="font-size: 1.125rem; margin: 0; color: var(--color-circuit-gold);">Medical &amp; Life Sciences Foundation</h4>
+              </div>
+              <span class="accordion-icon" aria-hidden="true">&#9662;</span>
+            </div>
+            <div class="accordion-content">
+              <p style="color: var(--color-circuit-gold); font-weight: 700; margin-bottom: 0.5rem;">Medical school coursework — 4 years of coursework and clinical clerkships completed (incomplete as of 2020)</p>
+              <p style="font-size: 0.875rem; color: var(--color-text-secondary); margin-bottom: 0.5rem;">
+                Dates: January 2016 – July 2020 · Eligible for readmission with advanced standing.
+              </p>
+              <p style="font-size: 0.8125rem; color: var(--color-text-muted); margin-bottom: 0.5rem;">
+                Honors: Human Anatomy Prosector, President &amp; Founder: P.A.L.S. (Peer-Assisted Learning Society); President: Quality Improvement Student Interest Group; Chair: UMMC/MBN Opioid Crisis Council; BCLS / ACLS / First Aid Certified; Virginia Covington Award.
+              </p>
+              <div class="career-impact-box">
+                <strong>Career Impact:</strong> High-reliability clinical operations, crisis mitigation, bio-risk evaluation, and systemic triage.
+              </div>
+            </div>
           </div>
+
         </div>
 
         <!-- Interactive Skills Matrix -->
@@ -208,46 +266,171 @@
           <button type="button" class="filter-chip" data-filter="leadership" role="tab" aria-selected="false">Leadership & Instruction</button>
         </div>
 
-        <div id="skills-matrix-display" class="skills-grid" style="margin-bottom: 3.5rem;">
+        <div class="scrolling-internal-container">
+          <div id="skills-matrix-display" class="skills-grid" style="margin-bottom: 2rem;">
           <!-- Dynamically populated or rendered items -->
-          <div class="skill-item-pill" data-category="cybersecurity">STRIDE Threat Modeling</div>
-          <div class="skill-item-pill" data-category="cybersecurity">Zero-Trust Network Architecture</div>
-          <div class="skill-item-pill" data-category="cybersecurity">Wireshark & Packet Inspection</div>
-          <div class="skill-item-pill" data-category="cybersecurity">Nmap Port & Vulnerability Scanning</div>
-          <div class="skill-item-pill" data-category="cybersecurity">SHA-256 Block Hashing Primitives</div>
-          <div class="skill-item-pill" data-category="cybersecurity">NIST SP 800-53 / CSF 2.0 Compliance</div>
-          <div class="skill-item-pill" data-category="cybersecurity">Cloud Security & Architecture (CS 532)</div>
-          <div class="skill-item-pill" data-category="ai">On-Device Local RAG Architecture</div>
-          <div class="skill-item-pill" data-category="ai">Apple MLX & Metal Performance Shaders</div>
-          <div class="skill-item-pill" data-category="ai">Quantized Gemma 4 / Ollama Execution</div>
-          <div class="skill-item-pill" data-category="ai">SwiftData & Local SQLite Vector Search</div>
-          <div class="skill-item-pill" data-category="ai">Model Context Protocol (MCP) Sandboxing</div>
-          <div class="skill-item-pill" data-category="cloud">AWS S3, CloudFront, Lambda, DynamoDB</div>
-          <div class="skill-item-pill" data-category="cloud">Firebase Hosting, Firestore, Functions</div>
-          <div class="skill-item-pill" data-category="cloud">Expiring HMAC Token Verification</div>
-          <div class="skill-item-pill" data-category="cloud">Docker Container Security & Isolation</div>
-          <div class="skill-item-pill" data-category="systems">Swift & SwiftUI (Native macOS/iOS)</div>
-          <div class="skill-item-pill" data-category="systems">Python (Systems, Data Analytics, Cryptography)</div>
-          <div class="skill-item-pill" data-category="systems">Java 21 (Secure Sockets & Agent Gates)</div>
-          <div class="skill-item-pill" data-category="systems">TypeScript & Modern ESNext</div>
-          <div class="skill-item-pill" data-category="systems">C & Assembly Systems Fundamentals</div>
-          <div class="skill-item-pill" data-category="leadership">Microsoft Certified Educator (MCE)</div>
-          <div class="skill-item-pill" data-category="leadership">Career & Technical Student Organization Advising</div>
-          <div class="skill-item-pill" data-category="leadership">DECA State Competition Mentorship</div>
-          <div class="skill-item-pill" data-category="leadership">TAPE Standards Program Administration</div>
-          <div class="skill-item-pill" data-category="leadership">BBC micro:bit Physical Computing</div>
+          <div class="skill-item-pill" data-category="cybersecurity">
+            <span>STRIDE Threat Modeling</span>
+            <span class="skill-category-badge">Zero-Trust</span>
+          </div>
+          <div class="skill-item-pill" data-category="cybersecurity">
+            <span>Zero-Trust Network Architecture</span>
+            <span class="skill-category-badge">Zero-Trust</span>
+          </div>
+          <div class="skill-item-pill" data-category="cybersecurity">
+            <span>Wireshark &amp; Packet Inspection</span>
+            <span class="skill-category-badge">Zero-Trust</span>
+          </div>
+          <div class="skill-item-pill" data-category="cybersecurity">
+            <span>Nmap Port &amp; Vulnerability Scanning</span>
+            <span class="skill-category-badge">Zero-Trust</span>
+          </div>
+          <div class="skill-item-pill" data-category="cybersecurity">
+            <span>SHA-256 Block Hashing Primitives</span>
+            <span class="skill-category-badge">Zero-Trust</span>
+          </div>
+          <div class="skill-item-pill" data-category="cybersecurity">
+            <span>NIST SP 800-53 / CSF 2.0 Compliance</span>
+            <span class="skill-category-badge">Zero-Trust</span>
+          </div>
+          <div class="skill-item-pill" data-category="cybersecurity">
+            <span>Cloud Security &amp; Architecture (CS 532)</span>
+            <span class="skill-category-badge">Zero-Trust</span>
+          </div>
+          <div class="skill-item-pill" data-category="ai">
+            <span>On-Device Local RAG Architecture</span>
+            <span class="skill-category-badge">AI / ML</span>
+          </div>
+          <div class="skill-item-pill" data-category="ai">
+            <span>Apple MLX &amp; Metal Performance Shaders</span>
+            <span class="skill-category-badge">AI / ML</span>
+          </div>
+          <div class="skill-item-pill" data-category="ai">
+            <span>Quantized Gemma 4 / Ollama Execution</span>
+            <span class="skill-category-badge">AI / ML</span>
+          </div>
+          <div class="skill-item-pill" data-category="ai">
+            <span>SwiftData &amp; Local SQLite Vector Search</span>
+            <span class="skill-category-badge">AI / ML</span>
+          </div>
+          <div class="skill-item-pill" data-category="ai">
+            <span>Model Context Protocol (MCP) Sandboxing</span>
+            <span class="skill-category-badge">AI / ML</span>
+          </div>
+          <div class="skill-item-pill" data-category="cloud">
+            <span>AWS S3, CloudFront, Lambda, DynamoDB</span>
+            <span class="skill-category-badge">Cloud</span>
+          </div>
+          <div class="skill-item-pill" data-category="cloud">
+            <span>Firebase Hosting, Firestore, Functions</span>
+            <span class="skill-category-badge">Cloud</span>
+          </div>
+          <div class="skill-item-pill" data-category="cloud">
+            <span>Expiring HMAC Token Verification</span>
+            <span class="skill-category-badge">Cloud</span>
+          </div>
+          <div class="skill-item-pill" data-category="cloud">
+            <span>Docker Container Security &amp; Isolation</span>
+            <span class="skill-category-badge">Cloud</span>
+          </div>
+          <div class="skill-item-pill" data-category="systems">
+            <span>Swift &amp; SwiftUI (Native macOS/iOS)</span>
+            <span class="skill-category-badge">Systems</span>
+          </div>
+          <div class="skill-item-pill" data-category="systems">
+            <span>Python (Systems, Data Analytics, Cryptography)</span>
+            <span class="skill-category-badge">Systems</span>
+          </div>
+          <div class="skill-item-pill" data-category="systems">
+            <span>Java 21 (Secure Sockets &amp; Agent Gates)</span>
+            <span class="skill-category-badge">Systems</span>
+          </div>
+          <div class="skill-item-pill" data-category="systems">
+            <span>TypeScript &amp; Modern ESNext</span>
+            <span class="skill-category-badge">Systems</span>
+          </div>
+          <div class="skill-item-pill" data-category="systems">
+            <span>C &amp; Assembly Systems Fundamentals</span>
+            <span class="skill-category-badge">Systems</span>
+          </div>
+          <div class="skill-item-pill" data-category="leadership">
+            <span>Microsoft Certified Educator (MCE)</span>
+            <span class="skill-category-badge">Leadership</span>
+          </div>
+          <div class="skill-item-pill" data-category="leadership">
+            <span>Career &amp; Technical Student Organization Advising</span>
+            <span class="skill-category-badge">Leadership</span>
+          </div>
+          <div class="skill-item-pill" data-category="leadership">
+            <span>DECA State Competition Mentorship</span>
+            <span class="skill-category-badge">Leadership</span>
+          </div>
+          <div class="skill-item-pill" data-category="leadership">
+            <span>TAPE Standards Program Administration</span>
+            <span class="skill-category-badge">Leadership</span>
+          </div>
+          <div class="skill-item-pill" data-category="leadership">
+            <span>BBC micro:bit Physical Computing</span>
+            <span class="skill-category-badge">Leadership</span>
+          </div>
+        </div>
+
+        <!-- Touch-Activated Repositories Drawer -->
+        </div>
+        <div class="skills-repos-drawer-container">
+          <button type="button" class="btn-secondary-outline skills-repos-toggle-btn" id="btn-toggle-repos-drawer" aria-expanded="false" aria-controls="skills-repos-drawer">
+            <span>&#128194; Touch Repositories Drawer (Verified Source Code)</span>
+            <span class="drawer-toggle-icon">&#9662;</span>
+          </button>
+          <div id="skills-repos-drawer" class="skills-repos-drawer" style="display: none;">
+            <div class="skills-repos-grid">
+              <div class="glass-card skill-repo-card">
+                <div class="skill-repo-header">
+                  <strong>CS646 Sanctum 3D World</strong>
+                  <span class="badge-wage-level">Godot / WebGL</span>
+                </div>
+                <p style="font-size: 0.8125rem; color: var(--color-text-secondary); margin: 0;">Interactive 3D distributed ledger memory palace.</p>
+                <a href="https://github.com/astrachan163/CS646-Sanctum" target="_blank" rel="noopener noreferrer" class="btn-demo-link" style="font-size: 0.75rem; padding: 0.35rem 0.75rem;">Open Repository &rarr;</a>
+              </div>
+              <div class="glass-card skill-repo-card">
+                <div class="skill-repo-header">
+                  <strong>MaqkrsTutor2 Local Assistant</strong>
+                  <span class="badge-wage-level">SwiftUI / MLX</span>
+                </div>
+                <p style="font-size: 0.8125rem; color: var(--color-text-secondary); margin: 0;">On-device private RAG architecture with local LLM.</p>
+                <a href="https://github.com/astrachan163/MaqkrsTutor-public" target="_blank" rel="noopener noreferrer" class="btn-demo-link" style="font-size: 0.75rem; padding: 0.35rem 0.75rem;">Open Repository &rarr;</a>
+              </div>
+              <div class="glass-card skill-repo-card">
+                <div class="skill-repo-header">
+                  <strong>AdaptivePrep &amp; AdaptiveHS</strong>
+                  <span class="badge-wage-level">Next.js / Cloud Run</span>
+                </div>
+                <p style="font-size: 0.8125rem; color: var(--color-text-secondary); margin: 0;">Full-stack learning platform with Firestore.</p>
+                <a href="https://adaptivehs-v2.firebaseapp.com/" target="_blank" rel="noopener noreferrer" class="btn-demo-link" style="font-size: 0.75rem; padding: 0.35rem 0.75rem;">Open Repository &rarr;</a>
+              </div>
+              <div class="glass-card skill-repo-card">
+                <div class="skill-repo-header">
+                  <strong>MaQkRs OS Command Center</strong>
+                  <span class="badge-wage-level">React 19 / TS</span>
+                </div>
+                <p style="font-size: 0.8125rem; color: var(--color-text-secondary); margin: 0;">Autonomous agent operations and financial planning console.</p>
+                <a href="https://github.com/astrachan163" target="_blank" rel="noopener noreferrer" class="btn-demo-link" style="font-size: 0.75rem; padding: 0.35rem 0.75rem;">Open Repository &rarr;</a>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- Professional Employment Timeline -->
         <h3 style="color: var(--color-circuit-gold); margin-bottom: 1.5rem;">Chronological Professional Work History</h3>
-        <div class="timeline-container">
+        <div class="scrolling-internal-container">
+          <div class="timeline-container">
           
           <div class="timeline-item">
             <div class="timeline-marker"></div>
             <div class="glass-card">
               <div class="timeline-card-header">
                 <span class="timeline-role">Teaching Assistant — Python Coding Summer Camp</span>
-                <span class="timeline-date-tag">June 2026</span>
+                <span class="timeline-date-tag">June 2026 – August 2026 (20–40 hrs/wk)</span>
               </div>
               <div class="timeline-org">University of Alabama at Birmingham (Department of Computer Science)</div>
               <ul class="timeline-achievements">
@@ -262,16 +445,16 @@
             <div class="timeline-marker"></div>
             <div class="glass-card">
               <div class="timeline-card-header">
-                <span class="timeline-role">Career & Technical Education (CTE) Teacher — Business, Marketing & Finance</span>
-                <span class="timeline-date-tag">August 2024 – June 2025</span>
+                <span class="timeline-role">CTE Teacher — Business, Marketing, and Finance</span>
+                <span class="timeline-date-tag">July 2024 – June 2025 (Full-Time, 40 hrs/wk)</span>
               </div>
               <div class="timeline-org">Shades Valley High School (Jefferson County Board of Education - JEFCOED)</div>
               <ul class="timeline-achievements">
                 <li>Instructed Business Finance, Customer Service, and Sales in the school’s premier National Academy of Finance (NAOF) program.</li>
                 <li>Served as official Chapter Adviser for the state's largest student career and technical business organization.</li>
-                <li>Head Coach for the Shades Valley High School Esports Team; organized fundraisers and secured corporate sponsorships.</li>
+                <li>Head Coach for the Esports Team; organized fundraisers and secured corporate sponsorships.</li>
                 <li>Maintained 100% compliance with Alabama State Department of Education TAPE instructional standards.</li>
-                <li>Awarded the <strong>JEFCOED Technology Torchbearer Award (2025)</strong> for innovative classroom technology integration.</li>
+                <li>Awarded the <strong>2025 JEFCOED Technology Torchbearer Award for Excellence</strong> for innovative classroom technology integration.</li>
               </ul>
             </div>
           </div>
@@ -280,12 +463,12 @@
             <div class="timeline-marker"></div>
             <div class="glass-card">
               <div class="timeline-card-header">
-                <span class="timeline-role">Career & Technical Education (CTE) Teacher — Business, Marketing & Finance</span>
-                <span class="timeline-date-tag">September 2023 – June 2024</span>
+                <span class="timeline-role">CTE Teacher — Business, Marketing, and Finance</span>
+                <span class="timeline-date-tag">August 2023 – June 2024 (Full-Time, 40 hrs/wk)</span>
               </div>
               <div class="timeline-org">Corner High School (Jefferson County Board of Education - JEFCOED)</div>
               <ul class="timeline-achievements">
-                <li>Founded, chartered, and advised a new DECA chapter, introducing competitive business leadership opportunities to the student body.</li>
+                <li>Founded, chartered, and advised a new DECA chapter, introducing competitive business leadership opportunities to the student body (DECA Chapter Founder & State Competition Coach).</li>
                 <li>Mentored and coached students in marketing and business finance simulations, culminating in <strong>1st-place and 2nd-place state finishes</strong> at the 2024 Alabama DECA Career Development Conference.</li>
                 <li>Delivered experiential curriculum in financial software, personal finance, and entrepreneurship.</li>
                 <li>Honored with the 2024 Alabama DECA New Chapter Advisor Recognition.</li>
@@ -297,8 +480,8 @@
             <div class="timeline-marker"></div>
             <div class="glass-card">
               <div class="timeline-card-header">
-                <span class="timeline-role">Operational Director</span>
-                <span class="timeline-date-tag">January 2023 – May 2023</span>
+                <span class="timeline-role">Operational Director & Laboratory Specialist</span>
+                <span class="timeline-date-tag">January 2023 – May 2023 (Full-Time, 40 hrs/wk)</span>
               </div>
               <div class="timeline-org">MidSouth Extracts LLC · Tupelo, MS</div>
               <ul class="timeline-achievements">
@@ -314,14 +497,14 @@
             <div class="timeline-marker"></div>
             <div class="glass-card">
               <div class="timeline-card-header">
-                <span class="timeline-role">Sales Development Specialist & Team Lead</span>
-                <span class="timeline-date-tag">April 2021 – November 2022</span>
+                <span class="timeline-role">Founder & Principal Technologist</span>
+                <span class="timeline-date-tag">January 2022 – Present (15–20 hrs/wk)</span>
               </div>
-              <div class="timeline-org">SelectQuote Insurance Services · Clinton, MS</div>
+              <div class="timeline-org">Maqkrs Consulting · Birmingham, AL & Clinton, MS</div>
               <ul class="timeline-achievements">
-                <li>Developed, evaluated, and led onboarding and training curricula for incoming sales cohorts across life and health divisions.</li>
-                <li>Partnered with compliance leadership to engineer micro-training modules reducing customer complaints and raising client retention.</li>
-                <li>Awarded the <strong>Top Sales Award (2022)</strong> and <strong>SQ Team Lead Award (2021)</strong>.</li>
+                <li>Provided strategic operational consulting on FDA, ISO, and cGMP compliance frameworks for regional startups.</li>
+                <li>Engineered custom digital operations: cloud hosting, web platforms, marketing funnels, and licensing pipelines.</li>
+                <li>Mentored students in work-based learning across vulnerability scanning and zero-trust configuration checklists.</li>
               </ul>
             </div>
           </div>
@@ -330,14 +513,42 @@
             <div class="timeline-marker"></div>
             <div class="glass-card">
               <div class="timeline-card-header">
-                <span class="timeline-role">Founder & Lead Technologist</span>
-                <span class="timeline-date-tag">2022 – Present</span>
+                <span class="timeline-role">Sales Development Specialist</span>
+                <span class="timeline-date-tag">April 2021 – November 2022 (Full-Time, 40 hrs/wk)</span>
               </div>
-              <div class="timeline-org">Maqkrs Consulting · Birmingham, AL & Clinton, MS</div>
+              <div class="timeline-org">SelectQuote Insurance Services · Clinton, MS</div>
               <ul class="timeline-achievements">
-                <li>Provided strategic operational consulting on FDA, ISO, and cGMP compliance frameworks for regional startups.</li>
-                <li>Engineered custom digital operations: cloud hosting, web platforms, marketing funnels, and licensing pipelines.</li>
-                <li>Mentored students in work-based learning across vulnerability scanning and zero-trust configuration checklists.</li>
+                <li>Developed, evaluated, and led onboarding and training curricula for incoming sales cohorts across life and health divisions.</li>
+                <li>Partnered with compliance leadership to engineer micro-training modules reducing customer complaints and raising client retention.</li>
+                <li>Awarded the <strong>Top Sales Award (2021)</strong>.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="glass-card">
+              <div class="timeline-card-header">
+                <span class="timeline-role">OmniMed Certified Village Health Volunteer (Uganda, East Africa)</span>
+                <span class="timeline-date-tag">July 2017 – August 2017</span>
+              </div>
+              <div class="timeline-org">OmniMed · Uganda, East Africa</div>
+              <ul class="timeline-achievements">
+                <li>Served as a certified health volunteer executing global health interventions and preventive medicine outreach in rural communities.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="glass-card">
+              <div class="timeline-card-header">
+                <span class="timeline-role">Youth Leadership & Civic Mentorship</span>
+                <span class="timeline-date-tag">August 2011 – Present (10 hrs/wk)</span>
+              </div>
+              <div class="timeline-org">First Presbyterian Church</div>
+              <ul class="timeline-achievements">
+                <li>Provided sustained youth leadership and civic mentorship, organizing community outreach and development activities.</li>
               </ul>
             </div>
           </div>
@@ -440,17 +651,21 @@
       <div class="container">
         <h2 id="career-heading" class="section-header">Career Research & Future Outlook</h2>
         <p class="section-intro">
-          Rigorous labor market investigation for the chosen career pathway: Information Security Analyst & Cybersecurity Systems Engineer, substantiated by official U.S. Bureau of Labor Statistics (BLS) data, federal compensation scales, and industry challenge analysis.
+          Labor market data and federal classification for Information Security Analyst & Cybersecurity Systems Engineer.
         </p>
 
         <!-- Career Target & NICE Framework Overview -->
         <div class="glass-card mb-4" style="margin-bottom: 2rem;">
-          <h3 style="color: var(--color-circuit-gold); margin-bottom: 0.5rem;">Target Career: Information Security Analyst & Secure Systems Architect</h3>
-          <p style="color: var(--color-cyber-cyan); font-weight: 600; margin-bottom: 1rem;">
-            Standard Occupational Classification: BLS SOC 15-1212.00 | CyberCorps SFS Public Service Specialization
-          </p>
+          <h3 style="color: var(--color-circuit-gold); margin-bottom: 0.5rem;">Target Career: Information Security Analyst &amp; Secure Systems Architect</h3>
+          <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; margin-bottom: 1rem;">
+            <span style="color: var(--color-text-secondary); font-size: 0.875rem;">Classification:</span>
+            <span class="badge-wage-level badge-code-pill" style="background: rgba(0, 229, 255, 0.15); color: var(--color-cyber-cyan); border: 1px solid var(--color-cyber-cyan); font-weight: 700;">BLS SOC 15-1212.00</span>
+            <span class="badge-wage-level badge-code-pill" style="background: rgba(212, 175, 55, 0.15); color: var(--color-circuit-gold); border: 1px solid var(--color-circuit-gold); font-weight: 700;">CyberCorps SFS Public Service Specialization</span>
+          </div>
           <p style="color: var(--color-text-secondary); margin-bottom: 1.25rem;">
-            Information Security Analysts plan, engineer, implement, and monitor defensive security measures to protect computer networks, cloud architectures, and digital assets. Aligned with the National Initiative for Cybersecurity Education (NICE) Workforce Framework categories: <strong>PR-CD-001 (Cyber Defense Analyst)</strong> and <strong>SP-ARC-002 (Security Architect)</strong>.
+            Information Security Analysts plan, engineer, implement, and monitor defensive security measures to protect computer networks, cloud architectures, and digital assets. Aligned with the National Initiative for Cybersecurity Education (NICE) Workforce Framework categories: 
+            <span class="badge-wage-level badge-code-pill" style="font-weight: 600;">NICE PR-CD-001 (Cyber Defense Analyst)</span>
+            <span class="badge-wage-level badge-code-pill" style="font-weight: 600;">NICE SP-ARC-002 (Security Architect)</span>.
           </p>
           <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
             <span class="badge-wage-level">Zero-Trust Network Access</span>
@@ -489,80 +704,94 @@
           </div>
         </div>
 
-        <!-- BLS Wage Distribution Table -->
-        <div class="table-responsive-container">
-          <table class="cyber-data-table" aria-label="BLS Salary Distribution Table">
-            <thead>
-              <tr>
-                <th scope="col">Earning Tier / Percentile</th>
-                <th scope="col">Annual Wage (USD)</th>
-                <th scope="col">Hourly Equivalent</th>
-                <th scope="col">Professional Context & Title</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><span class="badge-wage-level">Lowest 10%</span></td>
-                <td><strong>$69,310</strong></td>
-                <td>$33.32 / hr</td>
-                <td>Junior Security Analyst / Associate SOC Analyst</td>
-              </tr>
-              <tr>
-                <td><span class="badge-wage-level">25th Percentile</span></td>
-                <td><strong>$89,040</strong></td>
-                <td>$42.81 / hr</td>
-                <td>Cyber Defense Analyst / Network Security Specialist</td>
-              </tr>
-              <tr>
-                <td><span class="badge-wage-level" style="background: rgba(212, 175, 55, 0.2); color: var(--color-circuit-gold);">50th Percentile (Median)</span></td>
-                <td><strong style="color: var(--color-circuit-gold);">$120,360</strong></td>
-                <td>$57.87 / hr</td>
-                <td>Information Security Analyst / Incident Responder</td>
-              </tr>
-              <tr>
-                <td><span class="badge-wage-level">75th Percentile</span></td>
-                <td><strong>$152,430</strong></td>
-                <td>$73.28 / hr</td>
-                <td>Senior Security Systems Engineer / Threat Modeler</td>
-              </tr>
-              <tr>
-                <td><span class="badge-wage-level" style="background: rgba(0, 229, 255, 0.2); color: var(--color-cyber-cyan);">Highest 10% (Top Decile)</span></td>
-                <td><strong style="color: var(--color-cyber-cyan);">$182,370+</strong></td>
-                <td>$87.68+ / hr</td>
-                <td>Principal Security Architect / Federal Technical Lead</td>
-              </tr>
-            </tbody>
-          </table>
+        <!-- Interactive Salary Explorer Toggle -->
+        <div id="salary-explorer-toggle" class="salary-toggle-bar" role="tablist" aria-label="Salary Data Explorer">
+          <button type="button" class="salary-toggle-btn active" data-mode="bls" role="tab" aria-selected="true" aria-controls="salary-pane-bls">
+            Industry (BLS SOC 15-1212.00)
+          </button>
+          <button type="button" class="salary-toggle-btn" data-mode="gs" role="tab" aria-selected="false" aria-controls="salary-pane-gs">
+            Federal (GS / CyberCorps DHA)
+          </button>
         </div>
 
-        <!-- Federal Pay Scale Progression & CyberCorps SFS Track -->
-        <h3 style="color: var(--color-circuit-gold); margin-bottom: 1.25rem;">Federal Public Service Pay Bands (General Schedule GS-9 to GS-14)</h3>
-        <p style="color: var(--color-text-secondary); margin-bottom: 1.5rem;">
-          Funded by the National Science Foundation, CyberCorps SFS provides Direct Hire Authority (DHA) for federal service placements upon graduate degree completion at UAB.
-        </p>
-        <div class="gs-pathway-grid">
-          <div class="gs-step-card">
-            <span class="gs-grade-badge">GS-09 Entry Band</span>
-            <div class="gs-salary-range">$65,000 – $84,000</div>
-            <p style="font-size: 0.875rem; color: var(--color-text-secondary); margin-bottom: 0;">
-              Cybersecurity Graduate Intern / Junior Federal Analyst. Requires Master's candidate status; active SFS scholar clearable eligibility.
-            </p>
+        <!-- BLS Wage Distribution Table Pane -->
+        <div id="salary-pane-bls" class="salary-pane active" role="tabpanel">
+          <div class="table-responsive-container">
+            <table class="cyber-data-table" aria-label="BLS Salary Distribution Table">
+              <thead>
+                <tr>
+                  <th scope="col">Earning Tier / Percentile</th>
+                  <th scope="col">Annual Wage (USD)</th>
+                  <th scope="col">Hourly Equivalent</th>
+                  <th scope="col">Professional Context &amp; Title</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="Tier"><span class="badge-wage-level">Lowest 10%</span></td>
+                  <td data-label="Annual Wage"><strong>$69,310</strong></td>
+                  <td data-label="Hourly Rate">$33.32 / hr</td>
+                  <td data-label="Context">Junior Security Analyst / Associate SOC Analyst</td>
+                </tr>
+                <tr>
+                  <td data-label="Tier"><span class="badge-wage-level">25th Percentile</span></td>
+                  <td data-label="Annual Wage"><strong>$89,040</strong></td>
+                  <td data-label="Hourly Rate">$42.81 / hr</td>
+                  <td data-label="Context">Cyber Defense Analyst / Network Security Specialist</td>
+                </tr>
+                <tr>
+                  <td data-label="Tier"><span class="badge-wage-level" style="background: rgba(212, 175, 55, 0.2); color: var(--color-circuit-gold);">50th Percentile (Median)</span></td>
+                  <td data-label="Annual Wage"><strong style="color: var(--color-circuit-gold);">$120,360</strong></td>
+                  <td data-label="Hourly Rate">$57.87 / hr</td>
+                  <td data-label="Context">Information Security Analyst / Incident Responder</td>
+                </tr>
+                <tr>
+                  <td data-label="Tier"><span class="badge-wage-level">75th Percentile</span></td>
+                  <td data-label="Annual Wage"><strong>$152,430</strong></td>
+                  <td data-label="Hourly Rate">$73.28 / hr</td>
+                  <td data-label="Context">Senior Security Systems Engineer / Threat Modeler</td>
+                </tr>
+                <tr>
+                  <td data-label="Tier"><span class="badge-wage-level" style="background: rgba(0, 229, 255, 0.2); color: var(--color-cyber-cyan);">Highest 10% (Top Decile)</span></td>
+                  <td data-label="Annual Wage"><strong style="color: var(--color-cyber-cyan);">$182,370+</strong></td>
+                  <td data-label="Hourly Rate">$87.68+ / hr</td>
+                  <td data-label="Context">Principal Security Architect / Federal Technical Lead</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
+        </div>
 
-          <div class="gs-step-card" style="border-color: var(--color-cyber-cyan);">
-            <span class="gs-grade-badge" style="background: var(--color-cyber-cyan); color: var(--color-midnight-base);">GS-11 / GS-12 Target</span>
-            <div class="gs-salary-range">$78,000 – $122,000</div>
-            <p style="font-size: 0.875rem; color: var(--color-text-secondary); margin-bottom: 0;">
-              Information Security Systems Engineer / Cyber Defense Specialist. SFS graduate placement with agency-sponsored clearance pathway.
-            </p>
-          </div>
+        <!-- Federal Pay Scale Progression Pane -->
+        <div id="salary-pane-gs" class="salary-pane" role="tabpanel" style="display: none;">
+          <h3 style="color: var(--color-circuit-gold); margin-bottom: 1.25rem;">Federal Public Service Pay Bands (General Schedule GS-9 to GS-14)</h3>
+          <p style="color: var(--color-text-secondary); margin-bottom: 1.5rem;">
+            Funded by the National Science Foundation, CyberCorps SFS provides Direct Hire Authority (DHA) for federal service placements upon graduate degree completion at UAB.
+          </p>
+          <div class="gs-pathway-grid">
+            <div class="gs-step-card">
+              <span class="gs-grade-badge">GS-09 Entry Band</span>
+              <div class="gs-salary-range">$65,000 – $84,000</div>
+              <p style="font-size: 0.875rem; color: var(--color-text-secondary); margin-bottom: 0;">
+                Cybersecurity Graduate Intern / Junior Federal Analyst. Requires Master's candidate status; active SFS scholar clearable eligibility.
+              </p>
+            </div>
 
-          <div class="gs-step-card">
-            <span class="gs-grade-badge">GS-13 / GS-14 Senior</span>
-            <div class="gs-salary-range">$110,000 – $168,000+</div>
-            <p style="font-size: 0.875rem; color: var(--color-text-secondary); margin-bottom: 0;">
-              Senior Security Architect / Agency Technical Lead. Includes federal Cyber Incentive Pay bonuses up to 25% for high-demand technical roles.
-            </p>
+            <div class="gs-step-card" style="border-color: var(--color-cyber-cyan);">
+              <span class="gs-grade-badge" style="background: var(--color-cyber-cyan); color: var(--color-midnight-base);">GS-11 / GS-12 Target</span>
+              <div class="gs-salary-range">$78,000 – $122,000</div>
+              <p style="font-size: 0.875rem; color: var(--color-text-secondary); margin-bottom: 0;">
+                Information Security Systems Engineer / Cyber Defense Specialist. SFS graduate placement with agency-sponsored clearance pathway.
+              </p>
+            </div>
+
+            <div class="gs-step-card">
+              <span class="gs-grade-badge">GS-13 / GS-14 Senior</span>
+              <div class="gs-salary-range">$110,000 – $168,000+</div>
+              <p style="font-size: 0.875rem; color: var(--color-text-secondary); margin-bottom: 0;">
+                Senior Security Architect / Agency Technical Lead. Includes federal Cyber Incentive Pay bonuses up to 25% for high-demand technical roles.
+              </p>
+            </div>
           </div>
         </div>
 
@@ -658,7 +887,7 @@
             </p>
             <div class="career-impact-box">
               <strong>Impact on Future Career:</strong>
-              Provides indispensable executive communication, financial modeling, and instructional leadership skills. In federal cybersecurity, analysts must translate complex technical cyber risks to non-technical executives and train personnel on cyber hygiene.
+              In federal cybersecurity, analysts must translate complex technical cyber risks to non-technical executives and train personnel on cyber hygiene.
             </div>
           </div>
 
@@ -694,11 +923,11 @@
         <h3 style="color: var(--color-circuit-gold); margin-bottom: 1.25rem;">Conferences, Symposia & Community Leadership</h3>
         <div class="pd-grid">
           
-          <!-- Item 1: GiveGab Volunteering -->
+          <!-- Item 1: Sun Herald Single Media Feature Card -->
           <div class="glass-card pd-card animate-on-scroll">
             <div class="pd-image-wrapper">
               <a href="https://www.sunherald.com/news/local/counties/harrison-county/article97803862.html" target="_blank" rel="noopener noreferrer" class="pd-image-link" aria-label="Read Sun Herald Feature Article on Harrison County Emergency Youth Shelter & Youth Mentorship">
-                <img src="assets/images/professional-development/sunherald-volunteer-thumb.png" alt="Sun Herald Feature Coverage: Youth Mentorship & Emergency Shelter Community Support" loading="lazy" class="pd-card-img">
+                <img src="assets/images/professional-development/sunherald-volunteer-thumb.png" alt="Sun Herald Feature Coverage: Youth Mentorship & Emergency Shelter Community Support" loading="lazy" class="pd-card-img" data-type="image">
                 <div class="pd-thumb-overlay">
                   <span class="pd-overlay-badge pd-article-badge">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
@@ -707,10 +936,10 @@
                 </div>
               </a>
             </div>
-            <span class="pd-badge-date">Community Stewardship · 2023–2025</span>
-            <h3 style="font-size: 1.2rem; color: var(--color-circuit-gold); margin-bottom: 0.5rem;">GiveGab Volunteering: Youth Mentorship & Community Support</h3>
+            <span class="pd-badge-date">Community Stewardship · December 2018</span>
+            <h3 style="font-size: 1.2rem; color: var(--color-circuit-gold); margin-bottom: 0.5rem;">Sun Herald Feature: GiveGab Youth Mentorship &amp; Shelter Support</h3>
             <p style="font-size: 0.875rem; color: var(--color-text-secondary); margin-bottom: 1rem;">
-              Spearheaded digital community volunteering initiatives and youth advocacy across Harrison County, coordinating regional outreach and mentorship to support vulnerable youth and children in emergency transitional care.
+              Featured in the Sun Herald for spearheading regional community volunteering and youth advocacy across Harrison County, coordinating mentorship to support vulnerable youth in emergency shelter care.
             </p>
             <div class="career-impact-box" style="margin-bottom: 1rem;">
               <strong>Leadership Impact:</strong> Fosters high-trust civic stewardship, digital community engagement, and empathetic leadership foundational to federal public service.
@@ -724,7 +953,7 @@
           <div class="glass-card pd-card animate-on-scroll">
             <div class="pd-image-wrapper">
               <a href="https://www.wlox.com/2018/12/12/south-mississippi-strong-harrison-countys-emergency-youth-shelter-gives-safe-space-children-need/" target="_blank" rel="noopener noreferrer" class="pd-image-link" aria-label="Watch WLOX News Safe Space Story Broadcast">
-                <img src="assets/images/professional-development/wlox-youth-shelter-thumb.jpg" alt="Harrison County Emergency Youth Shelter Nursery Safe Space - WLOX News Broadcast" loading="lazy" class="pd-card-img">
+                <img src="assets/images/professional-development/wlox-youth-shelter-thumb.jpg" alt="Harrison County Emergency Youth Shelter Nursery Safe Space - WLOX News Broadcast" loading="lazy" class="pd-card-img" data-type="image">
                 <div class="pd-thumb-overlay">
                   <span class="pd-overlay-badge pd-video-badge">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
@@ -737,7 +966,7 @@
               </a>
             </div>
             <span class="pd-badge-date">Healthcare Policy & Crisis Council</span>
-            <h3 style="font-size: 1.2rem; color: var(--color-circuit-gold); margin-bottom: 0.5rem;">Opioid Crisis Council at UMMC & Youth Shelter Advocacy</h3>
+            <h3 style="font-size: 1.2rem; color: var(--color-circuit-gold); margin-bottom: 0.5rem;">Opioid Crisis Council at UMMC &amp; Youth Shelter Advocacy</h3>
             <p style="font-size: 0.875rem; color: var(--color-text-secondary); margin-bottom: 1rem;">
               Collaborated on medical and crisis mitigation initiatives at the University of Mississippi Medical Center (UMMC), addressing community healthcare interventions, harm reduction, and supporting Harrison County’s emergency youth shelter as a safe space for children in crisis.
             </p>
@@ -752,7 +981,7 @@
           <!-- Item 3: DECA International Career Development Conference in Anaheim -->
           <div class="glass-card pd-card animate-on-scroll">
             <div class="pd-image-wrapper">
-              <img src="assets/images/professional-development/deca-advisor-anaheim.png" alt="DECA Advisor Professional Learning Series Anaheim Convention Center" loading="lazy" class="pd-card-img" style="object-position: top;">
+              <img src="assets/images/professional-development/deca-advisor-anaheim.png" alt="DECA Advisor Professional Learning Series Anaheim Convention Center" loading="lazy" class="pd-card-img" data-type="image" style="object-position: top;">
               <div class="pd-thumb-overlay">
                 <span class="pd-overlay-badge pd-doc-badge">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
@@ -773,7 +1002,7 @@
           <!-- Item 4: ALACTE Career & Technical Education Conference -->
           <div class="glass-card pd-card animate-on-scroll">
             <div class="pd-image-wrapper">
-              <img src="assets/images/professional-development/alacte-conference-thumb.png" alt="ALACTE Career & Technical Education Conference" loading="lazy" class="pd-card-img">
+              <img src="assets/images/professional-development/alacte-conference-thumb.png" alt="ALACTE Career & Technical Education Conference" loading="lazy" class="pd-card-img" data-type="image">
               <div class="pd-thumb-overlay">
                 <span class="pd-overlay-badge pd-doc-badge">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="12 2 15 8 22 9 17 14 18 21 12 17 6 21 7 14 2 9 9 8 12 2"></polygon></svg>
@@ -782,7 +1011,7 @@
               </div>
             </div>
             <span class="pd-badge-date">State CTE Symposium · 2023–2024</span>
-            <h3 style="font-size: 1.2rem; color: var(--color-circuit-gold); margin-bottom: 0.5rem;">ALACTE Career & Technical Education Conference</h3>
+            <h3 style="font-size: 1.2rem; color: var(--color-circuit-gold); margin-bottom: 0.5rem;">ALACTE Career &amp; Technical Education Conference</h3>
             <p style="font-size: 0.875rem; color: var(--color-text-secondary); margin-bottom: 1rem;">
               Participated in the Alabama Association for Career and Technical Education (ALACTE) annual conference, exploring cutting-edge technical curriculum integration, student certification pipelines, and industry advisory council development.
             </p>
@@ -794,7 +1023,7 @@
           <!-- Item 5: Alabama State Department of Education ALACTE Conference -->
           <div class="glass-card pd-card animate-on-scroll">
             <div class="pd-image-wrapper">
-              <img src="assets/images/professional-development/alsde-cte-summit-thumb.png" alt="ALSDE Career & Technical Education Summit" loading="lazy" class="pd-card-img">
+              <img src="assets/images/professional-development/alsde-cte-summit-thumb.png" alt="ALSDE Career & Technical Education Summit" loading="lazy" class="pd-card-img" data-type="image">
               <div class="pd-thumb-overlay">
                 <span class="pd-overlay-badge pd-doc-badge">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
@@ -803,40 +1032,19 @@
               </div>
             </div>
             <span class="pd-badge-date">ALSDE Governance · 2024–2025</span>
-            <h3 style="font-size: 1.2rem; color: var(--color-circuit-gold); margin-bottom: 0.5rem;">ALSDE Career & Technical Education Summit</h3>
+            <h3 style="font-size: 1.2rem; color: var(--color-circuit-gold); margin-bottom: 0.5rem;">ALSDE Career &amp; Technical Education Summit</h3>
             <p style="font-size: 0.875rem; color: var(--color-text-secondary); margin-bottom: 1rem;">
-              Engaged in the Alabama State Department of Education (ALSDE) statewide CTE leadership summit, focusing on Alabama Plan 2026 educational milestones, workforce credentialing governance, and high-school-to-career technical pathways.
+              Statewide CTE leadership summit focusing on workforce credentialing governance and high-school-to-career technical pathways.
             </p>
             <div class="career-impact-box">
               <strong>Governance Impact:</strong> Ensured 100% compliance with Alabama TAPE evaluation governance and student credential verification.
             </div>
           </div>
 
-          <!-- Item 6: The KY Derby Conference -->
+          <!-- Item 6: Jump$tart National Educator Conference in Louisville (Canonical De-Duplicated Entry) -->
           <div class="glass-card pd-card animate-on-scroll">
             <div class="pd-image-wrapper">
-              <img src="assets/images/professional-development/ky-derby-conference-thumb.png" alt="The Kentucky Derby Leadership Conference in Louisville, KY" loading="lazy" class="pd-card-img">
-              <div class="pd-thumb-overlay">
-                <span class="pd-overlay-badge pd-article-badge">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
-                  Executive Leadership · Louisville
-                </span>
-              </div>
-            </div>
-            <span class="pd-badge-date">Regional Leadership · Louisville, KY</span>
-            <h3 style="font-size: 1.2rem; color: var(--color-circuit-gold); margin-bottom: 0.5rem;">The Kentucky Derby Leadership Conference</h3>
-            <p style="font-size: 0.875rem; color: var(--color-text-secondary); margin-bottom: 1rem;">
-              Attended the executive leadership conference in Louisville, KY, concentrating on high-velocity team orchestration, organizational resilience, and innovative cross-sector partnerships between education and regional industry.
-            </p>
-            <div class="career-impact-box">
-              <strong>Strategic Relevance:</strong> Translates executive leadership and adaptive decision-making principles to multi-stakeholder technical projects.
-            </div>
-          </div>
-
-          <!-- Item 7: Jump$tart National Educator Conference in Louisville -->
-          <div class="glass-card pd-card animate-on-scroll">
-            <div class="pd-image-wrapper">
-              <img src="assets/images/professional-development/jumpstart-conference-thumb.png" alt="Jump$tart National Financial Education Conference in Louisville" loading="lazy" class="pd-card-img">
+              <img src="assets/images/professional-development/jumpstart-conference-thumb.png" alt="Jump$tart National Financial Education Conference in Louisville" loading="lazy" class="pd-card-img" data-type="image">
               <div class="pd-thumb-overlay">
                 <span class="pd-overlay-badge pd-article-badge">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
@@ -845,19 +1053,19 @@
               </div>
             </div>
             <span class="pd-badge-date">National Financial Summit · Louisville, KY</span>
-            <h3 style="font-size: 1.2rem; color: var(--color-circuit-gold); margin-bottom: 0.5rem;">Jump$tart National Educator Conference</h3>
+            <h3 style="font-size: 1.2rem; color: var(--color-circuit-gold); margin-bottom: 0.5rem;">Jump$tart National Educator Conference (Louisville, KY / Kentucky Derby Leadership)</h3>
             <p style="font-size: 0.875rem; color: var(--color-text-secondary); margin-bottom: 1rem;">
-              Completed intensive professional learning at the premier Jump$tart National Financial Education Conference in Louisville, KY, mastering interactive classroom financial simulation tools, FinTech curriculum design, and economic equity strategies.
+              Intensive professional learning on interactive classroom financial simulation tools and FinTech curriculum design.
             </p>
             <div class="career-impact-box">
-              <strong>Curricular Innovation:</strong> Deployed experiential financial simulation models that prepared over 150 students for workforce economics.
+              <strong>Curricular Innovation:</strong> Deployed experiential financial simulation models and cross-sector leadership frameworks that prepared over 150 students for workforce economics.
             </div>
           </div>
 
-          <!-- Item 8: UMMC Associated Student Body (ASB) Quality Improvement Leadership -->
+          <!-- Item 7: UMMC Associated Student Body (ASB) Quality Improvement Leadership -->
           <div class="glass-card pd-card animate-on-scroll">
             <div class="pd-image-wrapper">
-              <img src="assets/images/professional-development/ummc-asb-acceptance.png" alt="University of Mississippi Medical Center ASB Quality Improvement Chair Acceptance Letter" loading="lazy" class="pd-card-img" style="object-position: top;">
+              <img src="assets/images/professional-development/ummc-asb-acceptance.png" alt="University of Mississippi Medical Center ASB Quality Improvement Chair Acceptance Letter" loading="lazy" class="pd-card-img" data-type="image" style="object-position: top;">
               <div class="pd-thumb-overlay">
                 <span class="pd-overlay-badge pd-doc-badge">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
@@ -868,18 +1076,18 @@
             <span class="pd-badge-date">Institutional Governance · UMMC</span>
             <h3 style="font-size: 1.2rem; color: var(--color-circuit-gold); margin-bottom: 0.5rem;">UMMC ASB Quality Improvement Chair for Education</h3>
             <p style="font-size: 0.875rem; color: var(--color-text-secondary); margin-bottom: 1rem;">
-              Appointed as Quality Improvement Chair for Education by the Associated Student Body (ASB) Executive Council at the University of Mississippi Medical Center. Directed student-faculty academic feedback loops, clinical curriculum quality audits, and institutional continuous improvement initiatives.
+              Appointed as Quality Improvement Chair for Education by the UMMC Associated Student Body (ASB) Executive Council. Directed student-faculty academic feedback loops and clinical curriculum quality audits.
             </p>
             <div class="career-impact-box">
               <strong>Institutional Leadership:</strong> Governed formal quality improvement methodologies, academic stakeholder communications, and high-stakes administrative reporting in an academic health science center.
             </div>
           </div>
 
-          <!-- Item 9: NonArtificial Superintelligence -->
+          <!-- Item 8: NonArtificial Superintelligence -->
           <div class="glass-card pd-card animate-on-scroll">
             <div class="pd-image-wrapper">
               <a href="https://nonartificialsi.com" target="_blank" rel="noopener noreferrer" class="pd-image-link" aria-label="Explore NonArtificial Superintelligence Live Platform">
-                <img src="assets/images/professional-development/nonartificial-si-thumb.png" alt="NonArtificial Superintelligence Web3 & Sovereign AI Platform" loading="lazy" class="pd-card-img">
+                <img src="assets/images/professional-development/nonartificial-si-thumb.png" alt="NonArtificial Superintelligence Web3 & Sovereign AI Platform" loading="lazy" class="pd-card-img" data-type="image">
                 <div class="pd-thumb-overlay">
                   <span class="pd-overlay-badge pd-platform-badge">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
@@ -891,7 +1099,7 @@
             <span class="pd-badge-date">Frontier AI & Web3 Systems · 2024–2025</span>
             <h3 style="font-size: 1.2rem; color: var(--color-circuit-gold); margin-bottom: 0.5rem;">NonArtificial Superintelligence (Web3 & Decentralized AI)</h3>
             <p style="font-size: 0.875rem; color: var(--color-text-secondary); margin-bottom: 1rem;">
-              Architecting decentralized intelligence infrastructure and sovereign AI systems at NonArtificial Superintelligence, integrating high-assurance cryptography, Web3 domain registry protocols, and autonomous agent verification models.
+              Architecting decentralized intelligence infrastructure and sovereign AI systems at NonArtificial Superintelligence.
             </p>
             <div class="career-impact-box" style="margin-bottom: 1rem;">
               <strong>Systems Innovation:</strong> Bridges zero-trust computational verification with sovereign decentralized architectures, establishing verifiable AI runtime environments.
@@ -904,7 +1112,7 @@
         </div>
 
         <!-- Federal Public Service & Educational Enhancement Core Cards -->
-        <h3 style="color: var(--color-circuit-gold); margin-bottom: 1.25rem;">Federal Career Execution & Public Service Milestones</h3>
+        <h3 style="color: var(--color-circuit-gold); margin-bottom: 1.25rem;">Federal Career Execution & Public Service Stages</h3>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
           
           <div class="glass-card">
@@ -915,7 +1123,7 @@
             </p>
             <div class="career-impact-box">
               <strong>Career Relevance:</strong>
-              Demonstrates structured, long-term career execution fulfilling the CyberCorps SFS public service service requirement across GS-9 through GS-12 bands.
+              
             </div>
           </div>
 
@@ -935,7 +1143,7 @@
             <span class="badge-wage-level" style="margin-bottom: 0.75rem;">Global Leadership</span>
             <h3 style="font-size: 1.15rem; color: var(--color-circuit-gold); margin-bottom: 0.5rem;">International Humanitarian Service</h3>
             <p style="font-size: 0.875rem; color: var(--color-text-secondary); margin-bottom: 1rem;">
-              Uganda health mission establishing 2 mobile clinics serving 1,000+ rural patients; U.S. Department of State Benjamin A. Gilman International Scholarship in Pokhara, Nepal conducting hospital clinical service and educational broadcasts for Reach the World.
+              OmniMed Certified Village Health Volunteer (Uganda, East Africa). July 2017 – August 2017. Established 2 mobile clinics serving 1,000+ rural patients; U.S. Department of State Benjamin A. Gilman International Scholarship in Pokhara, Nepal conducting hospital clinical service and educational broadcasts for Reach the World.
             </p>
             <div class="career-impact-box">
               <strong>Career Relevance:</strong>
@@ -1039,7 +1247,7 @@
           <div class="glass-card">
             <h4 style="color: var(--color-circuit-gold); margin-bottom: 0.5rem;">5. Regulatory Compliance & Quality Systems</h4>
             <p style="font-size: 0.8125rem; color: var(--color-cyber-cyan); font-weight: 600; margin-bottom: 0.5rem;">
-              Credential: MidSouth Extracts Operational Directorship & cGMP SOP Library
+              Credential: MidSouth Extracts Operational Director & Laboratory Specialistship & cGMP SOP Library
             </p>
             <p style="font-size: 0.875rem; color: var(--color-text-secondary); margin-bottom: 0;">
               Bridges technical cybersecurity controls with legal and regulatory mandates, applying pharmaceutical cGMP discipline to federal GRC and digital forensics.
@@ -1098,134 +1306,144 @@
         </p>
 
         <!-- 4 Curated Highlight Project Cards with Embedded 10s Video Previews -->
-        <h3 style="color: var(--color-circuit-gold); margin-bottom: 1.5rem;">Curated Highlight Projects with Video Previews</h3>
-        <div class="showcase-grid">
-
-          <!-- Highlight 1: CS646 Sanctum -->
-          <div class="showcase-card">
-            <div class="video-player-container">
-              <video class="preview-video-element" poster="assets/previews/sanctum-v1-poster.png" preload="metadata" muted playsinline loop aria-label="CS646 Sanctum 3D World Video Preview">
-                <source src="assets/previews/sanctum-v1-10s-720p.mp4" type="video/mp4">
-                <source src="assets/previews/sanctum-v1-10s-720p.webm" type="video/webm">
-                Your browser does not support HTML5 video preview.
-              </video>
-            </div>
-            <div class="showcase-content">
-              <h4 class="showcase-title">CS646 Sanctum 3D Memory Palace</h4>
-              <p style="font-size: 0.8125rem; color: var(--color-circuit-gold); font-weight: 600;">
-                Gamified Cryptographic Distributed Ledger Environment
-              </p>
-              <div class="showcase-tech-tags">
-                <span class="tech-tag-pill">Godot 4</span>
-                <span class="tech-tag-pill">WebGL</span>
-                <span class="tech-tag-pill">AWS CloudFront</span>
-                <span class="tech-tag-pill">SHA-256</span>
-                <span class="tech-tag-pill">TypeScript</span>
-              </div>
-              <p style="font-size: 0.875rem; color: var(--color-text-secondary); margin-bottom: 1rem;">
-                Interactive 3D exploration world featuring 5 distinct districts, procedural hover traversal, and real-time SHA-256 block hashing demonstrations.
-              </p>
-              <div class="showcase-actions">
-                <a href="https://d1puxvoeqwchkj.cloudfront.net/" target="_blank" rel="noopener noreferrer" class="btn-demo-link">
-                  Launch 3D WebGL World
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Highlight 2: MaqkrsTutor2 -->
-          <div class="showcase-card">
-            <div class="video-player-container">
-              <video class="preview-video-element" poster="assets/previews/tutor-v1-poster.png" preload="metadata" muted playsinline loop aria-label="MaqkrsTutor2 On-Device AI Video Preview">
-                <source src="assets/previews/tutor-v1-10s-720p.mp4" type="video/mp4">
-                <source src="assets/previews/tutor-v1-10s-720p.webm" type="video/webm">
-                Your browser does not support HTML5 video preview.
-              </video>
-            </div>
-            <div class="showcase-content">
-              <h4 class="showcase-title">MaqkrsTutor2 (Local AI Study Assistant)</h4>
-              <p style="font-size: 0.8125rem; color: var(--color-circuit-gold); font-weight: 600;">
-                Native Apple Silicon Local RAG Study Assistant
-              </p>
-              <div class="showcase-tech-tags">
-                <span class="tech-tag-pill">SwiftUI</span>
-                <span class="tech-tag-pill">SwiftData</span>
-                <span class="tech-tag-pill">Apple MLX</span>
-                <span class="tech-tag-pill">Quantized Gemma 4</span>
-                <span class="tech-tag-pill">Ollama</span>
-              </div>
-              <p style="font-size: 0.875rem; color: var(--color-text-secondary); margin-bottom: 1rem;">
-                Native assistant indexing documents and code for semantic query retrieval with 0 network egress, guaranteeing 100% privacy and institutional IP security.
-              </p>
-              <div class="showcase-actions">
-                <a href="https://github.com/astrachan163/MaqkrsTutor-public" target="_blank" rel="noopener noreferrer" class="btn-demo-link">
-                  View Public Repository
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Highlight 3: AdaptiveHS -->
-          <div class="showcase-card">
-            <div class="video-player-container">
-              <video class="preview-video-element" poster="assets/previews/adaptivehs-v1-poster.png" preload="metadata" muted playsinline loop aria-label="AdaptiveHS Learning Portal Video Preview">
-                <source src="assets/previews/adaptivehs-v1-10s-720p.mp4" type="video/mp4">
-                <source src="assets/previews/adaptivehs-v1-10s-720p.webm" type="video/webm">
-                Your browser does not support HTML5 video preview.
-              </video>
-            </div>
-            <div class="showcase-content">
-              <h4 class="showcase-title">AdaptivePrep & AdaptiveHS Learning Portal</h4>
-              <p style="font-size: 0.8125rem; color: var(--color-circuit-gold); font-weight: 600;">
-                Full-Stack K-12 Homeschool Learning Management Platform
-              </p>
-              <div class="showcase-tech-tags">
-                <span class="tech-tag-pill">Next.js 15</span>
-                <span class="tech-tag-pill">Firebase Firestore</span>
-                <span class="tech-tag-pill">Cloud Run</span>
-                <span class="tech-tag-pill">Tailwind CSS</span>
-                <span class="tech-tag-pill">DemoAuth</span>
-              </div>
-              <p style="font-size: 0.875rem; color: var(--color-text-secondary); margin-bottom: 1rem;">
-                Full-stack homeschool portal aligned with Georgia Standards of Excellence (GSE). Features multi-role dashboards for parents, students, and educators.
-              </p>
-              <div class="showcase-actions">
-                <a href="https://adaptivehs-v2.firebaseapp.com/" target="_blank" rel="noopener noreferrer" class="btn-demo-link">
-                  Launch Live Platform
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Highlight 4: MaQkRs Command Center & Planner -->
-          <div class="showcase-card">
-            <div class="video-player-container" style="background: url('assets/screenshots/web-home.png') center/cover no-repeat;">
-              <img src="assets/screenshots/web-home.png" alt="MaQkRs Command Center Dashboard Overview" style="width: 100%; height: 100%; object-fit: cover;">
-            </div>
-            <div class="showcase-content">
-              <h4 class="showcase-title">MaQkRs OS Command Center & Planner</h4>
-              <p style="font-size: 0.8125rem; color: var(--color-circuit-gold); font-weight: 600;">
-                Executive Dashboard & Multi-Agent Operations Console
-              </p>
-              <div class="showcase-tech-tags">
-                <span class="tech-tag-pill">React 19</span>
-                <span class="tech-tag-pill">TypeScript</span>
-                <span class="tech-tag-pill">Firebase</span>
-                <span class="tech-tag-pill">Tailwind CSS</span>
-                <span class="tech-tag-pill">Python</span>
-              </div>
-              <p style="font-size: 0.875rem; color: var(--color-text-secondary); margin-bottom: 1rem;">
-                Unified operational command center providing real-time telemetry across multi-agent workflows, business financials, and project sprint schedules.
-              </p>
-              <div class="showcase-actions">
-                <a href="https://maqkrs-command-center-i.firebaseapp.com/" target="_blank" rel="noopener noreferrer" class="btn-demo-link">
-                  Open Command Center
-                </a>
-              </div>
-            </div>
-          </div>
+        
+    <!-- 02. CAR SCRUB HERO -->
+    <section id="car-scrub-hero" class="portfolio-section" aria-label="Project Infrastructure Visualization" style="padding: 0;">
+      <div class="sticky-canvas-wrapper" id="showcase-canvas-wrapper" style="height: 400dvh; position: relative;">
+        <div class="sticky-canvas-inner" style="position: sticky; top: 0; height: 100dvh; display: flex; align-items: center; justify-content: center; background: #030810; overflow: hidden; z-index: 1;">
+          <canvas id="game-canvas" class="hero-canvas" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;"></canvas>
         </div>
+      </div>
+    </section>
 
+        <h3 style="color: var(--color-circuit-gold); margin-bottom: 1.5rem;">Curated Highlight Projects with Video Previews</h3>
+        
+          <div class="showcase-grid">
+
+            <!-- Highlight 1: CS646 Sanctum -->
+            <div class="showcase-card interactive-card">
+              <div class="video-player-container">
+                <video class="preview-video-element" data-type="video" data-src="assets/previews/sanctum-v1-10s-720p.mp4" poster="assets/previews/sanctum-v1-poster.png" preload="metadata" muted playsinline loop aria-label="CS646 Sanctum 3D World Video Preview" style="cursor: pointer;">
+                  <source src="assets/previews/sanctum-v1-10s-720p.mp4" type="video/mp4">
+                  <source src="assets/previews/sanctum-v1-10s-720p.webm" type="video/webm">
+                  Your browser does not support HTML5 video preview.
+                </video>
+              </div>
+              <div class="showcase-content">
+                <h4 class="showcase-title">CS646 Sanctum 3D Memory Palace</h4>
+                <p style="font-size: 0.8125rem; color: var(--color-circuit-gold); font-weight: 600;">
+                  Gamified Cryptographic Distributed Ledger Environment
+                </p>
+                <div class="showcase-tech-tags">
+                  <span class="tech-tag-pill">Godot 4</span>
+                  <span class="tech-tag-pill">WebGL</span>
+                  <span class="tech-tag-pill">AWS CloudFront</span>
+                  <span class="tech-tag-pill">SHA-256</span>
+                  <span class="tech-tag-pill">TypeScript</span>
+                </div>
+                <p style="font-size: 0.875rem; color: var(--color-text-secondary); margin-bottom: 1rem;">
+                  Interactive 3D exploration world featuring 5 distinct districts, procedural hover traversal, and real-time SHA-256 block hashing demonstrations.
+                </p>
+                <div class="showcase-actions">
+                  <a href="https://d1puxvoeqwchkj.cloudfront.net/" target="_blank" rel="noopener noreferrer" class="btn-demo-link">
+                    Launch 3D WebGL World
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Highlight 2: MaqkrsTutor2 -->
+            <div class="showcase-card interactive-card">
+              <div class="video-player-container">
+                <video class="preview-video-element" data-type="video" data-src="assets/previews/tutor-v1-10s-720p.mp4" poster="assets/previews/tutor-v1-poster.png" preload="metadata" muted playsinline loop aria-label="MaqkrsTutor2 On-Device AI Video Preview" style="cursor: pointer;">
+                  <source src="assets/previews/tutor-v1-10s-720p.mp4" type="video/mp4">
+                  <source src="assets/previews/tutor-v1-10s-720p.webm" type="video/webm">
+                  Your browser does not support HTML5 video preview.
+                </video>
+              </div>
+              <div class="showcase-content">
+                <h4 class="showcase-title">MaqkrsTutor2 (Local AI Study Assistant)</h4>
+                <p style="font-size: 0.8125rem; color: var(--color-circuit-gold); font-weight: 600;">
+                  Native Apple Silicon Local RAG Study Assistant
+                </p>
+                <div class="showcase-tech-tags">
+                  <span class="tech-tag-pill">SwiftUI</span>
+                  <span class="tech-tag-pill">SwiftData</span>
+                  <span class="tech-tag-pill">Apple MLX</span>
+                  <span class="tech-tag-pill">Quantized Gemma 4</span>
+                  <span class="tech-tag-pill">Ollama</span>
+                </div>
+                <p style="font-size: 0.875rem; color: var(--color-text-secondary); margin-bottom: 1rem;">
+                  Native assistant indexing documents and code for semantic query retrieval with 0 network egress, guaranteeing 100% privacy and institutional IP security.
+                </p>
+                <div class="showcase-actions">
+                  <a href="https://github.com/astrachan163/MaqkrsTutor-public" target="_blank" rel="noopener noreferrer" class="btn-demo-link">
+                    View Public Repository
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Highlight 3: AdaptiveHS -->
+            <div class="showcase-card interactive-card">
+              <div class="video-player-container">
+                <video class="preview-video-element" data-type="video" data-src="assets/previews/adaptivehs-v1-10s-720p.mp4" poster="assets/previews/adaptivehs-v1-poster.png" preload="metadata" muted playsinline loop aria-label="AdaptiveHS Learning Portal Video Preview" style="cursor: pointer;">
+                  <source src="assets/previews/adaptivehs-v1-10s-720p.mp4" type="video/mp4">
+                  <source src="assets/previews/adaptivehs-v1-10s-720p.webm" type="video/webm">
+                  Your browser does not support HTML5 video preview.
+                </video>
+              </div>
+              <div class="showcase-content">
+                <h4 class="showcase-title">AdaptivePrep & AdaptiveHS Learning Portal</h4>
+                <p style="font-size: 0.8125rem; color: var(--color-circuit-gold); font-weight: 600;">
+                  Full-Stack K-12 Homeschool Learning Management Platform
+                </p>
+                <div class="showcase-tech-tags">
+                  <span class="tech-tag-pill">Next.js 15</span>
+                  <span class="tech-tag-pill">Firebase Firestore</span>
+                  <span class="tech-tag-pill">Cloud Run</span>
+                  <span class="tech-tag-pill">Tailwind CSS</span>
+                  <span class="tech-tag-pill">DemoAuth</span>
+                </div>
+                <p style="font-size: 0.875rem; color: var(--color-text-secondary); margin-bottom: 1rem;">
+                  Full-stack homeschool portal. Features multi-role dashboards for parents, students, and educators.
+                </p>
+                <div class="showcase-actions">
+                  <a href="https://adaptivehs-v2.firebaseapp.com/" target="_blank" rel="noopener noreferrer" class="btn-demo-link">
+                    Launch Live Platform
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Highlight 4: MaQkRs Command Center & Planner -->
+            <div class="showcase-card interactive-card">
+              <div class="video-player-container" style="background: url('assets/screenshots/web-home.png') center/cover no-repeat;">
+                <img src="assets/screenshots/web-home.png" alt="MaQkRs Command Center Dashboard Overview" data-type="image" style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;">
+              </div>
+              <div class="showcase-content">
+                <h4 class="showcase-title">MaQkRs OS Command Center & Planner</h4>
+                <p style="font-size: 0.8125rem; color: var(--color-circuit-gold); font-weight: 600;">
+                  Executive Dashboard & Multi-Agent Operations Console
+                </p>
+                <div class="showcase-tech-tags">
+                  <span class="tech-tag-pill">React 19</span>
+                  <span class="tech-tag-pill">TypeScript</span>
+                  <span class="tech-tag-pill">Firebase</span>
+                  <span class="tech-tag-pill">Tailwind CSS</span>
+                  <span class="tech-tag-pill">Python</span>
+                </div>
+                <p style="font-size: 0.875rem; color: var(--color-text-secondary); margin-bottom: 1rem;">
+                  Unified operational command center providing real-time telemetry across multi-agent workflows, business financials, and project sprint schedules.
+                </p>
+                <div class="showcase-actions">
+                  <a href="https://maqkrs-command-center-i.firebaseapp.com/" target="_blank" rel="noopener noreferrer" class="btn-demo-link">
+                    Open Command Center
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         <!-- Directory of 28+ Verified Live Project Deployments -->
         <h3 style="color: var(--color-circuit-gold); margin-bottom: 1.25rem;">Directory of 28+ Verified Live Project Deployments</h3>
         <p style="color: var(--color-text-secondary); margin-bottom: 1.5rem;">
@@ -1272,7 +1490,7 @@
           <div class="glass-card" style="padding: 1.25rem;">
             <h4 style="font-size: 1rem; margin-bottom: 0.25rem;"><a href="https://adaptivehs-v2.firebaseapp.com/" target="_blank" rel="noopener noreferrer">AdaptivePrep K-12 Platform</a></h4>
             <p style="font-size: 0.8125rem; color: var(--color-circuit-gold); margin-bottom: 0.5rem;">Cloud Run · Next.js 15</p>
-            <p style="font-size: 0.8125rem; color: var(--color-text-muted); margin-bottom: 0;">Homeschool portal aligned with Georgia GSE standards.</p>
+            <p style="font-size: 0.8125rem; color: var(--color-text-muted); margin-bottom: 0;">Homeschool portal.</p>
           </div>
 
           <div class="glass-card" style="padding: 1.25rem;">
@@ -1390,15 +1608,9 @@
           </div>
 
           <div class="glass-card" style="padding: 1.25rem;">
-            <h4 style="font-size: 1rem; margin-bottom: 0.25rem;"><a href="https://github.com/astrachan163" target="_blank" rel="noopener noreferrer">Andrew Strachan GitHub</a></h4>
-            <p style="font-size: 0.8125rem; color: var(--color-circuit-gold); margin-bottom: 0.5rem;">GitHub · Developer Profile</p>
-            <p style="font-size: 0.8125rem; color: var(--color-text-muted); margin-bottom: 0;">Open source repositories, systems scripts, and academic tools.</p>
-          </div>
-
-          <div class="glass-card" style="padding: 1.25rem;">
-            <h4 style="font-size: 1rem; margin-bottom: 0.25rem;"><a href="https://www.credly.com/badges/d4e5c326-c255-405c-b50e-0a369d6fc3a0/public_url" target="_blank" rel="noopener noreferrer">Microsoft Credly Badge</a></h4>
-            <p style="font-size: 0.8125rem; color: var(--color-circuit-gold); margin-bottom: 0.5rem;">Credly Verification Platform</p>
-            <p style="font-size: 0.8125rem; color: var(--color-text-muted); margin-bottom: 0;">Official Microsoft Certified Educator digital badge verification.</p>
+            <h4 style="font-size: 1rem; margin-bottom: 0.25rem;"><a href="https://ghs-lp-dev-astrachan163.firebaseapp.com/" target="_blank" rel="noopener noreferrer">GHS Learning Platform</a></h4>
+            <p style="font-size: 0.8125rem; color: var(--color-circuit-gold); margin-bottom: 0.5rem;">Firebase · Google Cloud Prototype</p>
+            <p style="font-size: 0.8125rem; color: var(--color-text-muted); margin-bottom: 0;">Functional testing prototype for student portal and course delivery.</p>
           </div>
         </div>
       </div>
@@ -1488,13 +1700,18 @@
       </div>
     </div>
 
-    <!-- Presentation Clicker Hotkeys -->
-    <div class="presenter-keyboard-shortcuts">
-      <span>Hotkeys:</span>
-      <span><span class="kbd-badge">Space</span> Timer Play/Pause</span>
-      <span><span class="kbd-badge">←</span> / <span class="kbd-badge">→</span> Prev/Next Section</span>
-      <span><span class="kbd-badge">1-8</span> Jump Section</span>
-      <span><span class="kbd-badge">Esc</span> Close HUD</span>
+    <!-- Presentation Clicker Hotkeys & Touch Cues -->
+    <div class="nav-cues">
+      <div class="presenter-keyboard-shortcuts">
+        <span>Hotkeys:</span>
+        <span><span class="kbd-badge">Space</span> Timer Play/Pause</span>
+        <span><span class="kbd-badge">←</span> / <span class="kbd-badge">→</span> Prev/Next Section</span>
+        <span><span class="kbd-badge">1-8</span> Jump Section</span>
+        <span><span class="kbd-badge">Esc</span> Close HUD</span>
+      </div>
+    </div>
+    <div class="mobile-swipe-cues" style="padding: 1rem 1.5rem; border-top: 1px solid var(--glass-border); background: rgba(6, 11, 19, 0.9); font-size: 0.75rem; color: var(--color-text-muted); display: flex; align-items: center; gap: 0.5rem;">
+      <span>Touch Navigation: Swipe left/right or use section tabs to navigate</span>
     </div>
   </aside>
 
@@ -1504,8 +1721,8 @@
   <dialog id="video-modal" class="video-dialog-modal" aria-labelledby="modal-video-title">
     <div class="modal-inner">
       <div class="modal-header">
-        <h3 id="modal-video-title" class="modal-title">System Video Preview</h3>
-        <button type="button" class="btn-close-drawer" id="btn-modal-close" aria-label="Close Video Preview Modal">&times;</button>
+        <h3 id="modal-video-title" class="modal-title modal-header-fix">System Video Preview</h3>
+        <button type="button" class="btn-close-drawer modal-close-btn" id="btn-modal-close" aria-label="Close Video Preview Modal">&times;</button>
       </div>
       <div class="modal-body">
         <div class="modal-video-wrapper">
@@ -1576,5 +1793,7 @@
   <script src="js/presenter.js"></script>
   <script src="js/config.js"></script>
   <script src="js/app.js"></script>
+  <script src="js/canvas-scrub.js" defer></script>
+
 </body>
 </html>

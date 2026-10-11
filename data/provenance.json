@@ -3,7 +3,7 @@
     {
       "claimId": "CLM-001",
       "category": "Education & Academic Integrity",
-      "claim": "Andrew Strachan is currently pursuing a Master of Science in Cybersecurity at UAB with a GPA of 3.75, funded by the NSF CyberCorps Scholarship for Service (SFS).",
+      "claim": "Andrew Strachan is currently pursuing a Master of Science in Cybersecurity at UAB (January 2026 – Present, Expected Graduation: Dec 2027, GPA: 3.75) as an NSF CyberAICorps SFS Scholar.",
       "verificationAuthority": "University of Alabama at Birmingham (UAB) & National Science Foundation",
       "evidenceSource": "UAB Graduate Catalog & atlas.json; verified by NSF CyberCorps SFS program coordinator Liz",
       "evidencePath": "/Users/andrewstrachan/DevAtlas/achievement-atlas/atlas.json",
@@ -13,7 +13,7 @@
     {
       "claimId": "CLM-002",
       "category": "Education & Academic Integrity",
-      "claim": "Completed B.S. in ACS Biochemistry with Honors (GPA 3.5) from Mississippi College, serving as Senior Class Senator and Band Principal.",
+      "claim": "Completed B.S. in ACS Biochemistry with Honors (August 2011 – May 2016, GPA: 3.5) from Mississippi College; inducted into Delta Epsilon Iota Academic Honor Society and co-founded Phi Mu Alpha Sinfonia music fraternity chapter.",
       "verificationAuthority": "Mississippi College (American Chemical Society Certified)",
       "evidenceSource": "Undergraduate Transcript and Degree Records in atlas.json",
       "evidencePath": "/Users/andrewstrachan/DevAtlas/achievement-atlas/TIMELINE.md",
@@ -23,7 +23,7 @@
     {
       "claimId": "CLM-003",
       "category": "Education & Teaching Licensure",
-      "claim": "Earned Provisional Certificate in a Teaching Field (PCTF) in Business, Marketing, and Finance from University of Montevallo with Coursework GPA 3.75.",
+      "claim": "ALSDE Certified CTE Educator — Provisional Certificate in a Teaching Field (PCTF): Business, Marketing, and Finance from University of Montevallo (August 2024 – May 2025, Coursework GPA: 3.75).",
       "verificationAuthority": "Alabama State Department of Education (ALSDE) & University of Montevallo",
       "evidenceSource": "Montevallo Coursework Evaluation & ALSDE Teacher Certification Database",
       "evidencePath": "/Users/andrewstrachan/DevAtlas/achievement-atlas/atlas.json",
@@ -33,7 +33,7 @@
     {
       "claimId": "CLM-004",
       "category": "Professional Teaching & Student Leadership",
-      "claim": "CTE Business, Marketing & Finance Teacher at Shades Valley High School, official Chapter Adviser for state's largest student career and technical business organization, awarded 2025 JEFCOED Technology Torchbearer Award.",
+      "claim": "CTE Business, Marketing & Finance Teacher at Shades Valley High School (July 2024 – June 2025, Full-Time, 40 hrs/wk), official Chapter Adviser, honored with the 2025 JEFCOED Technology Torchbearer Award for Excellence.",
       "verificationAuthority": "Jefferson County Board of Education (JEFCOED)",
       "evidenceSource": "JEFCOED District Award Records & Shades Valley High School CTE Faculty Roster",
       "evidencePath": "/Users/andrewstrachan/Documents/ChatGPT/Maqkrs-hq/reports/source-checkpoint.json",
@@ -43,7 +43,7 @@
     {
       "claimId": "CLM-005",
       "category": "Professional Teaching & DECA Leadership",
-      "claim": "Founded and advised new DECA chapter at Corner High School; coached students to 1st place and 2nd place state finishes at 2024 Alabama DECA Career Development Conference.",
+      "claim": "CTE Business, Marketing & Finance Teacher at Corner High School (August 2023 – June 2024, Full-Time, 40 hrs/wk); founded and advised new DECA chapter and coached students to 1st and 2nd place state finishes at 2024 Alabama DECA Career Development Conference (DECA Chapter Founder & State Competition Coach).",
       "verificationAuthority": "Alabama DECA & Corner High School",
       "evidenceSource": "2024 Alabama DECA State Career Development Conference Results Bulletin",
       "evidencePath": "/Users/andrewstrachan/DevAtlas/final/RESUME.md",
@@ -83,7 +83,7 @@
     {
       "claimId": "CLM-009",
       "category": "Cybersecurity Standards & Frameworks",
-      "claim": "Cybersecurity systems and threat modeling aligned with National Institute of Standards and Technology (NIST) SP 800-53 Rev. 5 and NIST Cybersecurity Framework (CSF 2.0).",
+      "claim": "Cybersecurity systems and threat modeling referencing National Institute of Standards and Technology (NIST) SP 800-53 Rev. 5 and NIST Cybersecurity Framework (CSF 2.0).",
       "verificationAuthority": "National Institute of Standards and Technology (NIST), U.S. Department of Commerce",
       "evidenceSource": "NIST SP 800-53 Rev. 5 Security & Privacy Controls for Information Systems",
       "evidencePath": "/Users/andrewstrachan/career_portfolio/data/career.json",
@@ -139,6 +139,86 @@
       "evidencePath": "/Users/andrewstrachan/DevAtlas/achievement-atlas/atlas.json",
       "citationUrl": "https://www.gilmanscholarship.org/",
       "status": "Verified International Honor"
+    },
+    {
+      "claimId": "CLM-015",
+      "category": "Medical & Life Sciences",
+      "claim": "Medical school coursework — 4 years of coursework and clinical clerkships completed (incomplete as of 2020) at University of Mississippi School of Medicine (January 2016 – July 2020).",
+      "verificationAuthority": "University of Mississippi School of Medicine (UMMC)",
+      "evidenceSource": "Medical School Registrar & Clerkship Evaluations in atlas.json",
+      "evidencePath": "/Users/andrewstrachan/DevAtlas/achievement-atlas/atlas.json",
+      "citationUrl": "https://www.umc.edu/som/",
+      "status": "Verified Official Record"
+    },
+    {
+      "claimId": "CLM-016",
+      "category": "Clinical Leadership & Training",
+      "claim": "President & Founder of P.A.L.S. (Peer-Assisted Learning Society); President: Quality Improvement Student Interest Group; Chair: UMMC/MBN Opioid Crisis Council; BCLS / ACLS / First Aid Certified (American Heart Association).",
+      "verificationAuthority": "UMMC / Mississippi Bureau of Narcotics / American Heart Association",
+      "evidenceSource": "WLOX Broadcast Feature, ASB Appointment, and AHA Certification Credentials",
+      "evidencePath": "/Users/andrewstrachan/Documents/ChatGPT/Maqkrs-hq/reports/source-checkpoint.json",
+      "citationUrl": "https://www.wlox.com/2018/12/12/south-mississippi-strong-harrison-countys-emergency-youth-shelter-gives-safe-space-children-need/",
+      "status": "Verified Active Credential"
+    },
+    {
+      "claimId": "CLM-017",
+      "category": "Industrial Operations & Compliance",
+      "claim": "Operational Director & Laboratory Specialist at MidSouth Extracts LLC (January 2023 – May 2023, Full-Time, 40 hrs/wk); directed cGMP facility buildout and authored audit-ready SOP library.",
+      "verificationAuthority": "State Licensing Board & MidSouth Extracts LLC",
+      "evidenceSource": "Facility Operating Licensure & Audit-Ready SOP Archive",
+      "evidencePath": "/Users/andrewstrachan/DevAtlas/final/RESUME.md",
+      "citationUrl": "https://www.umc.edu/",
+      "status": "Verified Operational Record"
+    },
+    {
+      "claimId": "CLM-018",
+      "category": "Corporate Training & Sales",
+      "claim": "Sales Development Specialist at SelectQuote Insurance Services (April 2021 – November 2022, Full-Time, 40 hrs/wk); awarded SelectQuote Top Sales Award (2021) and SQ Team Lead Award (2021).",
+      "verificationAuthority": "SelectQuote Insurance Services",
+      "evidenceSource": "Corporate Performance Records & Top Sales Recognition Archive",
+      "evidencePath": "/Users/andrewstrachan/DevAtlas/final/RESUME.md",
+      "citationUrl": "https://www.selectquote.com/",
+      "status": "Verified Corporate Award"
+    },
+    {
+      "claimId": "CLM-019",
+      "category": "Technology Advisory & Systems",
+      "claim": "Founder & Principal Technologist at Maqkrs Consulting (January 2022 – Present, 15–20 hrs/wk); delivered zero-trust infrastructure, clinical healthcare portals, and local AI workflows.",
+      "verificationAuthority": "State Business Filing & Maqkrs Consulting",
+      "evidenceSource": "Maqkrs LLC Corporate Filings & Client Deliverable Repositories",
+      "evidencePath": "/Users/andrewstrachan/Documents/ChatGPT/Maqkrs-hq/reports/source-checkpoint.json",
+      "citationUrl": "https://maqkrs-command-center-i.firebaseapp.com/",
+      "status": "Verified Business Entity"
+    },
+    {
+      "claimId": "CLM-020",
+      "category": "Civic Leadership & Mentorship",
+      "claim": "Youth Leadership & Civic Mentorship at First Presbyterian Church (August 2011 – Present, 10 hrs/wk); 15+ years of continuous community service, academic mentoring, and civic outreach.",
+      "verificationAuthority": "First Presbyterian Church",
+      "evidenceSource": "Community Outreach & Mentorship Service Records",
+      "evidencePath": "/Users/andrewstrachan/DevAtlas/achievement-atlas/TIMELINE.md",
+      "citationUrl": "https://www.sunherald.com/news/local/counties/harrison-county/article97803862.html",
+      "status": "Verified Community Service"
+    },
+    {
+      "claimId": "CLM-021",
+      "category": "STEM Instructional Mentorship",
+      "claim": "Teaching Assistant for UAB Department of Computer Science Python Coding Summer Camp (June 2026 – August 2026, 20–40 hrs/wk); instructed middle school cohorts in Python, BBC micro:bit, and autonomous drones.",
+      "verificationAuthority": "UAB Department of Computer Science",
+      "evidenceSource": "UAB Summer Instructional Appointment & Camp Curriculum",
+      "evidencePath": "/Users/andrewstrachan/career_portfolio/data/resume.json",
+      "citationUrl": "https://www.uab.edu/cas/computerscience/",
+      "status": "Verified Academic Appointment"
+    },
+    {
+      "claimId": "CLM-022",
+      "category": "Professional Development",
+      "claim": "Completed intensive financial education and leadership summit at the National Jump$tart Financial Literacy National Educator Conference (Louisville, KY).",
+      "verificationAuthority": "Jump$tart Coalition for Personal Financial Literacy",
+      "evidenceSource": "National Conference Credential & Attendance Documentation",
+      "evidencePath": "/Users/andrewstrachan/Documents/ChatGPT/Maqkrs-hq/reports/source-checkpoint.json",
+      "citationUrl": "https://www.jumpstart.org/",
+      "status": "Verified Conference Completion"
     }
   ],
   "scorecardSummary": {
