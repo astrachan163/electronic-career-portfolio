@@ -22,7 +22,7 @@
     },
     {
       "claimId": "CLM-003",
-      "category": "Education & Teaching Licensure",
+      "category": "Education & Teaching Certificate",
       "claim": "ALSDE Certified CTE Educator — Provisional Certificate in a Teaching Field (PCTF): Business, Marketing, and Finance from University of Montevallo (August 2024 – May 2025, Coursework GPA: 3.75).",
       "verificationAuthority": "Alabama State Department of Education (ALSDE) & University of Montevallo",
       "evidenceSource": "Montevallo Coursework Evaluation & ALSDE Teacher Certification Database",
@@ -113,7 +113,7 @@
     {
       "claimId": "CLM-012",
       "category": "Software Systems & On-Device AI",
-      "claim": "MaqkrsTutor2 native macOS/iOS application built with SwiftUI, Apple MLX, and Ollama, presented at UAB CS Spring Showcase (ACM & Women in Tech).",
+      "claim": "MaQkrs AI Tutor native macOS/iOS application built with SwiftUI, Apple MLX, and Ollama, presented at UAB CS Spring Showcase (ACM & Women in Tech).",
       "verificationAuthority": "UAB Department of Computer Science & GitHub Public Repository",
       "evidenceSource": "Live GitHub public repository and showcase video preview",
       "evidencePath": "/Users/andrewstrachan/Maqkrs_Hub/exports/2026-10-03/tutor-v1-10s-720p.mp4",
@@ -143,7 +143,7 @@
     {
       "claimId": "CLM-015",
       "category": "Medical & Life Sciences",
-      "claim": "Medical school coursework — 4 years of coursework and clinical clerkships completed (incomplete as of 2020) at University of Mississippi School of Medicine (January 2016 – July 2020).",
+      "claim": "Medical Studies (coursework), University of Mississippi School of Medicine, 2016–2020.",
       "verificationAuthority": "University of Mississippi School of Medicine (UMMC)",
       "evidenceSource": "Medical School Registrar & Clerkship Evaluations in atlas.json",
       "evidencePath": "/Users/andrewstrachan/DevAtlas/achievement-atlas/atlas.json",
@@ -163,9 +163,9 @@
     {
       "claimId": "CLM-017",
       "category": "Industrial Operations & Compliance",
-      "claim": "Operational Director & Laboratory Specialist at MidSouth Extracts LLC (January 2023 – May 2023, Full-Time, 40 hrs/wk); directed cGMP facility buildout and authored audit-ready SOP library.",
+      "claim": "Operational Director & Laboratory Specialist at MidSouth Extracts LLC (January 2023 – May 2023, Full-Time, 40 hrs/wk). MidSouth Extracts, a Mississippi Medical Cannabis Program (MSDH)-licensed processing facility, needed its MSDH processing license, FDA food-facility registration, and required state and county licenses. Personally procured its MSDH (Mississippi Medical Cannabis Program) processing license, FDA food-facility registration, and all other required state and county licenses, including its MSDH manufactured-food permit and City of Tupelo local permits; wrote its 11-SOP library and HACCP program.",
       "verificationAuthority": "State Licensing Board & MidSouth Extracts LLC",
-      "evidenceSource": "Facility Operating Licensure & Audit-Ready SOP Archive",
+      "evidenceSource": "Facility operating records and SOP archive",
       "evidencePath": "/Users/andrewstrachan/DevAtlas/final/RESUME.md",
       "citationUrl": "https://www.umc.edu/",
       "status": "Verified Operational Record"
@@ -183,9 +183,9 @@
     {
       "claimId": "CLM-019",
       "category": "Technology Advisory & Systems",
-      "claim": "Founder & Principal Technologist at Maqkrs Consulting (January 2022 – Present, 15–20 hrs/wk); delivered zero-trust infrastructure, clinical healthcare portals, and local AI workflows.",
-      "verificationAuthority": "State Business Filing & Maqkrs Consulting",
-      "evidenceSource": "Maqkrs LLC Corporate Filings & Client Deliverable Repositories",
+      "claim": "Founder & Principal Technologist at MaQkrs Consulting (January 2022 – Present, 15–20 hrs/wk); delivered zero-trust infrastructure, clinical healthcare portals, and local AI workflows.",
+      "verificationAuthority": "State Business Filing & MaQkrs Consulting",
+      "evidenceSource": "MaQkrs LLC Corporate Filings & Client Deliverable Repositories",
       "evidencePath": "/Users/andrewstrachan/Documents/ChatGPT/Maqkrs-hq/reports/source-checkpoint.json",
       "citationUrl": "https://maqkrs-command-center-i.firebaseapp.com/",
       "status": "Verified Business Entity"

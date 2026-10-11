@@ -16,7 +16,7 @@
     },
     {
       "id": "tutor",
-      "title": "MaqkrsTutor2 (Local AI Privacy-Preserving Study Assistant)",
+      "title": "MaQkrs AI Tutor (Local AI Privacy-Preserving Study Assistant)",
       "subtitle": "Native macOS/iOS Local Retrieval-Augmented Generation (Local RAG)",
       "category": "Artificial Intelligence & Edge Privacy",
       "techStack": ["SwiftUI", "SwiftData", "Apple MLX", "Ollama", "Quantized Gemma 4", "SQLite Vector Search"],
@@ -43,7 +43,7 @@
     },
     {
       "id": "maqkrs",
-      "title": "MaQkRs OS Command Center & Operational Planner",
+      "title": "MaQkrs OS Command Center & Operational Planner",
       "subtitle": "Unified Executive Business Dashboard & Multi-Agent Operations Hub",
       "category": "Systems Operations & Dashboard Architecture",
       "techStack": ["React 19", "TypeScript", "Firebase", "Tailwind CSS", "Local Agent Hub", "Python"],
@@ -91,7 +91,7 @@
     },
     {
       "id": "p-05",
-      "name": "MaqkrsTutor Public Repository",
+      "name": "MaQkrs AI Tutor Public Repository",
       "category": "On-Device AI & Privacy",
       "platform": "GitHub Open Source",
       "url": "https://github.com/astrachan163/MaqkrsTutor-public",
@@ -127,7 +127,7 @@
     },
     {
       "id": "p-09",
-      "name": "MaQkRs OS Command Center",
+      "name": "MaQkrs OS Command Center",
       "category": "Systems Operations",
       "platform": "Firebase Hosting",
       "url": "https://maqkrs-command-center-i.firebaseapp.com/",

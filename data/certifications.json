@@ -14,7 +14,7 @@
       "name": "Educational Technology & Instructional Design",
       "category": "Instructional Systems & Workforce Training",
       "credential": "Microsoft Certified Educator (MCE) & Alabama Teaching Certificate (PCTF)",
-      "credentialType": "Industry Certification & State Licensure",
+      "credentialType": "Industry Certification & State Certificate",
       "verificationUrl": "https://www.credly.com/badges/d4e5c326-c255-405c-b50e-0a369d6fc3a0/public_url",
       "badgeImage": "assets/brand/mce-microsoft-certified-educator.png",
       "correlationToMission": "Essential for federal cyber workforce development, designing security awareness programs, training non-technical agency personnel on cyber hygiene, and translating complex technical security controls into actionable operational protocols.",
@@ -24,7 +24,7 @@
       "id": "SKILL-03",
       "name": "On-Device AI & Privacy-Preserving Systems",
       "category": "Artificial Intelligence & Edge Compute",
-      "credential": "Native Apple Silicon Architecture (MaqkrsTutor2) & 30 Professional AI Certifications",
+      "credential": "Native Apple Silicon Architecture (MaQkrs AI Tutor) & 30 Professional AI Certifications",
       "credentialType": "Software Engineering & Industry Certifications",
       "correlationToMission": "Addresses strict federal privacy, classified data protection, and operational security requirements. Enables offline semantic intelligence and local RAG capabilities that prevent data exfiltration to external commercial AI APIs.",
       "tools": ["SwiftUI", "SwiftData", "Apple MLX", "Ollama", "Quantized Gemma 4", "Local SQLite Vector Search", "Model Context Protocol (MCP)"]

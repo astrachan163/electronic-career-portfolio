@@ -51,7 +51,7 @@ var PresenterState = (typeof window !== 'undefined' && window.PresenterState) ? 
     ],
     projects: [
       'Walk through 4 flagship highlight systems with web-optimized 10s 720p video previews.',
-      'Highlight CS646 Sanctum 3D World (Godot WebGL on CloudFront) and MaqkrsTutor2 (SwiftUI on-device AI).',
+      'Highlight CS646 Sanctum 3D World (Godot WebGL on CloudFront) and MaQkrs AI Tutor (SwiftUI on-device AI).',
       'Direct evaluators to inspect the directory of 28+ verified live cloud-hosted applications.'
     ],
     sources: [
