@@ -29,8 +29,8 @@
     },
     {
       "id": "adaptivehs",
-      "title": "AdaptivePrep & AdaptiveHS Learning Platform",
-      "subtitle": "K-12 Homeschool Learning Management System & Curriculum Portal",
+      "title": "AdaptiveSchool",
+      "subtitle": "An adaptive learning platform for college and adult students, with AI tools for teachers, parents, and students",
       "category": "Full-Stack EdTech & Cloud Architecture",
       "techStack": ["Next.js 15", "Firebase Firestore", "Tailwind CSS", "Cloud Run", "Google Genkit", "DemoAuth"],
       "mp4Url": "assets/previews/adaptivehs-v1-10s-720p.mp4",
@@ -39,7 +39,7 @@
       "durationSeconds": 10,
       "liveUrl": "https://adaptivehs-v2.firebaseapp.com/",
       "simulationUrl": "https://d3jeotfnsm148g.cloudfront.net/work/adaptivehs/",
-      "description": "Developed a full-stack homeschool platform. Implemented role-based authentication separating Parent oversight, Student modules, and Educator tools with adaptive question generation and rubric scoring."
+      "description": "AdaptiveSchool, an adaptive learning platform for college and adult students, with AI tools for teachers, parents, and students."
     },
     {
       "id": "maqkrs",
@@ -100,16 +100,16 @@
     },
     {
       "id": "p-06",
-      "name": "AdaptivePrep K-12 Homeschool Platform",
+      "name": "AdaptiveSchool",
       "category": "Full-Stack EdTech",
       "platform": "Cloud Run / Firebase",
       "url": "https://adaptivehs-v2.firebaseapp.com/",
-      "description": "Server-side rendered homeschool learning management system.",
+      "description": "AdaptiveSchool, an adaptive learning platform for college and adult students, with AI tools for teachers, parents, and students.",
       "techStack": ["Next.js 15", "Cloud Run", "Firebase", "DemoAuth"]
     },
     {
       "id": "p-07",
-      "name": "AdaptiveHS Interactive Walkthrough Simulation",
+      "name": "AdaptiveSchool demo",
       "category": "Interactive EdTech Demo",
       "platform": "AWS CloudFront",
       "url": "https://d3jeotfnsm148g.cloudfront.net/work/adaptivehs/",
