@@ -77,7 +77,7 @@
       "category": "Coursework & Cryptography",
       "platform": "Firebase Hosting",
       "url": "https://cs646-sanctum-astrachan.firebaseapp.com/",
-      "description": "Permanent course portal for Dr. Yuliang Zheng's UAB graduate blockchain and cryptography curriculum.",
+      "description": "Permanent course portal for the UAB graduate blockchain and cryptography curriculum.",
       "techStack": ["React", "Firebase Hosting", "Tailwind CSS"]
     },
     {

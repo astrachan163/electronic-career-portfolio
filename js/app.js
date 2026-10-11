@@ -16,17 +16,17 @@ var PresenterState = (typeof window !== 'undefined' && window.PresenterState) ? 
   notes: {
     hero: [
       'Welcome evaluators, recruiters, and employers to Andrew Strachan\'s Electronic Career Portfolio.',
-      'Highlight candidate identity: NSF CyberCorps SFS Scholar | Clearable, M.S. Cybersecurity at UAB (GPA 3.75).',
+      'Highlight candidate identity: SFS CyberAICorps scholarship recipient (NSF-funded, with a post-graduation government service commitment). M.S. Cybersecurity student and builder at UAB (GPA 3.75).',
       'Emphasize the binding federal service commitment to protect national security infrastructure.'
     ],
     resume: [
       'Demonstrate interactive technology features: filterable skills matrix and verified academic records.',
-      'Point out graduate coursework at UAB (3.75 GPA), Montevallo PCTF (3.75 GPA), and MC ACS Biochemistry Honors (3.5 GPA).',
+      'Point out UAB GPA 3.75, Montevallo non-degree certificate GPA 3.66, and Mississippi College B.S. GPA 3.50, cum laude.',
       'Review measurable STAR accomplishments: 2025 JEFCOED Technology Torchbearer Award, State DECA coaching trophies, and cGMP compliance.'
     ],
     career: [
       'Review official BLS SOC 15-1212.00 economic data: $120,360 median wage, $182,370+ top decile, 32% growth rate.',
-      'Explain Federal General Schedule progression from GS-9 to GS-14 with CyberCorps SFS Direct Hire Authority.',
+      'Explain Federal General Schedule pay bands from GS-9 to GS-14 as context for roles he is preparing for. He does not hold those jobs.',
       'Discuss technical mitigations for 3 industry obstacles: Post-Quantum cryptography, agentic AI defense, and critical infrastructure.'
     ],
     education: [

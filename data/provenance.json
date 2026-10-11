@@ -3,7 +3,7 @@
     {
       "claimId": "CLM-001",
       "category": "Education & Academic Integrity",
-      "claim": "Andrew Strachan is currently pursuing a Master of Science in Cybersecurity at UAB (January 2026 – Present, Expected Graduation: Dec 2027, GPA: 3.75) as an NSF CyberAICorps SFS Scholar.",
+      "claim": "Andrew Strachan is currently pursuing a Master of Science in Cybersecurity at UAB (January 2026 – Present, Expected Graduation: Dec 2027, GPA: 3.75). SFS CyberAICorps scholarship recipient (NSF-funded, with a post-graduation government service commitment).",
       "verificationAuthority": "University of Alabama at Birmingham (UAB) & National Science Foundation",
       "evidenceSource": "UAB Graduate Catalog & atlas.json; verified by NSF CyberCorps SFS program coordinator Liz",
       "evidencePath": "/Users/andrewstrachan/DevAtlas/achievement-atlas/atlas.json",
@@ -13,7 +13,7 @@
     {
       "claimId": "CLM-002",
       "category": "Education & Academic Integrity",
-      "claim": "Completed B.S. in ACS Biochemistry with Honors (August 2011 – May 2016, GPA: 3.5) from Mississippi College; inducted into Delta Epsilon Iota Academic Honor Society and co-founded Phi Mu Alpha Sinfonia music fraternity chapter.",
+      "claim": "B.S., Biochemistry (ACS), with a secondary major in Biology Medical Sciences; Minor in Music, Mississippi College (now Mississippi Christian University), Aug 2011 – May 2016, cum laude, GPA 3.50. Inducted into Delta Epsilon Iota Academic Honor Society and co-founded Phi Mu Alpha Sinfonia music fraternity chapter.",
       "verificationAuthority": "Mississippi College (American Chemical Society Certified)",
       "evidenceSource": "Undergraduate Transcript and Degree Records in atlas.json",
       "evidencePath": "/Users/andrewstrachan/DevAtlas/achievement-atlas/TIMELINE.md",
@@ -23,7 +23,7 @@
     {
       "claimId": "CLM-003",
       "category": "Education & Teaching Certificate",
-      "claim": "ALSDE Certified CTE Educator — Provisional Certificate in a Teaching Field (PCTF): Business, Marketing, and Finance from University of Montevallo (August 2024 – May 2025, Coursework GPA: 3.75).",
+      "claim": "Provisional Certificate in a Teaching Field: Business, Marketing, and Finance (non-degree), University of Montevallo, Fall 2024 – Spring 2025, GPA 3.66.",
       "verificationAuthority": "Alabama State Department of Education (ALSDE) & University of Montevallo",
       "evidenceSource": "Montevallo Coursework Evaluation & ALSDE Teacher Certification Database",
       "evidencePath": "/Users/andrewstrachan/DevAtlas/achievement-atlas/atlas.json",
@@ -153,7 +153,7 @@
     {
       "claimId": "CLM-016",
       "category": "Clinical Leadership & Training",
-      "claim": "President & Founder of P.A.L.S. (Peer-Assisted Learning Society); President: Quality Improvement Student Interest Group; Chair: UMMC/MBN Opioid Crisis Council; BCLS / ACLS / First Aid Certified (American Heart Association).",
+      "claim": "President & Founder of P.A.L.S. (Peer-Assisted Learning Society); President: Quality Improvement Student Interest Group; Chair: UMMC/MBN Opioid Crisis Council; Human Anatomy Prosector (May–Sep 2017).",
       "verificationAuthority": "UMMC / Mississippi Bureau of Narcotics / American Heart Association",
       "evidenceSource": "WLOX Broadcast Feature, ASB Appointment, and AHA Certification Credentials",
       "evidencePath": "/Users/andrewstrachan/Documents/ChatGPT/Maqkrs-hq/reports/source-checkpoint.json",
@@ -163,7 +163,7 @@
     {
       "claimId": "CLM-017",
       "category": "Industrial Operations & Compliance",
-      "claim": "Operational Director & Laboratory Specialist at MidSouth Extracts LLC (January 2023 – May 2023, Full-Time, 40 hrs/wk). MidSouth Extracts, a Mississippi Medical Cannabis Program (MSDH)-licensed processing facility, needed its MSDH processing license, FDA food-facility registration, and required state and county licenses. Personally procured its MSDH (Mississippi Medical Cannabis Program) processing license, FDA food-facility registration, and all other required state and county licenses, including its MSDH manufactured-food permit and City of Tupelo local permits; wrote its 11-SOP library and HACCP program.",
+      "claim": "Operations Director at MidSouth Extracts LLC (January 2023 – May 2023). MidSouth Extracts, a Mississippi Medical Cannabis Program (MSDH)-licensed processing facility, needed its MSDH processing license, FDA food-facility registration, and required state and county licenses. Personally procured its MSDH (Mississippi Medical Cannabis Program) processing license, FDA food-facility registration, and all other required state and county licenses, including its MSDH manufactured-food permit and City of Tupelo local permits; wrote its 11-SOP library and HACCP program.",
       "verificationAuthority": "State Licensing Board & MidSouth Extracts LLC",
       "evidenceSource": "Facility operating records and SOP archive",
       "evidencePath": "/Users/andrewstrachan/DevAtlas/final/RESUME.md",
@@ -232,7 +232,7 @@
       "pointsPossible": 10,
       "rating": "Exceeds Expectations",
       "pointsAwarded": 10,
-      "evidence": "Integrates interactive technology features including real-time skills matrix filtering across 5 technical domains, chronological timeline with expandable STAR accomplishment cards, verifiable GPA records (UAB 3.75, Montevallo 3.75, MC 3.5), and direct links to live cloud deployments."
+      "evidence": "Integrates interactive technology features including real-time skills matrix filtering across 5 technical domains, chronological timeline with expandable STAR accomplishment cards, verifiable GPA records (UAB 3.75, Montevallo 3.66, Mississippi College 3.50), and direct links to live cloud deployments."
     },
     {
       "criterion": "2. Career Research, Statistics, Salary & Obstacles",
@@ -246,7 +246,7 @@
       "pointsPossible": 15,
       "rating": "Exceeds Expectations",
       "pointsAwarded": 15,
-      "evidence": "Shares school activities and graduate cybersecurity coursework (CS 623 Network Security, CS 646 Blockchain, CS 636 STRIDE Threat Modeling, CS 532 Cloud Computing), business education at Montevallo, and ACS biochemistry honors, providing in-depth articulation of how each activity directly impacts his future career as an Information Security Systems Engineer."
+      "evidence": "Shares school activities and graduate cybersecurity coursework (CS 623 Network Security, CS 646 Blockchain, CS 636 STRIDE Threat Modeling, CS 532 Cloud Computing), business education at Montevallo, and a B.S. in biochemistry (ACS), cum laude, with notes on how that study relates to the Information Security Analyst role he is preparing for."
     },
     {
       "criterion": "4. Special Skills Linked to Certification / Endorsement",
