@@ -143,7 +143,7 @@
     {
       "claimId": "CLM-015",
       "category": "Medical & Life Sciences",
-      "claim": "Medical Studies (Course and clinical work), University of Mississippi School of Medicine, 2016–2020.",
+      "claim": "Medical Studies, Course and clinical work, University of Mississippi School of Medicine, 2016–2020.",
       "verificationAuthority": "University of Mississippi School of Medicine (UMMC)",
       "evidenceSource": "Medical School Registrar & Clerkship Evaluations in atlas.json",
       "evidencePath": "/Users/andrewstrachan/DevAtlas/achievement-atlas/atlas.json",
