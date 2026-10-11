@@ -369,7 +369,7 @@
     {
       "id": "STAR-14",
       "title": "AdaptiveHS K-12 Homeschool Learning Platform",
-      "situation": "Homeschool families needed a unified learning platform aligned with Georgia Standards of Excellence (GSE) that supported parents, students, and educators.",
+      "situation": "Homeschool families needed a unified learning platform that supported parents, students, and educators.",
       "task": "Develop an accessible full-stack educational web application with role-based access control and adaptive assessments.",
       "action": "Built with Next.js 15, Firebase Firestore, and Tailwind CSS; engineered multi-role demo authentication and interactive simulation exports.",
       "result": "Deployed live on Cloud Run / Firebase (`adaptivehs-v2.firebaseapp.com`) and static CloudFront showcase with responsive UI across mobile and desktop."

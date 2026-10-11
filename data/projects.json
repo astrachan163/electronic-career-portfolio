@@ -39,7 +39,7 @@
       "durationSeconds": 10,
       "liveUrl": "https://adaptivehs-v2.firebaseapp.com/",
       "simulationUrl": "https://d3jeotfnsm148g.cloudfront.net/work/adaptivehs/",
-      "description": "Developed a full-stack homeschool platform aligned with Georgia Standards of Excellence (GSE). Implemented role-based authentication separating Parent oversight, Student modules, and Educator tools with adaptive question generation and rubric scoring."
+      "description": "Developed a full-stack homeschool platform. Implemented role-based authentication separating Parent oversight, Student modules, and Educator tools with adaptive question generation and rubric scoring."
     },
     {
       "id": "maqkrs",
@@ -104,7 +104,7 @@
       "category": "Full-Stack EdTech",
       "platform": "Cloud Run / Firebase",
       "url": "https://adaptivehs-v2.firebaseapp.com/",
-      "description": "Server-side rendered homeschool learning management system aligned with Georgia GSE benchmarks.",
+      "description": "Server-side rendered homeschool learning management system.",
       "techStack": ["Next.js 15", "Cloud Run", "Firebase", "DemoAuth"]
     },
     {

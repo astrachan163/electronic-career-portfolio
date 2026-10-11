@@ -196,7 +196,7 @@ TOTAL COMPOSITE SCORE                                   100       100     EXCEED
   4. **Tangible Software Products Developed**:
      - *CS646 Sanctum*: 3D WebGL cryptography memory palace deployed on AWS CloudFront.
      - *MaqkrsTutor2*: SwiftUI privacy-first education app with on-device Apple intelligence.
-     - *AdaptiveHS*: Next.js 15 homeschool learning platform aligned with Georgia Standards of Excellence (GSE).
+     - *AdaptiveHS*: Next.js 15 homeschool learning platform.
      - *Maqkrs Command Center*: Multi-agent cyber operating dashboard deployed on Firebase.
 
 ---
