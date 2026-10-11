@@ -133,7 +133,7 @@
     {
       "claimId": "CLM-014",
       "category": "Community Service & Global Outreach",
-      "claim": "Completed U.S. Department of State Benjamin A. Gilman International Scholarship in Pokhara, Nepal and international health mission in Uganda establishing 2 mobile clinics for 1,000+ patients.",
+      "claim": "Completed U.S. Department of State Benjamin A. Gilman International Scholarship in Pokhara, Nepal and international health mission in Uganda establishing mobile clinics.",
       "verificationAuthority": "U.S. Department of State (Bureau of Educational and Cultural Affairs) & Omnimed",
       "evidenceSource": "Gilman International Scholarship Alumni Records & Omnimed Field Reports",
       "evidencePath": "/Users/andrewstrachan/DevAtlas/achievement-atlas/atlas.json",
@@ -143,7 +143,7 @@
     {
       "claimId": "CLM-015",
       "category": "Medical & Life Sciences",
-      "claim": "Medical Studies (coursework), University of Mississippi School of Medicine, 2016–2020.",
+      "claim": "Medical Studies (Course and clinical work), University of Mississippi School of Medicine, 2016–2020.",
       "verificationAuthority": "University of Mississippi School of Medicine (UMMC)",
       "evidenceSource": "Medical School Registrar & Clerkship Evaluations in atlas.json",
       "evidencePath": "/Users/andrewstrachan/DevAtlas/achievement-atlas/atlas.json",
@@ -281,7 +281,7 @@
       "pointsPossible": 10,
       "rating": "Exceeds Expectations",
       "pointsAwarded": 10,
-      "evidence": "Showcases 51-position federal opportunity tracker, 14 SFS Virtual Job Fair applications, international health outreach in Uganda, Gilman Scholarship in Nepal, youth STEM drone mentoring, and 4 tangible software products developed (Sanctum, Tutor, AdaptiveHS, Citadel)."
+      "evidence": "Showcases 51-position federal opportunity tracker, 14 SFS Virtual Job Fair applications, international health outreach in Uganda, Gilman Scholarship in Nepal, youth STEM drone mentoring, and 4 tangible software products developed (Sanctum, Tutor, AdaptiveSchool, Citadel)."
     },
     {
       "criterion": "9. Technical Polish, Accessibility & Media Standards",
