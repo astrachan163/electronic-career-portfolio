@@ -58,8 +58,8 @@
     {
       "institution": "University of Mississippi School of Medicine",
       "abbreviation": "UMMC",
-      "degree": "Medical Studies (Course and clinical work), University of Mississippi School of Medicine, 2016–2020",
-      "field": "Medical Studies (Course and clinical work)",
+      "degree": "Medical Studies, Course and clinical work, University of Mississippi School of Medicine, 2016–2020",
+      "field": "Medical Studies, Course and clinical work",
       "dates": "January 2016 – July 2020",
       "gpa": "Coursework Completed in Good Standing",
       "honors": "Virginia Covington Award (2017) · President & Founder: P.A.L.S. (Peer-Assisted Learning Society) · Chair: UMMC/MBN Opioid Crisis Council · Human Anatomy Prosector (May–Sep 2017)",
@@ -68,7 +68,7 @@
         "President, Quality Improvement Student Interest Group & Associate Student Body QI Chair",
         "Chair, UMMC/MBN Opioid Crisis Council directing harm reduction initiatives and youth shelter outreach",
         "Human Anatomy Prosector (May–Sep 2017)",
-        "Medical Studies (Course and clinical work), University of Mississippi School of Medicine, 2016–2020, including high-reliability clinical operations, diagnostic triage, and HIPAA privacy security"
+        "Medical Studies, Course and clinical work, University of Mississippi School of Medicine, 2016–2020, including high-reliability clinical operations, diagnostic triage, and HIPAA privacy security"
       ]
     }
   ],
@@ -241,7 +241,7 @@
       "organization": "University of Mississippi School of Medicine (UMMC)",
       "location": "Jackson, MS",
       "dates": "May 2017 – September 2017",
-      "badge": "Medical Studies (Course and clinical work)",
+      "badge": "Medical Studies, Course and clinical work",
       "achievements": [
         "Performed intricate anatomical dissections of human cadaveric donors to create master teaching specimens for medical and dental schools.",
         "Delivered lecture demonstrations to 100+ first-year medical students, teaching complex neurovascular and musculoskeletal relationships."
@@ -433,11 +433,11 @@
     },
     {
       "institution": "Mississippi College & UMMC",
-      "program": "B.S. Biochemistry (ACS), Mississippi College (now Mississippi Christian University); Medical Studies (Course and clinical work), University of Mississippi School of Medicine, 2016–2020",
+      "program": "B.S. Biochemistry (ACS), Mississippi College (now Mississippi Christian University); Medical Studies, Course and clinical work, University of Mississippi School of Medicine, 2016–2020",
       "courses": [
         "ACS-Certified Biochemistry & Physical Chemistry",
         "Human Anatomy Prosector (May–Sep 2017)",
-        "Medical Studies (Course and clinical work)",
+        "Medical Studies, Course and clinical work",
         "High-Reliability Healthcare Operations & HIPAA Privacy Security"
       ],
       "careerImpact": "Instills scientific rigor, empirical hypothesis testing, and zero-defect attention to detail. Operating in sterile surgical suites and cGMP extraction labs directly parallels the discipline needed to enforce zero-trust security postures and safeguard protected infrastructure."
