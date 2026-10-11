@@ -1,14 +1,14 @@
 {
   "profile": {
     "name": "Andrew Strachan",
-    "headline": "Cybersecurity Systems Engineer & Secure Systems Architect",
-    "fellowship": "CyberCorps: Scholarship for Service (SFS) Scholar",
+    "headline": "M.S. Cybersecurity Candidate | CyberAICorps Scholar | UAB",
+    "programLine": "SFS CyberAICorps scholarship recipient (NSF-funded, with a post-graduation government service commitment)",
     "location": "Birmingham, Alabama",
     "email": "strachan@uab.edu",
     "github": "https://github.com/astrachan163",
     "linkedin": "https://www.linkedin.com/in/andrew-william-strachan/",
-    "clearance": "CyberCorps: Scholarship for Service (SFS) Scholar | Clearable. Maintained eligibility requirements for federal civilian employment; fully prepared to undergo federal security background investigations upon agency sponsorship.",
-    "summary": "NSF CyberCorps Scholarship for Service (SFS) Scholar pursuing an M.S. in Cybersecurity at UAB (GPA 3.75). Combines deep systems programming and zero-trust engineering with executive compliance, industrial cGMP quality controls, and award-winning career and technical education leadership."
+    "clearance": "Willing to obtain a security clearance.",
+    "summary": "SFS CyberAICorps scholarship recipient (NSF-funded, with a post-graduation government service commitment), pursuing an M.S. in Cybersecurity at UAB (GPA 3.75). M.S. Cybersecurity student and builder. Combines systems programming and zero-trust engineering with executive compliance, industrial cGMP quality controls, and award-winning career and technical education leadership."
   },
   "education": [
     {
@@ -18,7 +18,7 @@
       "field": "Cybersecurity & Information Security",
       "dates": "January 2026 – Present (Expected Graduation: Dec 2027)",
       "gpa": "3.75 / 4.0",
-      "honors": "NSF CyberAICorps SFS Scholar",
+      "honors": "SFS CyberAICorps scholarship recipient (NSF-funded, with a post-graduation government service commitment)",
       "highlights": [
         "Specializing in Network Security (CS 623), Blockchain & Cryptography (CS 646), Threat Modeling (CS 636), and Cloud Computing (CS 532)",
         "Under federal service commitment upon graduation to protect critical national infrastructure and executive agency assets",
@@ -28,10 +28,10 @@
     {
       "institution": "University of Montevallo",
       "abbreviation": "Montevallo",
-      "degree": "ALSDE Certified CTE Educator — Provisional Certificate in a Teaching Field (PCTF): Business, Marketing, and Finance",
+      "degree": "Provisional Certificate in a Teaching Field: Business, Marketing, and Finance (non-degree)",
       "field": "Business, Marketing, and Finance",
-      "dates": "August 2024 – May 2025",
-      "gpa": "3.75 / 4.0",
+      "dates": "Fall 2024 – Spring 2025",
+      "gpa": "3.66 / 4.0",
       "honors": "ALSDE State CTE Certification · NAOF Curriculum Specialization",
       "highlights": [
         "Mastered experiential pedagogy in managerial finance, business software systems, and entrepreneurship",
@@ -43,10 +43,10 @@
       "institution": "Mississippi College",
       "abbreviation": "MC",
       "degree": "Bachelor of Science (B.S.)",
-      "field": "ACS Biochemistry, Biology Medical Sciences; Music (Minor)",
+      "field": "B.S., Biochemistry (ACS), with a secondary major in Biology Medical Sciences; Minor in Music, Mississippi College (now Mississippi Christian University), Aug 2011 – May 2016, cum laude",
       "dates": "August 2011 – May 2016",
-      "gpa": "3.5 / 4.0",
-      "honors": "Graduated with Honors · Delta Epsilon Iota Academic Honor Society · Phi Mu Alpha Sinfonia",
+      "gpa": "3.50 / 4.0",
+      "honors": "cum laude · Delta Epsilon Iota Academic Honor Society · Phi Mu Alpha Sinfonia",
       "highlights": [
         "Senior Class Senator (Student Government Association, 2015–2016)",
         "Principal French Horn in MC Symphonic Band and Orchestra (2012–2013)",
@@ -62,12 +62,12 @@
       "field": "Medical Studies (coursework), 2016–2020",
       "dates": "January 2016 – July 2020",
       "gpa": "Coursework Completed in Good Standing",
-      "honors": "Virginia Covington Award (2017) · President & Founder: P.A.L.S. (Peer-Assisted Learning Society) · Chair: UMMC/MBN Opioid Crisis Council · BCLS / ACLS / First Aid Certified",
+      "honors": "Virginia Covington Award (2017) · President & Founder: P.A.L.S. (Peer-Assisted Learning Society) · Chair: UMMC/MBN Opioid Crisis Council · Human Anatomy Prosector (May–Sep 2017)",
       "highlights": [
         "Human Anatomy Prosector (May–Sep 2017)",
         "President, Quality Improvement Student Interest Group & Associate Student Body QI Chair",
         "Chair, UMMC/MBN Opioid Crisis Council directing harm reduction initiatives and youth shelter outreach",
-        "BCLS / ACLS / First Aid Certified (American Heart Association high-reliability life support)",
+        "Human Anatomy Prosector (May–Sep 2017)",
         "Medical Studies (coursework), 2016–2020, including high-reliability clinical operations, diagnostic triage, and HIPAA privacy security"
       ]
     }
@@ -178,10 +178,10 @@
       ]
     },
     {
-      "role": "Operational Director & Laboratory Specialist",
+      "role": "Operations Director",
       "organization": "MidSouth Extracts LLC",
       "location": "Tupelo, MS",
-      "dates": "January 2023 – May 2023 (Full-Time, 40 hrs/wk)",
+      "dates": "January 2023 – May 2023",
       "badge": "cGMP Compliance Lead",
       "achievements": [
         "MidSouth Extracts, a Mississippi Medical Cannabis Program (MSDH)-licensed processing facility, needed its MSDH processing license, FDA food-facility registration, and required state and county licenses.",
@@ -270,7 +270,7 @@
     },
     {
       "id": "STAR-02",
-      "title": "State Championship DECA Coaching (1st & 2nd Place)",
+      "title": "DECA coaching (1st and 2nd place)",
       "situation": "Corner High School lacked a competitive business leadership organization, limiting student exposure to state and national career pathways.",
       "task": "Charter a new DECA chapter from scratch, recruit student competitors, and prepare them for statewide marketing and finance role-play competitions.",
       "action": "Conducted weekly simulated business judging sessions, analyzed market case studies, and trained students in rapid executive decision-making.",
@@ -282,7 +282,7 @@
       "situation": "MidSouth Extracts, a Mississippi Medical Cannabis Program (MSDH)-licensed processing facility, needed its MSDH processing license, FDA food-facility registration, and required state and county licenses.",
       "task": "Author an entire operational standard operating procedure (SOP) library and guide facility qualification before state licensing audits.",
       "action": "Personally procured its MSDH (Mississippi Medical Cannabis Program) processing license, FDA food-facility registration, and all other required state and county licenses, including its MSDH manufactured-food permit and City of Tupelo local permits; wrote its 11-SOP library and HACCP program.",
-      "result": "Passed all state regulatory inspections on the first audit pass, with zero compliance citations."
+      "result": "Completed the licensing and SOP work in this role."
     },
     {
       "id": "STAR-04",
@@ -342,7 +342,7 @@
     },
     {
       "id": "STAR-11",
-      "title": "Benjamin A. Gilman International Fellowship in Pokhara, Nepal",
+      "title": "Benjamin A. Gilman International Scholarship in Pokhara, Nepal",
       "situation": "Global public health and sustainable agriculture initiatives require cross-disciplinary volunteers capable of clinical support and community education.",
       "task": "Complete U.S. Department of State Gilman Scholarship in Nepal, balancing clinical rotations with international educational broadcasts.",
       "action": "Assisted physicians at B.G. Hospital & Research Center, taught organic farming to 50+ Himalayan farmers, and served as Reach the World Travel Correspondent broadcasting live seminars to New York students.",
