@@ -1,0 +1,10 @@
+/* "Built by MaQkrs" footer badge. 44px min tap height, visible focus, no motion. Uses kit tokens if present. */
+.mq-badge { display:inline-flex; align-items:center; gap:8px; min-height:44px; padding:0 16px 0 8px; border-radius:999px;
+  background:#182048; color:#ffffff; border:1px solid #2A3566; font:600 14px/1 "Public Sans", system-ui, -apple-system, sans-serif;
+  text-decoration:none; }
+.mq-badge img { width:28px; height:28px; display:block; }
+.mq-badge:hover { border-color:#40F0F8; }
+.mq-badge:focus-visible { outline:2px solid #40F0F8; outline-offset:3px; }
+.mq-badge--light { background:#ffffff; color:#182048; border-color:#7880A0; }
+.mq-badge--light:focus-visible { outline-color:#2458B8; }
+@media (prefers-contrast: more) { .mq-badge { border-width:2px; border-color:currentColor; } }

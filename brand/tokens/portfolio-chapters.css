@@ -1,0 +1,76 @@
+/* Portfolio (nonartificialsi.com) chapter themes and helpers from design system v1. Needs tokens.css. Portfolio and career only. */
+/* 9. Chapter themes: each sets bg, surface, text, heading, muted, link, focus and accents together,
+   so no chapter can inherit dark ink on a dark ground (the Oct 11 blocker). */
+[data-chapter="intro"], [data-chapter="contact"] {
+  color-scheme: dark; --t-bg: var(--midnight-base); --t-surface: var(--midnight-surface); --t-stretch: 125%; }
+[data-chapter="intro"], [data-chapter="workshop"], [data-chapter="build"], [data-chapter="contact"] {
+  --t-text: #f4f7fb; --t-heading: var(--champagne-50); --t-muted: var(--frost-300);
+  --t-link: var(--cyan-200); --t-link-visited: var(--champagne-200); --t-focus: var(--cyan-300);
+  --t-accent: var(--champagne-200); --t-accent-2: var(--cyan-300); }
+[data-chapter="workshop"] { color-scheme: dark; --t-bg: var(--midnight-indigo); --t-surface: #243157; --t-muted: #d0d8e3; --t-stretch: 100%; }
+[data-chapter="build"] { color-scheme: dark; --t-bg: var(--midnight-navy); --t-surface: #162130; --t-stretch: 100%; }
+[data-chapter="cyber"], [data-chapter="security"] { /* Platinum Lagoon */
+  color-scheme: dark; --t-bg: var(--midnight-graphite); --t-surface: #0f1620;
+  --t-text: #f5f7fa; --t-heading: var(--platinum-50); --t-muted: #b4c0ce;
+  --t-link: #a8e8ec; --t-link-visited: var(--platinum-200); --t-focus: var(--cyan-lagoon);
+  --t-accent: var(--platinum-200); --t-accent-2: var(--cyan-lagoon);
+  --t-sweep: linear-gradient(100deg, var(--platinum-50) 0%, var(--platinum-200) 42%, var(--cyan-lagoon) 100%);
+  --t-rule: linear-gradient(90deg, transparent, var(--platinum-200) 20%, var(--cyan-lagoon) 80%, transparent);
+  --t-stretch: 62%; }
+[data-chapter="teach"] { /* Pearl, the one light chapter. Champagne appears only as light (rims/glow), never as text. */
+  color-scheme: light; --t-bg: var(--frost-50); --t-surface: #ffffff;
+  --t-text: var(--frost-ink); --t-heading: var(--frost-ink); --t-muted: var(--frost-ink-3);
+  --t-link: var(--cyan-ink); --t-link-visited: #1d3a4a; --t-focus: var(--cyan-deep);
+  --t-accent: #13212e; --t-accent-2: var(--cyan-deep);
+  --t-glass-subtle: rgb(255 255 255 / .62); --t-glass-strong: rgb(255 255 255 / .82);
+  --t-glass-border: rgb(15 27 38 / .12); --t-glass-border-active: rgb(12 104 101 / .28);
+  --t-sweep: linear-gradient(100deg, #13212e 0%, #1d3a4a 42%, var(--cyan-deep) 100%);
+  --t-rule: linear-gradient(90deg, transparent, var(--champagne-200) 15%, var(--cyan-deep) 70%, transparent);
+  --t-stretch: 112%; }
+[data-chapter="roots"] {
+  color-scheme: dark; --t-bg: var(--midnight-lagoon); --t-surface: #10272d;
+  --t-text: #eef4f3; --t-heading: var(--champagne-50); --t-muted: #bccbcc;
+  --t-link: #b5e4dd; --t-link-visited: var(--champagne-200); --t-focus: var(--cyan-seaglass);
+  --t-accent: var(--champagne-200); --t-accent-2: var(--cyan-seaglass);
+  --t-sweep: linear-gradient(100deg, var(--champagne-50) 0%, var(--champagne-200) 42%, var(--cyan-seaglass) 100%);
+  --t-stretch: 100%; }
+
+/* 10. PR #4 bridge: map semantic tokens onto the names PR #4 components already read. */
+:root, [data-chapter] {
+  --gc-bg: var(--t-bg); --gc-surface: var(--t-surface); --gc-text: var(--t-text); --gc-muted: var(--t-muted);
+  --gc-hi: var(--champagne-50); --gc-mid: var(--champagne-200); --gc-cyan: var(--t-accent-2);
+  --ink: var(--t-text); --paper: var(--t-bg); --muted: var(--t-muted); --heading: var(--t-heading);
+  --link: var(--t-link); --link-visited: var(--t-link-visited); --focus: var(--t-focus); --accent: var(--t-accent-2);
+  --hero-type-sweep: var(--t-sweep); --hero-rule: var(--t-rule); --chapter-stretch: var(--t-stretch);
+}
+[data-chapter="cyber"], [data-chapter="security"] { --gc-hi: var(--platinum-50); --gc-mid: var(--platinum-200); }
+[data-chapter="teach"] { --gc-hi: #13212e; --gc-mid: #1d3a4a; }
+
+/* 11. Base application (opt-in helpers; components keep their own selectors) */
+[data-chapter] { background-color: var(--t-bg); color: var(--t-text); }
+[data-chapter] :is(h1, h2, h3) { color: var(--t-heading); }
+[data-chapter] a { color: var(--t-link); text-decoration-line: underline; text-decoration-thickness: 1px; text-underline-offset: .18em; }
+[data-chapter] a:visited { color: var(--t-link-visited); }
+:focus-visible { outline: 2px solid var(--t-focus); outline-offset: 3px; }
+
+.ds-glass, .ds-glass-strong {
+  background-color: var(--t-glass-subtle); border: 1px solid var(--t-glass-border);
+  -webkit-backdrop-filter: blur(var(--glass-blur-subtle)) saturate(var(--glass-saturate));
+  backdrop-filter: blur(var(--glass-blur-subtle)) saturate(var(--glass-saturate)); }
+.ds-glass-strong { background-color: var(--t-glass-strong); border-color: var(--t-glass-border-active); box-shadow: var(--glass-glow);
+  -webkit-backdrop-filter: blur(var(--glass-blur-strong)) saturate(var(--glass-saturate));
+  backdrop-filter: blur(var(--glass-blur-strong)) saturate(var(--glass-saturate)); }
+
+/* 12. Accessibility fallbacks */
+@media (prefers-contrast: more) {
+  .ds-glass, .ds-glass-strong { -webkit-backdrop-filter: none; backdrop-filter: none; background-color: var(--t-surface);
+    background-image: none; box-shadow: none; border: 2px solid var(--t-text); }
+}
+@media (prefers-reduced-transparency: reduce) {
+  .ds-glass, .ds-glass-strong { -webkit-backdrop-filter: none; backdrop-filter: none; background-color: var(--t-surface); }
+}
+@media (prefers-reduced-motion: reduce) {
+  :root { --dur-fast: 0ms; --dur-mid: 0ms; --dur-slow: 0ms; --stagger: 0ms; --underline-delay: 0ms; --reveal-shift: 0px; }
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important; scroll-behavior: auto !important; }
+}

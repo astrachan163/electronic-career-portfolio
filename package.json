@@ -1,19 +1,25 @@
 {
-  "name": "andrew-strachan-career-portfolio",
+  "name": "electronic-career-portfolio",
   "version": "1.0.0",
-  "description": "Andrew Strachan's Electronic Career Portfolio - Cybersecurity Engineer & Secure Systems Architect",
-  "main": "js/app.js",
+  "private": true,
+  "description": "Electronic career portfolio for Andrew Strachan, an M.S. Cybersecurity candidate at UAB.",
+  "type": "module",
   "scripts": {
-    "copy-assets": "node tools/copy-assets.js",
-    "test": "node -e \"console.log('Testing suite ready')\"",
-    "serve": "python3 -m http.server 8080"
+    "build": "node scripts/build.mjs",
+    "build:preview": "node scripts/build.mjs --preview",
+    "dev": "npm run build && python3 -m http.server 8080 --directory dist",
+    "test": "node scripts/check-claims.mjs && node scripts/check-emoji.mjs && node --test tests/*.test.mjs",
+    "pretest": "npm run build"
   },
-  "keywords": [
-    "career-portfolio",
-    "cybersecurity",
-    "zero-trust",
-    "nsf-sfs"
-  ],
-  "author": "Andrew Strachan",
-  "license": "UNLICENSED"
+  "dependencies": {
+    "gsap": "^3.13.0"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.1",
+    "playwright": "^1.55.0"
+  },
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=20"
+  }
 }

@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "maqkrs-command-center-i"
+  },
+  "targets": {
+    "maqkrs-command-center-i": {
+      "hosting": {
+        "maqkrs-career": [
+          "maqkrs-career"
+        ]
+      }
+    }
+  }
+}

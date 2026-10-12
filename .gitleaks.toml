@@ -1,0 +1,11 @@
+title = "electronic-career-portfolio"
+
+[extend]
+useDefault = true
+
+# WPA3-Enterprise is the Wi-Fi protocol name in the fact archive, not an API key.
+[[allowlists]]
+description = "Protocol name in data/resume.json STAR-07"
+regexTarget = "match"
+regexes = ['''WPA3-Enterprise''']
+paths = ['''data/resume\.json''']

@@ -1,0 +1,24 @@
+/* End state for chapter reveals. Each chapter has its own rule so scripted motion can scrub one trigger at a time. */
+#about .reveal {
+  opacity: 1;
+  transform: none;
+  clip-path: inset(0);
+}
+
+#experience .reveal {
+  opacity: 1;
+  transform: none;
+  clip-path: inset(0);
+}
+
+#projects .reveal {
+  opacity: 1;
+  transform: none;
+  clip-path: inset(0);
+}
+
+#contact .reveal {
+  opacity: 1;
+  transform: none;
+  clip-path: inset(0);
+}

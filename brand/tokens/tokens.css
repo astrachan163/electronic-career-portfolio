@@ -1,0 +1,185 @@
+/* MaQkrs brand kit v1 tokens (Oct 11, 2026). Tokens only: no element or global rules.
+   Part A: portfolio site primitives (champagne-cyan, midnight, frost, golden-ratio type, Fibonacci spacing, glass, motion).
+   Part B: A1 app palette (--mq-*), for app UI. Part C: kit additions (gradients, glass helper, bar skin).
+   Fonts live in fonts.css (root-relative /fonts/ URLs; rewrite to your path). Chapter themes for the portfolio: portfolio-chapters.css. */
+/* ---- Part A ---- */
+:root {
+  /* 2. Palette primitives */
+  --champagne-50: #f7f2e8;  --champagne-100: #f1e9d8;  --champagne-200: #e8dcc0;
+  --champagne-rim: rgb(232 220 192 / .55);  --champagne-glow: rgb(232 220 192 / .16);
+  --cyan-100: #d2f2ef;  --cyan-200: #b7ebe6;  --cyan-300: #8ed4ce;
+  --cyan-lagoon: #7ad6da;  --cyan-seaglass: #9ad3cb;  --cyan-deep: #0c6865;  --cyan-ink: #0b5e5b;
+  --midnight-base: #0b111a;  --midnight-surface: #111a25;  --midnight-elevated: #1a2534;
+  --midnight-graphite: #070c12;  --midnight-navy: #0e1622;  --midnight-lagoon: #0a1c21;  --midnight-indigo: #1c2748;
+  --frost-50: #f5f7fa;  --frost-100: #eaeff4;  --frost-200: #d5dee8;  --frost-300: #c5d0dc;  --frost-400: #9eadbe;
+  --frost-ink: #0f1b26;  --frost-ink-2: #243848;  --frost-ink-3: #3e5366;
+  --platinum-50: #f7f4ef;  --platinum-200: #ded8cd;
+
+  /* 3. Type: Archivo display + Public Sans text + MaQkrs Pixel (Workshop/Play/404 only) */
+  --font-display: "Archivo", "Archivo Fallback", system-ui, sans-serif;
+  --font-body: "Public Sans", system-ui, -apple-system, sans-serif;
+  --font-pixel: "MaQkrs Pixel", ui-monospace, monospace;
+  --font-mono: ui-monospace, "SF Mono", Menlo, monospace;
+  --phi: 1.618;
+  /* Golden ratio on half steps: each step x1.272, every two steps x1.618 (16 -> 25.89 -> 41.89 -> 67.77). */
+  --step--1: 12.58px; --step-0: 16px; --step-1: 20.35px; --step-2: 25.89px; --step-3: 32.94px;
+  --step-4: 41.89px; --step-5: 53.30px; --step-6: 67.77px; --step-7: 86.23px;
+  /* Fluid aliases (same values PR #4 ships): phone ratio ~1.25, desktop phi. */
+  --type-fluid-n1: clamp(12.8px, 12.8px, 13px);
+  --type-fluid-0: 16px;
+  --type-fluid-1: clamp(20px, 17.79px + 0.562vw, 25.89px);
+  --type-fluid-2: clamp(25px, 18.66px + 1.613vw, 41.89px);
+  --type-fluid-3: clamp(31.25px, 17.54px + 3.488vw, 67.77px);
+  --type-fluid-4: clamp(39.06px, 12.56px + 6.742vw, 109.66px);
+  --leading-tight: 1.05; --leading-snug: 1.25; --leading-body: 1.618;
+  --track-kicker: .22em; --track-tab: .14em; --track-display: -.02em;
+  --pixel-size-1: 16px; --pixel-size-2: 24px; --pixel-size-3: 32px; /* integer multiples of the 8px em only */
+
+  /* 4. Fibonacci spacing + radii */
+  --space-fib-1: 2px; --space-fib-2: 3px; --space-fib-3: 5px; --space-fib-4: 8px; --space-fib-5: 13px;
+  --space-fib-6: 21px; --space-fib-7: 34px; --space-fib-8: 55px; --space-fib-9: 89px; --space-fib-10: 144px;
+  --radius-1: 2px; --radius-2: 8px; --radius-tab: 7px; --radius-3: 13px; --radius-4: 21px; --radius-pill: 999px;
+  --tap-min: 44px;
+
+  /* 5. Light: one key light, top-left. Highlights sit top-left, shadows fall bottom-right. */
+  --light-angle: 160deg;
+  --light-rim-hi: -1px -1px 1.5px rgb(247 242 232 / .38);
+  --light-rim-fill: 1.2px 0 1.5px rgb(142 212 206 / .42);
+  --light-edge: inset 1px 1px 0 rgb(255 255 255 / .07);
+  --light-shadow: 6px 10px 24px rgb(0 0 0 / .32);
+  --light-sheen: linear-gradient(var(--light-angle), rgb(255 255 255 / .10), transparent 42%);
+
+  /* 6. Glass material: max two glass layers per viewport, blur 8px or 10px, never animated */
+  --glass-blur-subtle: 8px; --glass-blur-strong: 10px; --glass-saturate: 140%;
+  --glass-subtle: rgb(17 26 37 / .50); --glass-strong: rgb(28 42 59 / .72);
+  --glass-border: rgb(202 218 235 / .10); --glass-border-active: rgb(232 220 192 / .24);
+  --glass-glow: var(--light-edge), 0 0 18px var(--champagne-glow), 0 6px 18px rgb(0 0 0 / .25);
+
+  /* 7. Motion: one easing curve */
+  --ease: cubic-bezier(.16, 1, .3, 1);
+  --ease-out: var(--ease); --gc-ease: var(--ease);
+  --dur-instant: 0ms; --dur-fast: 180ms; --dur-mid: 420ms; --dur-slow: 700ms;
+  --duration-fast: var(--dur-fast); --duration-mid: var(--dur-mid); --duration-slow: var(--dur-slow);
+  --stagger: 60ms; --underline-delay: 120ms; --reveal-shift: 8px;
+
+  /* 8. Default theme = Intro (midnight). Semantic tokens every component reads. */
+  color-scheme: dark;
+  --t-bg: var(--midnight-base); --t-surface: var(--midnight-surface);
+  --t-text: #f4f7fb; --t-heading: var(--champagne-50); --t-muted: var(--frost-300);
+  --t-link: var(--cyan-200); --t-link-visited: var(--champagne-200); --t-focus: var(--cyan-300);
+  --t-accent: var(--champagne-200); --t-accent-2: var(--cyan-300);
+  --t-glass-subtle: var(--glass-subtle); --t-glass-strong: var(--glass-strong);
+  --t-glass-border: var(--glass-border); --t-glass-border-active: var(--glass-border-active);
+  --t-sweep: linear-gradient(100deg, var(--champagne-50) 0%, var(--champagne-200) 42%, var(--cyan-300) 100%);
+  --t-rule: linear-gradient(90deg, transparent, var(--champagne-200) 20%, var(--cyan-300) 80%, transparent);
+  --t-stretch: 125%;
+}
+
+
+/* ---- Part B: A1 app palette ---- */
+/* MaQkrs AI Tutor app palette A1 (generated by build_a1.py, 2026-10-11). App UI only; not the portfolio tokens. */
+:root {
+  color-scheme: light dark;
+  --mq-bg: #F8F8F8;
+  --mq-surface: #FFFFFF;
+  --mq-surface-tint: #E8F1FD;
+  --mq-text-primary: #182048;
+  --mq-text-secondary: #4A5270;
+  --mq-accent: #4888E8;
+  --mq-accent-text: #2458B8;
+  --mq-accent-fill: #2F64C8;
+  --mq-on-accent-fill: #FFFFFF;
+  --mq-secondary: #3F9E40;
+  --mq-secondary-text: #2B7330;
+  --mq-secondary-tint: #E3F4E3;
+  --mq-cyan-accent: #30D8F8;
+  --mq-gold-accent: #F8D030;
+  --mq-on-deco-accent: #182048;
+  --mq-border: #C0C8D8;
+  --mq-border-strong: #7880A0;
+  --mq-focus-ring: #2458B8;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --mq-bg: #081028;
+    --mq-surface: #101838;
+    --mq-surface-tint: #182457;
+    --mq-text-primary: #E0F0F8;
+    --mq-text-secondary: #A8B6D4;
+    --mq-accent: #88B0F8;
+    --mq-accent-text: #9CC0FA;
+    --mq-accent-fill: #88B0F8;
+    --mq-on-accent-fill: #081028;
+    --mq-secondary: #58C0A0;
+    --mq-secondary-text: #6CD0AE;
+    --mq-secondary-tint: #123A32;
+    --mq-cyan-accent: #40F0F8;
+    --mq-gold-accent: #F8D030;
+    --mq-on-deco-accent: #081028;
+    --mq-border: #2A3566;
+    --mq-border-strong: #6E7AA8;
+    --mq-focus-ring: #40F0F8;
+  }
+}
+[data-theme="light"] {
+  --mq-bg: #F8F8F8;
+  --mq-surface: #FFFFFF;
+  --mq-surface-tint: #E8F1FD;
+  --mq-text-primary: #182048;
+  --mq-text-secondary: #4A5270;
+  --mq-accent: #4888E8;
+  --mq-accent-text: #2458B8;
+  --mq-accent-fill: #2F64C8;
+  --mq-on-accent-fill: #FFFFFF;
+  --mq-secondary: #3F9E40;
+  --mq-secondary-text: #2B7330;
+  --mq-secondary-tint: #E3F4E3;
+  --mq-cyan-accent: #30D8F8;
+  --mq-gold-accent: #F8D030;
+  --mq-on-deco-accent: #182048;
+  --mq-border: #C0C8D8;
+  --mq-border-strong: #7880A0;
+  --mq-focus-ring: #2458B8;
+}
+[data-theme="dark"] {
+  --mq-bg: #081028;
+  --mq-surface: #101838;
+  --mq-surface-tint: #182457;
+  --mq-text-primary: #E0F0F8;
+  --mq-text-secondary: #A8B6D4;
+  --mq-accent: #88B0F8;
+  --mq-accent-text: #9CC0FA;
+  --mq-accent-fill: #88B0F8;
+  --mq-on-accent-fill: #081028;
+  --mq-secondary: #58C0A0;
+  --mq-secondary-text: #6CD0AE;
+  --mq-secondary-tint: #123A32;
+  --mq-cyan-accent: #40F0F8;
+  --mq-gold-accent: #F8D030;
+  --mq-on-deco-accent: #081028;
+  --mq-border: #2A3566;
+  --mq-border-strong: #6E7AA8;
+  --mq-focus-ring: #40F0F8;
+}
+
+/* ---- Kit additions (v1): shared brand primitives for every MaQkrs project ---- */
+:root {
+  /* Gold-to-cyan = champagne-to-cyan. Never #dcc58a, brown, yellow, tan, mustard or lime. */
+  --mq-gradient-gold-cyan: linear-gradient(100deg, #f7f2e8 0%, #e8dcc0 42%, #8ed4ce 100%);   /* text/rules on dark only */
+  --mq-gradient-gold-cyan-rule: linear-gradient(90deg, transparent, #e8dcc0 20%, #8ed4ce 80%, transparent);
+  --mq-gradient-ink-cyan-light: linear-gradient(100deg, #13212e 0%, #1d3a4a 42%, #0c6865 100%); /* light grounds */
+  --mq-glass-bg: rgb(17 26 37 / .50); --mq-glass-bg-strong: rgb(28 42 59 / .72);
+  --mq-glass-border: rgb(202 218 235 / .10); --mq-glass-border-active: rgb(232 220 192 / .24);
+  --mq-glass-blur: 8px; --mq-glass-blur-strong: 10px; --mq-glass-fallback: #111a25;
+  --mq-bar-bg: #182048; --mq-bar-text: #ffffff; --mq-bar-focus: #30D8F8;   /* shared top bar / footer skin */
+  --mq-pixel-scale: 4; /* pixel art: integer scales only, image-rendering: pixelated */
+}
+.mq-pixel { image-rendering: pixelated; image-rendering: crisp-edges; }
+.mq-glass { background: var(--mq-glass-bg); border: 1px solid var(--mq-glass-border);
+  -webkit-backdrop-filter: blur(var(--mq-glass-blur)) saturate(140%); backdrop-filter: blur(var(--mq-glass-blur)) saturate(140%); }
+.mq-gradient-text { background: var(--mq-gradient-gold-cyan); -webkit-background-clip: text; background-clip: text; color: transparent; }
+@media (prefers-contrast: more), (prefers-reduced-transparency: reduce) {
+  .mq-glass { -webkit-backdrop-filter: none; backdrop-filter: none; background: var(--mq-glass-fallback); }
+  .mq-gradient-text { background: none; color: #f7f2e8; }
+}
+@supports not ((-webkit-background-clip: text) or (background-clip: text)) { .mq-gradient-text { color: #f7f2e8; } }
