@@ -80,3 +80,16 @@ Add this row to `maqkrs-dashboard/registry/apps.json` (do that in the hub repo, 
 ```
 
 `demo` is false because this portfolio has no sign-in and no sandbox session.
+
+## 8. GitHub Pages URL
+
+https://astrachan163.github.io/electronic-career-portfolio/ stays public. Resumes, the portfolio footer, and the profile README already link there. This repo does not publish `dist/` to that URL. The Firebase build uses root-absolute paths (`/css`, `/brand`, `/js`, `/icons`), and GitHub Pages serves this project under `/electronic-career-portfolio/`, so those assets would 404.
+
+The replacement is a redirect stub in `pages/`:
+
+- `pages/index.html` is the project-site home.
+- `pages/404.html` is what GitHub Pages serves for every old deep path (`assets/`, `js/`, `styles/`, `data/`, `README.md`, and the invasion frames).
+- Both pages send a meta refresh, a canonical link to `https://career.nonartificialsi.com/`, and a visible "Continue to the Electronic Career Portfolio" link.
+- `pages/redirect.mjs` rewrites that link and the refresh URL before the two-second fallback. Old hashes move with the visitor: `#hero`, `#resume`, `#education`, and `#main-content` go to `#about`; `#career`, `#development`, `#enhancement`, and `#skills` go to `#experience`; `#projects` stays `#projects`; `#sources` goes to `/sources`. Resume PDFs and `data/resume.json` go to `#about`. Professional-development images go to `#experience`. Project previews and `data/projects.json` go to `#projects`. Other old files go to the site root.
+
+`.github/workflows/pages-redirect.yml` is the publisher. It runs on a push to `main` and on `workflow_dispatch`. It requests `https://career.nonartificialsi.com/` and pushes `pages/` to the `gh-pages` branch only when that request returns HTTP 200. Any other result leaves `gh-pages` untouched, so the site Cody published at `823ca84949d0099dbe3a4c466e598d196c70234c` keeps answering until the Firebase URL does. A green run that logs "did not return 200" did not publish. After the domain is live, the next push to `main` publishes the stub; `workflow_dispatch` on `main` does the same thing without waiting for another commit. This workflow does not deploy Firebase Hosting.

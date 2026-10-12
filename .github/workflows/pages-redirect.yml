@@ -1,0 +1,45 @@
+name: GitHub Pages redirect
+
+# Publishes pages/ to the gh-pages branch only after the Firebase URL
+# returns HTTP 200. A failed check leaves the live github.io site unchanged.
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+concurrency:
+  group: github-pages-redirect
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Leave gh-pages in place until the Firebase URL answers
+        id: reach
+        run: |
+          code="$(curl -sS -o /dev/null -w '%{http_code}' --max-time 20 -L https://career.nonartificialsi.com/ || true)"
+          echo "Firebase URL status: ${code:-000}"
+          if [ "${code}" = "200" ]; then
+            echo "ready=yes" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=no" >> "$GITHUB_OUTPUT"
+            echo "career.nonartificialsi.com did not return 200. The gh-pages branch is unchanged."
+          fi
+
+      - name: Publish the redirect stub
+        if: steps.reach.outputs.ready == 'yes'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./pages
+          publish_branch: gh-pages
+          keep_files: false
+          force_orphan: false
+          commit_message: "Publish github.io redirect to career.nonartificialsi.com"

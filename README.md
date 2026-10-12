@@ -9,7 +9,7 @@
 
 A public career site for Andrew Strachan, an M.S. Cybersecurity candidate at the University of Alabama at Birmingham and an SFS CyberAICorps scholarship recipient.
 
-**Status:** Pre-release: demo build. The pages are built and tested locally. Firebase Hosting for career.nonartificialsi.com is not deployed from this repo yet.
+**Status:** Pre-release: demo build. The pages are built and tested locally. Firebase Hosting for career.nonartificialsi.com is not deployed from this repo yet. https://astrachan163.github.io/electronic-career-portfolio/ stays on the current gh-pages branch until that URL answers; `docs/DEPLOY.md` describes the redirect that replaces it.
 
 Not deployed · Part of [Andrew Strachan's portfolio](https://www.nonartificialsi.com)
 
