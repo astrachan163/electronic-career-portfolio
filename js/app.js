@@ -32,7 +32,7 @@ var PresenterState = (typeof window !== 'undefined' && window.PresenterState) ? 
     education: [
       'Present graduate cybersecurity coursework (CS 623 Network Security, CS 646 Blockchain & Cryptocurrency, CS 636 Computer Security, CS 532 Systems Programming, Cloud Computing (Summer 2026)).',
       'Articulate explicit impact on future career for every educational program.',
-      'Connect laboratory biochemistry discipline and medical training to zero-trust compliance standards.'
+      'Connect laboratory biochemistry discipline and medical studies to zero-trust compliance standards.'
     ],
     enhancement: [
       'Showcase the 51-position federal opportunity tracker (accurateinternshiptracker.xlsx).',

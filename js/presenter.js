@@ -31,7 +31,7 @@ var PresenterState = (typeof window !== 'undefined' && window.PresenterState) ? 
     education: [
       "UAB M.S. Cybersecurity GPA 3.75, Montevallo certificate GPA 3.66, Mississippi College B.S. GPA 3.50, cum laude.",
       "Graduate cybersecurity coursework (CS 623 Network Security, CS 646 Blockchain & Cryptocurrency, CS 636 Computer Security, CS 532 Systems Programming, Cloud Computing (Summer 2026)).",
-      "Connect laboratory biochemistry discipline and medical training to zero-trust compliance standards."
+      "Connect laboratory biochemistry discipline and medical studies to zero-trust compliance standards."
     ],
     enhancement: [
       "Professional Development (2023–2025): conferences (ALACTE, DECA Anaheim, National Jump$tart Financial Literacy Conference (Louisville, KY)), UMMC leadership, and community service.",

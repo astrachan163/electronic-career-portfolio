@@ -76,7 +76,7 @@
       "category": "Coursework & Cryptography",
       "platform": "Firebase Hosting",
       "url": "https://cs646-sanctum-astrachan.firebaseapp.com/",
-      "description": "Permanent course portal for the UAB graduate blockchain and cryptography curriculum.",
+      "description": "Permanent course portal for UAB CS 646 Blockchain & Cryptocurrency.",
       "techStack": ["React", "Firebase Hosting", "Tailwind CSS"]
     },
     {
