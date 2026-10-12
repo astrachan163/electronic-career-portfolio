@@ -1,5 +1,5 @@
 import { execSync } from "node:child_process";
-import { cpSync, mkdirSync, readFileSync, rmSync, writeFileSync, existsSync } from "node:fs";
+import { cpSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { pathToFileURL } from "node:url";
 
@@ -39,18 +39,6 @@ function copySite() {
   cpSync(path.join(root, "brand"), path.join(dist, "brand"), { recursive: true });
   cpSync(path.join(root, "brand", "icons"), path.join(dist, "icons"), { recursive: true });
   cpSync(path.join(root, "brand", "icons", "favicon.ico"), path.join(dist, "favicon.ico"));
-  const gsapDist = path.join(root, "node_modules", "gsap", "dist");
-  if (!existsSync(path.join(gsapDist, "gsap.min.js"))) {
-    throw new Error("gsap is not installed. From the repository root run npm install.");
-  }
-  const vendor = path.join(dist, "vendor", "gsap");
-  mkdirSync(vendor, { recursive: true });
-  cpSync(path.join(gsapDist, "gsap.min.js"), path.join(vendor, "gsap.min.js"));
-  cpSync(path.join(gsapDist, "ScrollTrigger.min.js"), path.join(vendor, "ScrollTrigger.min.js"));
-  const license = path.join(root, "node_modules", "gsap", "LICENSE");
-  if (existsSync(license)) {
-    cpSync(license, path.join(vendor, "LICENSE"));
-  }
 }
 
 function writeVersion() {

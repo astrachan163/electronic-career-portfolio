@@ -155,8 +155,22 @@ test("built pages keep legal links, chapters, and self-hosted brand files", () =
     assert.equal(home.includes(href), true, href);
   }
   assert.match(home, /fetchpriority="high"/);
-  assert.match(home, /prefers-reduced-motion: reduce/);
+  assert.match(home, /maqkrs-wordmark-pixel-night\.svg/);
+  assert.match(home, /data-maqkrs-crew/);
+  assert.match(home, /data-crew-src="\/brand\/crew\/maqkrs-crew\.js"/);
+  assert.match(home, /data-motion-pause/);
+  assert.equal(home.includes("still-reduced-motion"), false);
+  assert.equal(home.includes("cubebot"), false);
+  assert.equal(home.includes("maqkrs-mark-cubebot"), false);
   assert.match(home, /data-skip-intro/);
+  const motion = readFileSync(path.join(root, "site", "css", "motion.css"), "utf8");
+  assert.match(motion, /animation-timeline: view\(\)/);
+  assert.match(motion, /--reveal-shift: 4px/);
+  assert.equal(motion.includes("scale("), false);
+  assert.equal(motion.includes("clip-path"), false);
+  for (const id of ["about", "experience", "projects", "contact"]) {
+    assert.match(motion, new RegExp(`#${id} \\.reveal`));
+  }
 });
 
 test("dist has no secret markers and does not hotlink the kit", () => {
@@ -184,11 +198,20 @@ test("version.json names this app and a sha", () => {
   assert.equal(Number.isNaN(Date.parse(version.builtAt)), false);
 });
 
-test("gsap scroll plugin is vendored without eval", () => {
-  const gsap = readFileSync(path.join(dist, "vendor", "gsap", "gsap.min.js"), "utf8");
-  const scroll = readFileSync(path.join(dist, "vendor", "gsap", "ScrollTrigger.min.js"), "utf8");
-  assert.equal(gsap.includes("eval("), false);
-  assert.equal(scroll.includes("eval("), false);
+test("published pages omit the retired crystal-head bot", () => {
+  const pages = [
+    path.join(dist, "index.html"),
+    path.join(dist, "404.html"),
+    path.join(dist, "sources", "index.html"),
+  ];
+  for (const page of pages) {
+    const html = readFileSync(page, "utf8");
+    assert.equal(html.includes("cubebot"), false, page);
+    assert.match(html, /maqkrs-wordmark-pixel-night\.svg/);
+    assert.match(html, /data-maqkrs-crew/);
+  }
+  assert.equal(statExists(path.join(dist, "brand", "logo", "maqkrs-mark-cubebot.svg")), false);
+  assert.equal(statExists(path.join(dist, "vendor", "gsap", "gsap.min.js")), false);
 });
 
 function statExists(file) {

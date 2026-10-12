@@ -1,13 +1,18 @@
-import { motionPlan } from "./motion-policy.js";
+import { motionPlan, needsLoopPause, softenMotion } from "./motion-policy.js";
 
 const reduceQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
 const saveData = Boolean(navigator.connection && navigator.connection.saveData);
 const poster = document.querySelector("[data-intro-poster]");
 const stage = document.querySelector("[data-intro-stage]");
 const skip = document.querySelector("[data-skip-intro]");
+const pauseButton = document.querySelector("[data-motion-pause]");
 
-const STILL_SRC = "/brand/motion/maqkrs-title-intro-still-reduced-motion-960.webp";
-const STILL_SET = "/brand/motion/maqkrs-title-intro-still-reduced-motion-960.webp 960w, /brand/motion/maqkrs-title-intro-still-reduced-motion-1920.webp 1920w";
+const STILL_SRC = "/brand/motion/maqkrs-title-intro-poster-960.webp";
+const STILL_SET = "/brand/motion/maqkrs-title-intro-poster-960.webp 960w, /brand/motion/maqkrs-title-intro-poster-1920.webp 1920w";
+
+if (softenMotion(reduceQuery.matches)) {
+  document.documentElement.setAttribute("data-soften", "true");
+}
 
 function showStill() {
   document.documentElement.setAttribute("data-motion", "still");
@@ -16,7 +21,6 @@ function showStill() {
   }
   poster.src = STILL_SRC;
   poster.srcset = STILL_SET;
-  poster.alt = "MaQkrs gear title, reduced-motion still";
 }
 
 function skipIntro() {
@@ -24,6 +28,9 @@ function skipIntro() {
   if (video) {
     video.pause();
     video.remove();
+  }
+  if (pauseButton) {
+    pauseButton.hidden = true;
   }
   const heading = document.getElementById("about-title");
   const about = document.getElementById("about");
@@ -39,53 +46,41 @@ if (skip) {
   skip.addEventListener("click", skipIntro);
 }
 
-function probeFps(samples) {
-  return new Promise((resolve) => {
-    const deltas = [];
-    let last = 0;
-    function tick(now) {
-      if (last !== 0) {
-        deltas.push(now - last);
-      }
-      last = now;
-      if (deltas.length >= samples) {
-        const usable = deltas.slice(2);
-        const average = usable.reduce((sum, value) => sum + value, 0) / usable.length;
-        resolve(1000 / average);
+function bindPause(video) {
+  if (!pauseButton) {
+    return;
+  }
+  const arm = () => {
+    if (!needsLoopPause(video.duration) || pauseButton.dataset.armed === "true") {
+      return;
+    }
+    pauseButton.dataset.armed = "true";
+    pauseButton.hidden = false;
+    pauseButton.setAttribute("aria-pressed", "false");
+    pauseButton.addEventListener("click", () => {
+      if (video.paused) {
+        const played = video.play();
+        if (played && typeof played.catch === "function") {
+          played.catch(() => {});
+        }
+        pauseButton.textContent = "Pause";
+        pauseButton.setAttribute("aria-pressed", "false");
         return;
       }
-      requestAnimationFrame(tick);
-    }
-    requestAnimationFrame(tick);
-  });
-}
-
-function loadScript(src) {
-  return new Promise((resolve, reject) => {
-    const script = document.createElement("script");
-    script.src = src;
-    script.async = false;
-    script.onload = () => resolve();
-    script.onerror = () => reject(new Error("script failed"));
-    document.body.appendChild(script);
-  });
-}
-
-function findRule(selector) {
-  for (const sheet of document.styleSheets) {
-    let rules;
-    try {
-      rules = sheet.cssRules;
-    } catch {
-      continue;
-    }
-    for (const rule of rules) {
-      if (rule.selectorText === selector) {
-        return rule;
-      }
-    }
+      video.pause();
+      pauseButton.textContent = "Play";
+      pauseButton.setAttribute("aria-pressed", "true");
+    });
+    video.addEventListener("ended", () => {
+      pauseButton.textContent = "Play";
+      pauseButton.setAttribute("aria-pressed", "true");
+    });
+  };
+  if (video.readyState >= 1) {
+    arm();
+    return;
   }
-  return null;
+  video.addEventListener("loadedmetadata", arm, { once: true });
 }
 
 function mountVideo() {
@@ -121,93 +116,29 @@ function mountVideo() {
   });
   video.addEventListener("error", () => {
     video.remove();
+    if (pauseButton) {
+      pauseButton.hidden = true;
+    }
     showStill();
   });
   stage.append(video);
+  bindPause(video);
   const played = video.play();
   if (played && typeof played.catch === "function") {
     played.catch(() => {
       video.remove();
+      if (pauseButton) {
+        pauseButton.hidden = true;
+      }
       showStill();
     });
   }
 }
 
-function initChapters() {
-  const gsap = window.gsap;
-  const ScrollTrigger = window.ScrollTrigger;
-  if (!gsap || !ScrollTrigger) {
-    return;
-  }
-  const chapters = [
-    { id: "about", clip: false },
-    { id: "experience", clip: false },
-    { id: "projects", clip: true },
-    { id: "contact", clip: false },
-  ];
-  const rules = [];
-  for (const chapter of chapters) {
-    const rule = findRule(`#${chapter.id} .reveal`);
-    if (!rule) {
-      return;
-    }
-    rules.push({ chapter, rule });
-  }
-  const probe = document.querySelector("#about .reveal");
-  rules[0].rule.style.opacity = "0.42";
-  if (!probe || getComputedStyle(probe).opacity !== "0.42") {
-    for (const item of rules) {
-      item.rule.style.opacity = "1";
-      item.rule.style.transform = "none";
-      item.rule.style.clipPath = "inset(0)";
-    }
-    return;
-  }
-  gsap.registerPlugin(ScrollTrigger);
-  for (const item of rules) {
-    const proxy = { p: 0 };
-    gsap.fromTo(proxy, { p: 0 }, {
-      p: 1,
-      ease: "none",
-      scrollTrigger: {
-        trigger: `#${item.chapter.id}`,
-        start: "top 85%",
-        end: "top 45%",
-        scrub: true,
-      },
-      onUpdate: () => {
-        const progress = proxy.p;
-        item.rule.style.opacity = String(progress);
-        item.rule.style.transform = `translate3d(0, ${(1 - progress) * 28}px, 0)`;
-        if (item.chapter.clip) {
-          item.rule.style.clipPath = `inset(${(1 - progress) * 8}% 0 0 0)`;
-        }
-      },
-    });
-  }
-  ScrollTrigger.refresh();
-}
-
-async function startMotion() {
-  const fps = await probeFps(12);
-  const plan = motionPlan({
-    reduce: reduceQuery.matches,
-    saveData,
-    fps,
-  });
-  if (plan === "still") {
-    showStill();
-    return;
-  }
+function startMotion() {
   document.documentElement.setAttribute("data-motion", "video");
   const begin = () => {
     mountVideo();
-    loadScript("/vendor/gsap/gsap.min.js")
-      .then(() => loadScript("/vendor/gsap/ScrollTrigger.min.js"))
-      .then(() => initChapters())
-      .catch(() => {
-        document.documentElement.setAttribute("data-motion", "still");
-      });
   };
   if (document.readyState === "complete") {
     begin();
@@ -216,7 +147,7 @@ async function startMotion() {
   }
 }
 
-if (motionPlan({ reduce: reduceQuery.matches, saveData, fps: 60 }) === "still") {
+if (motionPlan({ saveData }) === "still") {
   showStill();
 } else {
   startMotion();

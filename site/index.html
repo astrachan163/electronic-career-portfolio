@@ -49,15 +49,15 @@
     </div>
   </header>
   <main id="content">
+    <div data-maqkrs-crew data-crew-src="/brand/crew/maqkrs-crew.js" hidden></div>
     <section id="intro" class="chapter" data-chapter="intro" aria-labelledby="intro-title">
       <div class="chapter-inner intro-layout">
         <div class="intro-stage" data-intro-stage>
-          <picture>
-            <source media="(prefers-reduced-motion: reduce)" type="image/webp" srcset="/brand/motion/maqkrs-title-intro-still-reduced-motion-960.webp 960w, /brand/motion/maqkrs-title-intro-still-reduced-motion-1920.webp 1920w">
-            <img data-intro-poster src="/brand/motion/maqkrs-title-intro-poster-960.webp" srcset="/brand/motion/maqkrs-title-intro-poster-960.webp 960w, /brand/motion/maqkrs-title-intro-poster-1920.webp 1920w" sizes="(max-width: 960px) 100vw, 960px" alt="MaQkrs gear title" width="960" height="540" fetchpriority="high">
-          </picture>
+          <img data-intro-poster src="/brand/motion/maqkrs-title-intro-poster-960.webp" srcset="/brand/motion/maqkrs-title-intro-poster-960.webp 960w, /brand/motion/maqkrs-title-intro-poster-1920.webp 1920w" sizes="(max-width: 960px) 100vw, 960px" alt="MaQkrs gear title" width="960" height="540" fetchpriority="high">
+          <button class="motion-pause" type="button" data-motion-pause hidden aria-pressed="false">Pause</button>
         </div>
         <div>
+          <img class="pixel-wordmark" src="/brand/logo/maqkrs-wordmark-pixel-night.svg" alt="MaQkrs" width="368" height="96">
           <p class="kicker">Electronic Career Portfolio</p>
           <hr class="rule">
           <h1 id="intro-title">Andrew Strachan</h1>
@@ -362,10 +362,9 @@
     <div class="footer-inner">
       <div class="footer-brand">
         <a href="https://www.nonartificialsi.com/">
-          <img class="footer-wordmark" src="/brand/logo/maqkrs-wordmark-pixel-night.svg" alt="MaQkrs" width="123" height="32">
+          <img class="footer-wordmark" src="/brand/logo/maqkrs-wordmark-pixel-night.svg" alt="MaQkrs" width="184" height="48">
         </a>
         <a class="mq-badge" href="https://www.nonartificialsi.com/" aria-label="Built by MaQkrs, Andrew Strachan's portfolio">
-          <img src="/brand/logo/maqkrs-mark-cubebot.svg" alt="" width="28" height="28">
           <span>Built by MaQkrs</span>
         </a>
       </div>
@@ -381,6 +380,7 @@
       <p>Electronic Career Portfolio by Andrew Strachan. No account is required. This build does not offer AI features.</p>
     </div>
   </footer>
+  <script type="module" src="/js/crew-hook.js"></script>
   <script type="module" src="/js/main.js"></script>
 </body>
 </html>

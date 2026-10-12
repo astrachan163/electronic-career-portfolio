@@ -11,9 +11,6 @@
     "test": "node scripts/check-claims.mjs && node scripts/check-emoji.mjs && node --test tests/*.test.mjs",
     "pretest": "npm run build"
   },
-  "dependencies": {
-    "gsap": "^3.13.0"
-  },
   "devDependencies": {
     "@axe-core/playwright": "^4.10.1",
     "playwright": "^1.55.0"

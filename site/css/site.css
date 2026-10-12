@@ -203,6 +203,38 @@ h4 {
   opacity: 1;
 }
 
+.motion-pause {
+  position: absolute;
+  z-index: 2;
+  right: 8px;
+  bottom: 8px;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0;
+  border: 2px solid var(--mq-bar-focus);
+  background: var(--mq-bar-bg);
+  color: #ffffff;
+  font: 600 12px/1 var(--font-body);
+  cursor: pointer;
+}
+
+.motion-pause[hidden] {
+  display: none;
+}
+
+.pixel-wordmark {
+  display: block;
+  width: min(100%, 368px);
+  height: auto;
+  margin: 0 0 var(--space-fib-5);
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
 .skip-intro {
   min-height: var(--tap-min);
   min-width: var(--tap-min);
@@ -301,8 +333,10 @@ summary {
 }
 
 .footer-wordmark {
-  height: 32px;
+  height: 48px;
   width: auto;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
 }
 
 .legal-links {
@@ -376,6 +410,7 @@ summary {
   .ns-bar,
   .skip,
   .skip-intro,
+  .motion-pause,
   .intro-video {
     display: none;
   }

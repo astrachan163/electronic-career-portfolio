@@ -17,8 +17,8 @@ Not deployed · Part of [Andrew Strachan's portfolio](https://www.nonartificials
 
 - Presents four chapters: about, experience, projects, and contact, readable with JavaScript off.
 - Links every live deployment from the approved project list, including CS646 Sanctum, MaQkrs AI Tutor, AdaptiveSchool, MaQkrs Command Center, and the coursework hubs.
-- Plays the MaQkrs gear-title intro once, muted, with a Skip control. Reduced motion, Save-Data, and a frame probe under 50 fps show the still instead.
-- Uses the self-hosted MaQkrs brand kit (wordmark, circuit-M mark, portrait, cubebot badge, and tokens).
+- Plays the MaQkrs gear-title intro once, muted, with a Skip control. Motion stays on when reduced motion is requested. Save-Data shows the poster instead. A 44px pause appears because the title cycle is 12 seconds.
+- Uses the self-hosted MaQkrs brand kit: the chunky pixel wordmark with the gold gear in the Q, the circuit-M mark, the portrait, and the tokens. The retired crystal-head bot is not shown. A hook is left for the brand kit v2 crew script.
 
 ## Planned
 
@@ -33,13 +33,13 @@ Not deployed · Part of [Andrew Strachan's portfolio](https://www.nonartificials
 
 | 430 px wide | Reduced motion |
 |---|---|
-| ![The same intro on a 430 pixel wide viewport](docs/screens/landing-430.webp) | ![Reduced motion shows the gear still and the headline, with no video](docs/screens/landing-reduced-motion.webp) |
+| ![The same intro on a 430 pixel wide viewport](docs/screens/landing-430.webp) | ![Reduced motion still plays the gear title](docs/screens/landing-reduced-motion.webp) |
 
 Captured from the local demo build. No real user data, keys, emails, or tokens appear in them. The address strachan@uab.edu is the public contact address from the fact sheet and is not shown in these frames.
 
 ## How it's built
 
-- Static HTML and CSS. A small module script loads GSAP 3 and ScrollTrigger only after a frame probe, and only animates transform, opacity, and clip-path.
+- Static HTML and CSS. Chapter transitions are one CSS scroll timeline each, animating transform and opacity only.
 - Firebase Hosting config targets site `maqkrs-career` in project `maqkrs-command-center-i`. There is no Firestore database and no Cloud Functions.
 - Brand files are copied into the repo. Pages do not request the brand kit host at runtime.
 - No AI features in this build.

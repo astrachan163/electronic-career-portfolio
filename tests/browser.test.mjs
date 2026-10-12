@@ -89,6 +89,13 @@ test("landing, sources, and 404 have no serious axe violations", { timeout: 1200
     await page.waitForSelector("h1");
     assert.match(await page.locator("h1").innerText(), /Andrew Strachan/);
     assert.equal(await page.locator("[data-skip-intro]").count(), 1);
+    await page.waitForSelector("[data-motion-pause]:not([hidden])");
+    const pauseBox = await page.locator("[data-motion-pause]").boundingBox();
+    assert.ok(pauseBox && pauseBox.width >= 44 && pauseBox.height >= 44);
+    await page.locator("[data-motion-pause]").click();
+    assert.equal(await page.locator("video").evaluate((node) => node.paused), true);
+    assert.equal(await page.locator("img[src*='cubebot']").count(), 0);
+    assert.equal(await page.locator(".pixel-wordmark").count(), 1);
     await axeSerious(page);
     const wide = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
     assert.ok(wide < 2, `desktop overflow ${wide}`);
@@ -98,6 +105,7 @@ test("landing, sources, and 404 have no serious axe violations", { timeout: 1200
     await page.goto(`http://127.0.0.1:${port}/missing-page`, { waitUntil: "networkidle" });
     await axeSerious(page);
     assert.match(await page.locator("h1").innerText(), /not on this site/);
+    assert.equal(await page.locator("img[src*='cubebot']").count(), 0);
     await desktop.close();
 
     const phone = await browser.newContext({ viewport: { width: 430, height: 900 } });
@@ -114,9 +122,13 @@ test("landing, sources, and 404 have no serious axe violations", { timeout: 1200
     });
     const reduced = await still.newPage();
     await reduced.goto(`http://127.0.0.1:${port}/`, { waitUntil: "networkidle" });
-    assert.equal(await reduced.locator("video").count(), 0);
+    await reduced.waitForSelector("video");
+    assert.equal(await reduced.locator("html").getAttribute("data-motion"), "video");
+    assert.equal(await reduced.locator("html").getAttribute("data-soften"), "true");
     const current = await reduced.locator("[data-intro-poster]").evaluate((img) => img.currentSrc);
-    assert.match(current, /still-reduced-motion/);
+    assert.equal(current.includes("still-reduced-motion"), false);
+    await reduced.waitForSelector("[data-motion-pause]:not([hidden])");
+    await axeSerious(reduced);
     await still.close();
   } finally {
     await browser.close();
