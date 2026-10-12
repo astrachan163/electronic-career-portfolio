@@ -183,13 +183,18 @@ class PortfolioApp {
 
     PresenterState.active = open;
     if (open) {
+      drawer.inert = false;
       drawer.classList.add('open');
       drawer.setAttribute('aria-hidden', 'false');
       if (presenterBtn) presenterBtn.setAttribute('aria-expanded', 'true');
       this.updateSpeakerNotes(PresenterState.currentSection);
     } else {
+      if (presenterBtn && drawer.contains(document.activeElement)) {
+        presenterBtn.focus();
+      }
       drawer.classList.remove('open');
       drawer.setAttribute('aria-hidden', 'true');
+      drawer.inert = true;
       if (presenterBtn) presenterBtn.setAttribute('aria-expanded', 'false');
     }
   }
@@ -475,7 +480,7 @@ class PortfolioApp {
       }
     });
 
-    // Mobile scroll / touch fallback to guarantee animation triggers on mobile Safari / Chrome
+    // Mobile scroll / touch fallback so animation triggers on mobile Safari / Chrome
     const checkVisibilityFallback = () => {
       const vh = window.innerHeight || document.documentElement.clientHeight;
       animatedElements.forEach(el => {

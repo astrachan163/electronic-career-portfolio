@@ -160,7 +160,7 @@
         "Taught Business Finance, Customer Service, and Sales in the premier National Academy of Finance (NAOF) program.",
         "Served as official Chapter Adviser for the state's largest student career and technical business organization.",
         "Head Coach for the Shades Valley High School Esports Team; raised funding and secured corporate sponsorships.",
-        "Maintained 100% compliance with Alabama State Department of Education TAPE instructional standards.",
+        "Maintained compliance with Alabama State Department of Education TAPE instructional standards.",
         "Honored with the prestigious 2025 JEFCOED Technology Torchbearer Award for Excellence for innovative classroom technology integration."
       ]
     },
@@ -298,7 +298,7 @@
       "situation": "Commercial cloud AI tools leak institutional data and student intellectual property to remote LLM providers, violating zero-trust and educational privacy laws.",
       "task": "Architect a native on-device macOS AI study assistant capable of semantic document search with 0 network egress.",
       "action": "Built SwiftUI app with SwiftData, integrated Ollama/MLX for quantized Gemma 4 local inference, engineered SQLite vector retrieval over PDFs and code, and open-sourced sanitized repo.",
-      "result": "Presented at the UAB CS Spring Showcase (ACM & Women in Tech), achieving sub-second local retrieval with 100% privacy assurance."
+      "result": "Presented at the UAB CS Spring Showcase (ACM & Women in Tech), achieving sub-second local retrieval, designed to keep data on the device."
     },
     {
       "id": "STAR-06",
@@ -354,7 +354,7 @@
       "situation": "Emerging autonomous AI agents with access to command line tools pose severe security risks if models execute unverified shell commands.",
       "task": "Build a defense-in-depth gatekeeper ensuring zero-trust verification before executing agent actions on local systems.",
       "action": "Engineered Java 21 / Python architecture with WebSocket security boundary, Model Context Protocol (MCP) tool sandboxing, and LanceDB memory audit trails.",
-      "result": "Successfully prevented unauthorized system call execution and established verifiable audit trails for 100% of autonomous tool invocations."
+      "result": "Successfully prevented unauthorized system call execution and established verifiable audit trails for autonomous tool invocations."
     },
     {
       "id": "STAR-13",
@@ -394,7 +394,7 @@
       "situation": "Enterprise systems required automated cloud provisioning adhering to least-privilege access and zero-trust boundary verification.",
       "task": "Design and deploy cloud infrastructure automation validating IAM policies and encrypted resource boundaries.",
       "action": "Engineered infrastructure automation, strict IAM policy least-privilege configurations, and cryptographic hashing pipelines across cloud storage and compute.",
-      "result": "Automated deployment pipelines with 100% verification across test clusters, enforcing NIST SP 800-53 security controls."
+      "result": "Automated deployment pipelines with verification across test clusters, enforcing NIST SP 800-53 security controls."
     }
   ],
   "careerRelatedEducation": [

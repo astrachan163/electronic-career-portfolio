@@ -25,7 +25,7 @@
       "posterUrl": "assets/previews/tutor-v1-poster.png",
       "durationSeconds": 10,
       "repoUrl": "https://github.com/astrachan163/MaqkrsTutor-public",
-      "description": "Engineered a native Apple Silicon assistant that indexes technical course documents, PDFs, and source code for grounded question answering with 0 network egress. Protects institutional and student data through 100% on-device inference using quantized foundation models."
+      "description": "Engineered a native Apple Silicon assistant that indexes technical course documents, PDFs, and source code for grounded question answering with 0 network egress. Protects institutional and student data through on-device inference, designed to keep data on the device, using quantized foundation models."
     },
     {
       "id": "adaptivehs",

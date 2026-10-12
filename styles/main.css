@@ -494,6 +494,11 @@ section.portfolio-section:nth-child(even) {
   color: var(--color-text-muted);
 }
 
+.footer-meta-block a[href^="mailto:"] {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
 .footer-col-title {
   font-size: 1rem;
   text-transform: uppercase;

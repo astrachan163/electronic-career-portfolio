@@ -260,7 +260,7 @@
       "pointsPossible": 10,
       "rating": "Exceeds Expectations",
       "pointsAwarded": 10,
-      "evidence": "Provides compelling evidence from legitimate federal and professional authorities: U.S. Bureau of Labor Statistics (BLS), National Institute of Standards and Technology (NIST SP 800-53 / CSF), National Science Foundation (CyberCorps SFS), and Microsoft Credly badge records. 100% of outbound citation URLs use secure HTTPS."
+      "evidence": "Provides compelling evidence from legitimate federal and professional authorities: U.S. Bureau of Labor Statistics (BLS), National Institute of Standards and Technology (NIST SP 800-53 / CSF), National Science Foundation (CyberCorps SFS), and Microsoft Credly badge records. Outbound citation URLs use secure HTTPS."
     },
     {
       "criterion": "6. Use of Portfolio to Enhance Presentation",
