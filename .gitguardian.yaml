@@ -1,0 +1,8 @@
+# Required, otherwise ggshield treats this file as the deprecated v1 format.
+version: 2
+
+secret:
+  ignored_paths:
+    # Deleted AdaptiveSchool backup. The GitGuardian hit in this tree is
+    # demo-login copy inside a minified Turbopack chunk, not a live credential.
+    - 'atlas_live_backup/**/*'

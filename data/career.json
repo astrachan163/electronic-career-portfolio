@@ -1,6 +1,6 @@
 {
   "targetCareer": {
-    "title": "Information Security Analyst & Cybersecurity Systems Engineer",
+    "title": "Information Security Analyst (a role he is preparing for)",
     "socCode": "15-1212.00",
     "socTitle": "Information Security Analysts",
     "specialization": "Federal Public Service & CyberCorps SFS Track",
@@ -47,7 +47,7 @@
       { "level": "Lowest 10%", "annual": "$69,310", "hourly": "$33.32 / hr", "context": "Entry-level junior analyst / associate" },
       { "level": "25th Percentile", "annual": "$89,040", "hourly": "$42.81 / hr", "context": "Early-career technical analyst" },
       { "level": "50th Percentile (Median)", "annual": "$120,360", "hourly": "$57.87 / hr", "context": "Mid-career experienced engineer" },
-      { "level": "75th Percentile", "annual": "$152,430", "hourly": "$73.28 / hr", "context": "Senior security systems engineer" },
+      { "level": "75th Percentile", "annual": "$152,430", "hourly": "$73.28 / hr", "context": "Senior security analyst" },
       { "level": "Highest 10% (Top Decile)", "annual": "$182,370+", "hourly": "$87.68+ / hr", "context": "Principal architect / technical director" }
     ]
   },
@@ -55,23 +55,23 @@
     "framework": "U.S. Federal Civil Service — General Schedule (GS) Pay Scales",
     "program": "National Science Foundation (NSF) CyberCorps: Scholarship for Service (SFS)",
     "serviceCommitment": "Mandatory federal civilian employment commitment (1:1 year ratio) post-graduation",
-    "hiringAuthority": "Direct Hire Authority (DHA) for CyberCorps SFS graduates across federal agencies",
+    "hiringAuthority": "Program fact only: the NSF program CyberCorps: Scholarship for Service (SFS) describes a federal hiring pathway for program graduates. Andrew does not hold that hiring status.",
     "payProgression": [
       {
         "grade": "GS-09",
         "title": "Cybersecurity Graduate Intern / Junior Analyst",
         "salaryRange": "$65,000 – $84,000",
-        "qualifications": "Master's degree student (active SFS Scholar); eligible for federal employment"
+        "qualifications": "Pay band for a role he is preparing for. He does not hold this job. SFS CyberAICorps scholarship recipient (NSF-funded, with a post-graduation government service commitment)."
       },
       {
         "grade": "GS-11 / GS-12",
-        "title": "Information Security Systems Engineer / Cyber Defense Specialist",
+        "title": "Information Security Analyst (a role he is preparing for)",
         "salaryRange": "$78,000 – $122,000",
-        "qualifications": "Completed M.S. Cybersecurity degree; agency-sponsored clearance pathway; SFS initial placement"
+        "qualifications": "A later pay band for a role he is preparing for. He does not hold this job. Willing to obtain a security clearance."
       },
       {
         "grade": "GS-13 / GS-14",
-        "title": "Senior Security Architect & Federal Technical Lead",
+        "title": "Senior security lead (a later pay band he is preparing toward, not a job he holds)",
         "salaryRange": "$110,000 – $168,000+",
         "qualifications": "3-5 years federal service, lead architect role; eligible for up to 25% Cyber Incentive Pay"
       }
@@ -96,7 +96,7 @@
       "id": "OBS-02",
       "obstacle": "Agentic AI Weaponization & Autonomous Adversary Exploits",
       "challenge": "Hostile state actors and cyber syndicates are weaponizing autonomous LLM agents to execute automated vulnerability discovery, multi-stage phishing, and real-time evasion of static security rules.",
-      "mitigation": "Building zero-trust agentic security architectures. Andrew engineered 'Citadel' (Java 21 / Model Context Protocol) enforcing sandboxed tool invocation, strict capability manifests, and hardware-isolated local AI inference (MaqkrsTutor2) that neutralizes data egress risks."
+      "mitigation": "Building zero-trust agentic security architectures. Andrew engineered 'Citadel' (Java 21 / Model Context Protocol) enforcing sandboxed tool invocation, strict capability manifests, and hardware-isolated local AI inference (MaQkrs AI Tutor) that neutralizes data egress risks."
     },
     {
       "id": "OBS-03",

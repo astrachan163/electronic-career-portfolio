@@ -1,0 +1,12 @@
+{
+  "id": "maqkrs-career",
+  "name": "Electronic Career Portfolio",
+  "brand": "MaQkrs",
+  "publicUrl": "https://career.nonartificialsi.com",
+  "webAppUrl": "https://career.nonartificialsi.com",
+  "project": "maqkrs-command-center-i",
+  "site": "maqkrs-career",
+  "repo": "https://github.com/astrachan163/electronic-career-portfolio",
+  "healthUrl": "https://career.nonartificialsi.com/version.json",
+  "demo": false
+}

@@ -1,23 +1,79 @@
-# Andrew Strachan — Electronic Career Portfolio
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/brand/banner-dark.png">
+    <img src="docs/brand/banner-light.png" alt="Electronic Career Portfolio: Andrew Strachan's public career site" width="880">
+  </picture>
+</p>
 
-> **Cybersecurity Systems Engineer & Secure Systems Architect**  
-> CyberCorps Scholarship for Service (SFS) Scholar | Clearable | M.S. Cybersecurity, University of Alabama at Birmingham (Expected Dec 2027, GPA: 3.75)
+# Electronic Career Portfolio
 
-## Live Deployment
-- **Official GitHub Pages URL**: [https://astrachan163.github.io/electronic-career-portfolio/](https://astrachan163.github.io/electronic-career-portfolio/)
+A public career site for Andrew Strachan, an M.S. Cybersecurity candidate at the University of Alabama at Birmingham and an SFS CyberAICorps scholarship recipient.
 
-## Portfolio Overview
-This repository hosts the public distribution of Andrew Strachan's Electronic Career Portfolio.
+**Status:** Pre-release: demo build. The pages are built and tested locally. Firebase Hosting for career.nonartificialsi.com is not deployed from this repo yet. https://astrachan163.github.io/electronic-career-portfolio/ stays on the current gh-pages branch until that URL answers; `docs/DEPLOY.md` describes the redirect that replaces it.
 
-### Key Sections:
-1. **Interactive Resume**: Filterable skills matrix across Cybersecurity, AI/ML, Cloud/DevSecOps, Systems/Languages, and Leadership/Pedagogy, with STAR-formatted accomplishment records.
-2. **Career Research & Summary**: Deep analysis of Information Security Analyst & Cybersecurity Systems Engineer careers (BLS SOC 15-1212.00: $120,360 median wage, 32% projected growth, federal GS-9 to GS-14 pay band trajectories, post-quantum cryptography challenges).
-3. **Career-Related Education**: Graduate coursework at UAB (Network Security, Computer Security, Cryptography/Sanctum, Cloud Security), STRIDE threat modeling, and University of Montevallo CTE finance/business education.
-4. **Professional Development (2023–2025)**: Conferences, volunteering, professional achievements, and leadership engagements (ALACTE, Jump$tart National Educator Conference, DECA ICDC Anaheim, UMMC Honors & ASB, NonArtificial Superintelligence).
-5. **Educational Enhancement**: Comprehensive federal opportunity tracker (`accurateinternshiptracker.xlsx`), SFS Virtual Job Fair applications, international medical mission leadership (Uganda, Nepal Gilman Scholar), and youth STEM drone camp mentorship.
-6. **Special Skills & Credentials**: Top verified career skills, Credly-verified Microsoft Certified Educator (MCE) credential, and directory of 30 completed LinkedIn Learning certificates.
-7. **Curated Project Showcase**: Interactive media demonstrations of CS646 Sanctum (3D Cryptography Memory Palace on CloudFront), MaqkrsTutor2 (SwiftUI on-device Apple intelligence), AdaptiveHS (Next.js 15 GSE learning platform), and Maqkrs Command Center, alongside 28+ verified live deployments.
-8. **Sources & Provenance Audit**: Full traceability ledger linking all metrics, salaries, and accomplishments to authoritative sources (BLS OOH, NIST SP 800 standards, O*NET, Credly).
+Not deployed · Part of [Andrew Strachan's portfolio](https://www.nonartificialsi.com)
 
-## Privacy & Compliance
-This public release has undergone automated privacy scanning to ensure that personal contact phone numbers, unlisted repositories, and test credentials have been sanitized in compliance with strict information security standards.
+## What it does today
+
+- Presents four chapters: about, experience, projects, and contact, readable with JavaScript off.
+- Links every live deployment from the approved project list, including CS646 Sanctum, MaQkrs AI Tutor, AdaptiveSchool, MaQkrs Command Center, and the coursework hubs.
+- Plays the MaQkrs gear-title intro once, muted, with a Skip control. Motion stays on when reduced motion is requested. Save-Data shows the poster instead. A 44px pause appears because the title cycle is 12 seconds.
+- Uses one plain-text MaQkrs logo in the heading font. The gear-title film is loaded from `brand/intro/` until the crest animation replaces it. The retired crystal-head bot is not shown. A hook is left for the brand kit v2 crew script.
+
+## Planned
+
+- Firebase Hosting on site `maqkrs-career` at https://career.nonartificialsi.com [planned]
+- Hub registry row in maqkrs-dashboard [planned]
+
+## Screens
+
+| Desktop intro | Projects chapter |
+|---|---|
+| ![Gear-title intro and headline on a desktop viewport](docs/screens/landing-desktop.webp) | ![Project cards linking live ecosystem apps](docs/screens/projects-desktop.webp) |
+
+| 430 px wide | Reduced motion |
+|---|---|
+| ![The same intro on a 430 pixel wide viewport](docs/screens/landing-430.webp) | ![Reduced motion still plays the gear title](docs/screens/landing-reduced-motion.webp) |
+
+Captured from the local demo build. No real user data, keys, emails, or tokens appear in them. The address strachan@uab.edu is the public contact address from the fact sheet and is not shown in these frames.
+
+## How it's built
+
+- Static HTML and CSS. Chapter transitions are one CSS scroll timeline each, animating transform and opacity only.
+- Firebase Hosting config targets site `maqkrs-career` in project `maqkrs-command-center-i`. There is no Firestore database and no Cloud Functions.
+- Brand files are copied into the repo. Pages do not request the brand kit host at runtime.
+- No AI features in this build.
+
+## Run it locally
+
+From the repository root:
+
+```sh
+npm install
+npm run build
+npm run dev
+```
+
+`npm run dev` builds `dist/` and serves it at http://127.0.0.1:8080/. This site does not read environment variables. `.env.example` is only a reminder not to commit secrets.
+
+## Tests and checks
+
+```sh
+npm test
+npm run build
+gitleaks dir . --redact
+```
+
+`npm test` builds first, then runs the claims gate, the emoji gate, hosting-target checks, and a Playwright plus axe-core pass of the landing page, the sources page, and the 404 page.
+
+## Security
+
+No secrets are committed. Configuration for a future deploy is the Firebase project and hosting target in `.firebaserc` and `firebase.json`, not an API key. Report a problem to strachan@uab.edu.
+
+## Credits
+
+Author: Andrew Strachan.
+
+## License
+
+All rights reserved. Source shared for review.

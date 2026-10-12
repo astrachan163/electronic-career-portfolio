@@ -14,7 +14,7 @@
       "name": "Educational Technology & Instructional Design",
       "category": "Instructional Systems & Workforce Training",
       "credential": "Microsoft Certified Educator (MCE) & Alabama Teaching Certificate (PCTF)",
-      "credentialType": "Industry Certification & State Licensure",
+      "credentialType": "Industry Certification & State Certificate",
       "verificationUrl": "https://www.credly.com/badges/d4e5c326-c255-405c-b50e-0a369d6fc3a0/public_url",
       "badgeImage": "assets/brand/mce-microsoft-certified-educator.png",
       "correlationToMission": "Essential for federal cyber workforce development, designing security awareness programs, training non-technical agency personnel on cyber hygiene, and translating complex technical security controls into actionable operational protocols.",
@@ -24,7 +24,7 @@
       "id": "SKILL-03",
       "name": "On-Device AI & Privacy-Preserving Systems",
       "category": "Artificial Intelligence & Edge Compute",
-      "credential": "Native Apple Silicon Architecture (MaqkrsTutor2) & 30 Professional AI Certifications",
+      "credential": "Native Apple Silicon Architecture (MaQkrs AI Tutor) & 30 Professional AI Certifications",
       "credentialType": "Software Engineering & Industry Certifications",
       "correlationToMission": "Addresses strict federal privacy, classified data protection, and operational security requirements. Enables offline semantic intelligence and local RAG capabilities that prevent data exfiltration to external commercial AI APIs.",
       "tools": ["SwiftUI", "SwiftData", "Apple MLX", "Ollama", "Quantized Gemma 4", "Local SQLite Vector Search", "Model Context Protocol (MCP)"]
@@ -33,7 +33,7 @@
       "id": "SKILL-04",
       "name": "Cloud Infrastructure & DevSecOps Engineering",
       "category": "Cloud Architecture & Automated Delivery",
-      "credential": "CS532 Cloud Systems Architecture & Multi-Cloud Production Deployments",
+      "credential": "CS532 cloud coursework and multi-cloud production deployments",
       "credentialType": "Academic Systems Project & Cloud Engineering",
       "correlationToMission": "Ensures federal digital assets are deployed within fortified, automated environments. Enforces cryptographic download expiration, automated container isolation, and immutable audit trails across AWS, GCP, and serverless runtimes.",
       "tools": ["AWS S3", "AWS CloudFront", "AWS Lambda", "AWS DynamoDB", "Firebase", "Docker", "HMAC Signatures", "CI/CD SAST"]
@@ -42,7 +42,7 @@
       "id": "SKILL-05",
       "name": "Regulatory Compliance & Quality Assurance Systems",
       "category": "Governance, Risk & Compliance (GRC)",
-      "credential": "MidSouth Extracts Operational Directorship & cGMP Standard Operating Procedures",
+      "credential": "MidSouth Extracts Operations Director, January 2023 – May 2023",
       "credentialType": "Industrial Leadership & Regulatory Auditing",
       "correlationToMission": "Bridges technical security controls with legal and regulatory mandates. Applies rigorous pharmaceutical-grade standard operating procedures and chain-of-custody discipline to federal cybersecurity governance, risk management, and digital forensics.",
       "tools": ["cGMP / FDA 21 CFR", "Standard Operating Procedures (SOPs)", "Process Hazard Analysis (PHA)", "HIPAA Compliance", "Chain of Custody", "Quality Auditing"]
@@ -59,23 +59,12 @@
     "description": "Validates technology literacy and the competencies needed to provide a rich, custom learning environment for learners. Confirms mastery in integrating information and communication technology into professional instructional design and workforce upskilling."
   },
   "stateTeachingCertificate": {
-    "title": "Provisional Certificate in a Teaching Field (PCTF)",
+    "title": "Provisional Certificate in a Teaching Field: Business, Marketing, and Finance (non-degree)",
     "field": "Business, Marketing, and Finance",
     "issuingAuthority": "Alabama State Department of Education (ALSDE) / University of Montevallo",
-    "activeDates": "August 2024 – May 2025",
-    "gpa": "3.75 / 4.0",
+    "activeDates": "Fall 2024 – Spring 2025",
+    "gpa": "3.66 / 4.0",
     "status": "Verified Official Record"
-  },
-  "clinicalLifeSupport": {
-    "title": "BCLS / ACLS / First Aid Certified",
-    "certifications": [
-      "Basic Cardiac Life Support (BCLS)",
-      "Advanced Cardiovascular Life Support (ACLS)",
-      "First Aid Certified"
-    ],
-    "issuingAuthority": "American Heart Association (AHA) / University of Mississippi Medical Center (UMMC)",
-    "status": "Verified Clinical Certification",
-    "description": "High-reliability clinical life support, emergency resuscitation protocols, and acute healthcare trauma response certification."
   },
   "linkedinLearning": [
     {

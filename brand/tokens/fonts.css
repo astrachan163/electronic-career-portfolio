@@ -1,0 +1,9 @@
+/* Self-hosted WOFF2 subsets. Licenses: /brand/fonts/OFL-*.txt and FONT_LICENSE_NOTE.md */
+@font-face { font-family: "Archivo"; src: url("/brand/fonts/archivo-wdth-750.woff2") format("woff2");
+  font-weight: 750; font-stretch: 62% 125%; font-display: swap; }
+@font-face { font-family: "Public Sans"; src: url("/brand/fonts/public-sans-400-700.woff2") format("woff2");
+  font-weight: 400 700; font-display: swap; }
+@font-face { font-family: "MaQkrs Pixel"; src: url("/brand/fonts/MaQkrsPixel.woff2") format("woff2");
+  font-weight: 400; font-display: swap; }
+@font-face { font-family: "Archivo Fallback"; src: local("Helvetica Neue"), local("Arial");
+  size-adjust: 104%; ascent-override: 90%; descent-override: 22%; }

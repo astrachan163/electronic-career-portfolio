@@ -1,0 +1,58 @@
+name: GitHub Pages redirect
+
+# Manual only. A push to main must not replace the live gh-pages branch.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: github-pages-redirect
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # A failed check writes ready=no and does not publish.
+      - name: Confirm version.json names this app
+        id: reach
+        run: |
+          echo "GitHub Actions run ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+          python3 - << 'PY'
+          import json, os, urllib.request
+          from datetime import datetime
+          url = "https://career.nonartificialsi.com/version.json"
+          print(f"Checking {url}")
+          ready = "no"
+          try:
+              raw = urllib.request.urlopen(url, timeout=20).read().decode("utf-8")
+              data = json.loads(raw)
+              sha = str(data.get("sha", ""))
+              built = str(data.get("builtAt", ""))
+              print(f"app={data.get('app')} sha={sha} builtAt={built}")
+              datetime.fromisoformat(built.replace("Z", "+00:00"))
+              if data.get("app") == "maqkrs-career" and len(sha) == 40 and all(c in "0123456789abcdef" for c in sha):
+                  ready = "yes"
+                  print(f"Verified version.json for run {os.environ['GITHUB_RUN_ID']} at sha {sha}")
+          except Exception as exc:
+              print(f"version.json was not acceptable: {exc}")
+          if ready != "yes":
+              print("version.json did not match maqkrs-career. The gh-pages branch is unchanged.")
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as handle:
+              handle.write(f"ready={ready}\n")
+          PY
+
+      - name: Publish the redirect stub
+        if: steps.reach.outputs.ready == 'yes'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./pages
+          publish_branch: gh-pages
+          keep_files: false
+          force_orphan: false
+          commit_message: "Publish github.io redirect to career.nonartificialsi.com"

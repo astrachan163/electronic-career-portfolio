@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.firebase/
+.env
+.env.*
+!.env.example
+firebase.preview.json
+*.log
