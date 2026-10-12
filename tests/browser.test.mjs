@@ -95,7 +95,9 @@ test("landing, sources, and 404 have no serious axe violations", { timeout: 1200
     await page.locator("[data-motion-pause]").click();
     assert.equal(await page.locator("video").evaluate((node) => node.paused), true);
     assert.equal(await page.locator("img[src*='cubebot']").count(), 0);
-    assert.equal(await page.locator(".pixel-wordmark").count(), 1);
+    assert.equal(await page.locator(".logo-slot").count(), 1);
+    assert.equal(await page.locator("img[src*='wordmark']").count(), 0);
+    assert.equal(await page.locator("img[src*='circuit-m']").count(), 0);
     await axeSerious(page);
     const wide = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
     assert.ok(wide < 2, `desktop overflow ${wide}`);

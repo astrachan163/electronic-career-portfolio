@@ -94,6 +94,24 @@ h4 {
   padding-block: var(--space-fib-4);
 }
 
+.logo-slot {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--tap-min);
+  color: #e8dcc0;
+  font-family: var(--font-display);
+  font-weight: 750;
+  font-stretch: 112%;
+  font-size: 1.35rem;
+  letter-spacing: 0.01em;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.logo-slot:visited {
+  color: #e8dcc0;
+}
+
 .ns-back,
 .ns-links a {
   display: inline-flex;

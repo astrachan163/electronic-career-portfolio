@@ -20,7 +20,7 @@
       "gpa": "3.75 / 4.0",
       "honors": "SFS CyberAICorps scholarship recipient (NSF-funded, with a post-graduation government service commitment)",
       "highlights": [
-        "Specializing in Network Security (CS 623), Blockchain & Cryptography (CS 646), Threat Modeling (CS 636), and Cloud Computing (CS 532)",
+        "CS 623 Network Security, CS 646 Blockchain & Cryptocurrency, CS 636 Computer Security, CS 532 Systems Programming, and Cloud Computing (Summer 2026)",
         "Under federal service commitment upon graduation to protect critical national infrastructure and executive agency assets",
         "Graduate researcher in on-device AI security, sandboxed agent runtimes, and WebAssembly cryptographic architectures"
       ]
@@ -81,7 +81,8 @@
         "NIST SP 800-53 / CSF Compliance",
         "Network Defense & Packet Analysis (Wireshark, Nmap)",
         "Cryptographic Hashing & SHA-256 Block Verification",
-        "Cloud Computing Architecture & Secure Enclaves (CS 532)",
+        "Cloud Computing (Summer 2026)",
+        "CS 532 Systems Programming",
         "Identity & Access Management (IAM / Least Privilege)",
         "Firewall, Proxy & Access Control Lists (ACLs)"
       ]
@@ -141,7 +142,7 @@
       "role": "Teaching Assistant — Python Coding Summer Camp",
       "organization": "University of Alabama at Birmingham (Department of Computer Science)",
       "location": "Birmingham, AL",
-      "dates": "June 2026 – August 2026 (20–40 hrs/wk)",
+      "dates": "June 2026 – July 2026",
       "badge": "STEM Mentorship",
       "achievements": [
         "Instructed middle school cohorts in Python programming fundamentals, algorithmic loops, and physical computing.",
@@ -201,27 +202,45 @@
       ]
     },
     {
-      "role": "Sales Development Specialist",
+      "role": "Insurance Sales Representative",
       "organization": "SelectQuote Insurance Services",
       "location": "Clinton, MS",
-      "dates": "April 2021 – November 2022 (Full-Time, 40 hrs/wk)",
+      "dates": "April 2021 – September 2021",
       "badge": "Top Sales Award (2021)",
       "achievements": [
-        "Trained, onboarded, and coached incoming sales cohorts across high-velocity life and health insurance divisions.",
-        "Engineered micro-training modules and compliance scripts that reduced regulatory complaints and elevated retention.",
-        "Honored with the SelectQuote Top Sales Award (2021) and SQ Team Lead Award (2021) for sustained performance and coaching excellence."
+        "Awarded the SelectQuote Top Sales Award (2021)."
       ]
     },
     {
-      "role": "OmniMed Certified Village Health Volunteer (Uganda, East Africa)",
-      "organization": "OmniMed",
-      "location": "Mukono District, Uganda, East Africa",
-      "dates": "July 2017 – August 2017",
-      "badge": "Global Health Certification",
+      "role": "Team Lead",
+      "organization": "SelectQuote Insurance Services",
+      "location": "Clinton, MS",
+      "dates": "October 2021 – March 2022",
+      "badge": "SQ Team Lead Award (2021)",
       "achievements": [
-        "Certified Village Health Volunteer partnering with local village health teams to conduct primary preventive care.",
-        "Established mobile medical clinics delivering clinical assessments and health education.",
-        "Delivered clean-water sanitation and disease prevention workshops across remote communities."
+        "Awarded the SQ Team Lead Award (2021)."
+      ]
+    },
+    {
+      "role": "Sales Development Specialist",
+      "organization": "SelectQuote Insurance Services",
+      "location": "Clinton, MS",
+      "dates": "April 2022 – November 2022",
+      "badge": "New-rep training program",
+      "achievements": [
+        "Built and led the new-rep training program.",
+        "Trained, onboarded, and coached incoming sales cohorts across life and health insurance divisions.",
+        "Engineered micro-training modules and compliance scripts that reduced regulatory complaints and elevated retention."
+      ]
+    },
+    {
+      "role": "Certified Village Health Team (VHT) associate, UMMC with OmniMed, Uganda",
+      "organization": "UMMC with OmniMed",
+      "location": "Uganda",
+      "dates": "July 2017 – August 2017",
+      "badge": "Village Health Team",
+      "achievements": [
+        "Mobilized and ran mobile clinics with the UMMC team; helped establish community health teaching groups."
       ]
     },
     {
@@ -334,11 +353,11 @@
     },
     {
       "id": "STAR-10",
-      "title": "Uganda International Health Outreach & Mobile Clinic Establishment",
-      "situation": "Rural communities in Uganda, Africa faced extreme barriers to primary healthcare, clean water hygiene, and preventive health screenings.",
-      "task": "Participate in an intensive international health internship with Omnimed Health Initiative to expand clinical capacity.",
-      "action": "Partnered with village health teams to establish two functional mobile medical clinics and delivered preventive health workshops across remote villages.",
-      "result": "Delivered care and preventive health education, demonstrating crisis composure and cross-cultural leadership."
+      "title": "Certified Village Health Team (VHT) associate, UMMC with OmniMed, Uganda",
+      "situation": "Rural communities in Uganda needed mobile clinics and community health teaching.",
+      "task": "Work with the UMMC team in Uganda.",
+      "action": "Mobilized and ran mobile clinics with the UMMC team; helped establish community health teaching groups.",
+      "result": "Mobilized and ran mobile clinics with the UMMC team; helped establish community health teaching groups."
     },
     {
       "id": "STAR-11",
@@ -367,10 +386,10 @@
     {
       "id": "STAR-14",
       "title": "AdaptiveSchool",
-      "situation": "College and adult students needed an adaptive learning platform, with AI tools for teachers, parents, and students.",
+      "situation": "A schooling portal for students, teachers, and parents.",
       "task": "Develop an accessible full-stack educational web application with role-based access control and adaptive assessments.",
-      "action": "Built with Next.js 15, Firebase Firestore, and Tailwind CSS; engineered multi-role demo authentication and interactive simulation exports.",
-      "result": "Deployed live on Cloud Run / Firebase (`adaptivehs-v2.firebaseapp.com`) and static CloudFront showcase with responsive UI across mobile and desktop."
+      "action": "Built with Next.js 15, Firebase Firestore, and Tailwind CSS; engineered multi-role demo authentication.",
+      "result": "Deployed live on Cloud Run / Firebase (`adaptivehs-v2.firebaseapp.com`)."
     },
     {
       "id": "STAR-15",
@@ -402,16 +421,17 @@
       "institution": "University of Alabama at Birmingham",
       "program": "M.S. in Cybersecurity (Graduate Coursework)",
       "courses": [
-        "CS 623 Network Security (Firewalls, Proxies, Packet Inspection, TLS/SSL)",
-        "CS 646 Blockchain & Cryptography (Elliptic Curves, SHA-256, Consensus Algorithms)",
-        "CS 636 Computer Security & Threat Modeling (STRIDE, DFDs, Vulnerability Mitigation)",
-        "CS 532 Cloud Computing (AWS S3, DynamoDB, Lambda, IAM Security)"
+        "CS 623 Network Security",
+        "CS 646 Blockchain & Cryptocurrency",
+        "CS 636 Computer Security",
+        "CS 532 Systems Programming",
+        "Cloud Computing (Summer 2026)"
       ],
       "careerImpact": "Directly develops the technical defense capabilities required for Information Security Analysts. Coursework provides rigorous, hands-on mastery in identifying network intrusions, analyzing cryptographic primitives, evaluating system architecture threats, and deploying zero-trust cloud architectures."
     },
     {
       "institution": "STRIDE Threat Modeling Enterprise Assessment",
-      "program": "Systems Security Architecture (CS 636)",
+      "program": "CS 636 Computer Security",
       "courses": [
         "BlazerNET Enterprise Threat Boundary Analysis",
         "IoT Surveillance Camera Threat Vector Modeling",
@@ -462,7 +482,7 @@
       "title": "International Service & Healthcare Outreach",
       "source": "Omnimed Uganda & Gilman Scholarship Nepal",
       "count": 2,
-      "details": "Uganda medical outreach establishing mobile clinics; U.S. Department of State Benjamin A. Gilman International Scholarship in Pokhara, Nepal conducting hospital service and rural sustainable agriculture education.",
+      "details": "Certified Village Health Team (VHT) associate, UMMC with OmniMed, Uganda (July 2017 – August 2017). Mobilized and ran mobile clinics with the UMMC team; helped establish community health teaching groups. U.S. Department of State Benjamin A. Gilman International Scholarship in Pokhara, Nepal.",
       "careerRelevance": "Cultivates global situational awareness, high-stakes operational adaptability, and community stewardship foundational to public service leadership."
     },
     {
@@ -476,7 +496,7 @@
       "title": "Work-Based Learning & Products Developed",
       "source": "DevAtlas & MaQkrs Hub Releases",
       "count": 4,
-      "details": "Engineered flagship working systems including CS646 Sanctum 3D World (Godot/WebGL on CloudFront), MaQkrs AI Tutor On-Device AI (SwiftUI/Local RAG), AdaptiveSchool, an adaptive learning platform for college and adult students, with AI tools for teachers, parents, and students (Next.js 15/Cloud Run), and Citadel Zero-Trust Gatekeeper (Java 21).",
+      "details": "Engineered flagship working systems including CS646 Sanctum 3D World (Godot/WebGL on CloudFront), MaQkrs AI Tutor On-Device AI (SwiftUI/Local RAG), AdaptiveSchool, a schooling portal for students, teachers, and parents (Next.js 15/Cloud Run), and Citadel Zero-Trust Gatekeeper (Java 21).",
       "careerRelevance": "Proves tangible end-to-end software engineering capability from architecture and cryptographic verification to cloud deployment and user experience."
     }
   ]

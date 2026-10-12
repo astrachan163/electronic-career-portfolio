@@ -48,12 +48,19 @@ test("the Pages stub redirects with a canonical and a visible link", () => {
   }
   const workflow = readFileSync(path.join(root, ".github", "workflows", "pages-redirect.yml"), "utf8");
   assert.equal(workflow.includes("pull_request"), false);
-  assert.match(workflow, /https:\/\/career\.nonartificialsi\.com\//);
+  assert.equal(workflow.includes("branches:"), false);
+  assert.match(workflow, /workflow_dispatch/);
+  assert.match(workflow, /version\.json/);
+  assert.match(workflow, /maqkrs-career/);
+  assert.match(workflow, /GITHUB_RUN_ID/);
   assert.match(workflow, /publish_branch: gh-pages/);
   assert.match(workflow, /ready=no/);
   const deploy = readFileSync(path.join(root, "docs", "DEPLOY.md"), "utf8");
   assert.match(deploy, /astrachan163\.github\.io\/electronic-career-portfolio/);
   assert.match(deploy, /meta refresh/);
+  assert.match(deploy, /workflow_dispatch/);
+  assert.match(deploy, /version\.json/);
+  assert.equal(deploy.includes("returns HTTP 200"), false);
 });
 
 test("gitguardian ignores the deleted AdaptiveSchool backup tree", () => {

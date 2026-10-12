@@ -37,8 +37,9 @@ function copySite() {
   mkdirSync(dist, { recursive: true });
   cpSync(path.join(root, "site"), dist, { recursive: true });
   cpSync(path.join(root, "brand"), path.join(dist, "brand"), { recursive: true });
-  cpSync(path.join(root, "brand", "icons"), path.join(dist, "icons"), { recursive: true });
-  cpSync(path.join(root, "brand", "icons", "favicon.ico"), path.join(dist, "favicon.ico"));
+  const iconSlot = path.join(root, "brand", "icons");
+  cpSync(iconSlot, path.join(dist, "icons"), { recursive: true });
+  cpSync(path.join(iconSlot, "favicon.ico"), path.join(dist, "favicon.ico"));
 }
 
 function writeVersion() {

@@ -30,7 +30,7 @@
     {
       "id": "adaptivehs",
       "title": "AdaptiveSchool",
-      "subtitle": "An adaptive learning platform for college and adult students, with AI tools for teachers, parents, and students",
+      "subtitle": "A schooling portal for students, teachers, and parents.",
       "category": "Full-Stack EdTech & Cloud Architecture",
       "techStack": ["Next.js 15", "Firebase Firestore", "Tailwind CSS", "Cloud Run", "Google Genkit", "DemoAuth"],
       "mp4Url": "assets/previews/adaptivehs-v1-10s-720p.mp4",
@@ -38,8 +38,7 @@
       "posterUrl": "assets/previews/adaptivehs-v1-poster.png",
       "durationSeconds": 10,
       "liveUrl": "https://adaptivehs-v2.firebaseapp.com/",
-      "simulationUrl": "https://d3jeotfnsm148g.cloudfront.net/work/adaptivehs/",
-      "description": "AdaptiveSchool, an adaptive learning platform for college and adult students, with AI tools for teachers, parents, and students."
+      "description": "A schooling portal for students, teachers, and parents."
     },
     {
       "id": "maqkrs",
@@ -104,17 +103,8 @@
       "category": "Full-Stack EdTech",
       "platform": "Cloud Run / Firebase",
       "url": "https://adaptivehs-v2.firebaseapp.com/",
-      "description": "AdaptiveSchool, an adaptive learning platform for college and adult students, with AI tools for teachers, parents, and students.",
+      "description": "A schooling portal for students, teachers, and parents.",
       "techStack": ["Next.js 15", "Cloud Run", "Firebase", "DemoAuth"]
-    },
-    {
-      "id": "p-07",
-      "name": "AdaptiveSchool demo",
-      "category": "Interactive EdTech Demo",
-      "platform": "AWS CloudFront",
-      "url": "https://d3jeotfnsm148g.cloudfront.net/work/adaptivehs/",
-      "description": "Static cloud simulation illustrating multi-role user workflows and assessment interfaces.",
-      "techStack": ["AWS CloudFront", "Static Web Showcase", "HTML5"]
     },
     {
       "id": "p-08",
@@ -157,7 +147,7 @@
       "name": "Victorious Herbal Elements (Storefront)",
       "category": "E-Commerce Storefront",
       "platform": "Vercel",
-      "url": "https://aether-apothecary.vercel.app/",
+      "url": "https://herbal.nonartificialsi.com/",
       "description": "Modern botanical product catalog and checkout workflow with responsive product showcases.",
       "techStack": ["Next.js", "Vercel", "Stripe API"]
     },

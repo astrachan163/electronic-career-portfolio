@@ -18,7 +18,7 @@ Not deployed · Part of [Andrew Strachan's portfolio](https://www.nonartificials
 - Presents four chapters: about, experience, projects, and contact, readable with JavaScript off.
 - Links every live deployment from the approved project list, including CS646 Sanctum, MaQkrs AI Tutor, AdaptiveSchool, MaQkrs Command Center, and the coursework hubs.
 - Plays the MaQkrs gear-title intro once, muted, with a Skip control. Motion stays on when reduced motion is requested. Save-Data shows the poster instead. A 44px pause appears because the title cycle is 12 seconds.
-- Uses the self-hosted MaQkrs brand kit: the chunky pixel wordmark with the gold gear in the Q, the circuit-M mark, the portrait, and the tokens. The retired crystal-head bot is not shown. A hook is left for the brand kit v2 crew script.
+- Uses one plain-text MaQkrs logo in the heading font. The gear-title film is loaded from `brand/intro/` until the crest animation replaces it. The retired crystal-head bot is not shown. A hook is left for the brand kit v2 crew script.
 
 ## Planned
 

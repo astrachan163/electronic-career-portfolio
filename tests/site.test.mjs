@@ -23,12 +23,11 @@ const liveLinks = [
   "https://cs646-sanctum-astrachan--midterm-aogm2izm.web.app/#/",
   "https://github.com/astrachan163/MaqkrsTutor-public",
   "https://adaptivehs-v2.firebaseapp.com/",
-  "https://d3jeotfnsm148g.cloudfront.net/work/adaptivehs/",
   "https://quantum-universe-3d.web.app/",
   "https://maqkrs-command-center-i.firebaseapp.com/",
   "https://d3jeotfnsm148g.cloudfront.net/",
   "https://coastal-speech-co-fl.firebaseapp.com/",
-  "https://aether-apothecary.vercel.app/",
+  "https://herbal.nonartificialsi.com",
   "https://networking-testy.firebaseapp.com/",
   "https://networking-security-cs623-hub.firebaseapp.com/",
   "https://practice-questions-networking.firebaseapp.com/",
@@ -92,6 +91,9 @@ test("security headers omit unsafe script and style sources", () => {
   ]) {
     assert.equal(keys.includes(key), true, key);
   }
+  const hsts = shared.headers.find((header) => header.key === "Strict-Transport-Security").value;
+  assert.equal(hsts.includes("preload"), false);
+  assert.match(hsts, /max-age=31536000/);
   assert.equal(shared.headers.find((header) => header.key === "Referrer-Policy").value, "strict-origin-when-cross-origin");
   assert.equal(shared.headers.find((header) => header.key === "X-Content-Type-Options").value, "nosniff");
   const version = firebase.hosting.headers.find((block) => block.source === "/version.json");
@@ -155,7 +157,29 @@ test("built pages keep legal links, chapters, and self-hosted brand files", () =
     assert.equal(home.includes(href), true, href);
   }
   assert.match(home, /fetchpriority="high"/);
-  assert.match(home, /maqkrs-wordmark-pixel-night\.svg/);
+  assert.match(home, /class="logo-slot"/);
+  assert.match(home, />MaQkrs<\/a>/);
+  assert.equal(home.includes("maqkrs-wordmark"), false);
+  assert.equal(home.includes("circuit-m"), false);
+  assert.match(home, /\/brand\/intro\/poster-960\.webp/);
+  assert.equal(home.includes("/brand/motion/"), false);
+  assert.match(home, /June 2026 – July 2026/);
+  assert.match(home, /CS 646 Blockchain &amp; Cryptocurrency/);
+  assert.match(home, /CS 532 Systems Programming/);
+  assert.match(home, /Cloud Computing/);
+  assert.equal(home.includes("Cloud Computing (CS"), false);
+  assert.match(home, /Certified Village Health Team \(VHT\) associate/);
+  assert.match(home, /Mobilized and ran mobile clinics with the UMMC team/);
+  assert.match(home, /Insurance Sales Representative/);
+  assert.match(home, /<h3>Team Lead<\/h3>/);
+  assert.match(home, /Sales Development Specialist/);
+  assert.match(home, /https:\/\/herbal\.nonartificialsi\.com/);
+  assert.equal(home.includes("aether-apothecary.vercel.app"), false);
+  assert.equal(home.includes("/work/adaptivehs/"), false);
+  assert.equal(home.includes("adaptive learning platform"), false);
+  assert.match(home, /loading="lazy"/);
+  const withoutHeadline = home.replace(/<p class="lede">[\s\S]*?<\/p>/, "");
+  assert.equal(withoutHeadline.includes("CyberAICorps Scholar"), false);
   assert.match(home, /data-maqkrs-crew/);
   assert.match(home, /data-crew-src="\/brand\/crew\/maqkrs-crew\.js"/);
   assert.match(home, /data-motion-pause/);
@@ -207,7 +231,9 @@ test("published pages omit the retired crystal-head bot", () => {
   for (const page of pages) {
     const html = readFileSync(page, "utf8");
     assert.equal(html.includes("cubebot"), false, page);
-    assert.match(html, /maqkrs-wordmark-pixel-night\.svg/);
+    assert.equal(html.includes("maqkrs-wordmark"), false, page);
+    assert.equal(html.includes("circuit-m"), false, page);
+    assert.match(html, /class="logo-slot"/);
     assert.match(html, /data-maqkrs-crew/);
   }
   assert.equal(statExists(path.join(dist, "brand", "logo", "maqkrs-mark-cubebot.svg")), false);

@@ -1,12 +1,8 @@
 name: GitHub Pages redirect
 
-# Publishes pages/ to the gh-pages branch only after the Firebase URL
-# returns HTTP 200. A failed check leaves the live github.io site unchanged.
+# Manual only. A push to main must not replace the live gh-pages branch.
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
 
 permissions:
   contents: write
@@ -21,17 +17,34 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Leave gh-pages in place until the Firebase URL answers
+      # A failed check writes ready=no and does not publish.
+      - name: Confirm version.json names this app
         id: reach
         run: |
-          code="$(curl -sS -o /dev/null -w '%{http_code}' --max-time 20 -L https://career.nonartificialsi.com/ || true)"
-          echo "Firebase URL status: ${code:-000}"
-          if [ "${code}" = "200" ]; then
-            echo "ready=yes" >> "$GITHUB_OUTPUT"
-          else
-            echo "ready=no" >> "$GITHUB_OUTPUT"
-            echo "career.nonartificialsi.com did not return 200. The gh-pages branch is unchanged."
-          fi
+          echo "GitHub Actions run ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+          python3 - << 'PY'
+          import json, os, urllib.request
+          from datetime import datetime
+          url = "https://career.nonartificialsi.com/version.json"
+          print(f"Checking {url}")
+          ready = "no"
+          try:
+              raw = urllib.request.urlopen(url, timeout=20).read().decode("utf-8")
+              data = json.loads(raw)
+              sha = str(data.get("sha", ""))
+              built = str(data.get("builtAt", ""))
+              print(f"app={data.get('app')} sha={sha} builtAt={built}")
+              datetime.fromisoformat(built.replace("Z", "+00:00"))
+              if data.get("app") == "maqkrs-career" and len(sha) == 40 and all(c in "0123456789abcdef" for c in sha):
+                  ready = "yes"
+                  print(f"Verified version.json for run {os.environ['GITHUB_RUN_ID']} at sha {sha}")
+          except Exception as exc:
+              print(f"version.json was not acceptable: {exc}")
+          if ready != "yes":
+              print("version.json did not match maqkrs-career. The gh-pages branch is unchanged.")
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as handle:
+              handle.write(f"ready={ready}\n")
+          PY
 
       - name: Publish the redirect stub
         if: steps.reach.outputs.ready == 'yes'

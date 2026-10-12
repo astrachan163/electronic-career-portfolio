@@ -6,7 +6,7 @@
       "claim": "Andrew Strachan is currently pursuing a Master of Science in Cybersecurity at UAB (January 2026 – Present, Expected Graduation: Dec 2027, GPA: 3.75). SFS CyberAICorps scholarship recipient (NSF-funded, with a post-graduation government service commitment).",
       "verificationAuthority": "University of Alabama at Birmingham (UAB) & National Science Foundation",
       "evidenceSource": "UAB Graduate Catalog & atlas.json; verified by NSF CyberCorps SFS program coordinator Liz",
-      "evidencePath": "/Users/andrewstrachan/DevAtlas/achievement-atlas/atlas.json",
+      "evidencePath": "DevAtlas/achievement-atlas/atlas.json",
       "citationUrl": "https://new.nsf.gov/funding/opportunities/cybercorps-scholarship-service-sfs",
       "status": "Verified Official Record"
     },
@@ -16,7 +16,7 @@
       "claim": "B.S., Biochemistry (ACS), with a secondary major in Biology Medical Sciences; Minor in Music, Mississippi College (now Mississippi Christian University), Aug 2011 – May 2016, cum laude, GPA 3.50. Inducted into Delta Epsilon Iota Academic Honor Society and co-founded Phi Mu Alpha Sinfonia music fraternity chapter.",
       "verificationAuthority": "Mississippi College (American Chemical Society Certified)",
       "evidenceSource": "Undergraduate Transcript and Degree Records in atlas.json",
-      "evidencePath": "/Users/andrewstrachan/DevAtlas/achievement-atlas/TIMELINE.md",
+      "evidencePath": "DevAtlas/achievement-atlas/TIMELINE.md",
       "citationUrl": "https://www.mc.edu/academics/departments/chemistry",
       "status": "Verified Official Record"
     },
@@ -26,7 +26,7 @@
       "claim": "Provisional Certificate in a Teaching Field: Business, Marketing, and Finance (non-degree), University of Montevallo, Fall 2024 – Spring 2025, GPA 3.66.",
       "verificationAuthority": "Alabama State Department of Education (ALSDE) & University of Montevallo",
       "evidenceSource": "Montevallo Coursework Evaluation & ALSDE Teacher Certification Database",
-      "evidencePath": "/Users/andrewstrachan/DevAtlas/achievement-atlas/atlas.json",
+      "evidencePath": "DevAtlas/achievement-atlas/atlas.json",
       "citationUrl": "https://www.alabamaachieves.org/",
       "status": "Verified Official Record"
     },
@@ -36,7 +36,7 @@
       "claim": "CTE Business, Marketing & Finance Teacher at Shades Valley High School (July 2024 – June 2025, Full-Time, 40 hrs/wk), official Chapter Adviser, honored with the 2025 JEFCOED Technology Torchbearer Award for Excellence.",
       "verificationAuthority": "Jefferson County Board of Education (JEFCOED)",
       "evidenceSource": "JEFCOED District Award Records & Shades Valley High School CTE Faculty Roster",
-      "evidencePath": "/Users/andrewstrachan/Documents/ChatGPT/Maqkrs-hq/reports/source-checkpoint.json",
+      "evidencePath": "Documents/ChatGPT/Maqkrs-hq/reports/source-checkpoint.json",
       "citationUrl": "https://www.jefcoed.com/",
       "status": "Verified Official Record"
     },
@@ -46,7 +46,7 @@
       "claim": "CTE Business, Marketing & Finance Teacher at Corner High School (August 2023 – June 2024, Full-Time, 40 hrs/wk); founded and advised new DECA chapter and coached students to 1st and 2nd place state finishes at 2024 Alabama DECA Career Development Conference (DECA Chapter Founder & State Competition Coach).",
       "verificationAuthority": "Alabama DECA & Corner High School",
       "evidenceSource": "2024 Alabama DECA State Career Development Conference Results Bulletin",
-      "evidencePath": "/Users/andrewstrachan/DevAtlas/final/RESUME.md",
+      "evidencePath": "DevAtlas/final/RESUME.md",
       "citationUrl": "https://www.alabamadeca.org/",
       "status": "Verified Official Record"
     },
@@ -56,7 +56,7 @@
       "claim": "Microsoft Certified Educator (MCE) credential issued May 16, 2025, verifying mastery of 21st-century educational technology integration.",
       "verificationAuthority": "Microsoft Corporation & Certiport via Credly Digital Credential Platform",
       "evidenceSource": "Credly Public Digital Badge Verification",
-      "evidencePath": "/Users/andrewstrachan/Current Resume by Year/Badges & Certifications/mce-microsoft-certified-educator.png",
+      "evidencePath": "Current Resume by Year/Badges & Certifications/mce-microsoft-certified-educator.png",
       "citationUrl": "https://www.credly.com/badges/d4e5c326-c255-405c-b50e-0a369d6fc3a0/public_url",
       "status": "Verified Active Credential"
     },
@@ -66,7 +66,7 @@
       "claim": "Completed 30 verified LinkedIn Learning certifications covering Generative AI, Multi-Agent Systems, AI Governance, and Cloud Infrastructure.",
       "verificationAuthority": "LinkedIn Corporation (LinkedIn Learning)",
       "evidenceSource": "Live HTTP 200 verification audit of 30 unique certificate completion URLs",
-      "evidencePath": "/Users/andrewstrachan/Documents/ChatGPT/Maqkrs-hq/reports/portfolio-external-links.md",
+      "evidencePath": "Documents/ChatGPT/Maqkrs-hq/reports/portfolio-external-links.md",
       "citationUrl": "https://www.linkedin.com/learning/",
       "status": "Verified Digital Certifications"
     },
@@ -76,7 +76,7 @@
       "claim": "Information Security Analysts (SOC 15-1212.00) command $120,360 median wage, $182,370+ top decile wage, and projected 32% employment growth rate (+53,200 jobs).",
       "verificationAuthority": "U.S. Bureau of Labor Statistics (BLS), U.S. Department of Labor",
       "evidenceSource": "BLS Occupational Outlook Handbook: Information Security Analysts (Release 2024–2026)",
-      "evidencePath": "/Users/andrewstrachan/career_portfolio/data/career.json",
+      "evidencePath": "career_portfolio/data/career.json",
       "citationUrl": "https://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm",
       "status": "Verified Federal Government Statistics"
     },
@@ -86,7 +86,7 @@
       "claim": "Cybersecurity systems and threat modeling referencing National Institute of Standards and Technology (NIST) SP 800-53 Rev. 5 and NIST Cybersecurity Framework (CSF 2.0).",
       "verificationAuthority": "National Institute of Standards and Technology (NIST), U.S. Department of Commerce",
       "evidenceSource": "NIST SP 800-53 Rev. 5 Security & Privacy Controls for Information Systems",
-      "evidencePath": "/Users/andrewstrachan/career_portfolio/data/career.json",
+      "evidencePath": "career_portfolio/data/career.json",
       "citationUrl": "https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final",
       "status": "Verified Federal Standard"
     },
@@ -96,7 +96,7 @@
       "claim": "Career roles aligned with NICE Cybersecurity Workforce Framework categories: PR-CD-001 (Cyber Defense Analyst) and SP-ARC-002 (Security Architect).",
       "verificationAuthority": "National Initiative for Cybersecurity Education (NICE) / NIST SP 800-181 Rev. 1",
       "evidenceSource": "NICE Workforce Framework for Cybersecurity (NIST SP 800-181 Rev. 1)",
-      "evidencePath": "/Users/andrewstrachan/career_portfolio/data/career.json",
+      "evidencePath": "career_portfolio/data/career.json",
       "citationUrl": "https://www.nist.gov/itl/applied-cybersecurity/nice/nice-framework-resource-center",
       "status": "Verified Federal Framework"
     },
@@ -106,7 +106,7 @@
       "claim": "CS646 Sanctum 3D Cryptographic Memory Palace authored in Godot 4.7.2 WebGL, deployed live on AWS CloudFront with real-time SHA-256 block hashing.",
       "verificationAuthority": "AWS CloudFront & UAB CS Department",
       "evidenceSource": "Live HTTP 200 deployment and 720p 30fps web preview video",
-      "evidencePath": "/Users/andrewstrachan/Maqkrs_Hub/exports/2026-10-03/sanctum-v1-10s-720p.mp4",
+      "evidencePath": "Maqkrs_Hub/exports/2026-10-03/sanctum-v1-10s-720p.mp4",
       "citationUrl": "https://d1puxvoeqwchkj.cloudfront.net/",
       "status": "Verified Live Deployment"
     },
@@ -116,7 +116,7 @@
       "claim": "MaQkrs AI Tutor native macOS/iOS application built with SwiftUI, Apple MLX, and Ollama, presented at UAB CS Spring Showcase (ACM & Women in Tech).",
       "verificationAuthority": "UAB Department of Computer Science & GitHub Public Repository",
       "evidenceSource": "Live GitHub public repository and showcase video preview",
-      "evidencePath": "/Users/andrewstrachan/Maqkrs_Hub/exports/2026-10-03/tutor-v1-10s-720p.mp4",
+      "evidencePath": "Maqkrs_Hub/exports/2026-10-03/tutor-v1-10s-720p.mp4",
       "citationUrl": "https://github.com/astrachan163/MaqkrsTutor-public",
       "status": "Verified Public Codebase"
     },
@@ -126,17 +126,17 @@
       "claim": "Created 51-position federal opportunity tracker and submitted 14 agency applications at the NSF CyberCorps SFS Virtual Job Fair.",
       "verificationAuthority": "CyberCorps SFS Program Office & U.S. Office of Personnel Management (OPM)",
       "evidenceSource": "accurateinternshiptracker.xlsx and SFS Virtual Job Fair Candidate Drop Log",
-      "evidencePath": "/Users/andrewstrachan/Downloads/Afterwards/accurateinternshiptracker.xlsx",
+      "evidencePath": "Downloads/Afterwards/accurateinternshiptracker.xlsx",
       "citationUrl": "https://www.sfs.opm.gov/",
       "status": "Verified Application Records"
     },
     {
       "claimId": "CLM-014",
       "category": "Community Service & Global Outreach",
-      "claim": "Completed U.S. Department of State Benjamin A. Gilman International Scholarship in Pokhara, Nepal and international health mission in Uganda establishing mobile clinics.",
+      "claim": "Certified Village Health Team (VHT) associate, UMMC with OmniMed, Uganda (July 2017 – August 2017). Mobilized and ran mobile clinics with the UMMC team; helped establish community health teaching groups. Completed the U.S. Department of State Benjamin A. Gilman International Scholarship in Pokhara, Nepal.",
       "verificationAuthority": "U.S. Department of State (Bureau of Educational and Cultural Affairs) & Omnimed",
       "evidenceSource": "Gilman International Scholarship Alumni Records & Omnimed Field Reports",
-      "evidencePath": "/Users/andrewstrachan/DevAtlas/achievement-atlas/atlas.json",
+      "evidencePath": "DevAtlas/achievement-atlas/atlas.json",
       "citationUrl": "https://www.gilmanscholarship.org/",
       "status": "Verified International Honor"
     },
@@ -146,7 +146,7 @@
       "claim": "Medical Studies, Course and clinical work, University of Mississippi School of Medicine, 2016–2020.",
       "verificationAuthority": "University of Mississippi School of Medicine (UMMC)",
       "evidenceSource": "Medical School Registrar & Clerkship Evaluations in atlas.json",
-      "evidencePath": "/Users/andrewstrachan/DevAtlas/achievement-atlas/atlas.json",
+      "evidencePath": "DevAtlas/achievement-atlas/atlas.json",
       "citationUrl": "https://www.umc.edu/som/",
       "status": "Verified Official Record"
     },
@@ -156,7 +156,7 @@
       "claim": "President & Founder of P.A.L.S. (Peer-Assisted Learning Society); President: Quality Improvement Student Interest Group; Chair: UMMC/MBN Opioid Crisis Council; Human Anatomy Prosector (May–Sep 2017).",
       "verificationAuthority": "UMMC / Mississippi Bureau of Narcotics / American Heart Association",
       "evidenceSource": "WLOX Broadcast Feature, ASB Appointment, and AHA Certification Credentials",
-      "evidencePath": "/Users/andrewstrachan/Documents/ChatGPT/Maqkrs-hq/reports/source-checkpoint.json",
+      "evidencePath": "Documents/ChatGPT/Maqkrs-hq/reports/source-checkpoint.json",
       "citationUrl": "https://www.wlox.com/2018/12/12/south-mississippi-strong-harrison-countys-emergency-youth-shelter-gives-safe-space-children-need/",
       "status": "Verified Active Credential"
     },
@@ -166,17 +166,17 @@
       "claim": "Operations Director at MidSouth Extracts LLC (January 2023 – May 2023). MidSouth Extracts, a Mississippi Medical Cannabis Program (MSDH)-licensed processing facility, needed its MSDH processing license, FDA food-facility registration, and required state and county licenses. Personally procured its MSDH (Mississippi Medical Cannabis Program) processing license, FDA food-facility registration, and all other required state and county licenses, including its MSDH manufactured-food permit and City of Tupelo local permits; wrote its 11-SOP library and HACCP program.",
       "verificationAuthority": "State Licensing Board & MidSouth Extracts LLC",
       "evidenceSource": "Facility operating records and SOP archive",
-      "evidencePath": "/Users/andrewstrachan/DevAtlas/final/RESUME.md",
+      "evidencePath": "DevAtlas/final/RESUME.md",
       "citationUrl": "https://www.umc.edu/",
       "status": "Verified Operational Record"
     },
     {
       "claimId": "CLM-018",
       "category": "Corporate Training & Sales",
-      "claim": "Sales Development Specialist at SelectQuote Insurance Services (April 2021 – November 2022, Full-Time, 40 hrs/wk); awarded SelectQuote Top Sales Award (2021) and SQ Team Lead Award (2021).",
+      "claim": "Insurance Sales Representative, SelectQuote Insurance Services, Clinton, MS, April 2021 – September 2021; Team Lead, October 2021 – March 2022; Sales Development Specialist (built and led the new-rep training program), April 2022 – November 2022. Awarded the SelectQuote Top Sales Award (2021) and SQ Team Lead Award (2021).",
       "verificationAuthority": "SelectQuote Insurance Services",
       "evidenceSource": "Corporate Performance Records & Top Sales Recognition Archive",
-      "evidencePath": "/Users/andrewstrachan/DevAtlas/final/RESUME.md",
+      "evidencePath": "DevAtlas/final/RESUME.md",
       "citationUrl": "https://www.selectquote.com/",
       "status": "Verified Corporate Award"
     },
@@ -186,7 +186,7 @@
       "claim": "Founder & Principal Technologist at MaQkrs Consulting (January 2022 – Present, 15–20 hrs/wk); delivered zero-trust infrastructure, clinical healthcare portals, and local AI workflows.",
       "verificationAuthority": "State Business Filing & MaQkrs Consulting",
       "evidenceSource": "MaQkrs LLC Corporate Filings & Client Deliverable Repositories",
-      "evidencePath": "/Users/andrewstrachan/Documents/ChatGPT/Maqkrs-hq/reports/source-checkpoint.json",
+      "evidencePath": "Documents/ChatGPT/Maqkrs-hq/reports/source-checkpoint.json",
       "citationUrl": "https://maqkrs-command-center-i.firebaseapp.com/",
       "status": "Verified Business Entity"
     },
@@ -196,17 +196,17 @@
       "claim": "Youth Leadership & Civic Mentorship at First Presbyterian Church (August 2011 – Present, 10 hrs/wk); 15+ years of continuous community service, academic mentoring, and civic outreach.",
       "verificationAuthority": "First Presbyterian Church",
       "evidenceSource": "Community Outreach & Mentorship Service Records",
-      "evidencePath": "/Users/andrewstrachan/DevAtlas/achievement-atlas/TIMELINE.md",
+      "evidencePath": "DevAtlas/achievement-atlas/TIMELINE.md",
       "citationUrl": "https://www.sunherald.com/news/local/counties/harrison-county/article97803862.html",
       "status": "Verified Community Service"
     },
     {
       "claimId": "CLM-021",
       "category": "STEM Instructional Mentorship",
-      "claim": "Teaching Assistant for UAB Department of Computer Science Python Coding Summer Camp (June 2026 – August 2026, 20–40 hrs/wk); instructed middle school cohorts in Python, BBC micro:bit, and autonomous drones.",
+      "claim": "Python Coding Summer Camp Teaching Assistant, UAB (June 2026 – July 2026); instructed middle school cohorts in Python, BBC micro:bit, and autonomous drones.",
       "verificationAuthority": "UAB Department of Computer Science",
       "evidenceSource": "UAB Summer Instructional Appointment & Camp Curriculum",
-      "evidencePath": "/Users/andrewstrachan/career_portfolio/data/resume.json",
+      "evidencePath": "career_portfolio/data/resume.json",
       "citationUrl": "https://www.uab.edu/cas/computerscience/",
       "status": "Verified Academic Appointment"
     },
@@ -216,7 +216,7 @@
       "claim": "Completed intensive financial education and leadership summit at the National Jump$tart Financial Literacy National Educator Conference (Louisville, KY).",
       "verificationAuthority": "Jump$tart Coalition for Personal Financial Literacy",
       "evidenceSource": "National Conference Credential & Attendance Documentation",
-      "evidencePath": "/Users/andrewstrachan/Documents/ChatGPT/Maqkrs-hq/reports/source-checkpoint.json",
+      "evidencePath": "Documents/ChatGPT/Maqkrs-hq/reports/source-checkpoint.json",
       "citationUrl": "https://www.jumpstart.org/",
       "status": "Verified Conference Completion"
     }
@@ -246,7 +246,7 @@
       "pointsPossible": 15,
       "rating": "Exceeds Expectations",
       "pointsAwarded": 15,
-      "evidence": "Shares school activities and graduate cybersecurity coursework (CS 623 Network Security, CS 646 Blockchain, CS 636 STRIDE Threat Modeling, CS 532 Cloud Computing), business education at Montevallo, and a B.S. in biochemistry (ACS), cum laude, with notes on how that study relates to the Information Security Analyst role he is preparing for."
+      "evidence": "Shares school activities and graduate cybersecurity coursework (CS 623 Network Security, CS 646 Blockchain & Cryptocurrency, CS 636 Computer Security, CS 532 Systems Programming, Cloud Computing (Summer 2026)), business education at Montevallo, and a B.S. in biochemistry (ACS), cum laude, with notes on how that study relates to the Information Security Analyst role he is preparing for."
     },
     {
       "criterion": "4. Special Skills Linked to Certification / Endorsement",
