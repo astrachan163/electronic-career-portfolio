@@ -33,7 +33,7 @@
       "id": "SKILL-04",
       "name": "Cloud Infrastructure & DevSecOps Engineering",
       "category": "Cloud Architecture & Automated Delivery",
-      "credential": "CS532 cloud coursework and multi-cloud production deployments",
+      "credential": "Cloud Computing (Summer 2026) and multi-cloud production deployments",
       "credentialType": "Academic Systems Project & Cloud Engineering",
       "correlationToMission": "Ensures federal digital assets are deployed within fortified, automated environments. Enforces cryptographic download expiration, automated container isolation, and immutable audit trails across AWS, GCP, and serverless runtimes.",
       "tools": ["AWS S3", "AWS CloudFront", "AWS Lambda", "AWS DynamoDB", "Firebase", "Docker", "HMAC Signatures", "CI/CD SAST"]

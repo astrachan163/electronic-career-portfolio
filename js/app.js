@@ -30,7 +30,7 @@ var PresenterState = (typeof window !== 'undefined' && window.PresenterState) ? 
       'Discuss technical mitigations for 3 industry obstacles: Post-Quantum cryptography, agentic AI defense, and critical infrastructure.'
     ],
     education: [
-      'Present graduate cybersecurity coursework (CS 623 Network Security, CS 646 Blockchain, CS 636 STRIDE Threat Modeling, CS 532 Cloud Computing).',
+      'Present graduate cybersecurity coursework (CS 623 Network Security, CS 646 Blockchain & Cryptocurrency, CS 636 Computer Security, CS 532 Systems Programming, Cloud Computing (Summer 2026)).',
       'Articulate explicit impact on future career for every educational program.',
       'Connect laboratory biochemistry discipline and medical training to zero-trust compliance standards.'
     ],

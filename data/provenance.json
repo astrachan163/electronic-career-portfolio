@@ -133,7 +133,7 @@
     {
       "claimId": "CLM-014",
       "category": "Community Service & Global Outreach",
-      "claim": "Completed U.S. Department of State Benjamin A. Gilman International Scholarship in Pokhara, Nepal and international health mission in Uganda establishing mobile clinics.",
+      "claim": "Certified Village Health Team (VHT) member, UMMC & OmniMed, Uganda (Jul 2017 – Aug 2017). Mobilized and ran mobile clinics with the UMMC team; helped establish community health teaching groups. Completed the U.S. Department of State Benjamin A. Gilman International Scholarship in Pokhara, Nepal.",
       "verificationAuthority": "U.S. Department of State (Bureau of Educational and Cultural Affairs) & Omnimed",
       "evidenceSource": "Gilman International Scholarship Alumni Records & Omnimed Field Reports",
       "evidencePath": "/Users/andrewstrachan/DevAtlas/achievement-atlas/atlas.json",
@@ -173,7 +173,7 @@
     {
       "claimId": "CLM-018",
       "category": "Corporate Training & Sales",
-      "claim": "Sales Development Specialist at SelectQuote Insurance Services (April 2021 – November 2022, Full-Time, 40 hrs/wk); awarded SelectQuote Top Sales Award (2021) and SQ Team Lead Award (2021).",
+      "claim": "Insurance Sales Representative, SelectQuote Insurance Services, Clinton, MS, Apr 2021 – Sep 2021; Team Lead, Oct 2021 – Mar 2022; Sales Development Specialist (built and led the new-rep training program), Apr 2022 – Nov 2022. Awarded the SelectQuote Top Sales Award (2021) and SQ Team Lead Award (2021).",
       "verificationAuthority": "SelectQuote Insurance Services",
       "evidenceSource": "Corporate Performance Records & Top Sales Recognition Archive",
       "evidencePath": "/Users/andrewstrachan/DevAtlas/final/RESUME.md",
@@ -203,7 +203,7 @@
     {
       "claimId": "CLM-021",
       "category": "STEM Instructional Mentorship",
-      "claim": "Teaching Assistant for UAB Department of Computer Science Python Coding Summer Camp (June 2026 – August 2026, 20–40 hrs/wk); instructed middle school cohorts in Python, BBC micro:bit, and autonomous drones.",
+      "claim": "Python Coding Summer Camp Teaching Assistant, UAB (Jun 2026 – Jul 2026); instructed middle school cohorts in Python, BBC micro:bit, and autonomous drones.",
       "verificationAuthority": "UAB Department of Computer Science",
       "evidenceSource": "UAB Summer Instructional Appointment & Camp Curriculum",
       "evidencePath": "/Users/andrewstrachan/career_portfolio/data/resume.json",
@@ -246,7 +246,7 @@
       "pointsPossible": 15,
       "rating": "Exceeds Expectations",
       "pointsAwarded": 15,
-      "evidence": "Shares school activities and graduate cybersecurity coursework (CS 623 Network Security, CS 646 Blockchain, CS 636 STRIDE Threat Modeling, CS 532 Cloud Computing), business education at Montevallo, and a B.S. in biochemistry (ACS), cum laude, with notes on how that study relates to the Information Security Analyst role he is preparing for."
+      "evidence": "Shares school activities and graduate cybersecurity coursework (CS 623 Network Security, CS 646 Blockchain & Cryptocurrency, CS 636 Computer Security, CS 532 Systems Programming, Cloud Computing (Summer 2026)), business education at Montevallo, and a B.S. in biochemistry (ACS), cum laude, with notes on how that study relates to the Information Security Analyst role he is preparing for."
     },
     {
       "criterion": "4. Special Skills Linked to Certification / Endorsement",
