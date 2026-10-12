@@ -119,9 +119,10 @@ test("there is no functions codebase to prefix", () => {
 });
 
 test("env sentinel stays empty", () => {
-  const tracked = execSync("git ls-files", { encoding: "utf8" });
-  assert.equal(tracked.includes(".env\n") || tracked.startsWith(".env"), false);
-  assert.equal(tracked.includes("ENV_SENTINEL_DO_NOT_SHIP"), false);
+  const files = execSync("git ls-files", { encoding: "utf8" }).split("\n").filter(Boolean);
+  const secretEnv = files.filter((file) => file === ".env" || (file.startsWith(".env.") && file !== ".env.example"));
+  assert.deepEqual(secretEnv, []);
+  assert.equal(files.some((file) => file.includes("ENV_SENTINEL_DO_NOT_SHIP")), false);
   const example = readFileSync(path.join(root, ".env.example"), "utf8");
   assert.equal(example.includes("AIza"), false);
   assert.equal(example.includes("ENV_SENTINEL_DO_NOT_SHIP"), false);
