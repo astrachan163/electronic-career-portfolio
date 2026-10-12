@@ -16,7 +16,7 @@ This repository hosts the public distribution of Andrew Strachan's Electronic Ca
 4. **Professional Development (2023–2025)**: Conferences, volunteering, professional achievements, and leadership engagements (ALACTE, Jump$tart National Educator Conference, DECA ICDC Anaheim, UMMC Honors & ASB, NonArtificial Superintelligence).
 5. **Educational Enhancement**: Comprehensive federal opportunity tracker (`accurateinternshiptracker.xlsx`), SFS Virtual Job Fair applications, international medical mission leadership (Uganda, Nepal Gilman Scholar), and youth STEM drone camp mentorship.
 6. **Special Skills & Credentials**: Top verified career skills, Credly-verified Microsoft Certified Educator (MCE) credential, and directory of 30 completed LinkedIn Learning certificates.
-7. **Curated Project Showcase**: Interactive media demonstrations of CS646 Sanctum (3D Cryptography Memory Palace on CloudFront), MaQkrs AI Tutor (SwiftUI on-device Apple intelligence), AdaptiveSchool, an adaptive learning platform for college and adult students, with AI tools for teachers, parents, and students (Next.js 15), and MaQkrs Command Center, alongside 28+ verified live deployments.
+7. **Curated Project Showcase**: Interactive media demonstrations of CS646 Sanctum (3D Cryptography Memory Palace on CloudFront), MaQkrs AI Tutor (SwiftUI on-device Apple intelligence), AdaptiveSchool, a schooling portal for students, teachers, and parents (Next.js 15), and MaQkrs Command Center, alongside 28+ verified live deployments.
 8. **Sources & Provenance Audit**: Full traceability ledger linking all metrics, salaries, and accomplishments to authoritative sources (BLS OOH, NIST SP 800 standards, O*NET, Credly).
 
 ## Privacy & Compliance
