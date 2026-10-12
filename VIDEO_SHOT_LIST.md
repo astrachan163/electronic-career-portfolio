@@ -51,7 +51,7 @@ This shot list provides step-by-step instructions for recording high-impact app 
   - Or live demo simulation: [https://d3jeotfnsm148g.cloudfront.net/work/adaptivehs/](https://d3jeotfnsm148g.cloudfront.net/work/adaptivehs/)
 - **Step-by-step actions**:
   1. From the parent/teacher landing view, click into the lesson planner.
-  2. Scroll through the Georgia GSE curriculum standards and course module cards.
+  2. Scroll through the course module cards.
   3. Click a student progress badge or activity card showing completion analytics.
 - **Target Duration**: 10–12 seconds.
 - **Drop-in Project Filepath**:

@@ -16,23 +16,23 @@ var PresenterState = (typeof window !== 'undefined' && window.PresenterState) ? 
   notes: {
     hero: [
       'Welcome evaluators, recruiters, and employers to Andrew Strachan\'s Electronic Career Portfolio.',
-      'Highlight candidate identity: NSF CyberCorps SFS Scholar | Clearable, M.S. Cybersecurity at UAB (GPA 3.75).',
+      'Highlight candidate identity: SFS CyberAICorps scholarship recipient (NSF-funded, with a post-graduation government service commitment). M.S. Cybersecurity student and builder at UAB (GPA 3.75).',
       'Emphasize the binding federal service commitment to protect national security infrastructure.'
     ],
     resume: [
       'Demonstrate interactive technology features: filterable skills matrix and verified academic records.',
-      'Point out graduate coursework at UAB (3.75 GPA), Montevallo PCTF (3.75 GPA), and MC ACS Biochemistry Honors (3.5 GPA).',
+      'Point out UAB GPA 3.75, Montevallo non-degree certificate GPA 3.66, and Mississippi College B.S. GPA 3.50, cum laude.',
       'Review measurable STAR accomplishments: 2025 JEFCOED Technology Torchbearer Award, State DECA coaching trophies, and cGMP compliance.'
     ],
     career: [
       'Review official BLS SOC 15-1212.00 economic data: $120,360 median wage, $182,370+ top decile, 32% growth rate.',
-      'Explain Federal General Schedule progression from GS-9 to GS-14 with CyberCorps SFS Direct Hire Authority.',
+      'Explain Federal General Schedule pay bands from GS-9 to GS-14 as context for roles he is preparing for. He does not hold those jobs.',
       'Discuss technical mitigations for 3 industry obstacles: Post-Quantum cryptography, agentic AI defense, and critical infrastructure.'
     ],
     education: [
-      'Present graduate cybersecurity coursework (CS 623 Network Security, CS 646 Blockchain, CS 636 STRIDE Threat Modeling, CS 532 Cloud Computing).',
+      'Present graduate cybersecurity coursework (CS 623 Network Security, CS 646 Blockchain & Cryptocurrency, CS 636 Computer Security, CS 532 Systems Programming, Cloud Computing (Summer 2026)).',
       'Articulate explicit impact on future career for every educational program.',
-      'Connect laboratory biochemistry discipline and medical training to zero-trust compliance standards.'
+      'Connect laboratory biochemistry discipline and medical studies to zero-trust compliance standards.'
     ],
     enhancement: [
       'Showcase the 51-position federal opportunity tracker (accurateinternshiptracker.xlsx).',
@@ -51,7 +51,7 @@ var PresenterState = (typeof window !== 'undefined' && window.PresenterState) ? 
     ],
     projects: [
       'Walk through 4 flagship highlight systems with web-optimized 10s 720p video previews.',
-      'Highlight CS646 Sanctum 3D World (Godot WebGL on CloudFront) and MaqkrsTutor2 (SwiftUI on-device AI).',
+      'Highlight CS646 Sanctum 3D World (Godot WebGL on CloudFront) and MaQkrs AI Tutor (SwiftUI on-device AI).',
       'Direct evaluators to inspect the directory of 28+ verified live cloud-hosted applications.'
     ],
     sources: [
@@ -183,13 +183,18 @@ class PortfolioApp {
 
     PresenterState.active = open;
     if (open) {
+      drawer.inert = false;
       drawer.classList.add('open');
       drawer.setAttribute('aria-hidden', 'false');
       if (presenterBtn) presenterBtn.setAttribute('aria-expanded', 'true');
       this.updateSpeakerNotes(PresenterState.currentSection);
     } else {
+      if (presenterBtn && drawer.contains(document.activeElement)) {
+        presenterBtn.focus();
+      }
       drawer.classList.remove('open');
       drawer.setAttribute('aria-hidden', 'true');
+      drawer.inert = true;
       if (presenterBtn) presenterBtn.setAttribute('aria-expanded', 'false');
     }
   }
@@ -475,7 +480,7 @@ class PortfolioApp {
       }
     });
 
-    // Mobile scroll / touch fallback to guarantee animation triggers on mobile Safari / Chrome
+    // Mobile scroll / touch fallback so animation triggers on mobile Safari / Chrome
     const checkVisibilityFallback = () => {
       const vh = window.innerHeight || document.documentElement.clientHeight;
       animatedElements.forEach(el => {

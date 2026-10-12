@@ -48,7 +48,7 @@ The print stylesheet enforces strict graphic and typographic standards for hard-
      - `.showcase-card`, `.directory-item`
      - `.skills-matrix-category`, `.cert-card`
      - `.provenance-entry`
-   - Explicit page breaks (`page-break-before: always;`) configured before major FBLA chapter milestones (Resume, Career Summary, Education, Enhancement, Special Skills, Projects, Provenance Ledger).
+   - Explicit page breaks (`page-break-before: always;`) configured before major FBLA chapter stages (Resume, Career Summary, Education, Enhancement, Special Skills, Projects, Provenance Ledger).
 
 4. **Typography & Legibility**:
    - Standard point scales: H1 (`24pt`), H2 (`18pt`), H3 (`14pt`), Body (`10.5pt / 14pt leading`).

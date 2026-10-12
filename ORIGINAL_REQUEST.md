@@ -43,7 +43,7 @@ Integrity mode: development
 | https://cs646-sanctum-astrachan.firebaseapp.com/ | CS 646 study hub alternative deployment |
 | https://secure-connector-buddy.lovable.app/ | CS 436/636/736 Computer Security study companion |
 | https://andy-sg-ns.firebaseapp.com/ | Cybersecurity study guide: question variants |
-| https://adaptivehs-v2.firebaseapp.com/ | AdaptivePrep: K-12 homeschooling platform (Georgia GSE) |
+| https://adaptivehs-v2.firebaseapp.com/ | AdaptivePrep: K-12 homeschooling platform |
 | https://d3jeotfnsm148g.cloudfront.net/work/adaptivehs/ | AdaptiveHS demo simulation |
 | https://d3jeotfnsm148g.cloudfront.net/ (also `?project=aether`) | Project Atlas: Andrew's main 3D portfolio |
 | https://ghs-lp-dev-astrachan163.firebaseapp.com/ | GHS learning platform student portal |

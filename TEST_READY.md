@@ -115,7 +115,7 @@ node tests/runner.js --verbose
 
 ## 7. Progressive Milestone Verification Guide
 
-Builders implementing Milestones M1 through M5 can verify their progress incrementally:
+Builders implementing Stages M1 through M5 can verify their progress incrementally:
 
 - **Milestone 1 (Asset Pipeline & Foundation Layout)**:
   `node tests/runner.js --feature=F1` and `node tests/runner.js --feature=F2`
@@ -127,5 +127,5 @@ Builders implementing Milestones M1 through M5 can verify their progress increme
   `node tests/runner.js --feature=F10` and `node tests/runner.js --feature=F11`
 - **Milestone 5 (Dual Variant Packaging & Verification)**:
   `node tests/runner.js --feature=F12`, `--feature=F13`, and `--feature=F14`
-- **Full E2E Pass (All Milestones Complete)**:
+- **Full E2E Pass (All Stages Complete)**:
   `node tests/runner.js` (Must achieve 187/187 passing test cases).
