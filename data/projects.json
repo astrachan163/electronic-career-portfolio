@@ -33,10 +33,6 @@
       "subtitle": "A schooling portal for students, teachers, and parents.",
       "category": "Full-Stack EdTech & Cloud Architecture",
       "techStack": ["Next.js 15", "Firebase Firestore", "Tailwind CSS", "Cloud Run", "Google Genkit", "DemoAuth"],
-      "mp4Url": "assets/previews/adaptivehs-v1-10s-720p.mp4",
-      "webmUrl": "assets/previews/adaptivehs-v1-10s-720p.webm",
-      "posterUrl": "assets/previews/adaptivehs-v1-poster.png",
-      "durationSeconds": 10,
       "liveUrl": "https://adaptivehs-v2.firebaseapp.com/",
       "description": "A schooling portal for students, teachers, and parents."
     },
