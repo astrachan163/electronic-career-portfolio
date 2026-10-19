@@ -18,7 +18,7 @@ var PortfolioConfig = {
     headline: 'M.S. Cybersecurity Candidate | CyberAICorps Scholar | UAB',
     programLine: 'SFS CyberAICorps scholarship recipient (NSF-funded, with a post-graduation government service commitment)',
     location: 'Birmingham, Alabama',
-    email: 'strachan@uab.edu',
+    email: 'astrachan162@gmail.com',
     phone: undefined, // Explicitly omitted/undefined on public variant
     github: 'https://github.com/astrachan163',
     linkedin: 'https://www.linkedin.com/in/andrew-william-strachan/'
@@ -46,7 +46,7 @@ var PortfolioConfig = {
       contact: {
         name: 'Andrew Strachan',
         location: 'Birmingham, Alabama',
-        email: 'strachan@uab.edu',
+        email: 'astrachan162@gmail.com',
         phone: undefined
       },
       credentials: {
@@ -60,7 +60,7 @@ var PortfolioConfig = {
       contact: {
         name: 'Andrew Strachan',
         location: 'Birmingham, Alabama',
-        email: 'strachan@uab.edu'
+        email: 'astrachan162@gmail.com'
       },
       credentials: {
         showTestLogins: false,
