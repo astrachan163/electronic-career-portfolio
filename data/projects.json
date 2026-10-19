@@ -16,7 +16,7 @@
     },
     {
       "id": "tutor",
-      "title": "MaqkrsTutor2 (Local AI Privacy-Preserving Study Assistant)",
+      "title": "MaQkrs AI Tutor (Local AI Privacy-Preserving Study Assistant)",
       "subtitle": "Native macOS/iOS Local Retrieval-Augmented Generation (Local RAG)",
       "category": "Artificial Intelligence & Edge Privacy",
       "techStack": ["SwiftUI", "SwiftData", "Apple MLX", "Ollama", "Quantized Gemma 4", "SQLite Vector Search"],
@@ -25,12 +25,12 @@
       "posterUrl": "assets/previews/tutor-v1-poster.png",
       "durationSeconds": 10,
       "repoUrl": "https://github.com/astrachan163/MaqkrsTutor-public",
-      "description": "Engineered a native Apple Silicon assistant that indexes technical course documents, PDFs, and source code for grounded question answering with 0 network egress. Protects institutional and student data through 100% on-device inference using quantized foundation models."
+      "description": "Engineered a native Apple Silicon assistant that indexes technical course documents, PDFs, and source code for grounded question answering with 0 network egress. Protects institutional and student data through on-device inference, designed to keep data on the device, using quantized foundation models."
     },
     {
       "id": "adaptivehs",
-      "title": "AdaptivePrep & AdaptiveHS Learning Platform",
-      "subtitle": "K-12 Homeschool Learning Management System & Curriculum Portal",
+      "title": "AdaptiveSchool",
+      "subtitle": "A schooling portal for students, teachers, and parents.",
       "category": "Full-Stack EdTech & Cloud Architecture",
       "techStack": ["Next.js 15", "Firebase Firestore", "Tailwind CSS", "Cloud Run", "Google Genkit", "DemoAuth"],
       "mp4Url": "assets/previews/adaptivehs-v1-10s-720p.mp4",
@@ -38,12 +38,11 @@
       "posterUrl": "assets/previews/adaptivehs-v1-poster.png",
       "durationSeconds": 10,
       "liveUrl": "https://adaptivehs-v2.firebaseapp.com/",
-      "simulationUrl": "https://d3jeotfnsm148g.cloudfront.net/work/adaptivehs/",
-      "description": "Developed a full-stack homeschool platform aligned with Georgia Standards of Excellence (GSE). Implemented role-based authentication separating Parent oversight, Student modules, and Educator tools with adaptive question generation and rubric scoring."
+      "description": "A schooling portal for students, teachers, and parents."
     },
     {
       "id": "maqkrs",
-      "title": "MaQkRs OS Command Center & Operational Planner",
+      "title": "MaQkrs OS Command Center & Operational Planner",
       "subtitle": "Unified Executive Business Dashboard & Multi-Agent Operations Hub",
       "category": "Systems Operations & Dashboard Architecture",
       "techStack": ["React 19", "TypeScript", "Firebase", "Tailwind CSS", "Local Agent Hub", "Python"],
@@ -77,7 +76,7 @@
       "category": "Coursework & Cryptography",
       "platform": "Firebase Hosting",
       "url": "https://cs646-sanctum-astrachan.firebaseapp.com/",
-      "description": "Permanent course portal for Dr. Yuliang Zheng's UAB graduate blockchain and cryptography curriculum.",
+      "description": "Permanent course portal for UAB CS 646 Blockchain & Cryptocurrency.",
       "techStack": ["React", "Firebase Hosting", "Tailwind CSS"]
     },
     {
@@ -91,7 +90,7 @@
     },
     {
       "id": "p-05",
-      "name": "MaqkrsTutor Public Repository",
+      "name": "MaQkrs AI Tutor Public Repository",
       "category": "On-Device AI & Privacy",
       "platform": "GitHub Open Source",
       "url": "https://github.com/astrachan163/MaqkrsTutor-public",
@@ -100,21 +99,12 @@
     },
     {
       "id": "p-06",
-      "name": "AdaptivePrep K-12 Homeschool Platform",
+      "name": "AdaptiveSchool",
       "category": "Full-Stack EdTech",
       "platform": "Cloud Run / Firebase",
       "url": "https://adaptivehs-v2.firebaseapp.com/",
-      "description": "Server-side rendered homeschool learning management system aligned with Georgia GSE benchmarks.",
+      "description": "A schooling portal for students, teachers, and parents.",
       "techStack": ["Next.js 15", "Cloud Run", "Firebase", "DemoAuth"]
-    },
-    {
-      "id": "p-07",
-      "name": "AdaptiveHS Interactive Walkthrough Simulation",
-      "category": "Interactive EdTech Demo",
-      "platform": "AWS CloudFront",
-      "url": "https://d3jeotfnsm148g.cloudfront.net/work/adaptivehs/",
-      "description": "Static cloud simulation illustrating multi-role user workflows and assessment interfaces.",
-      "techStack": ["AWS CloudFront", "Static Web Showcase", "HTML5"]
     },
     {
       "id": "p-08",
@@ -127,7 +117,7 @@
     },
     {
       "id": "p-09",
-      "name": "MaQkRs OS Command Center",
+      "name": "MaQkrs OS Command Center",
       "category": "Systems Operations",
       "platform": "Firebase Hosting",
       "url": "https://maqkrs-command-center-i.firebaseapp.com/",
@@ -157,7 +147,7 @@
       "name": "Victorious Herbal Elements (Storefront)",
       "category": "E-Commerce Storefront",
       "platform": "Vercel",
-      "url": "https://aether-apothecary.vercel.app/",
+      "url": "https://herbal.nonartificialsi.com/",
       "description": "Modern botanical product catalog and checkout workflow with responsive product showcases.",
       "techStack": ["Next.js", "Vercel", "Stripe API"]
     },

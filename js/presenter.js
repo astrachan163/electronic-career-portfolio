@@ -15,23 +15,23 @@ var PresenterState = (typeof window !== 'undefined' && window.PresenterState) ? 
   notes: {
     hero: [
       "Welcome evaluators, recruiters, and employers to Andrew Strachan's Electronic Career Portfolio.",
-      "Highlight candidate identity: NSF CyberCorps SFS Scholar | Clearable, M.S. Cybersecurity at UAB (GPA 3.75).",
+      "Highlight candidate identity: SFS CyberAICorps scholarship recipient (NSF-funded, with a post-graduation government service commitment). M.S. Cybersecurity student and builder at UAB (GPA 3.75).",
       "Emphasize the binding federal public service commitment to protect national security infrastructure."
     ],
     resume: [
       "17 STAR accomplishments across cybersecurity engineering and academic leadership.",
       "Demonstrate interactive technology features: filterable skills matrix and verified academic records.",
-      "Graduate coursework at UAB (3.75 GPA), Montevallo PCTF (3.75 GPA), and MC ACS Biochemistry Honors (3.5 GPA)."
+      "Coursework: UAB GPA 3.75, Montevallo non-degree certificate GPA 3.66, Mississippi College B.S. GPA 3.50, cum laude.",
     ],
     career: [
       "BLS SOC 15-1212 $120,360 median wage, $182,370+ top decile, 32% growth rate (+53,200 jobs).",
-      "Federal General Schedule progression from GS-9 to GS-14 with CyberCorps SFS Direct Hire Authority.",
+      "Federal General Schedule pay bands from GS-9 to GS-14 are context for roles he is preparing for. He does not hold those jobs.",
       "Technical mitigations for 3 industry obstacles: Post-Quantum cryptography, agentic AI defense, and critical infrastructure."
     ],
     education: [
-      "UAB M.S. Cyber 3.75 GPA, Montevallo PCTF (3.75 GPA), and MC ACS Biochemistry Honors (3.5 GPA).",
-      "Graduate cybersecurity coursework (CS 623 Network Security, CS 646 Blockchain, CS 636 STRIDE Threat Modeling, CS 532 Cloud Computing).",
-      "Connect laboratory biochemistry discipline and medical training to zero-trust compliance standards."
+      "UAB M.S. Cybersecurity GPA 3.75, Montevallo certificate GPA 3.66, Mississippi College B.S. GPA 3.50, cum laude.",
+      "Graduate cybersecurity coursework (CS 623 Network Security, CS 646 Blockchain & Cryptocurrency, CS 636 Computer Security, CS 532 Systems Programming, Cloud Computing (Summer 2026)).",
+      "Connect laboratory biochemistry discipline and medical studies to zero-trust compliance standards."
     ],
     enhancement: [
       "Professional Development (2023–2025): conferences (ALACTE, DECA Anaheim, National Jump$tart Financial Literacy Conference (Louisville, KY)), UMMC leadership, and community service.",
@@ -50,7 +50,7 @@ var PresenterState = (typeof window !== 'undefined' && window.PresenterState) ? 
     ],
     projects: [
       "4 highlight video cards with web-optimized 10s 720p video previews.",
-      "CS646 Sanctum 3D World (Godot WebGL on CloudFront) and MaqkrsTutor2 (SwiftUI on-device AI).",
+      "CS646 Sanctum 3D World (Godot WebGL on CloudFront) and MaQkrs AI Tutor (SwiftUI on-device AI).",
       "Directory of 28+ verified live cloud-hosted applications."
     ],
     sources: [

@@ -1,14 +1,14 @@
 {
   "profile": {
     "name": "Andrew Strachan",
-    "headline": "Cybersecurity Systems Engineer & Secure Systems Architect",
-    "fellowship": "CyberCorps: Scholarship for Service (SFS) Scholar",
+    "headline": "M.S. Cybersecurity Candidate | CyberAICorps Scholar | UAB",
+    "programLine": "SFS CyberAICorps scholarship recipient (NSF-funded, with a post-graduation government service commitment)",
     "location": "Birmingham, Alabama",
     "email": "strachan@uab.edu",
     "github": "https://github.com/astrachan163",
     "linkedin": "https://www.linkedin.com/in/andrew-william-strachan/",
-    "clearance": "CyberCorps: Scholarship for Service (SFS) Scholar | Clearable. Maintained eligibility requirements for federal civilian employment; fully prepared to undergo federal security background investigations upon agency sponsorship.",
-    "summary": "NSF CyberCorps Scholarship for Service (SFS) Scholar pursuing an M.S. in Cybersecurity at UAB (GPA 3.75). Combines deep systems programming and zero-trust engineering with executive compliance, industrial cGMP quality controls, and award-winning career and technical education leadership."
+    "clearance": "Willing to obtain a security clearance.",
+    "summary": "SFS CyberAICorps scholarship recipient (NSF-funded, with a post-graduation government service commitment), pursuing an M.S. in Cybersecurity at UAB (GPA 3.75). M.S. Cybersecurity student and builder. Combines systems programming and zero-trust engineering with executive compliance, industrial cGMP quality controls, and award-winning career and technical education leadership."
   },
   "education": [
     {
@@ -18,9 +18,9 @@
       "field": "Cybersecurity & Information Security",
       "dates": "January 2026 – Present (Expected Graduation: Dec 2027)",
       "gpa": "3.75 / 4.0",
-      "honors": "NSF CyberAICorps SFS Scholar",
+      "honors": "SFS CyberAICorps scholarship recipient (NSF-funded, with a post-graduation government service commitment)",
       "highlights": [
-        "Specializing in Network Security (CS 623), Blockchain & Cryptography (CS 646), Threat Modeling (CS 636), and Cloud Computing (CS 532)",
+        "CS 623 Network Security, CS 646 Blockchain & Cryptocurrency, CS 636 Computer Security, CS 532 Systems Programming, and Cloud Computing (Summer 2026)",
         "Under federal service commitment upon graduation to protect critical national infrastructure and executive agency assets",
         "Graduate researcher in on-device AI security, sandboxed agent runtimes, and WebAssembly cryptographic architectures"
       ]
@@ -28,10 +28,10 @@
     {
       "institution": "University of Montevallo",
       "abbreviation": "Montevallo",
-      "degree": "ALSDE Certified CTE Educator — Provisional Certificate in a Teaching Field (PCTF): Business, Marketing, and Finance",
+      "degree": "Provisional Certificate in a Teaching Field: Business, Marketing, and Finance (non-degree)",
       "field": "Business, Marketing, and Finance",
-      "dates": "August 2024 – May 2025",
-      "gpa": "3.75 / 4.0",
+      "dates": "Fall 2024 – Spring 2025",
+      "gpa": "3.66 / 4.0",
       "honors": "ALSDE State CTE Certification · NAOF Curriculum Specialization",
       "highlights": [
         "Mastered experiential pedagogy in managerial finance, business software systems, and entrepreneurship",
@@ -43,10 +43,10 @@
       "institution": "Mississippi College",
       "abbreviation": "MC",
       "degree": "Bachelor of Science (B.S.)",
-      "field": "ACS Biochemistry, Biology Medical Sciences; Music (Minor)",
+      "field": "B.S., Biochemistry (ACS), with a secondary major in Biology Medical Sciences; Minor in Music, Mississippi College (now Mississippi Christian University), Aug 2011 – May 2016, cum laude",
       "dates": "August 2011 – May 2016",
-      "gpa": "3.5 / 4.0",
-      "honors": "Graduated with Honors · Delta Epsilon Iota Academic Honor Society · Phi Mu Alpha Sinfonia",
+      "gpa": "3.50 / 4.0",
+      "honors": "cum laude · Delta Epsilon Iota Academic Honor Society · Phi Mu Alpha Sinfonia",
       "highlights": [
         "Senior Class Senator (Student Government Association, 2015–2016)",
         "Principal French Horn in MC Symphonic Band and Orchestra (2012–2013)",
@@ -58,17 +58,17 @@
     {
       "institution": "University of Mississippi School of Medicine",
       "abbreviation": "UMMC",
-      "degree": "Doctor of Medicine (M.D.) Candidate — 4 Years Coursework & Clinical Clerkships Completed (Incomplete as of 2020)",
-      "field": "Medicine (Completed 4 Years; In Good Standing)",
+      "degree": "Medical Studies, Course and clinical work, University of Mississippi School of Medicine, 2016–2020",
+      "field": "Medical Studies, Course and clinical work",
       "dates": "January 2016 – July 2020",
       "gpa": "Coursework Completed in Good Standing",
-      "honors": "Virginia Covington Award (2017) · President & Founder: P.A.L.S. (Peer-Assisted Learning Society) · Chair: UMMC/MBN Opioid Crisis Council · BCLS / ACLS / First Aid Certified",
+      "honors": "Virginia Covington Award (2017) · President & Founder: P.A.L.S. (Peer-Assisted Learning Society) · Chair: UMMC/MBN Opioid Crisis Council · Human Anatomy Prosector (May–Sep 2017)",
       "highlights": [
-        "Master Anatomical Prosector for School of Medicine and School of Dentistry (2017)",
+        "Human Anatomy Prosector (May–Sep 2017)",
         "President, Quality Improvement Student Interest Group & Associate Student Body QI Chair",
         "Chair, UMMC/MBN Opioid Crisis Council directing harm reduction initiatives and youth shelter outreach",
-        "BCLS / ACLS / First Aid Certified (American Heart Association high-reliability life support)",
-        "Rigorous four-year training in high-reliability clinical operations, diagnostic triage, and HIPAA privacy security"
+        "Human Anatomy Prosector (May–Sep 2017)",
+        "Medical Studies, Course and clinical work, University of Mississippi School of Medicine, 2016–2020, including high-reliability clinical operations, diagnostic triage, and HIPAA privacy security"
       ]
     }
   ],
@@ -81,7 +81,8 @@
         "NIST SP 800-53 / CSF Compliance",
         "Network Defense & Packet Analysis (Wireshark, Nmap)",
         "Cryptographic Hashing & SHA-256 Block Verification",
-        "Cloud Computing Architecture & Secure Enclaves (CS 532)",
+        "Cloud Computing (Summer 2026)",
+        "CS 532 Systems Programming",
         "Identity & Access Management (IAM / Least Privilege)",
         "Firewall, Proxy & Access Control Lists (ACLs)"
       ]
@@ -138,10 +139,10 @@
   ],
   "experience": [
     {
-      "role": "Teaching Assistant — Python Coding Summer Camp",
+      "role": "Python Coding Summer Camp Teaching Assistant, UAB",
       "organization": "University of Alabama at Birmingham (Department of Computer Science)",
       "location": "Birmingham, AL",
-      "dates": "June 2026 – August 2026 (20–40 hrs/wk)",
+      "dates": "Jun 2026 – Jul 2026",
       "badge": "STEM Mentorship",
       "achievements": [
         "Instructed middle school cohorts in Python programming fundamentals, algorithmic loops, and physical computing.",
@@ -160,7 +161,7 @@
         "Taught Business Finance, Customer Service, and Sales in the premier National Academy of Finance (NAOF) program.",
         "Served as official Chapter Adviser for the state's largest student career and technical business organization.",
         "Head Coach for the Shades Valley High School Esports Team; raised funding and secured corporate sponsorships.",
-        "Maintained 100% compliance with Alabama State Department of Education TAPE instructional standards.",
+        "Maintained compliance with Alabama State Department of Education TAPE instructional standards.",
         "Honored with the prestigious 2025 JEFCOED Technology Torchbearer Award for Excellence for innovative classroom technology integration."
       ]
     },
@@ -178,21 +179,19 @@
       ]
     },
     {
-      "role": "Operational Director & Laboratory Specialist",
+      "role": "Operations Director",
       "organization": "MidSouth Extracts LLC",
       "location": "Tupelo, MS",
-      "dates": "January 2023 – May 2023 (Full-Time, 40 hrs/wk)",
+      "dates": "January 2023 – May 2023",
       "badge": "cGMP Compliance Lead",
       "achievements": [
-        "Directed operational buildout of a state-licensed, cGMP-regulated botanical and medical processing facility.",
-        "Authored an audit-ready library of Standard Operating Procedures (SOPs) spanning extraction protocols, hazardous material safety, and QA/QC testing.",
-        "Embedded with PhD analytical chemists and process engineers to execute process hazard analyses (PHA) and equipment qualification.",
-        "Secured state and municipal operating permits with 100% first-pass regulatory compliance."
+        "MidSouth Extracts, a Mississippi Medical Cannabis Program (MSDH)-licensed processing facility, needed its MSDH processing license, FDA food-facility registration, and required state and county licenses.",
+        "Personally procured its MSDH (Mississippi Medical Cannabis Program) processing license, FDA food-facility registration, and all other required state and county licenses, including its MSDH manufactured-food permit and City of Tupelo local permits; wrote its 11-SOP library and HACCP program."
       ]
     },
     {
       "role": "Founder & Principal Technologist",
-      "organization": "Maqkrs Consulting",
+      "organization": "MaQkrs Consulting",
       "location": "Birmingham, AL & Clinton, MS",
       "dates": "January 2022 – Present (15–20 hrs/wk)",
       "badge": "Consulting & Systems",
@@ -203,27 +202,45 @@
       ]
     },
     {
-      "role": "Sales Development Specialist",
+      "role": "Insurance Sales Representative, SelectQuote Insurance Services, Clinton, MS, Apr 2021 – Sep 2021",
       "organization": "SelectQuote Insurance Services",
       "location": "Clinton, MS",
-      "dates": "April 2021 – November 2022 (Full-Time, 40 hrs/wk)",
+      "dates": "Apr 2021 – Sep 2021",
       "badge": "Top Sales Award (2021)",
       "achievements": [
-        "Trained, onboarded, and coached incoming sales cohorts across high-velocity life and health insurance divisions.",
-        "Engineered micro-training modules and compliance scripts that reduced regulatory complaints and elevated retention.",
-        "Honored with the SelectQuote Top Sales Award (2021) and SQ Team Lead Award (2021) for sustained performance and coaching excellence."
+        "Awarded the SelectQuote Top Sales Award (2021)."
       ]
     },
     {
-      "role": "OmniMed Certified Village Health Volunteer (Uganda, East Africa)",
-      "organization": "OmniMed",
-      "location": "Mukono District, Uganda, East Africa",
-      "dates": "July 2017 – August 2017",
-      "badge": "Global Health Certification",
+      "role": "Team Lead, Oct 2021 – Mar 2022",
+      "organization": "SelectQuote Insurance Services",
+      "location": "Clinton, MS",
+      "dates": "Oct 2021 – Mar 2022",
+      "badge": "SQ Team Lead Award (2021)",
       "achievements": [
-        "Certified Village Health Volunteer partnering with local village health teams to conduct primary preventive care.",
-        "Established two functional mobile medical clinics delivering clinical assessments and health education to 1,000+ rural patients.",
-        "Delivered clean-water sanitation and disease prevention workshops across remote communities."
+        "Awarded the SQ Team Lead Award (2021)."
+      ]
+    },
+    {
+      "role": "Sales Development Specialist (built and led the new-rep training program), Apr 2022 – Nov 2022",
+      "organization": "SelectQuote Insurance Services",
+      "location": "Clinton, MS",
+      "dates": "Apr 2022 – Nov 2022",
+      "badge": "New-rep training program",
+      "achievements": [
+        "Built and led the new-rep training program.",
+        "Trained, onboarded, and coached incoming sales cohorts across life and health insurance divisions.",
+        "Engineered micro-training modules and compliance scripts that reduced regulatory complaints and elevated retention."
+      ]
+    },
+    {
+      "role": "Certified Village Health Team (VHT) member, UMMC & OmniMed, Uganda (Jul 2017 – Aug 2017)",
+      "organization": "UMMC & OmniMed",
+      "location": "Uganda",
+      "dates": "Jul 2017 – Aug 2017",
+      "badge": "Village Health Team",
+      "achievements": [
+        "Mobilized and ran mobile clinics with the UMMC team; helped establish community health teaching groups."
       ]
     },
     {
@@ -239,11 +256,11 @@
       ]
     },
     {
-      "role": "Master Human Anatomy Prosector",
+      "role": "Human Anatomy Prosector (May–Sep 2017)",
       "organization": "University of Mississippi School of Medicine (UMMC)",
       "location": "Jackson, MS",
       "dates": "May 2017 – September 2017",
-      "badge": "Medical Training",
+      "badge": "Medical Studies, Course and clinical work",
       "achievements": [
         "Performed intricate anatomical dissections of human cadaveric donors to create master teaching specimens for medical and dental schools.",
         "Delivered lecture demonstrations to 100+ first-year medical students, teaching complex neurovascular and musculoskeletal relationships."
@@ -272,7 +289,7 @@
     },
     {
       "id": "STAR-02",
-      "title": "State Championship DECA Coaching (1st & 2nd Place)",
+      "title": "DECA coaching (1st and 2nd place)",
       "situation": "Corner High School lacked a competitive business leadership organization, limiting student exposure to state and national career pathways.",
       "task": "Charter a new DECA chapter from scratch, recruit student competitors, and prepare them for statewide marketing and finance role-play competitions.",
       "action": "Conducted weekly simulated business judging sessions, analyzed market case studies, and trained students in rapid executive decision-making.",
@@ -281,10 +298,10 @@
     {
       "id": "STAR-03",
       "title": "cGMP Facility Buildout & Audit-Ready SOP Library",
-      "situation": "MidSouth Extracts was establishing a botanical extraction facility requiring compliance with rigorous FDA and state health authority mandates.",
+      "situation": "MidSouth Extracts, a Mississippi Medical Cannabis Program (MSDH)-licensed processing facility, needed its MSDH processing license, FDA food-facility registration, and required state and county licenses.",
       "task": "Author an entire operational standard operating procedure (SOP) library and guide facility qualification before state licensing audits.",
-      "action": "Embedded with analytical chemists and process engineers, synthesized complex extraction protocols into 30+ standardized operating procedures, and enforced safety controls.",
-      "result": "Passed all state regulatory inspections on the first audit pass, achieving 100% operational licensure with zero compliance citations."
+      "action": "Personally procured its MSDH (Mississippi Medical Cannabis Program) processing license, FDA food-facility registration, and all other required state and county licenses, including its MSDH manufactured-food permit and City of Tupelo local permits; wrote its 11-SOP library and HACCP program.",
+      "result": "Completed the licensing and SOP work in this role."
     },
     {
       "id": "STAR-04",
@@ -296,11 +313,11 @@
     },
     {
       "id": "STAR-05",
-      "title": "MaqkrsTutor2 Privacy-Preserving On-Device AI Assistant",
+      "title": "MaQkrs AI Tutor Privacy-Preserving On-Device AI Assistant",
       "situation": "Commercial cloud AI tools leak institutional data and student intellectual property to remote LLM providers, violating zero-trust and educational privacy laws.",
       "task": "Architect a native on-device macOS AI study assistant capable of semantic document search with 0 network egress.",
       "action": "Built SwiftUI app with SwiftData, integrated Ollama/MLX for quantized Gemma 4 local inference, engineered SQLite vector retrieval over PDFs and code, and open-sourced sanitized repo.",
-      "result": "Presented at the UAB CS Spring Showcase (ACM & Women in Tech), achieving sub-second local retrieval with 100% privacy assurance."
+      "result": "Presented at the UAB CS Spring Showcase (ACM & Women in Tech), achieving sub-second local retrieval, designed to keep data on the device."
     },
     {
       "id": "STAR-06",
@@ -336,15 +353,15 @@
     },
     {
       "id": "STAR-10",
-      "title": "Uganda International Health Outreach & Mobile Clinic Establishment",
-      "situation": "Rural communities in Uganda, Africa faced extreme barriers to primary healthcare, clean water hygiene, and preventive health screenings.",
-      "task": "Participate in an intensive international health internship with Omnimed Health Initiative to expand clinical capacity.",
-      "action": "Partnered with village health teams to establish two functional mobile medical clinics and delivered preventive health workshops across remote villages.",
-      "result": "Delivered care and preventive health education to over 1,000 rural patients, demonstrating crisis composure and cross-cultural leadership."
+      "title": "Certified Village Health Team (VHT) member, UMMC & OmniMed, Uganda (Jul 2017 – Aug 2017)",
+      "situation": "Rural communities in Uganda needed mobile clinics and community health teaching.",
+      "task": "Work with the UMMC team in Uganda.",
+      "action": "Mobilized and ran mobile clinics with the UMMC team; helped establish community health teaching groups.",
+      "result": "Mobilized and ran mobile clinics with the UMMC team; helped establish community health teaching groups."
     },
     {
       "id": "STAR-11",
-      "title": "Benjamin A. Gilman International Fellowship in Pokhara, Nepal",
+      "title": "Benjamin A. Gilman International Scholarship in Pokhara, Nepal",
       "situation": "Global public health and sustainable agriculture initiatives require cross-disciplinary volunteers capable of clinical support and community education.",
       "task": "Complete U.S. Department of State Gilman Scholarship in Nepal, balancing clinical rotations with international educational broadcasts.",
       "action": "Assisted physicians at B.G. Hospital & Research Center, taught organic farming to 50+ Himalayan farmers, and served as Reach the World Travel Correspondent broadcasting live seminars to New York students.",
@@ -356,7 +373,7 @@
       "situation": "Emerging autonomous AI agents with access to command line tools pose severe security risks if models execute unverified shell commands.",
       "task": "Build a defense-in-depth gatekeeper ensuring zero-trust verification before executing agent actions on local systems.",
       "action": "Engineered Java 21 / Python architecture with WebSocket security boundary, Model Context Protocol (MCP) tool sandboxing, and LanceDB memory audit trails.",
-      "result": "Successfully prevented unauthorized system call execution and established verifiable audit trails for 100% of autonomous tool invocations."
+      "result": "Successfully prevented unauthorized system call execution and established verifiable audit trails for autonomous tool invocations."
     },
     {
       "id": "STAR-13",
@@ -368,15 +385,15 @@
     },
     {
       "id": "STAR-14",
-      "title": "AdaptiveHS K-12 Homeschool Learning Platform",
-      "situation": "Homeschool families needed a unified learning platform aligned with Georgia Standards of Excellence (GSE) that supported parents, students, and educators.",
+      "title": "AdaptiveSchool",
+      "situation": "A schooling portal for students, teachers, and parents.",
       "task": "Develop an accessible full-stack educational web application with role-based access control and adaptive assessments.",
       "action": "Built with Next.js 15, Firebase Firestore, and Tailwind CSS; engineered multi-role demo authentication and interactive simulation exports.",
-      "result": "Deployed live on Cloud Run / Firebase (`adaptivehs-v2.firebaseapp.com`) and static CloudFront showcase with responsive UI across mobile and desktop."
+      "result": "Deployed live on Cloud Run / Firebase (`adaptivehs-v2.firebaseapp.com`)."
     },
     {
       "id": "STAR-15",
-      "title": "Master Human Anatomy Prosectorship & Surgical Dissection",
+      "title": "Human Anatomy Prosector (May–Sep 2017)",
       "situation": "UMMC School of Medicine required pristine, high-fidelity anatomical specimens for incoming medical and dental students.",
       "task": "Execute complex surgical dissections of donor cadavers and lead clinical demonstration labs for first-year cohorts.",
       "action": "Spent 400+ hours in laboratory dissection isolating deep neurovascular bundles, cranial nerves, and thoracic viscera; delivered weekly clinical lectures.",
@@ -396,7 +413,7 @@
       "situation": "Enterprise systems required automated cloud provisioning adhering to least-privilege access and zero-trust boundary verification.",
       "task": "Design and deploy cloud infrastructure automation validating IAM policies and encrypted resource boundaries.",
       "action": "Engineered infrastructure automation, strict IAM policy least-privilege configurations, and cryptographic hashing pipelines across cloud storage and compute.",
-      "result": "Automated deployment pipelines with 100% verification across test clusters, enforcing NIST SP 800-53 security controls."
+      "result": "Automated deployment pipelines with verification across test clusters, enforcing NIST SP 800-53 security controls."
     }
   ],
   "careerRelatedEducation": [
@@ -404,16 +421,17 @@
       "institution": "University of Alabama at Birmingham",
       "program": "M.S. in Cybersecurity (Graduate Coursework)",
       "courses": [
-        "CS 623 Network Security (Firewalls, Proxies, Packet Inspection, TLS/SSL)",
-        "CS 646 Blockchain & Cryptography (Elliptic Curves, SHA-256, Consensus Algorithms)",
-        "CS 636 Computer Security & Threat Modeling (STRIDE, DFDs, Vulnerability Mitigation)",
-        "CS 532 Cloud Computing (AWS S3, DynamoDB, Lambda, IAM Security)"
+        "CS 623 Network Security",
+        "CS 646 Blockchain & Cryptocurrency",
+        "CS 636 Computer Security",
+        "CS 532 Systems Programming",
+        "Cloud Computing (Summer 2026)"
       ],
       "careerImpact": "Directly develops the technical defense capabilities required for Information Security Analysts. Coursework provides rigorous, hands-on mastery in identifying network intrusions, analyzing cryptographic primitives, evaluating system architecture threats, and deploying zero-trust cloud architectures."
     },
     {
       "institution": "STRIDE Threat Modeling Enterprise Assessment",
-      "program": "Systems Security Architecture (CS 636)",
+      "program": "CS 636 Computer Security",
       "courses": [
         "BlazerNET Enterprise Threat Boundary Analysis",
         "IoT Surveillance Camera Threat Vector Modeling",
@@ -435,11 +453,11 @@
     },
     {
       "institution": "Mississippi College & UMMC",
-      "program": "B.S. ACS Biochemistry Honors & Medical Training",
+      "program": "B.S. Biochemistry (ACS), Mississippi College (now Mississippi Christian University); Medical Studies, Course and clinical work, University of Mississippi School of Medicine, 2016–2020",
       "courses": [
         "ACS-Certified Biochemistry & Physical Chemistry",
-        "Human Gross Anatomy & Neuroanatomy (Master Prosector)",
-        "Medical School Preclinical Sciences & Clinical Clerkships",
+        "Human Anatomy Prosector (May–Sep 2017)",
+        "Medical Studies, Course and clinical work",
         "High-Reliability Healthcare Operations & HIPAA Privacy Security"
       ],
       "careerImpact": "Instills scientific rigor, empirical hypothesis testing, and zero-defect attention to detail. Operating in sterile surgical suites and cGMP extraction labs directly parallels the discipline needed to enforce zero-trust security postures and safeguard protected infrastructure."
@@ -464,7 +482,7 @@
       "title": "International Service & Healthcare Outreach",
       "source": "Omnimed Uganda & Gilman Scholarship Nepal",
       "count": 2,
-      "details": "Uganda medical outreach establishing 2 mobile clinics serving 1,000+ rural patients; U.S. Department of State Benjamin A. Gilman International Scholarship in Pokhara, Nepal conducting hospital service and rural sustainable agriculture education.",
+      "details": "Certified Village Health Team (VHT) member, UMMC & OmniMed, Uganda (Jul 2017 – Aug 2017). Mobilized and ran mobile clinics with the UMMC team; helped establish community health teaching groups. U.S. Department of State Benjamin A. Gilman International Scholarship in Pokhara, Nepal conducting hospital service and rural sustainable agriculture education.",
       "careerRelevance": "Cultivates global situational awareness, high-stakes operational adaptability, and community stewardship foundational to public service leadership."
     },
     {
@@ -476,9 +494,9 @@
     },
     {
       "title": "Work-Based Learning & Products Developed",
-      "source": "DevAtlas & Maqkrs Hub Releases",
+      "source": "DevAtlas & MaQkrs Hub Releases",
       "count": 4,
-      "details": "Engineered flagship working systems including CS646 Sanctum 3D World (Godot/WebGL on CloudFront), MaqkrsTutor2 On-Device AI (SwiftUI/Local RAG), AdaptiveHS Learning Portal (Next.js 15/Cloud Run), and Citadel Zero-Trust Gatekeeper (Java 21).",
+      "details": "Engineered flagship working systems including CS646 Sanctum 3D World (Godot/WebGL on CloudFront), MaQkrs AI Tutor On-Device AI (SwiftUI/Local RAG), AdaptiveSchool, a schooling portal for students, teachers, and parents (Next.js 15/Cloud Run), and Citadel Zero-Trust Gatekeeper (Java 21).",
       "careerRelevance": "Proves tangible end-to-end software engineering capability from architecture and cryptographic verification to cloud deployment and user experience."
     }
   ]

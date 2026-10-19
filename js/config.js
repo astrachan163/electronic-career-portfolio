@@ -15,8 +15,8 @@ var PortfolioConfig = {
   // Candidate Contact & Profile Information
   contact: {
     name: 'Andrew Strachan',
-    headline: 'Cybersecurity Systems Engineer & Secure Systems Architect',
-    fellowship: 'CyberCorps: Scholarship for Service (SFS) Scholar | Clearable',
+    headline: 'M.S. Cybersecurity Candidate | CyberAICorps Scholar | UAB',
+    programLine: 'SFS CyberAICorps scholarship recipient (NSF-funded, with a post-graduation government service commitment)',
     location: 'Birmingham, Alabama',
     email: 'strachan@uab.edu',
     phone: undefined, // Explicitly omitted/undefined on public variant
@@ -54,20 +54,17 @@ var PortfolioConfig = {
       }
     },
     private: {
-      variant: 'private',
-      isPublic: false,
-      redacted: false,
+      variant: 'public',
+      isPublic: true,
+      redacted: true,
       contact: {
         name: 'Andrew Strachan',
         location: 'Birmingham, Alabama',
         email: 'strachan@uab.edu'
       },
       credentials: {
-        showTestLogins: true,
-        ghsLogin: {
-          username: 'z@z.com',
-          pass: 'zzzzzz'
-        }
+        showTestLogins: false,
+        ghsLogin: undefined
       }
     }
   }

@@ -3,7 +3,7 @@
     {
       "claimId": "CLM-001",
       "category": "Education & Academic Integrity",
-      "claim": "Andrew Strachan is currently pursuing a Master of Science in Cybersecurity at UAB (January 2026 – Present, Expected Graduation: Dec 2027, GPA: 3.75) as an NSF CyberAICorps SFS Scholar.",
+      "claim": "Andrew Strachan is currently pursuing a Master of Science in Cybersecurity at UAB (January 2026 – Present, Expected Graduation: Dec 2027, GPA: 3.75). SFS CyberAICorps scholarship recipient (NSF-funded, with a post-graduation government service commitment).",
       "verificationAuthority": "University of Alabama at Birmingham (UAB) & National Science Foundation",
       "evidenceSource": "UAB Graduate Catalog & atlas.json; verified by NSF CyberCorps SFS program coordinator Liz",
       "evidencePath": "/Users/andrewstrachan/DevAtlas/achievement-atlas/atlas.json",
@@ -13,7 +13,7 @@
     {
       "claimId": "CLM-002",
       "category": "Education & Academic Integrity",
-      "claim": "Completed B.S. in ACS Biochemistry with Honors (August 2011 – May 2016, GPA: 3.5) from Mississippi College; inducted into Delta Epsilon Iota Academic Honor Society and co-founded Phi Mu Alpha Sinfonia music fraternity chapter.",
+      "claim": "B.S., Biochemistry (ACS), with a secondary major in Biology Medical Sciences; Minor in Music, Mississippi College (now Mississippi Christian University), Aug 2011 – May 2016, cum laude, GPA 3.50. Inducted into Delta Epsilon Iota Academic Honor Society and co-founded Phi Mu Alpha Sinfonia music fraternity chapter.",
       "verificationAuthority": "Mississippi College (American Chemical Society Certified)",
       "evidenceSource": "Undergraduate Transcript and Degree Records in atlas.json",
       "evidencePath": "/Users/andrewstrachan/DevAtlas/achievement-atlas/TIMELINE.md",
@@ -22,8 +22,8 @@
     },
     {
       "claimId": "CLM-003",
-      "category": "Education & Teaching Licensure",
-      "claim": "ALSDE Certified CTE Educator — Provisional Certificate in a Teaching Field (PCTF): Business, Marketing, and Finance from University of Montevallo (August 2024 – May 2025, Coursework GPA: 3.75).",
+      "category": "Education & Teaching Certificate",
+      "claim": "Provisional Certificate in a Teaching Field: Business, Marketing, and Finance (non-degree), University of Montevallo, Fall 2024 – Spring 2025, GPA 3.66.",
       "verificationAuthority": "Alabama State Department of Education (ALSDE) & University of Montevallo",
       "evidenceSource": "Montevallo Coursework Evaluation & ALSDE Teacher Certification Database",
       "evidencePath": "/Users/andrewstrachan/DevAtlas/achievement-atlas/atlas.json",
@@ -83,7 +83,7 @@
     {
       "claimId": "CLM-009",
       "category": "Cybersecurity Standards & Frameworks",
-      "claim": "Cybersecurity systems and threat modeling aligned with National Institute of Standards and Technology (NIST) SP 800-53 Rev. 5 and NIST Cybersecurity Framework (CSF 2.0).",
+      "claim": "Cybersecurity systems and threat modeling referencing National Institute of Standards and Technology (NIST) SP 800-53 Rev. 5 and NIST Cybersecurity Framework (CSF 2.0).",
       "verificationAuthority": "National Institute of Standards and Technology (NIST), U.S. Department of Commerce",
       "evidenceSource": "NIST SP 800-53 Rev. 5 Security & Privacy Controls for Information Systems",
       "evidencePath": "/Users/andrewstrachan/career_portfolio/data/career.json",
@@ -113,7 +113,7 @@
     {
       "claimId": "CLM-012",
       "category": "Software Systems & On-Device AI",
-      "claim": "MaqkrsTutor2 native macOS/iOS application built with SwiftUI, Apple MLX, and Ollama, presented at UAB CS Spring Showcase (ACM & Women in Tech).",
+      "claim": "MaQkrs AI Tutor native macOS/iOS application built with SwiftUI, Apple MLX, and Ollama, presented at UAB CS Spring Showcase (ACM & Women in Tech).",
       "verificationAuthority": "UAB Department of Computer Science & GitHub Public Repository",
       "evidenceSource": "Live GitHub public repository and showcase video preview",
       "evidencePath": "/Users/andrewstrachan/Maqkrs_Hub/exports/2026-10-03/tutor-v1-10s-720p.mp4",
@@ -133,7 +133,7 @@
     {
       "claimId": "CLM-014",
       "category": "Community Service & Global Outreach",
-      "claim": "Completed U.S. Department of State Benjamin A. Gilman International Scholarship in Pokhara, Nepal and international health mission in Uganda establishing 2 mobile clinics for 1,000+ patients.",
+      "claim": "Certified Village Health Team (VHT) member, UMMC & OmniMed, Uganda (Jul 2017 – Aug 2017). Mobilized and ran mobile clinics with the UMMC team; helped establish community health teaching groups. Completed the U.S. Department of State Benjamin A. Gilman International Scholarship in Pokhara, Nepal.",
       "verificationAuthority": "U.S. Department of State (Bureau of Educational and Cultural Affairs) & Omnimed",
       "evidenceSource": "Gilman International Scholarship Alumni Records & Omnimed Field Reports",
       "evidencePath": "/Users/andrewstrachan/DevAtlas/achievement-atlas/atlas.json",
@@ -143,7 +143,7 @@
     {
       "claimId": "CLM-015",
       "category": "Medical & Life Sciences",
-      "claim": "Doctor of Medicine (M.D.) Candidate — 4 Years Coursework & Clinical Clerkships Completed in Good Standing (Incomplete as of 2020) at University of Mississippi School of Medicine (January 2016 – July 2020).",
+      "claim": "Medical Studies, Course and clinical work, University of Mississippi School of Medicine, 2016–2020.",
       "verificationAuthority": "University of Mississippi School of Medicine (UMMC)",
       "evidenceSource": "Medical School Registrar & Clerkship Evaluations in atlas.json",
       "evidencePath": "/Users/andrewstrachan/DevAtlas/achievement-atlas/atlas.json",
@@ -153,7 +153,7 @@
     {
       "claimId": "CLM-016",
       "category": "Clinical Leadership & Training",
-      "claim": "President & Founder of P.A.L.S. (Peer-Assisted Learning Society); President: Quality Improvement Student Interest Group; Chair: UMMC/MBN Opioid Crisis Council; BCLS / ACLS / First Aid Certified (American Heart Association).",
+      "claim": "President & Founder of P.A.L.S. (Peer-Assisted Learning Society); President: Quality Improvement Student Interest Group; Chair: UMMC/MBN Opioid Crisis Council; Human Anatomy Prosector (May–Sep 2017).",
       "verificationAuthority": "UMMC / Mississippi Bureau of Narcotics / American Heart Association",
       "evidenceSource": "WLOX Broadcast Feature, ASB Appointment, and AHA Certification Credentials",
       "evidencePath": "/Users/andrewstrachan/Documents/ChatGPT/Maqkrs-hq/reports/source-checkpoint.json",
@@ -163,9 +163,9 @@
     {
       "claimId": "CLM-017",
       "category": "Industrial Operations & Compliance",
-      "claim": "Operational Director & Laboratory Specialist at MidSouth Extracts LLC (January 2023 – May 2023, Full-Time, 40 hrs/wk); directed cGMP facility buildout and authored audit-ready SOP library.",
+      "claim": "Operations Director at MidSouth Extracts LLC (January 2023 – May 2023). MidSouth Extracts, a Mississippi Medical Cannabis Program (MSDH)-licensed processing facility, needed its MSDH processing license, FDA food-facility registration, and required state and county licenses. Personally procured its MSDH (Mississippi Medical Cannabis Program) processing license, FDA food-facility registration, and all other required state and county licenses, including its MSDH manufactured-food permit and City of Tupelo local permits; wrote its 11-SOP library and HACCP program.",
       "verificationAuthority": "State Licensing Board & MidSouth Extracts LLC",
-      "evidenceSource": "Facility Operating Licensure & Audit-Ready SOP Archive",
+      "evidenceSource": "Facility operating records and SOP archive",
       "evidencePath": "/Users/andrewstrachan/DevAtlas/final/RESUME.md",
       "citationUrl": "https://www.umc.edu/",
       "status": "Verified Operational Record"
@@ -173,7 +173,7 @@
     {
       "claimId": "CLM-018",
       "category": "Corporate Training & Sales",
-      "claim": "Sales Development Specialist at SelectQuote Insurance Services (April 2021 – November 2022, Full-Time, 40 hrs/wk); awarded SelectQuote Top Sales Award (2021) and SQ Team Lead Award (2021).",
+      "claim": "Insurance Sales Representative, SelectQuote Insurance Services, Clinton, MS, Apr 2021 – Sep 2021; Team Lead, Oct 2021 – Mar 2022; Sales Development Specialist (built and led the new-rep training program), Apr 2022 – Nov 2022. Awarded the SelectQuote Top Sales Award (2021) and SQ Team Lead Award (2021).",
       "verificationAuthority": "SelectQuote Insurance Services",
       "evidenceSource": "Corporate Performance Records & Top Sales Recognition Archive",
       "evidencePath": "/Users/andrewstrachan/DevAtlas/final/RESUME.md",
@@ -183,9 +183,9 @@
     {
       "claimId": "CLM-019",
       "category": "Technology Advisory & Systems",
-      "claim": "Founder & Principal Technologist at Maqkrs Consulting (January 2022 – Present, 15–20 hrs/wk); delivered zero-trust infrastructure, clinical healthcare portals, and local AI workflows.",
-      "verificationAuthority": "State Business Filing & Maqkrs Consulting",
-      "evidenceSource": "Maqkrs LLC Corporate Filings & Client Deliverable Repositories",
+      "claim": "Founder & Principal Technologist at MaQkrs Consulting (January 2022 – Present, 15–20 hrs/wk); delivered zero-trust infrastructure, clinical healthcare portals, and local AI workflows.",
+      "verificationAuthority": "State Business Filing & MaQkrs Consulting",
+      "evidenceSource": "MaQkrs LLC Corporate Filings & Client Deliverable Repositories",
       "evidencePath": "/Users/andrewstrachan/Documents/ChatGPT/Maqkrs-hq/reports/source-checkpoint.json",
       "citationUrl": "https://maqkrs-command-center-i.firebaseapp.com/",
       "status": "Verified Business Entity"
@@ -203,7 +203,7 @@
     {
       "claimId": "CLM-021",
       "category": "STEM Instructional Mentorship",
-      "claim": "Teaching Assistant for UAB Department of Computer Science Python Coding Summer Camp (June 2026 – August 2026, 20–40 hrs/wk); instructed middle school cohorts in Python, BBC micro:bit, and autonomous drones.",
+      "claim": "Python Coding Summer Camp Teaching Assistant, UAB (Jun 2026 – Jul 2026); instructed middle school cohorts in Python, BBC micro:bit, and autonomous drones.",
       "verificationAuthority": "UAB Department of Computer Science",
       "evidenceSource": "UAB Summer Instructional Appointment & Camp Curriculum",
       "evidencePath": "/Users/andrewstrachan/career_portfolio/data/resume.json",
@@ -232,7 +232,7 @@
       "pointsPossible": 10,
       "rating": "Exceeds Expectations",
       "pointsAwarded": 10,
-      "evidence": "Integrates interactive technology features including real-time skills matrix filtering across 5 technical domains, chronological timeline with expandable STAR accomplishment cards, verifiable GPA records (UAB 3.75, Montevallo 3.75, MC 3.5), and direct links to live cloud deployments."
+      "evidence": "Integrates interactive technology features including real-time skills matrix filtering across 5 technical domains, chronological timeline with expandable STAR accomplishment cards, verifiable GPA records (UAB 3.75, Montevallo 3.66, Mississippi College 3.50), and direct links to live cloud deployments."
     },
     {
       "criterion": "2. Career Research, Statistics, Salary & Obstacles",
@@ -246,7 +246,7 @@
       "pointsPossible": 15,
       "rating": "Exceeds Expectations",
       "pointsAwarded": 15,
-      "evidence": "Shares school activities and graduate cybersecurity coursework (CS 623 Network Security, CS 646 Blockchain, CS 636 STRIDE Threat Modeling, CS 532 Cloud Computing), business education at Montevallo, and ACS biochemistry honors, providing in-depth articulation of how each activity directly impacts his future career as an Information Security Systems Engineer."
+      "evidence": "Shares school activities and graduate cybersecurity coursework (CS 623 Network Security, CS 646 Blockchain & Cryptocurrency, CS 636 Computer Security, CS 532 Systems Programming, Cloud Computing (Summer 2026)), business education at Montevallo, and a B.S. in biochemistry (ACS), cum laude, with notes on how that study relates to the Information Security Analyst role he is preparing for."
     },
     {
       "criterion": "4. Special Skills Linked to Certification / Endorsement",
@@ -260,7 +260,7 @@
       "pointsPossible": 10,
       "rating": "Exceeds Expectations",
       "pointsAwarded": 10,
-      "evidence": "Provides compelling evidence from legitimate federal and professional authorities: U.S. Bureau of Labor Statistics (BLS), National Institute of Standards and Technology (NIST SP 800-53 / CSF), National Science Foundation (CyberCorps SFS), and Microsoft Credly badge records. 100% of outbound citation URLs use secure HTTPS."
+      "evidence": "Provides compelling evidence from legitimate federal and professional authorities: U.S. Bureau of Labor Statistics (BLS), National Institute of Standards and Technology (NIST SP 800-53 / CSF), National Science Foundation (CyberCorps SFS), and Microsoft Credly badge records. Outbound citation URLs use secure HTTPS."
     },
     {
       "criterion": "6. Use of Portfolio to Enhance Presentation",
@@ -281,7 +281,7 @@
       "pointsPossible": 10,
       "rating": "Exceeds Expectations",
       "pointsAwarded": 10,
-      "evidence": "Showcases 51-position federal opportunity tracker, 14 SFS Virtual Job Fair applications, international health outreach in Uganda, Gilman Scholarship in Nepal, youth STEM drone mentoring, and 4 tangible software products developed (Sanctum, Tutor, AdaptiveHS, Citadel)."
+      "evidence": "Showcases 51-position federal opportunity tracker, 14 SFS Virtual Job Fair applications, international health outreach in Uganda, Gilman Scholarship in Nepal, youth STEM drone mentoring, and 4 tangible software products developed (Sanctum, Tutor, AdaptiveSchool, Citadel)."
     },
     {
       "criterion": "9. Technical Polish, Accessibility & Media Standards",
