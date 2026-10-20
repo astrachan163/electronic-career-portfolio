@@ -32,7 +32,7 @@
       "field": "Business, Marketing, and Finance",
       "dates": "Fall 2024 – Spring 2025",
       "gpa": "3.66 / 4.0",
-      "honors": "ALSDE State CTE Certification · NAOF Curriculum Specialization",
+      "honors": "ALSDE State CTE Certification",
       "highlights": [
         "Mastered experiential pedagogy in managerial finance, business software systems, and entrepreneurship",
         "Rigorous training in Alabama Department of Education Technical Assessment for Program Evaluation (TAPE) standards",
@@ -62,7 +62,7 @@
       "field": "Medical Studies, Course and clinical work",
       "dates": "January 2016 – July 2020",
       "gpa": "Coursework Completed in Good Standing",
-      "honors": "Virginia Covington Award (2017) · President & Founder: P.A.L.S. (Peer-Assisted Learning Society) · Chair: UMMC/MBN Opioid Crisis Council · Human Anatomy Prosector (May–Sep 2017)",
+      "honors": "Virginia Covington Award (2017); President & Founder, P.A.L.S. (Peer-Assisted Learning Society), 2017; President, Quality Improvement Student Interest Group; Associated Student Body Quality Improvement Chair for Education; Chair, UMMC / Mississippi Bureau of Narcotics Opioid Crisis Council, 2018. Human Anatomy Prosector (May–Sep 2017).",
       "highlights": [
         "Human Anatomy Prosector (May–Sep 2017)",
         "President, Quality Improvement Student Interest Group & Associate Student Body QI Chair",
@@ -160,9 +160,9 @@
       "achievements": [
         "Taught Business Finance, Customer Service, and Sales in the premier National Academy of Finance (NAOF) program.",
         "Served as official Chapter Adviser for the state's largest student career and technical business organization.",
-        "Head Coach for the Shades Valley High School Esports Team; raised funding and secured corporate sponsorships.",
+        "Organized fundraising for FBLA and the Valley Devastators esports team, including lip sync battles and talent shows.",
         "Maintained compliance with Alabama State Department of Education TAPE instructional standards.",
-        "Honored with the prestigious 2025 JEFCOED Technology Torchbearer Award for Excellence for innovative classroom technology integration."
+        "2025 JEFCOED Technology Torchbearer Award for Excellence, for integrating technology into the curriculum: website building, 3D printing, and student-built fundraiser apps."
       ]
     },
     {
@@ -240,14 +240,14 @@
       "dates": "Jul 2017 – Aug 2017",
       "badge": "Village Health Team",
       "achievements": [
-        "Mobilized and ran mobile clinics with the UMMC team; helped establish community health teaching groups."
+        "Helped establish mobile medical clinics delivering clinical assessments and health education in rural Uganda."
       ]
     },
     {
       "role": "Youth Leadership & Civic Mentorship",
-      "organization": "First Presbyterian Church",
+      "organization": "Community youth program",
       "location": "Gulfport, MS & Clinton, MS",
-      "dates": "August 2011 – Present (10 hrs/wk)",
+      "dates": "August 2011 – Present (approx. 1–2 hrs/wk, seasonal: summers and holidays)",
       "badge": "Civic Stewardship",
       "achievements": [
         "Provided sustained youth leadership, academic mentoring, and civic guidance across 15+ years of continuous service.",
@@ -285,7 +285,7 @@
       "situation": "Shades Valley High School required modern technology integration across CTE business classrooms to prepare students for industry credentialing.",
       "task": "Design, deploy, and instruct experiential learning curriculum utilizing business technology, financial simulations, and competitive event training.",
       "action": "Built interactive spreadsheet simulation models, introduced digital business portfolios, and mentored the state's largest student business chapter.",
-      "result": "Honored by the Jefferson County Board of Education with the 2025 JEFCOED Technology Torchbearer Award for Excellence out of hundreds of CTE educators across the district."
+      "result": "2025 JEFCOED Technology Torchbearer Award for Excellence, for integrating technology into the curriculum: website building, 3D printing, and student-built fundraiser apps."
     },
     {
       "id": "STAR-02",
@@ -356,8 +356,8 @@
       "title": "Certified Village Health Team (VHT) member, UMMC & OmniMed, Uganda (Jul 2017 – Aug 2017)",
       "situation": "Rural communities in Uganda needed mobile clinics and community health teaching.",
       "task": "Work with the UMMC team in Uganda.",
-      "action": "Mobilized and ran mobile clinics with the UMMC team; helped establish community health teaching groups.",
-      "result": "Mobilized and ran mobile clinics with the UMMC team; helped establish community health teaching groups."
+      "action": "Helped establish mobile medical clinics delivering clinical assessments and health education in rural Uganda.",
+      "result": "Helped establish mobile medical clinics delivering clinical assessments and health education in rural Uganda."
     },
     {
       "id": "STAR-11",
@@ -405,7 +405,7 @@
       "situation": "Pre-clinical medical students faced high attrition rates in challenging foundational courses like Medical Biochemistry and Neuroscience.",
       "task": "Found and structure an academic peer-mentorship organization to deliver high-yield study reviews and practice question banks.",
       "action": "Founded P.A.L.S., recruited high-performing upperclassmen tutors, established study sessions, and coordinated with faculty course directors.",
-      "result": "Mentored 150+ students across multiple cohorts, resulting in documented increases in class exam averages and earning the Virginia Covington Award."
+      "result": "Mentored students in gross anatomy; Virginia Covington Award (2017)."
     },
     {
       "id": "STAR-17",
@@ -482,7 +482,7 @@
       "title": "International Service & Healthcare Outreach",
       "source": "Omnimed Uganda & Gilman Scholarship Nepal",
       "count": 2,
-      "details": "Certified Village Health Team (VHT) member, UMMC & OmniMed, Uganda (Jul 2017 – Aug 2017). Mobilized and ran mobile clinics with the UMMC team; helped establish community health teaching groups. U.S. Department of State Benjamin A. Gilman International Scholarship in Pokhara, Nepal conducting hospital service and rural sustainable agriculture education.",
+      "details": "Certified Village Health Team (VHT) member, UMMC & OmniMed, Uganda (Jul 2017 – Aug 2017). Helped establish mobile medical clinics delivering clinical assessments and health education in rural Uganda. U.S. Department of State Benjamin A. Gilman International Scholarship in Pokhara, Nepal conducting hospital service and rural sustainable agriculture education.",
       "careerRelevance": "Cultivates global situational awareness, high-stakes operational adaptability, and community stewardship foundational to public service leadership."
     },
     {
