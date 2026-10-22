@@ -15,7 +15,7 @@ var PortfolioConfig = {
   // Candidate Contact & Profile Information
   contact: {
     name: 'Andrew Strachan',
-    headline: 'M.S. Cybersecurity Candidate | CyberAICorps Scholar | UAB',
+    headline: 'M.S. Cybersecurity Candidate | SFS CyberAICorps Scholarship Recipient | UAB',
     programLine: 'SFS CyberAICorps scholarship recipient (NSF-funded, with a post-graduation government service commitment)',
     location: 'Birmingham, Alabama',
     email: 'astrachan162@gmail.com',

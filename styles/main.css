@@ -228,7 +228,8 @@ section.portfolio-section:nth-child(even) {
   gap: 0.875rem;
   text-decoration: none;
   color: var(--color-text-primary);
-  flex-shrink: 0;
+  flex-shrink: 1;
+  min-width: 0;
 }
 
 .brand-logo-img {
@@ -243,7 +244,12 @@ section.portfolio-section:nth-child(even) {
   height: 2.5rem;
 }
 
+.portfolio-section a {
+  overflow-wrap: anywhere;
+}
+
 .brand-identity {
+  min-width: 0;
   display: flex;
   flex-direction: column;
 }
@@ -550,7 +556,20 @@ section.portfolio-section:nth-child(even) {
     position: relative;
   }
 
+  .brand-subtitle {
+    display: none;
+  }
+
+  .brand-title {
+    font-size: 1rem;
+  }
+
+  .brand-logo-img {
+    height: 2rem;
+  }
+
   .nav-toggle-btn {
+    flex-shrink: 0;
     display: inline-flex;
     align-items: center;
     justify-content: center;

@@ -1,21 +1,21 @@
 {
   "profile": {
     "name": "Andrew Strachan",
-    "headline": "M.S. Cybersecurity Candidate | CyberAICorps Scholar | UAB",
+    "headline": "M.S. Cybersecurity Candidate | SFS CyberAICorps Scholarship Recipient | UAB",
     "programLine": "SFS CyberAICorps scholarship recipient (NSF-funded, with a post-graduation government service commitment)",
     "location": "Birmingham, Alabama",
     "email": "astrachan162@gmail.com",
     "github": "https://github.com/astrachan163",
     "linkedin": "https://www.linkedin.com/in/andrew-william-strachan/",
     "clearance": "Willing to obtain a security clearance.",
-    "summary": "SFS CyberAICorps scholarship recipient (NSF-funded, with a post-graduation government service commitment), pursuing an M.S. in Cybersecurity at UAB (GPA 3.75). M.S. Cybersecurity student and builder. Combines systems programming and zero-trust engineering with executive compliance, industrial cGMP quality controls, and award-winning career and technical education leadership."
+    "summary": "SFS CyberAICorps scholarship recipient (NSF-funded, with a post-graduation government service commitment), pursuing an M.S. in Cybersecurity at UAB (GPA 3.75). M.S. Cybersecurity student and builder. Combines systems programming and zero-trust engineering with executive compliance, regulated processing operations, and award-winning career and technical education leadership."
   },
   "education": [
     {
       "institution": "University of Alabama at Birmingham",
       "abbreviation": "UAB",
       "degree": "Master of Science in Cybersecurity",
-      "field": "Cybersecurity & Information Security",
+      "field": "Cyber Crime Investigation",
       "dates": "January 2026 – Present (Expected Graduation: Dec 2027)",
       "gpa": "3.75 / 4.0",
       "honors": "SFS CyberAICorps scholarship recipient (NSF-funded, with a post-graduation government service commitment)",
@@ -28,11 +28,11 @@
     {
       "institution": "University of Montevallo",
       "abbreviation": "Montevallo",
-      "degree": "Provisional Certificate in a Teaching Field: Business, Marketing, and Finance (non-degree)",
+      "degree": "Coursework toward an Alabama teaching certificate in Business, Marketing, and Finance (non-degree)",
       "field": "Business, Marketing, and Finance",
       "dates": "Fall 2024 – Spring 2025",
       "gpa": "3.66 / 4.0",
-      "honors": "ALSDE State CTE Certification",
+      "honors": "Non-degree coursework",
       "highlights": [
         "Mastered experiential pedagogy in managerial finance, business software systems, and entrepreneurship",
         "Rigorous training in Alabama Department of Education Technical Assessment for Program Evaluation (TAPE) standards",
@@ -40,13 +40,13 @@
       ]
     },
     {
-      "institution": "Mississippi College",
+      "institution": "Mississippi College (now Mississippi Christian Univ.)",
       "abbreviation": "MC",
       "degree": "Bachelor of Science (B.S.)",
-      "field": "B.S., Biochemistry (ACS), with a secondary major in Biology Medical Sciences; Minor in Music, Mississippi College (now Mississippi Christian University), Aug 2011 – May 2016, cum laude",
+      "field": "B.S., ACS-certified Biochemistry and Biological Medical Sciences (double major); Minor in Music, Mississippi College (now Mississippi Christian Univ.), Aug 2011 – May 2016, cum laude",
       "dates": "August 2011 – May 2016",
       "gpa": "3.50 / 4.0",
-      "honors": "cum laude · Delta Epsilon Iota Academic Honor Society · Phi Mu Alpha Sinfonia",
+      "honors": "cum laude · Delta Epsilon Iota Academic Honor Society · Phi Mu Alpha Sinfonia · Alpha Epsilon Delta pre-health honor society (2014–2015)",
       "highlights": [
         "Senior Class Senator (Student Government Association, 2015–2016)",
         "Principal French Horn in MC Symphonic Band and Orchestra (2012–2013)",
@@ -62,7 +62,7 @@
       "field": "Medical Studies, Course and clinical work",
       "dates": "January 2016 – July 2020",
       "gpa": "Coursework Completed in Good Standing",
-      "honors": "Virginia Covington Award (2017); President & Founder, P.A.L.S. (Peer-Assisted Learning Society), 2017; President, Quality Improvement Student Interest Group; Associated Student Body Quality Improvement Chair for Education; Chair, UMMC / Mississippi Bureau of Narcotics Opioid Crisis Council, 2018. Human Anatomy Prosector (May–Sep 2017).",
+      "honors": "Virginia Covington Award (2018), recognizing a role-model medical student; President & Founder, P.A.L.S. (Peer-Assisted Learning Society), 2017; President, Quality Improvement Student Interest Group; Associated Student Body Quality Improvement Chair for Education; Chair, UMMC / Mississippi Bureau of Narcotics Opioid Crisis Council, 2018. Human Anatomy Prosector (May–Sep 2017).",
       "highlights": [
         "Human Anatomy Prosector (May–Sep 2017)",
         "President, Quality Improvement Student Interest Group & Associate Student Body QI Chair",
@@ -92,7 +92,7 @@
       "skills": [
         "On-Device Retrieval-Augmented Generation (Local RAG)",
         "Apple MLX & Metal Performance Shaders",
-        "Quantized LLMs (Ollama / Gemma 4 / Llama 3)",
+        "Gemma via MLX Swift (on-device)",
         "SwiftData & Local SQLite Vector Indexing",
         "Model Context Protocol (MCP) Sandboxed Tool Routing",
         "Agentic AI Workflow Architecture & Permission Gates",
@@ -158,9 +158,11 @@
       "dates": "July 2024 – June 2025 (Full-Time, 40 hrs/wk)",
       "badge": "Torchbearer Award 2025",
       "achievements": [
-        "Taught Business Finance, Customer Service, and Sales in the premier National Academy of Finance (NAOF) program.",
+        "Taught business finance, customer service, and sales in the National Academy of Finance to state Career and Technical Education (CTE) standards.",
         "Served as official Chapter Adviser for the state's largest student career and technical business organization.",
-        "Organized fundraising for FBLA and the Valley Devastators esports team, including lip sync battles and talent shows.",
+        "Esports Coach (2024–25): coached the Valley Devastators esports team.",
+        "Media Team Coordinator (2024–25): helped start the school media team under Mr. Phillip Gibson; ran photoshoots, video setup, and individual student projects.",
+        "Organized fundraising for FBLA and the Valley Devastators esports team: a 3D-printed ornament sale (Nov–Dec 2024), Lip Sync Battle 2025, and talent shows.",
         "Maintained compliance with Alabama State Department of Education TAPE instructional standards.",
         "2025 JEFCOED Technology Torchbearer Award for Excellence, for integrating technology into the curriculum: website building, 3D printing, and student-built fundraiser apps."
       ]
@@ -172,10 +174,11 @@
       "dates": "August 2023 – June 2024 (Full-Time, 40 hrs/wk)",
       "badge": "DECA State Winners",
       "achievements": [
-        "Founded, chartered, and advised a brand-new DECA chapter, opening statewide competitive business leadership to rural students.",
+        "Founding DECA Adviser (2023–24): founded and advised the school's DECA chapter; students placed 1st and 2nd at the 2024 Alabama DECA state Career Development Conference.",
+        "Taught Sports & Entertainment Marketing (2023–24): students produced weekly sports social posts and flyers (volleyball, baseball, football, basketball, wrestling and more) through student-led, deadline-driven design workflows.",
+        "Ran Corner DECA fundraisers in 2024: Nothing Bundt Cakes and Krispy Kreme sales.",
         "Coached student competitors in business finance and marketing, achieving 1st place and 2nd place state trophies at the 2024 Alabama DECA Career Development Conference.",
-        "Engineered experiential business curricula in financial modeling, spreadsheet automation, and entrepreneurship.",
-        "Received the 2024 Alabama DECA New Chapter Advisor Recognition for exceptional student competitive placement."
+        "Engineered experiential business curricula in financial modeling, spreadsheet automation, and entrepreneurship."
       ]
     },
     {
@@ -183,22 +186,22 @@
       "organization": "MidSouth Extracts LLC",
       "location": "Tupelo, MS",
       "dates": "January 2023 – May 2023",
-      "badge": "cGMP Compliance Lead",
+      "badge": "Regulatory Operations",
       "achievements": [
-        "MidSouth Extracts, a Mississippi Medical Cannabis Program (MSDH)-licensed processing facility, needed its MSDH processing license, FDA food-facility registration, and required state and county licenses.",
-        "Personally procured its MSDH (Mississippi Medical Cannabis Program) processing license, FDA food-facility registration, and all other required state and county licenses, including its MSDH manufactured-food permit and City of Tupelo local permits; wrote its 11-SOP library and HACCP program."
+        "Ran an MSDH-licensed medical cannabis processing facility.",
+        "Wrote the facility’s 11 standard operating procedures and HACCP food-safety plan; implemented METRC seed-to-sale tracking and compliance reporting."
       ]
     },
     {
-      "role": "Founder & Principal Technologist",
+      "role": "Founder & Technologist",
       "organization": "MaQkrs Consulting",
-      "location": "Birmingham, AL & Clinton, MS",
-      "dates": "January 2022 – Present (15–20 hrs/wk)",
+      "location": "Birmingham, AL (clients in AL, MS, TN, GA)",
+      "dates": "January 2022 – Present (15 hrs/wk)",
       "badge": "Consulting & Systems",
       "achievements": [
-        "Delivered technical advisory services on zero-trust digital infrastructure, FDA/cGMP compliance, and secure cloud deployments.",
-        "Developed custom client platforms including e-commerce storefronts, clinical healthcare portals, and local AI workflows.",
-        "Mentored student interns in security baseline auditing, vulnerability scanning, and cloud least-privilege configurations."
+        "Built ghs-learning-platform for an Atlanta-based client: TypeScript/Express API with Firebase-auth role-based access control, STRIDE threat model, security tests in CI, and an incident-response drill.",
+        "Built client sites for Legacy Meadows (funeral home) and Victorious Herbal Elements; taught homework help.",
+        "Worked with student testers who beta-tested MaQkrs AI Tutor builds and gave feedback."
       ]
     },
     {
@@ -268,7 +271,7 @@
     },
     {
       "role": "Human Gross Anatomy Laboratory Teaching Assistant",
-      "organization": "Mississippi College (Department of Biological Sciences)",
+      "organization": "Mississippi College (now Mississippi Christian Univ.) (Department of Biological Sciences)",
       "location": "Clinton, MS",
       "dates": "August 2015 – May 2016",
       "badge": "Undergraduate STEM",
@@ -297,10 +300,10 @@
     },
     {
       "id": "STAR-03",
-      "title": "cGMP Facility Buildout & Audit-Ready SOP Library",
-      "situation": "MidSouth Extracts, a Mississippi Medical Cannabis Program (MSDH)-licensed processing facility, needed its MSDH processing license, FDA food-facility registration, and required state and county licenses.",
+      "title": "Licensed Facility Operations & SOP Library",
+      "situation": "Ran an MSDH-licensed medical cannabis processing facility.",
       "task": "Author an entire operational standard operating procedure (SOP) library and guide facility qualification before state licensing audits.",
-      "action": "Personally procured its MSDH (Mississippi Medical Cannabis Program) processing license, FDA food-facility registration, and all other required state and county licenses, including its MSDH manufactured-food permit and City of Tupelo local permits; wrote its 11-SOP library and HACCP program.",
+      "action": "Wrote the facility’s 11 standard operating procedures and HACCP food-safety plan; implemented METRC seed-to-sale tracking and compliance reporting.",
       "result": "Completed the licensing and SOP work in this role."
     },
     {
@@ -316,7 +319,7 @@
       "title": "MaQkrs AI Tutor Privacy-Preserving On-Device AI Assistant",
       "situation": "Commercial cloud AI tools leak institutional data and student intellectual property to remote LLM providers, violating zero-trust and educational privacy laws.",
       "task": "Architect a native on-device macOS AI study assistant capable of semantic document search with 0 network egress.",
-      "action": "Built SwiftUI app with SwiftData, integrated Ollama/MLX for quantized Gemma 4 local inference, engineered SQLite vector retrieval over PDFs and code, and open-sourced sanitized repo.",
+      "action": "Built SwiftUI app with SwiftData, integrated Gemma via MLX Swift for on-device inference, engineered SQLite vector retrieval over PDFs and code, and open-sourced sanitized repo.",
       "result": "Presented at the UAB CS Spring Showcase (ACM & Women in Tech), achieving sub-second local retrieval, designed to keep data on the device."
     },
     {
@@ -389,7 +392,7 @@
       "situation": "A schooling portal for students, teachers, and parents.",
       "task": "Develop an accessible full-stack educational web application with role-based access control and adaptive assessments.",
       "action": "Built with Next.js 15, Firebase Firestore, and Tailwind CSS; engineered multi-role demo authentication and interactive simulation exports.",
-      "result": "Deployed live on Cloud Run / Firebase (`adaptivehs-v2.firebaseapp.com`)."
+      "result": "Deployed live on Cloud Run / Firebase (`adaptiveschool.nonartificialsi.com`)."
     },
     {
       "id": "STAR-15",
@@ -405,7 +408,7 @@
       "situation": "Pre-clinical medical students faced high attrition rates in challenging foundational courses like Medical Biochemistry and Neuroscience.",
       "task": "Found and structure an academic peer-mentorship organization to deliver high-yield study reviews and practice question banks.",
       "action": "Founded P.A.L.S., recruited high-performing upperclassmen tutors, established study sessions, and coordinated with faculty course directors.",
-      "result": "Mentored students in gross anatomy; Virginia Covington Award (2017)."
+      "result": "Mentored students in gross anatomy; Virginia Covington Award (2018), recognizing a role-model medical student."
     },
     {
       "id": "STAR-17",
@@ -442,7 +445,7 @@
     },
     {
       "institution": "University of Montevallo",
-      "program": "Provisional Certificate in a Teaching Field (PCTF)",
+      "program": "Coursework toward an Alabama teaching certificate (non-degree)",
       "courses": [
         "Business, Marketing, and Finance Pedagogy",
         "Managerial Accounting & Enterprise Risk Analysis",
@@ -452,15 +455,15 @@
       "careerImpact": "Provides essential executive communication, financial acumen, and educational leadership skills. In federal cybersecurity and critical infrastructure, security analysts must articulate technical cyber risks to non-technical executives and train workforce personnel on security hygiene."
     },
     {
-      "institution": "Mississippi College & UMMC",
-      "program": "B.S. Biochemistry (ACS), Mississippi College (now Mississippi Christian University); Medical Studies, Course and clinical work, University of Mississippi School of Medicine, 2016–2020",
+      "institution": "Mississippi College (now Mississippi Christian Univ.) & UMMC",
+      "program": "B.S., ACS-certified Biochemistry and Biological Medical Sciences (double major), Mississippi College (now Mississippi Christian Univ.); Medical Studies, Course and clinical work, University of Mississippi School of Medicine, 2016–2020",
       "courses": [
         "ACS-Certified Biochemistry & Physical Chemistry",
         "Human Anatomy Prosector (May–Sep 2017)",
         "Medical Studies, Course and clinical work",
         "High-Reliability Healthcare Operations & HIPAA Privacy Security"
       ],
-      "careerImpact": "Instills scientific rigor, empirical hypothesis testing, and zero-defect attention to detail. Operating in sterile surgical suites and cGMP extraction labs directly parallels the discipline needed to enforce zero-trust security postures and safeguard protected infrastructure."
+      "careerImpact": "Instills scientific rigor, empirical hypothesis testing, and zero-defect attention to detail. Operating in sterile surgical suites and regulated processing facilities directly parallels the discipline needed to enforce zero-trust security postures and safeguard protected infrastructure."
     }
   ],
   "educationalEnhancement": [

@@ -19,7 +19,7 @@
       "title": "MaQkrs AI Tutor (Local AI Privacy-Preserving Study Assistant)",
       "subtitle": "Native macOS/iOS Local Retrieval-Augmented Generation (Local RAG)",
       "category": "Artificial Intelligence & Edge Privacy",
-      "techStack": ["SwiftUI", "SwiftData", "Apple MLX", "Ollama", "Quantized Gemma 4", "SQLite Vector Search"],
+      "techStack": ["SwiftUI", "SwiftData", "Apple MLX", "Quantized Gemma 4", "SQLite Vector Search"],
       "mp4Url": "assets/previews/tutor-v1-10s-720p.mp4",
       "webmUrl": "assets/previews/tutor-v1-10s-720p.webm",
       "posterUrl": "assets/previews/tutor-v1-poster.png",
@@ -33,7 +33,7 @@
       "subtitle": "A schooling portal for students, teachers, and parents.",
       "category": "Full-Stack EdTech & Cloud Architecture",
       "techStack": ["Next.js 15", "Firebase Firestore", "Tailwind CSS", "Cloud Run", "Google Genkit", "DemoAuth"],
-      "liveUrl": "https://adaptivehs-v2.firebaseapp.com/",
+      "liveUrl": "https://adaptiveschool.nonartificialsi.com/",
       "description": "A schooling portal for students, teachers, and parents."
     },
     {
@@ -91,14 +91,14 @@
       "platform": "GitHub Open Source",
       "url": "https://github.com/astrachan163/MaqkrsTutor-public",
       "description": "Sanitized open source distribution for the native macOS/iOS on-device AI study assistant.",
-      "techStack": ["SwiftUI", "SwiftData", "Apple MLX", "Ollama"]
+      "techStack": ["SwiftUI", "SwiftData", "Apple MLX"]
     },
     {
       "id": "p-06",
       "name": "AdaptiveSchool",
       "category": "Full-Stack EdTech",
       "platform": "Cloud Run / Firebase",
-      "url": "https://adaptivehs-v2.firebaseapp.com/",
+      "url": "https://adaptiveschool.nonartificialsi.com/",
       "description": "A schooling portal for students, teachers, and parents.",
       "techStack": ["Next.js 15", "Cloud Run", "Firebase", "DemoAuth"]
     },

@@ -3,7 +3,7 @@
     {
       "claimId": "CLM-001",
       "category": "Education & Academic Integrity",
-      "claim": "Andrew Strachan is currently pursuing a Master of Science in Cybersecurity at UAB (January 2026 – Present, Expected Graduation: Dec 2027, GPA: 3.75). SFS CyberAICorps scholarship recipient (NSF-funded, with a post-graduation government service commitment).",
+      "claim": "Andrew Strachan is currently pursuing a Master of Science in Cybersecurity, concentration Cyber Crime Investigation, at UAB (January 2026 – Present, Expected Graduation: Dec 2027, GPA: 3.75). SFS CyberAICorps scholarship recipient (NSF-funded, with a post-graduation government service commitment).",
       "verificationAuthority": "University of Alabama at Birmingham (UAB) & National Science Foundation",
       "evidenceSource": "UAB Graduate Catalog & atlas.json; verified by NSF CyberCorps SFS program coordinator Liz",
       "evidencePath": "Private source record (not published)",
@@ -13,8 +13,8 @@
     {
       "claimId": "CLM-002",
       "category": "Education & Academic Integrity",
-      "claim": "B.S., Biochemistry (ACS), with a secondary major in Biology Medical Sciences; Minor in Music, Mississippi College (now Mississippi Christian University), Aug 2011 – May 2016, cum laude, GPA 3.50. Inducted into Delta Epsilon Iota Academic Honor Society and co-founded Phi Mu Alpha Sinfonia music fraternity chapter.",
-      "verificationAuthority": "Mississippi College (American Chemical Society Certified)",
+      "claim": "B.S., ACS-certified Biochemistry and Biological Medical Sciences (double major); Minor in Music, Mississippi College (now Mississippi Christian Univ.), Aug 2011 – May 2016, cum laude, GPA 3.50. Inducted into Delta Epsilon Iota Academic Honor Society and co-founded Phi Mu Alpha Sinfonia music fraternity chapter. Alpha Epsilon Delta pre-health honor society member, 2014–2015.",
+      "verificationAuthority": "Mississippi College (now Mississippi Christian Univ.) (American Chemical Society Certified)",
       "evidenceSource": "Undergraduate Transcript and Degree Records in atlas.json",
       "evidencePath": "Private source record (not published)",
       "citationUrl": "https://www.mc.edu/academics/departments/chemistry",
@@ -22,12 +22,12 @@
     },
     {
       "claimId": "CLM-003",
-      "category": "Education & Teaching Certificate",
-      "claim": "Provisional Certificate in a Teaching Field: Business, Marketing, and Finance (non-degree), University of Montevallo, Fall 2024 – Spring 2025, GPA 3.66.",
-      "verificationAuthority": "Alabama State Department of Education (ALSDE) & University of Montevallo",
-      "evidenceSource": "Montevallo Coursework Evaluation & ALSDE Teacher Certification Database",
+      "category": "Education & Non-degree Coursework",
+      "claim": "Coursework toward an Alabama teaching certificate in Business, Marketing, and Finance (non-degree), University of Montevallo, Fall 2024 – Spring 2025, GPA 3.66.",
+      "verificationAuthority": "University of Montevallo",
+      "evidenceSource": "University of Montevallo transcript; October 20, 2026 academic record review",
       "evidencePath": "Private source record (not published)",
-      "citationUrl": "https://www.alabamaachieves.org/",
+      "citationUrl": "https://www.montevallo.edu/",
       "status": "Verified Official Record"
     },
     {
@@ -113,7 +113,7 @@
     {
       "claimId": "CLM-012",
       "category": "Software Systems & On-Device AI",
-      "claim": "MaQkrs AI Tutor native macOS/iOS application built with SwiftUI, Apple MLX, and Ollama, presented at UAB CS Spring Showcase (ACM & Women in Tech).",
+      "claim": "MaQkrs AI Tutor native macOS/iOS application built with SwiftUI, Apple MLX, and Gemma via MLX Swift, presented at UAB CS Spring Showcase (ACM & Women in Tech).",
       "verificationAuthority": "UAB Department of Computer Science & GitHub Public Repository",
       "evidenceSource": "Live GitHub public repository and showcase video preview",
       "evidencePath": "Private source record (not published)",
@@ -154,16 +154,16 @@
       "claimId": "CLM-016",
       "category": "Clinical Leadership & Training",
       "claim": "President & Founder of P.A.L.S. (Peer-Assisted Learning Society); President: Quality Improvement Student Interest Group; Chair: UMMC/MBN Opioid Crisis Council; Human Anatomy Prosector (May–Sep 2017).",
-      "verificationAuthority": "UMMC / Mississippi Bureau of Narcotics / American Heart Association",
-      "evidenceSource": "WLOX Broadcast Feature, ASB Appointment, and AHA Certification Credentials",
+      "verificationAuthority": "University of Mississippi Medical Center (UMMC)",
+      "evidenceSource": "UMMC leadership records and Andrew-confirmed career master",
       "evidencePath": "Private source record (not published)",
-      "citationUrl": "https://www.wlox.com/2018/12/12/south-mississippi-strong-harrison-countys-emergency-youth-shelter-gives-safe-space-children-need/",
-      "status": "Verified Active Credential"
+      "citationUrl": "https://www.umc.edu/",
+      "status": "Documented leadership"
     },
     {
       "claimId": "CLM-017",
       "category": "Industrial Operations & Compliance",
-      "claim": "Operations Director at MidSouth Extracts LLC (January 2023 – May 2023). MidSouth Extracts, a Mississippi Medical Cannabis Program (MSDH)-licensed processing facility, needed its MSDH processing license, FDA food-facility registration, and required state and county licenses. Personally procured its MSDH (Mississippi Medical Cannabis Program) processing license, FDA food-facility registration, and all other required state and county licenses, including its MSDH manufactured-food permit and City of Tupelo local permits; wrote its 11-SOP library and HACCP program.",
+      "claim": "Operations Director at MidSouth Extracts LLC (January 2023 – May 2023). Ran an MSDH-licensed medical cannabis processing facility. Wrote the facility’s 11 standard operating procedures and HACCP food-safety plan; implemented METRC seed-to-sale tracking and compliance reporting.",
       "verificationAuthority": "State Licensing Board & MidSouth Extracts LLC",
       "evidenceSource": "Facility operating records and SOP archive",
       "evidencePath": "Private source record (not published)",
@@ -183,7 +183,7 @@
     {
       "claimId": "CLM-019",
       "category": "Technology Advisory & Systems",
-      "claim": "Founder & Principal Technologist at MaQkrs Consulting (January 2022 – Present, 15–20 hrs/wk); delivered zero-trust infrastructure, clinical healthcare portals, and local AI workflows.",
+      "claim": "Founder & Technologist at MaQkrs Consulting (January 2022 – Present, 15 hrs/wk); built ghs-learning-platform for an Atlanta client and client sites for Legacy Meadows and Victorious Herbal Elements; worked with student testers on MaQkrs AI Tutor beta builds.",
       "verificationAuthority": "State Business Filing & MaQkrs Consulting",
       "evidenceSource": "MaQkrs LLC Corporate Filings & Client Deliverable Repositories",
       "evidencePath": "Private source record (not published)",
@@ -232,7 +232,7 @@
       "pointsPossible": 10,
       "rating": "Exceeds Expectations",
       "pointsAwarded": 10,
-      "evidence": "Integrates interactive technology features including real-time skills matrix filtering across 5 technical domains, chronological timeline with expandable STAR accomplishment cards, verifiable GPA records (UAB 3.75, Montevallo 3.66, Mississippi College 3.50), and direct links to live cloud deployments."
+      "evidence": "Integrates interactive technology features including real-time skills matrix filtering across 5 technical domains, chronological timeline with expandable STAR accomplishment cards, verifiable GPA records (UAB 3.75, Montevallo 3.66, Mississippi College (now Mississippi Christian Univ.) 3.50), and direct links to live cloud deployments."
     },
     {
       "criterion": "2. Career Research, Statistics, Salary & Obstacles",
