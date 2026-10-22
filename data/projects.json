@@ -10,7 +10,7 @@
       "webmUrl": "assets/previews/sanctum-v1-10s-720p.webm",
       "posterUrl": "assets/previews/sanctum-v1-poster.png",
       "durationSeconds": 10,
-      "liveUrl": "https://d1puxvoeqwchkj.cloudfront.net/",
+      "liveUrl": "https://sanctum.nonartificialsi.com/",
       "backupLiveUrl": "https://cs646-sanctum-world.firebaseapp.com/",
       "description": "Architected an interactive 3D browser-based learning world visualizing abstract blockchain and cryptocurrency mechanisms. Features 5 distinct districts (Consensus, Cryptography, Money Exchange, Network, Storage), procedural hover vehicle traversal, and real-time SHA-256 block hashing demonstrations."
     },
@@ -53,7 +53,7 @@
       "name": "CS646 Sanctum: 3D Memory Palace",
       "category": "3D Spatial & Blockchain",
       "platform": "AWS CloudFront",
-      "url": "https://d1puxvoeqwchkj.cloudfront.net/",
+      "url": "https://sanctum.nonartificialsi.com/",
       "description": "Flagship 3D cryptographic exploration world built in Godot 4 and WebGL with interactive SHA-256 hashing.",
       "techStack": ["Godot 4", "WebGL", "AWS CloudFront", "TypeScript"]
     },
