@@ -1,6 +1,6 @@
 # Andrew Strachan — Electronic Career Portfolio
 
-> **M.S. Cybersecurity Candidate | CyberAICorps Scholar | UAB**  
+> **M.S. Cybersecurity Candidate | SFS CyberAICorps Scholarship Recipient | UAB**
 > SFS CyberAICorps scholarship recipient (NSF-funded, with a post-graduation government service commitment). M.S. Cybersecurity, University of Alabama at Birmingham (Expected Dec 2027, GPA: 3.75). Willing to obtain a security clearance.
 
 ## Live Deployment

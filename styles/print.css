@@ -33,6 +33,10 @@
   /* ==========================================================================
      2. Suppress Interactive-Only & Navigation UI
      ========================================================================== */
+  #invasion-hero-section,
+  #car-scrub-hero,
+  .pd-thumb-overlay,
+  .pd-video-play-center,
   .site-header,
   .site-nav,
   .nav-actions,
@@ -50,6 +54,31 @@
   .btn-demo-link,
   .skip-link {
     display: none !important;
+  }
+
+  .scrolling-internal-container {
+    max-height: none !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  .skill-item-pill {
+    break-inside: avoid;
+  }
+
+  .accordion-content {
+    display: block !important;
+  }
+
+  .animate-on-scroll,
+  .animate-fade-in,
+  .animate-slide-left {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  a {
+    overflow-wrap: anywhere;
   }
 
   /* Show video posters instead of blank player boxes - allow poster frames to render on print sheets */

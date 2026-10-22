@@ -21,7 +21,7 @@ var PresenterState = (typeof window !== 'undefined' && window.PresenterState) ? 
     resume: [
       "17 STAR accomplishments across cybersecurity engineering and academic leadership.",
       "Demonstrate interactive technology features: filterable skills matrix and verified academic records.",
-      "Coursework: UAB GPA 3.75, Montevallo non-degree certificate GPA 3.66, Mississippi College B.S. GPA 3.50, cum laude.",
+      "Coursework: UAB GPA 3.75, Montevallo non-degree coursework GPA 3.66, Mississippi College (now Mississippi Christian Univ.) B.S. GPA 3.50, cum laude.",
     ],
     career: [
       "BLS SOC 15-1212 $120,360 median wage, $182,370+ top decile, 32% growth rate (+53,200 jobs).",
@@ -29,7 +29,7 @@ var PresenterState = (typeof window !== 'undefined' && window.PresenterState) ? 
       "Technical mitigations for 3 industry obstacles: Post-Quantum cryptography, agentic AI defense, and critical infrastructure."
     ],
     education: [
-      "UAB M.S. Cybersecurity GPA 3.75, Montevallo certificate GPA 3.66, Mississippi College B.S. GPA 3.50, cum laude.",
+      "UAB M.S. Cybersecurity GPA 3.75, Montevallo non-degree coursework GPA 3.66, Mississippi College (now Mississippi Christian Univ.) B.S. GPA 3.50, cum laude.",
       "Graduate cybersecurity coursework (CS 623 Network Security, CS 646 Blockchain & Cryptocurrency, CS 636 Computer Security, CS 532 Systems Programming, Cloud Computing (Summer 2026)).",
       "Connect laboratory biochemistry discipline and medical studies to zero-trust compliance standards."
     ],

@@ -21,8 +21,8 @@ var PresenterState = (typeof window !== 'undefined' && window.PresenterState) ? 
     ],
     resume: [
       'Demonstrate interactive technology features: filterable skills matrix and verified academic records.',
-      'Point out UAB GPA 3.75, Montevallo non-degree certificate GPA 3.66, and Mississippi College B.S. GPA 3.50, cum laude.',
-      'Review measurable STAR accomplishments: 2025 JEFCOED Technology Torchbearer Award, State DECA coaching trophies, and cGMP compliance.'
+      'Point out UAB GPA 3.75, Montevallo non-degree coursework GPA 3.66, and Mississippi College (now Mississippi Christian Univ.) B.S. GPA 3.50, cum laude.',
+      'Review measurable STAR accomplishments: 2025 JEFCOED Technology Torchbearer Award, State DECA coaching trophies, and regulated operations.'
     ],
     career: [
       'Review official BLS SOC 15-1212.00 economic data: $120,360 median wage, $182,370+ top decile, 32% growth rate.',

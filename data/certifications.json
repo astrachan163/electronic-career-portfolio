@@ -13,8 +13,8 @@
       "id": "SKILL-02",
       "name": "Educational Technology & Instructional Design",
       "category": "Instructional Systems & Workforce Training",
-      "credential": "Microsoft Certified Educator (MCE) & Alabama Teaching Certificate (PCTF)",
-      "credentialType": "Industry Certification & State Certificate",
+      "credential": "Microsoft Certified Educator (MCE)",
+      "credentialType": "Industry Certification",
       "verificationUrl": "https://www.credly.com/badges/d4e5c326-c255-405c-b50e-0a369d6fc3a0/public_url",
       "badgeImage": "assets/brand/mce-microsoft-certified-educator.png",
       "correlationToMission": "Essential for federal cyber workforce development, designing security awareness programs, training non-technical agency personnel on cyber hygiene, and translating complex technical security controls into actionable operational protocols.",
@@ -27,7 +27,7 @@
       "credential": "Native Apple Silicon Architecture (MaQkrs AI Tutor) & 30 Professional AI Certifications",
       "credentialType": "Software Engineering & Industry Certifications",
       "correlationToMission": "Addresses strict federal privacy, classified data protection, and operational security requirements. Enables offline semantic intelligence and local RAG capabilities that prevent data exfiltration to external commercial AI APIs.",
-      "tools": ["SwiftUI", "SwiftData", "Apple MLX", "Ollama", "Quantized Gemma 4", "Local SQLite Vector Search", "Model Context Protocol (MCP)"]
+      "tools": ["SwiftUI", "SwiftData", "Apple MLX", "Quantized Gemma 4", "Local SQLite Vector Search", "Model Context Protocol (MCP)"]
     },
     {
       "id": "SKILL-04",
@@ -44,8 +44,8 @@
       "category": "Governance, Risk & Compliance (GRC)",
       "credential": "MidSouth Extracts Operations Director, January 2023 – May 2023",
       "credentialType": "Industrial Leadership & Regulatory Auditing",
-      "correlationToMission": "Bridges technical security controls with legal and regulatory mandates. Applies rigorous pharmaceutical-grade standard operating procedures and chain-of-custody discipline to federal cybersecurity governance, risk management, and digital forensics.",
-      "tools": ["cGMP / FDA 21 CFR", "Standard Operating Procedures (SOPs)", "Process Hazard Analysis (PHA)", "HIPAA Compliance", "Chain of Custody", "Quality Auditing"]
+      "correlationToMission": "Bridges technical security controls with legal and regulatory mandates. Applies rigorous documented standard operating procedures and chain-of-custody discipline to federal cybersecurity governance, risk management, and digital forensics.",
+      "tools": ["cGMP-informed SOPs", "Standard Operating Procedures (SOPs)", "Process Hazard Analysis (PHA)", "HIPAA Compliance", "Chain of Custody", "Quality Auditing"]
     }
   ],
   "featuredCredential": {
@@ -59,12 +59,12 @@
     "description": "Validates technology literacy and the competencies needed to provide a rich, custom learning environment for learners. Confirms mastery in integrating information and communication technology into professional instructional design and workforce upskilling."
   },
   "stateTeachingCertificate": {
-    "title": "Provisional Certificate in a Teaching Field: Business, Marketing, and Finance (non-degree)",
+    "title": "Coursework toward an Alabama teaching certificate in Business, Marketing, and Finance (non-degree)",
     "field": "Business, Marketing, and Finance",
-    "issuingAuthority": "Alabama State Department of Education (ALSDE) / University of Montevallo",
+    "institution": "University of Montevallo",
     "activeDates": "Fall 2024 – Spring 2025",
     "gpa": "3.66 / 4.0",
-    "status": "Verified Official Record"
+    "status": "Non-degree coursework"
   },
   "linkedinLearning": [
     {

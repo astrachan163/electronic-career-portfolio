@@ -102,7 +102,7 @@
       "id": "OBS-03",
       "obstacle": "Critical National Infrastructure Ransomware & Zero-Trust Modernization",
       "challenge": "Legacy industrial control systems (ICS/SCADA) and municipal networks operate with outdated perimeter-only security models, making them vulnerable to lateral adversary movement following initial compromise.",
-      "mitigation": "Deploying defense-in-depth and STRIDE threat modeling. Andrew's background in pharmaceutical cGMP compliance and industrial standard operating procedures (SOPs) bridges cyber controls with physical systems, enforcing strict micro-segmentation, multi-factor authentication, and immutable audit logs."
+      "mitigation": "Deploying defense-in-depth and STRIDE threat modeling. Andrew's background in regulated processing operations and industrial standard operating procedures (SOPs) bridges cyber controls with physical systems, enforcing strict micro-segmentation, multi-factor authentication, and immutable audit logs."
     }
   ]
 }
